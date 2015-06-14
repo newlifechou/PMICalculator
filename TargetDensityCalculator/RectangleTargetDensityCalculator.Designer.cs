@@ -55,7 +55,7 @@
             this.txtWeight = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCalculate = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -297,15 +297,15 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "靶材重量";
             // 
-            // button1
+            // btnCalculate
             // 
-            this.button1.Location = new System.Drawing.Point(204, 237);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 39);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "计算";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnCalculate.Location = new System.Drawing.Point(204, 237);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(99, 39);
+            this.btnCalculate.TabIndex = 10;
+            this.btnCalculate.Text = "计算";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCaculate_Click);
             // 
             // btnClear
             // 
@@ -323,7 +323,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(334, 288);
             this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.txtRelativeDensity);
             this.Controls.Add(this.txtRealDensity);
             this.Controls.Add(this.txtTheoreticalDensity);
@@ -391,7 +391,7 @@
         private System.Windows.Forms.TextBox txtWeight;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Button btnClear;
     }
 }

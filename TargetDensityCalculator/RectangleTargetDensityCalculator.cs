@@ -21,7 +21,7 @@ namespace TargetDensityCalculator
             FormOperate.ClearAllTextBoxInForm(this);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnCaculate_Click(object sender, EventArgs e)
         {
             try
             {

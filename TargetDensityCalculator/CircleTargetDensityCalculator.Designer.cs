@@ -29,37 +29,38 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtWeight = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDiameter = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtPapterWeight = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.txtPaperThickness = new System.Windows.Forms.TextBox();
+            this.chkIncludeCarbonPaper = new System.Windows.Forms.CheckBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtThickness1 = new System.Windows.Forms.TextBox();
+            this.txtThickness2 = new System.Windows.Forms.TextBox();
+            this.txtThickness3 = new System.Windows.Forms.TextBox();
+            this.txtThickness4 = new System.Windows.Forms.TextBox();
+            this.txtThickness = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtThereticalDensity = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtRealDensity = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtRelativeDensity = new System.Windows.Forms.TextBox();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnCalculate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -71,12 +72,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "靶材重量";
             // 
-            // textBox1
+            // txtWeight
             // 
-            this.textBox1.Location = new System.Drawing.Point(77, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(72, 21);
-            this.textBox1.TabIndex = 1;
+            this.txtWeight.Location = new System.Drawing.Point(77, 70);
+            this.txtWeight.Name = "txtWeight";
+            this.txtWeight.Size = new System.Drawing.Size(72, 21);
+            this.txtWeight.TabIndex = 1;
+            this.txtWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label2
             // 
@@ -87,12 +89,13 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "g";
             // 
-            // textBox2
+            // txtDiameter
             // 
-            this.textBox2.Location = new System.Drawing.Point(77, 97);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(72, 21);
-            this.textBox2.TabIndex = 4;
+            this.txtDiameter.Location = new System.Drawing.Point(77, 97);
+            this.txtDiameter.Name = "txtDiameter";
+            this.txtDiameter.Size = new System.Drawing.Size(72, 21);
+            this.txtDiameter.TabIndex = 4;
+            this.txtDiameter.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label3
             // 
@@ -130,12 +133,13 @@
             this.label10.TabIndex = 2;
             this.label10.Text = "g";
             // 
-            // textBox5
+            // txtPapterWeight
             // 
-            this.textBox5.Location = new System.Drawing.Point(77, 34);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(49, 21);
-            this.textBox5.TabIndex = 4;
+            this.txtPapterWeight.Location = new System.Drawing.Point(77, 34);
+            this.txtPapterWeight.Name = "txtPapterWeight";
+            this.txtPapterWeight.Size = new System.Drawing.Size(49, 21);
+            this.txtPapterWeight.TabIndex = 4;
+            this.txtPapterWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label11
             // 
@@ -155,23 +159,24 @@
             this.label12.TabIndex = 2;
             this.label12.Text = "mm";
             // 
-            // textBox6
+            // txtPaperThickness
             // 
-            this.textBox6.Location = new System.Drawing.Point(191, 33);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(51, 21);
-            this.textBox6.TabIndex = 4;
-            this.textBox6.Text = "0.5";
+            this.txtPaperThickness.Location = new System.Drawing.Point(191, 33);
+            this.txtPaperThickness.Name = "txtPaperThickness";
+            this.txtPaperThickness.Size = new System.Drawing.Size(51, 21);
+            this.txtPaperThickness.TabIndex = 4;
+            this.txtPaperThickness.Text = "0.5";
+            this.txtPaperThickness.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // checkBox1
+            // chkIncludeCarbonPaper
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(20, 12);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(192, 16);
-            this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "靶材重量和厚度包括双层石墨纸";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkIncludeCarbonPaper.AutoSize = true;
+            this.chkIncludeCarbonPaper.Location = new System.Drawing.Point(20, 12);
+            this.chkIncludeCarbonPaper.Name = "chkIncludeCarbonPaper";
+            this.chkIncludeCarbonPaper.Size = new System.Drawing.Size(192, 16);
+            this.chkIncludeCarbonPaper.TabIndex = 6;
+            this.chkIncludeCarbonPaper.Text = "靶材重量和厚度包括双层石墨纸";
+            this.chkIncludeCarbonPaper.UseVisualStyleBackColor = true;
             // 
             // label13
             // 
@@ -182,40 +187,45 @@
             this.label13.TabIndex = 3;
             this.label13.Text = "测量厚度";
             // 
-            // textBox7
+            // txtThickness1
             // 
-            this.textBox7.Location = new System.Drawing.Point(77, 124);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(51, 21);
-            this.textBox7.TabIndex = 4;
+            this.txtThickness1.Location = new System.Drawing.Point(77, 124);
+            this.txtThickness1.Name = "txtThickness1";
+            this.txtThickness1.Size = new System.Drawing.Size(51, 21);
+            this.txtThickness1.TabIndex = 4;
+            this.txtThickness1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox8
+            // txtThickness2
             // 
-            this.textBox8.Location = new System.Drawing.Point(134, 124);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(51, 21);
-            this.textBox8.TabIndex = 4;
+            this.txtThickness2.Location = new System.Drawing.Point(134, 124);
+            this.txtThickness2.Name = "txtThickness2";
+            this.txtThickness2.Size = new System.Drawing.Size(51, 21);
+            this.txtThickness2.TabIndex = 4;
+            this.txtThickness2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox9
+            // txtThickness3
             // 
-            this.textBox9.Location = new System.Drawing.Point(191, 124);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(51, 21);
-            this.textBox9.TabIndex = 4;
+            this.txtThickness3.Location = new System.Drawing.Point(191, 124);
+            this.txtThickness3.Name = "txtThickness3";
+            this.txtThickness3.Size = new System.Drawing.Size(51, 21);
+            this.txtThickness3.TabIndex = 4;
+            this.txtThickness3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox10
+            // txtThickness4
             // 
-            this.textBox10.Location = new System.Drawing.Point(248, 124);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(51, 21);
-            this.textBox10.TabIndex = 4;
+            this.txtThickness4.Location = new System.Drawing.Point(248, 124);
+            this.txtThickness4.Name = "txtThickness4";
+            this.txtThickness4.Size = new System.Drawing.Size(51, 21);
+            this.txtThickness4.TabIndex = 4;
+            this.txtThickness4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox11
+            // txtThickness
             // 
-            this.textBox11.Location = new System.Drawing.Point(77, 151);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(72, 21);
-            this.textBox11.TabIndex = 4;
+            this.txtThickness.Location = new System.Drawing.Point(77, 151);
+            this.txtThickness.Name = "txtThickness";
+            this.txtThickness.Size = new System.Drawing.Size(72, 21);
+            this.txtThickness.TabIndex = 4;
+            this.txtThickness.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label14
             // 
@@ -262,12 +272,13 @@
             this.label18.TabIndex = 2;
             this.label18.Text = "g/cm3";
             // 
-            // textBox12
+            // txtThereticalDensity
             // 
-            this.textBox12.Location = new System.Drawing.Point(77, 178);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(72, 21);
-            this.textBox12.TabIndex = 4;
+            this.txtThereticalDensity.Location = new System.Drawing.Point(77, 178);
+            this.txtThereticalDensity.Name = "txtThereticalDensity";
+            this.txtThereticalDensity.Size = new System.Drawing.Size(72, 21);
+            this.txtThereticalDensity.TabIndex = 4;
+            this.txtThereticalDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label19
             // 
@@ -287,12 +298,14 @@
             this.label20.TabIndex = 2;
             this.label20.Text = "g/cm3";
             // 
-            // textBox13
+            // txtRealDensity
             // 
-            this.textBox13.Location = new System.Drawing.Point(77, 205);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(72, 21);
-            this.textBox13.TabIndex = 4;
+            this.txtRealDensity.Location = new System.Drawing.Point(77, 205);
+            this.txtRealDensity.Name = "txtRealDensity";
+            this.txtRealDensity.ReadOnly = true;
+            this.txtRealDensity.Size = new System.Drawing.Size(72, 21);
+            this.txtRealDensity.TabIndex = 4;
+            this.txtRealDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label21
             // 
@@ -312,47 +325,61 @@
             this.label22.TabIndex = 2;
             this.label22.Text = "%";
             // 
-            // textBox14
+            // txtRelativeDensity
             // 
-            this.textBox14.Location = new System.Drawing.Point(77, 232);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(72, 21);
-            this.textBox14.TabIndex = 4;
+            this.txtRelativeDensity.Location = new System.Drawing.Point(77, 232);
+            this.txtRelativeDensity.Name = "txtRelativeDensity";
+            this.txtRelativeDensity.ReadOnly = true;
+            this.txtRelativeDensity.Size = new System.Drawing.Size(72, 21);
+            this.txtRelativeDensity.TabIndex = 4;
+            this.txtRelativeDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // button1
+            // btnClear
             // 
-            this.button1.Location = new System.Drawing.Point(22, 261);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(289, 39);
-            this.button1.TabIndex = 51;
-            this.button1.Text = "计算";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnClear.Location = new System.Drawing.Point(20, 261);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(99, 39);
+            this.btnClear.TabIndex = 54;
+            this.btnClear.Text = "清空";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnCalculate
+            // 
+            this.btnCalculate.Location = new System.Drawing.Point(200, 261);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(99, 39);
+            this.btnCalculate.TabIndex = 53;
+            this.btnCalculate.Text = "计算";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // CircleTargetDensityCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(334, 312);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnCalculate);
+            this.Controls.Add(this.chkIncludeCarbonPaper);
+            this.Controls.Add(this.txtPaperThickness);
+            this.Controls.Add(this.txtRelativeDensity);
+            this.Controls.Add(this.txtRealDensity);
+            this.Controls.Add(this.txtThereticalDensity);
+            this.Controls.Add(this.txtThickness);
+            this.Controls.Add(this.txtThickness4);
+            this.Controls.Add(this.txtThickness3);
+            this.Controls.Add(this.txtThickness2);
+            this.Controls.Add(this.txtThickness1);
             this.Controls.Add(this.label22);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtPapterWeight);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtDiameter);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label11);
@@ -362,7 +389,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtWeight);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -379,37 +406,38 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtWeight;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDiameter;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtPapterWeight;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox txtPaperThickness;
+        private System.Windows.Forms.CheckBox chkIncludeCarbonPaper;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtThickness1;
+        private System.Windows.Forms.TextBox txtThickness2;
+        private System.Windows.Forms.TextBox txtThickness3;
+        private System.Windows.Forms.TextBox txtThickness4;
+        private System.Windows.Forms.TextBox txtThickness;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtThereticalDensity;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtRealDensity;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtRelativeDensity;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnCalculate;
     }
 }
 

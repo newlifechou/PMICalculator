@@ -89,6 +89,7 @@
             // 
             this.txtThickness.Location = new System.Drawing.Point(81, 121);
             this.txtThickness.Name = "txtThickness";
+            this.txtThickness.ReadOnly = true;
             this.txtThickness.Size = new System.Drawing.Size(72, 21);
             this.txtThickness.TabIndex = 8;
             this.txtThickness.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -100,7 +101,6 @@
             this.txtThickness4.Size = new System.Drawing.Size(51, 21);
             this.txtThickness4.TabIndex = 7;
             this.txtThickness4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtThickness4.TextChanged += new System.EventHandler(this.txtThickness1_TextChanged);
             // 
             // txtThickness3
             // 
@@ -109,7 +109,6 @@
             this.txtThickness3.Size = new System.Drawing.Size(51, 21);
             this.txtThickness3.TabIndex = 6;
             this.txtThickness3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtThickness3.TextChanged += new System.EventHandler(this.txtThickness1_TextChanged);
             // 
             // txtThickness2
             // 
@@ -118,7 +117,6 @@
             this.txtThickness2.Size = new System.Drawing.Size(51, 21);
             this.txtThickness2.TabIndex = 5;
             this.txtThickness2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtThickness2.TextChanged += new System.EventHandler(this.txtThickness1_TextChanged);
             // 
             // txtThickness1
             // 
@@ -127,7 +125,6 @@
             this.txtThickness1.Size = new System.Drawing.Size(51, 21);
             this.txtThickness1.TabIndex = 4;
             this.txtThickness1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtThickness1.TextChanged += new System.EventHandler(this.txtThickness1_TextChanged);
             // 
             // label22
             // 

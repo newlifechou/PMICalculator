@@ -25,21 +25,27 @@ namespace TargetDensityCalculator
         {
             try
             {
-                double weight, width, height, h, theoreticalDensity;
+                double weight, width, height, h1, h2, h3, h4, h, theoreticalDensity;
                 FormOperate.ConvertStringToDouble(txtWeight, out weight);
                 FormOperate.ConvertStringToDouble(txtWidth, out width);
                 FormOperate.ConvertStringToDouble(txtHeight, out height);
-                FormOperate.ConvertStringToDouble(txtThickness, out h);
+                FormOperate.ConvertStringToDouble(txtThickness1, out h1);
+                FormOperate.ConvertStringToDouble(txtThickness2, out h2);
+                FormOperate.ConvertStringToDouble(txtThickness3, out h3);
+                FormOperate.ConvertStringToDouble(txtThickness4, out h4);
                 FormOperate.ConvertStringToDouble(txtTheoreticalDensity, out theoreticalDensity);
                 try
                 {
+                    h=(h1 + h2 + h3 + h4) / 4;
+                    this.txtThickness.Text = h.ToString("N2");
+
                     TargetDensityCalculate tdc = new TargetDensityCalculate();
                     tdc.CalculateRectangleTargetTargetDensity(weight, width, height, h, theoreticalDensity);
                     txtRealDensity.Text = tdc.RealDensity.ToString("N3");
                     txtRelativeDensity.Text = (tdc.RelativeDensity * 100).ToString("N2");
                 }
                 catch (Exception ex)
-                {                 
+                {
                     throw ex;
                 }
             }
@@ -48,26 +54,7 @@ namespace TargetDensityCalculator
                 MessageBox.Show(ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        /// <summary>
-        /// 实时计算出平均厚度
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void txtThickness1_TextChanged(object sender, EventArgs e)
-        {
-            double h1, h2, h3, h4;
-            try
-            {
-                FormOperate.ConvertStringToDouble(txtThickness1, out h1);
-                FormOperate.ConvertStringToDouble(txtThickness2, out h2);
-                FormOperate.ConvertStringToDouble(txtThickness3, out h3);
-                FormOperate.ConvertStringToDouble(txtThickness4, out h4);
-                this.txtThickness.Text = ((h1 + h2 + h3 + h4) / 4).ToString("N2");
-            }
-            catch (Exception)
-            {
-                this.txtThickness.Text = "-";
-            }
-        }
+
+
     }
 }

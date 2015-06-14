@@ -10,6 +10,7 @@ namespace TargetDensityCalculator
     /// </summary>
     public class TargetDensityCalculate
     {
+        //三个输出结果
         public double RealDensity { get; set; }
         public double RelativeDensity { get; set; }
         public double Volume { get; set; }

@@ -1,6 +1,6 @@
 ﻿namespace TargetDensityCalculator
 {
-    partial class AchimedesDensityCalculator
+    partial class ArhimedesDensityCalculator
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtWeight = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtW1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtW2 = new System.Windows.Forms.TextBox();
+            this.txtRelativeDensity = new System.Windows.Forms.TextBox();
+            this.txtRealDensity = new System.Windows.Forms.TextBox();
+            this.txtTheoreticalDensity = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCalculate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtWeight
             // 
-            this.textBox1.Location = new System.Drawing.Point(91, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(72, 21);
-            this.textBox1.TabIndex = 12;
+            this.txtWeight.Location = new System.Drawing.Point(91, 12);
+            this.txtWeight.Name = "txtWeight";
+            this.txtWeight.Size = new System.Drawing.Size(72, 21);
+            this.txtWeight.TabIndex = 12;
             // 
             // label2
             // 
@@ -92,12 +92,12 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "g";
             // 
-            // textBox2
+            // txtW1
             // 
-            this.textBox2.Location = new System.Drawing.Point(91, 39);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(72, 21);
-            this.textBox2.TabIndex = 12;
+            this.txtW1.Location = new System.Drawing.Point(91, 39);
+            this.txtW1.Name = "txtW1";
+            this.txtW1.Size = new System.Drawing.Size(72, 21);
+            this.txtW1.TabIndex = 12;
             // 
             // label5
             // 
@@ -117,33 +117,33 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "g";
             // 
-            // textBox3
+            // txtW2
             // 
-            this.textBox3.Location = new System.Drawing.Point(91, 66);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(72, 21);
-            this.textBox3.TabIndex = 12;
+            this.txtW2.Location = new System.Drawing.Point(91, 66);
+            this.txtW2.Name = "txtW2";
+            this.txtW2.Size = new System.Drawing.Size(72, 21);
+            this.txtW2.TabIndex = 12;
             // 
-            // textBox14
+            // txtRelativeDensity
             // 
-            this.textBox14.Location = new System.Drawing.Point(91, 147);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(72, 21);
-            this.textBox14.TabIndex = 49;
+            this.txtRelativeDensity.Location = new System.Drawing.Point(91, 147);
+            this.txtRelativeDensity.Name = "txtRelativeDensity";
+            this.txtRelativeDensity.Size = new System.Drawing.Size(72, 21);
+            this.txtRelativeDensity.TabIndex = 49;
             // 
-            // textBox13
+            // txtRealDensity
             // 
-            this.textBox13.Location = new System.Drawing.Point(91, 120);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(72, 21);
-            this.textBox13.TabIndex = 48;
+            this.txtRealDensity.Location = new System.Drawing.Point(91, 120);
+            this.txtRealDensity.Name = "txtRealDensity";
+            this.txtRealDensity.Size = new System.Drawing.Size(72, 21);
+            this.txtRealDensity.TabIndex = 48;
             // 
-            // textBox12
+            // txtTheoreticalDensity
             // 
-            this.textBox12.Location = new System.Drawing.Point(91, 93);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(72, 21);
-            this.textBox12.TabIndex = 47;
+            this.txtTheoreticalDensity.Location = new System.Drawing.Point(91, 93);
+            this.txtTheoreticalDensity.Name = "txtTheoreticalDensity";
+            this.txtTheoreticalDensity.Size = new System.Drawing.Size(72, 21);
+            this.txtTheoreticalDensity.TabIndex = 47;
             // 
             // label22
             // 
@@ -199,43 +199,44 @@
             this.label17.TabIndex = 46;
             this.label17.Text = "理论密度";
             // 
-            // button1
+            // btnCalculate
             // 
-            this.button1.Location = new System.Drawing.Point(12, 180);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(211, 39);
-            this.button1.TabIndex = 50;
-            this.button1.Text = "计算";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCalculate.Location = new System.Drawing.Point(12, 180);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(211, 39);
+            this.btnCalculate.TabIndex = 50;
+            this.btnCalculate.Text = "计算";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
-            // AchimedesDensityCalculator
+            // ArhimedesDensityCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(235, 238);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.btnCalculate);
+            this.Controls.Add(this.txtRelativeDensity);
+            this.Controls.Add(this.txtRealDensity);
+            this.Controls.Add(this.txtTheoreticalDensity);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtW2);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtW1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtWeight);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "AchimedesDensityCalculator";
+            this.Name = "ArhimedesDensityCalculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "排水法计算密度";
             this.ResumeLayout(false);
@@ -245,24 +246,24 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtWeight;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtW1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtW2;
+        private System.Windows.Forms.TextBox txtRelativeDensity;
+        private System.Windows.Forms.TextBox txtRealDensity;
+        private System.Windows.Forms.TextBox txtTheoreticalDensity;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCalculate;
     }
 }

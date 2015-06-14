@@ -44,11 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AchimedesDensityCalculator.cs">
+    <Compile Include="ArhimedesDensityCalculator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AchimedesDensityCalculator.Designer.cs">
-      <DependentUpon>AchimedesDensityCalculator.cs</DependentUpon>
+    <Compile Include="ArhimedesDensityCalculator.Designer.cs">
+      <DependentUpon>ArhimedesDensityCalculator.cs</DependentUpon>
     </Compile>
     <Compile Include="CircleTargetDensityCalculator.cs">
       <SubType>Form</SubType>
@@ -56,6 +56,7 @@
     <Compile Include="CircleTargetDensityCalculator.Designer.cs">
       <DependentUpon>CircleTargetDensityCalculator.cs</DependentUpon>
     </Compile>
+    <Compile Include="TargetDensityCalculate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RectangleTargetDensityCalculator.cs">
@@ -64,8 +65,8 @@
     <Compile Include="RectangleTargetDensityCalculator.Designer.cs">
       <DependentUpon>RectangleTargetDensityCalculator.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AchimedesDensityCalculator.resx">
-      <DependentUpon>AchimedesDensityCalculator.cs</DependentUpon>
+    <EmbeddedResource Include="ArhimedesDensityCalculator.resx">
+      <DependentUpon>ArhimedesDensityCalculator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

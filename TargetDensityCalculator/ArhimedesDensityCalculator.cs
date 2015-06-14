@@ -9,11 +9,16 @@ using System.Windows.Forms;
 
 namespace TargetDensityCalculator
 {
-    public partial class AchimedesDensityCalculator : Form
+    public partial class ArhimedesDensityCalculator : Form
     {
-        public AchimedesDensityCalculator()
+        public ArhimedesDensityCalculator()
         {
             InitializeComponent();
+        }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

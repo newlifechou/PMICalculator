@@ -19,19 +19,19 @@ namespace TestForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ArchimedesDensityCalculator adc = new ArchimedesDensityCalculator();
+            CalculatorArchimedesDensity adc = new CalculatorArchimedesDensity();
             adc.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            RectangleTargetDensityCalculator rtdc = new RectangleTargetDensityCalculator();
+            CalculatorRectangleTargetDensity rtdc = new CalculatorRectangleTargetDensity();
             rtdc.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            CircleTargetDensityCalculator ctdc = new CircleTargetDensityCalculator();
+            CalculatorCircleTargetDensity ctdc = new CalculatorCircleTargetDensity();
             ctdc.ShowDialog();
         }
     }

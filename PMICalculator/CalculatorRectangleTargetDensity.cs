@@ -9,16 +9,16 @@ using System.Windows.Forms;
 
 namespace PMICalculator
 {
-    public partial class RectangleTargetDensityCalculator : Form
+    public partial class CalculatorRectangleTargetDensity : Form
     {
-        public RectangleTargetDensityCalculator()
+        public CalculatorRectangleTargetDensity()
         {
             InitializeComponent();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            FormOperate.ClearAllTextBoxInForm(this);
+            FormCommonOperate.ClearAllTextBoxInForm(this);
         }
 
         private void btnCaculate_Click(object sender, EventArgs e)
@@ -26,20 +26,20 @@ namespace PMICalculator
             try
             {
                 double weight, width, height, h1, h2, h3, h4, h, theoreticalDensity;
-                FormOperate.ConvertStringToDouble(txtWeight, out weight);
-                FormOperate.ConvertStringToDouble(txtWidth, out width);
-                FormOperate.ConvertStringToDouble(txtHeight, out height);
-                FormOperate.ConvertStringToDouble(txtThickness1, out h1);
-                FormOperate.ConvertStringToDouble(txtThickness2, out h2);
-                FormOperate.ConvertStringToDouble(txtThickness3, out h3);
-                FormOperate.ConvertStringToDouble(txtThickness4, out h4);
-                FormOperate.ConvertStringToDouble(txtTheoreticalDensity, out theoreticalDensity);
+                FormCommonOperate.ConvertStringToDouble(txtWeight, out weight);
+                FormCommonOperate.ConvertStringToDouble(txtWidth, out width);
+                FormCommonOperate.ConvertStringToDouble(txtHeight, out height);
+                FormCommonOperate.ConvertStringToDouble(txtThickness1, out h1);
+                FormCommonOperate.ConvertStringToDouble(txtThickness2, out h2);
+                FormCommonOperate.ConvertStringToDouble(txtThickness3, out h3);
+                FormCommonOperate.ConvertStringToDouble(txtThickness4, out h4);
+                FormCommonOperate.ConvertStringToDouble(txtTheoreticalDensity, out theoreticalDensity);
                 try
                 {
                     h=(h1 + h2 + h3 + h4) / 4;
                     this.txtThickness.Text = h.ToString("N2");
 
-                    TargetDensityCalculate tdc = new TargetDensityCalculate();
+                    CalculateTargetDensity tdc = new CalculateTargetDensity();
                     tdc.CalculateRectangleTargetTargetDensity(weight, width, height, h, theoreticalDensity);
                     txtRealDensity.Text = tdc.RealDensity.ToString("N3");
                     txtRelativeDensity.Text = (tdc.RelativeDensity * 100).ToString("N2");

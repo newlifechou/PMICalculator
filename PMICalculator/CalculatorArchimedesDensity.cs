@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace PMICalculator
 {
-    public partial class ArchimedesDensityCalculator : Form
+    public partial class CalculatorArchimedesDensity : Form
     {
-        public ArchimedesDensityCalculator()
+        public CalculatorArchimedesDensity()
         {
             InitializeComponent();
         }
@@ -22,14 +22,14 @@ namespace PMICalculator
             {
                 double weight, w1, w2, thereticaldensity;
                 //当所有的textbox都转换成功的时候，才可以进行计算
-                FormOperate.ConvertStringToDouble(txtWeight, out weight);
-                FormOperate.ConvertStringToDouble(txtW1, out w1);
-                FormOperate.ConvertStringToDouble(txtW2, out w2);
-                FormOperate.ConvertStringToDouble(txtTheoreticalDensity, out thereticaldensity);
+                FormCommonOperate.ConvertStringToDouble(txtWeight, out weight);
+                FormCommonOperate.ConvertStringToDouble(txtW1, out w1);
+                FormCommonOperate.ConvertStringToDouble(txtW2, out w2);
+                FormCommonOperate.ConvertStringToDouble(txtTheoreticalDensity, out thereticaldensity);
 
                 try
                 {
-                    TargetDensityCalculate tdc = new TargetDensityCalculate();
+                    CalculateTargetDensity tdc = new CalculateTargetDensity();
                     tdc.CalculateArchimedeTargetDensity(weight, w1, w2, thereticaldensity);
                     txtRealDensity.Text = tdc.RealDensity.ToString("N3");
                     txtRelativeDensity.Text = (tdc.RelativeDensity * 100).ToString("N2");
@@ -55,7 +55,7 @@ namespace PMICalculator
         /// <param name="e"></param>
         private void btnClear_Click(object sender, EventArgs e)
         {
-            FormOperate.ClearAllTextBoxInForm(this);
+            FormCommonOperate.ClearAllTextBoxInForm(this);
         }
     }
 }

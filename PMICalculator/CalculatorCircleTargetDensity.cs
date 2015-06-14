@@ -9,16 +9,16 @@ using System.Windows.Forms;
 
 namespace PMICalculator
 {
-    public partial class CircleTargetDensityCalculator : Form
+    public partial class CalculatorCircleTargetDensity : Form
     {
-        public CircleTargetDensityCalculator()
+        public CalculatorCircleTargetDensity()
         {
             InitializeComponent();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            FormOperate.ClearAllTextBoxInForm(this);
+            FormCommonOperate.ClearAllTextBoxInForm(this);
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)
@@ -26,21 +26,21 @@ namespace PMICalculator
             try
             {
                 double weight, diameter, h1, h2, h3, h4, h,paperWeight, paperThickness, theoreticalDensity;
-                FormOperate.ConvertStringToDouble(txtWeight, out weight);
-                FormOperate.ConvertStringToDouble(txtDiameter, out diameter);
-                FormOperate.ConvertStringToDouble(txtThickness1, out h1);
-                FormOperate.ConvertStringToDouble(txtThickness2, out h2);
-                FormOperate.ConvertStringToDouble(txtThickness3, out h3);
-                FormOperate.ConvertStringToDouble(txtThickness4, out h4);
-                FormOperate.ConvertStringToDouble(txtTheoreticalDensity, out theoreticalDensity);
+                FormCommonOperate.ConvertStringToDouble(txtWeight, out weight);
+                FormCommonOperate.ConvertStringToDouble(txtDiameter, out diameter);
+                FormCommonOperate.ConvertStringToDouble(txtThickness1, out h1);
+                FormCommonOperate.ConvertStringToDouble(txtThickness2, out h2);
+                FormCommonOperate.ConvertStringToDouble(txtThickness3, out h3);
+                FormCommonOperate.ConvertStringToDouble(txtThickness4, out h4);
+                FormCommonOperate.ConvertStringToDouble(txtTheoreticalDensity, out theoreticalDensity);
                 h= (h1 + h2 + h3 + h4) / 4;
                 this.txtThickness.Text = h.ToString("N2");
 
                 //如果需要减去石墨纸的重量和厚度
                 if (chkIncludeCarbonPaper.Checked == true)
                 {
-                    FormOperate.ConvertStringToDouble(txtPaperThickness, out paperThickness);
-                    FormOperate.ConvertStringToDouble(txtPapterWeight, out paperWeight);
+                    FormCommonOperate.ConvertStringToDouble(txtPaperThickness, out paperThickness);
+                    FormCommonOperate.ConvertStringToDouble(txtPapterWeight, out paperWeight);
 
                     h = h - paperThickness;
                     this.txtMovePaperThickness.Text = h.ToString("N2");
@@ -48,7 +48,7 @@ namespace PMICalculator
                     this.txtMovePaperWeight.Text = weight.ToString("N2");
                 }
 
-                TargetDensityCalculate tdc = new TargetDensityCalculate();
+                CalculateTargetDensity tdc = new CalculateTargetDensity();
                 tdc.CalculateCirlcleTargetDensity(weight, diameter, h, theoreticalDensity);
                 txtRealDensity.Text = tdc.RealDensity.ToString("N3");
                 txtRelativeDensity.Text = (tdc.RelativeDensity * 100).ToString("N2");

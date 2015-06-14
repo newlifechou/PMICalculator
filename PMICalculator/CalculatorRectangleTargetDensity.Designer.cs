@@ -1,6 +1,6 @@
 ﻿namespace PMICalculator
 {
-    partial class RectangleTargetDensityCalculator
+    partial class CalculatorRectangleTargetDensity
     {
         /// <summary>
         /// Required designer variable.

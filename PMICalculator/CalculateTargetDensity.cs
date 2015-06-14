@@ -8,7 +8,7 @@ namespace PMICalculator
     /// <summary>
     /// 靶材密度计算类
     /// </summary>
-    public class TargetDensityCalculate
+    public class CalculateTargetDensity
     {
         //三个输出结果
         public double RealDensity { get; set; }

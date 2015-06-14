@@ -1,6 +1,6 @@
 ﻿namespace PMICalculator
 {
-    partial class ArchimedesDensityCalculator
+    partial class CalculatorArchimedesDensity
     {
         /// <summary>
         /// Required designer variable.

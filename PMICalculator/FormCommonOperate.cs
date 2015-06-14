@@ -9,7 +9,7 @@ namespace PMICalculator
     /// <summary>
     /// 这个静态类主要用于常用的Form操作
     /// </summary>
-    public class FormOperate
+    public class FormCommonOperate
     {
         /// <summary>
         /// 清空所选容器里所有textbox

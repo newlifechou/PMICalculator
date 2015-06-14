@@ -1,6 +1,6 @@
 ﻿namespace PMICalculator
 {
-    partial class CircleTargetDensityCalculator
+    partial class CalculatorCircleTargetDensity
     {
         /// <summary>
         /// Required designer variable.

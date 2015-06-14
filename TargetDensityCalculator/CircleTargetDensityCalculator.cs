@@ -35,6 +35,7 @@ namespace TargetDensityCalculator
                 FormOperate.ConvertStringToDouble(txtTheoreticalDensity, out theoreticalDensity);
                 h= (h1 + h2 + h3 + h4) / 4;
                 this.txtThickness.Text = h.ToString("N2");
+
                 //如果需要减去石墨纸的重量和厚度
                 if (chkIncludeCarbonPaper.Checked == true)
                 {

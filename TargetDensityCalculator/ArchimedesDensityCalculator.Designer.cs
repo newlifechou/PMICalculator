@@ -223,7 +223,7 @@
             this.btnClear.Location = new System.Drawing.Point(12, 180);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(99, 39);
-            this.btnClear.TabIndex = 5;
+            this.btnClear.TabIndex = 6;
             this.btnClear.Text = "清空";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);

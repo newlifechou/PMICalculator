@@ -22,26 +22,24 @@ namespace TargetDensityCalculator
             {
                 double weight, w1, w2, thereticaldensity;
                 //当所有的textbox都转换成功的时候，才可以进行计算
-                if (double.TryParse(txtWeight.Text, out weight) && double.TryParse(txtW1.Text, out w1) &&
-                    double.TryParse(txtW2.Text, out w2) && double.TryParse(txtTheoreticalDensity.Text, out thereticaldensity))
+                FormOperate.ConvertStringToDouble(txtWeight, out weight);
+                FormOperate.ConvertStringToDouble(txtW1, out w1);
+                FormOperate.ConvertStringToDouble(txtW2, out w2);
+                FormOperate.ConvertStringToDouble(txtTheoreticalDensity, out thereticaldensity);
+
+                try
                 {
                     TargetDensityCalculate tdc = new TargetDensityCalculate();
-                    try
-                    {
-                        tdc.CalculateArchimedeTargetDensity(weight, w1, w2, thereticaldensity);
-                        txtRealDensity.Text = tdc.RealDensity.ToString("N3");
-                        txtRelativeDensity.Text = (tdc.RelativeDensity * 100).ToString("N2");
-                    }
-                    catch (Exception ex)
-                    {
-                        //将错误继续抛出，让最外层的trycatch来处理
-                        throw ex;
-                    }
+                    tdc.CalculateArchimedeTargetDensity(weight, w1, w2, thereticaldensity);
+                    txtRealDensity.Text = tdc.RealDensity.ToString("N3");
+                    txtRelativeDensity.Text = (tdc.RelativeDensity * 100).ToString("N2");
                 }
-                else
+                catch (Exception ex)
                 {
-                    throw new Exception("所有输入必须是数字！");
+                    //将错误继续抛出，让最外层的trycatch来处理
+                    throw ex;
                 }
+
             }
             catch (Exception ex)
             {

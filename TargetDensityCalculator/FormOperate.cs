@@ -11,9 +11,13 @@ namespace TargetDensityCalculator
     /// </summary>
     public class FormOperate
     {
-        public static void ClearAllTextBoxInForm(Form form)
+        /// <summary>
+        /// 清空所选容器里所有textbox
+        /// </summary>
+        /// <param name="form"></param>
+        public static void ClearAllTextBoxInForm(Control container)
         {
-            foreach (var item in form.Controls)
+            foreach (var item in container.Controls)
             {
                 if (item is TextBox)
                 {
@@ -22,5 +26,19 @@ namespace TargetDensityCalculator
                 }
             }
         }
+        /// <summary>
+        /// 转换string到double，如果不行，就抛出异常
+        /// </summary>
+        /// <param name="txt"></param>
+        /// <param name="number"></param>
+        public static void ConvertStringToDouble(TextBox txt, out double number)
+        {
+            if (!double.TryParse(txt.Text, out number))
+            {
+                throw new Exception("所有输入必须是数字");
+            }
+        }
+
+
     }
 }

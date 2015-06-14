@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace TargetDensityCalculator
+namespace TestForm
 {
     static class Program
     {
@@ -15,8 +15,7 @@ namespace TargetDensityCalculator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new CircleTargetDensityCalculator());
-            Application.Run(new ArchimedesDensityCalculator());
+            Application.Run(new Form1());
         }
     }
 }

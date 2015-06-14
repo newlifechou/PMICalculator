@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TargetDensityCalculator")]
+[assembly: AssemblyTitle("PMICalculator")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TargetDensityCalculator")]
+[assembly: AssemblyProduct("PMICalculator")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("6f82579c-c36b-4a3e-9fb5-a59f2ccda6b0")]
+[assembly: Guid("780c0c8d-2b1a-47ad-87e3-ea1286ff1cec")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace TargetDensityCalculator
+namespace PMICalculator
 {
     public partial class RectangleTargetDensityCalculator : Form
     {

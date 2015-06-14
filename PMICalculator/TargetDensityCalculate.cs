@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace TargetDensityCalculator
+namespace PMICalculator
 {
     /// <summary>
     /// 靶材密度计算类

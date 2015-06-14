@@ -1,4 +1,4 @@
-﻿namespace TargetDensityCalculator
+﻿namespace PMICalculator
 {
     partial class CircleTargetDensityCalculator
     {

@@ -94,7 +94,7 @@
             this.txtDiameter.Location = new System.Drawing.Point(77, 97);
             this.txtDiameter.Name = "txtDiameter";
             this.txtDiameter.Size = new System.Drawing.Size(72, 21);
-            this.txtDiameter.TabIndex = 4;
+            this.txtDiameter.TabIndex = 2;
             this.txtDiameter.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label3
@@ -138,7 +138,8 @@
             this.txtPapterWeight.Location = new System.Drawing.Point(77, 34);
             this.txtPapterWeight.Name = "txtPapterWeight";
             this.txtPapterWeight.Size = new System.Drawing.Size(49, 21);
-            this.txtPapterWeight.TabIndex = 4;
+            this.txtPapterWeight.TabIndex = 44;
+            this.txtPapterWeight.Text = "5";
             this.txtPapterWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label11
@@ -164,13 +165,15 @@
             this.txtPaperThickness.Location = new System.Drawing.Point(191, 33);
             this.txtPaperThickness.Name = "txtPaperThickness";
             this.txtPaperThickness.Size = new System.Drawing.Size(51, 21);
-            this.txtPaperThickness.TabIndex = 4;
+            this.txtPaperThickness.TabIndex = 44;
             this.txtPaperThickness.Text = "0.5";
             this.txtPaperThickness.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // chkIncludeCarbonPaper
             // 
             this.chkIncludeCarbonPaper.AutoSize = true;
+            this.chkIncludeCarbonPaper.Checked = true;
+            this.chkIncludeCarbonPaper.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkIncludeCarbonPaper.Location = new System.Drawing.Point(20, 12);
             this.chkIncludeCarbonPaper.Name = "chkIncludeCarbonPaper";
             this.chkIncludeCarbonPaper.Size = new System.Drawing.Size(192, 16);
@@ -192,8 +195,9 @@
             this.txtThickness1.Location = new System.Drawing.Point(77, 124);
             this.txtThickness1.Name = "txtThickness1";
             this.txtThickness1.Size = new System.Drawing.Size(51, 21);
-            this.txtThickness1.TabIndex = 4;
+            this.txtThickness1.TabIndex = 3;
             this.txtThickness1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtThickness1.TextChanged += new System.EventHandler(this.txtThickness1_TextChanged);
             // 
             // txtThickness2
             // 
@@ -202,29 +206,32 @@
             this.txtThickness2.Size = new System.Drawing.Size(51, 21);
             this.txtThickness2.TabIndex = 4;
             this.txtThickness2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtThickness2.TextChanged += new System.EventHandler(this.txtThickness1_TextChanged);
             // 
             // txtThickness3
             // 
             this.txtThickness3.Location = new System.Drawing.Point(191, 124);
             this.txtThickness3.Name = "txtThickness3";
             this.txtThickness3.Size = new System.Drawing.Size(51, 21);
-            this.txtThickness3.TabIndex = 4;
+            this.txtThickness3.TabIndex = 5;
             this.txtThickness3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtThickness3.TextChanged += new System.EventHandler(this.txtThickness1_TextChanged);
             // 
             // txtThickness4
             // 
             this.txtThickness4.Location = new System.Drawing.Point(248, 124);
             this.txtThickness4.Name = "txtThickness4";
             this.txtThickness4.Size = new System.Drawing.Size(51, 21);
-            this.txtThickness4.TabIndex = 4;
+            this.txtThickness4.TabIndex = 6;
             this.txtThickness4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtThickness4.TextChanged += new System.EventHandler(this.txtThickness1_TextChanged);
             // 
             // txtThickness
             // 
             this.txtThickness.Location = new System.Drawing.Point(77, 151);
             this.txtThickness.Name = "txtThickness";
             this.txtThickness.Size = new System.Drawing.Size(72, 21);
-            this.txtThickness.TabIndex = 4;
+            this.txtThickness.TabIndex = 7;
             this.txtThickness.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label14
@@ -277,7 +284,7 @@
             this.txtThereticalDensity.Location = new System.Drawing.Point(77, 178);
             this.txtThereticalDensity.Name = "txtThereticalDensity";
             this.txtThereticalDensity.Size = new System.Drawing.Size(72, 21);
-            this.txtThereticalDensity.TabIndex = 4;
+            this.txtThereticalDensity.TabIndex = 8;
             this.txtThereticalDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label19
@@ -304,7 +311,7 @@
             this.txtRealDensity.Name = "txtRealDensity";
             this.txtRealDensity.ReadOnly = true;
             this.txtRealDensity.Size = new System.Drawing.Size(72, 21);
-            this.txtRealDensity.TabIndex = 4;
+            this.txtRealDensity.TabIndex = 45;
             this.txtRealDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label21
@@ -331,7 +338,7 @@
             this.txtRelativeDensity.Name = "txtRelativeDensity";
             this.txtRelativeDensity.ReadOnly = true;
             this.txtRelativeDensity.Size = new System.Drawing.Size(72, 21);
-            this.txtRelativeDensity.TabIndex = 4;
+            this.txtRelativeDensity.TabIndex = 46;
             this.txtRelativeDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btnClear
@@ -349,7 +356,7 @@
             this.btnCalculate.Location = new System.Drawing.Point(200, 261);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(99, 39);
-            this.btnCalculate.TabIndex = 53;
+            this.btnCalculate.TabIndex = 9;
             this.btnCalculate.Text = "计算";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);

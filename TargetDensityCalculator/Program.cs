@@ -16,7 +16,7 @@ namespace TargetDensityCalculator
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new CircleTargetDensityCalculator());
-            Application.Run(new )
+            Application.Run(new ArchimedesDensityCalculator());
         }
     }
 }

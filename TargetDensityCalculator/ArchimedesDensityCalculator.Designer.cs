@@ -1,6 +1,6 @@
 ﻿namespace TargetDensityCalculator
 {
-    partial class ArhimedesDensityCalculator
+    partial class ArchimedesDensityCalculator
     {
         /// <summary>
         /// Required designer variable.
@@ -47,6 +47,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.btnCalculate = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtWeight
@@ -54,7 +55,8 @@
             this.txtWeight.Location = new System.Drawing.Point(91, 12);
             this.txtWeight.Name = "txtWeight";
             this.txtWeight.Size = new System.Drawing.Size(72, 21);
-            this.txtWeight.TabIndex = 12;
+            this.txtWeight.TabIndex = 1;
+            this.txtWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label2
             // 
@@ -97,7 +99,8 @@
             this.txtW1.Location = new System.Drawing.Point(91, 39);
             this.txtW1.Name = "txtW1";
             this.txtW1.Size = new System.Drawing.Size(72, 21);
-            this.txtW1.TabIndex = 12;
+            this.txtW1.TabIndex = 2;
+            this.txtW1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label5
             // 
@@ -122,28 +125,34 @@
             this.txtW2.Location = new System.Drawing.Point(91, 66);
             this.txtW2.Name = "txtW2";
             this.txtW2.Size = new System.Drawing.Size(72, 21);
-            this.txtW2.TabIndex = 12;
+            this.txtW2.TabIndex = 3;
+            this.txtW2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtRelativeDensity
             // 
             this.txtRelativeDensity.Location = new System.Drawing.Point(91, 147);
             this.txtRelativeDensity.Name = "txtRelativeDensity";
+            this.txtRelativeDensity.ReadOnly = true;
             this.txtRelativeDensity.Size = new System.Drawing.Size(72, 21);
             this.txtRelativeDensity.TabIndex = 49;
+            this.txtRelativeDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtRealDensity
             // 
             this.txtRealDensity.Location = new System.Drawing.Point(91, 120);
             this.txtRealDensity.Name = "txtRealDensity";
+            this.txtRealDensity.ReadOnly = true;
             this.txtRealDensity.Size = new System.Drawing.Size(72, 21);
             this.txtRealDensity.TabIndex = 48;
+            this.txtRealDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtTheoreticalDensity
             // 
             this.txtTheoreticalDensity.Location = new System.Drawing.Point(91, 93);
             this.txtTheoreticalDensity.Name = "txtTheoreticalDensity";
             this.txtTheoreticalDensity.Size = new System.Drawing.Size(72, 21);
-            this.txtTheoreticalDensity.TabIndex = 47;
+            this.txtTheoreticalDensity.TabIndex = 4;
+            this.txtTheoreticalDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label22
             // 
@@ -201,19 +210,30 @@
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(12, 180);
+            this.btnCalculate.Location = new System.Drawing.Point(124, 180);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(211, 39);
-            this.btnCalculate.TabIndex = 50;
+            this.btnCalculate.Size = new System.Drawing.Size(99, 39);
+            this.btnCalculate.TabIndex = 5;
             this.btnCalculate.Text = "计算";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
-            // ArhimedesDensityCalculator
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(12, 180);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(99, 39);
+            this.btnClear.TabIndex = 5;
+            this.btnClear.Text = "清空";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // ArchimedesDensityCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(235, 238);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.txtRelativeDensity);
             this.Controls.Add(this.txtRealDensity);
@@ -236,7 +256,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "ArhimedesDensityCalculator";
+            this.Name = "ArchimedesDensityCalculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "排水法计算密度";
             this.ResumeLayout(false);
@@ -265,5 +285,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.Button btnClear;
     }
 }

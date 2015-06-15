@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalculateWeightingDensity.cs" />
     <Compile Include="CalculatorPressureFromPDtoT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +73,18 @@
     <Compile Include="CalculatorPressureFromTDToP.Designer.cs">
       <DependentUpon>CalculatorPressureFromTDToP.cs</DependentUpon>
     </Compile>
+    <Compile Include="CalculatorWeightingDensityByAt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculatorWeightingDensityByAt.Designer.cs">
+      <DependentUpon>CalculatorWeightingDensityByAt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculatorWeightingDensityByWt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculatorWeightingDensityByWt.Designer.cs">
+      <DependentUpon>CalculatorWeightingDensityByWt.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCommonOperate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CalculatorRectangleTargetDensity.cs">
@@ -81,6 +94,7 @@
       <DependentUpon>CalculatorRectangleTargetDensity.cs</DependentUpon>
     </Compile>
     <Compile Include="CalculateTargetDensity.cs" />
+    <Compile Include="WeightingDensityItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CalculatorPressureFromPDtoT.resx">
@@ -100,6 +114,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CalculatorRectangleTargetDensity.resx">
       <DependentUpon>CalculatorRectangleTargetDensity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculatorWeightingDensityByAt.resx">
+      <DependentUpon>CalculatorWeightingDensityByAt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculatorWeightingDensityByWt.resx">
+      <DependentUpon>CalculatorWeightingDensityByWt.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

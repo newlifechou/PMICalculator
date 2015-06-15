@@ -84,6 +84,7 @@
             this.txtT1.Name = "txtT1";
             this.txtT1.Size = new System.Drawing.Size(80, 21);
             this.txtT1.TabIndex = 1;
+            this.txtT1.Text = "5";
             this.txtT1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label2

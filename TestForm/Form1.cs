@@ -52,5 +52,17 @@ namespace TestForm
             CalculatorPressureFromTDToP calculator = new CalculatorPressureFromTDToP();
             calculator.ShowDialog();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            CalculatorWeightingDensityByWt calculator = new CalculatorWeightingDensityByWt();
+            calculator.ShowDialog();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            CalculatorWeightingDensityByAt calculator = new CalculatorWeightingDensityByAt();
+            calculator.ShowDialog();
+        }
     }
 }

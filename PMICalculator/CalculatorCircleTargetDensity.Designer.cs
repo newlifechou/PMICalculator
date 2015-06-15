@@ -62,12 +62,12 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.panelMovePaper = new System.Windows.Forms.Panel();
+            this.txtMovePaperThickness = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.txtMovePaperWeight = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtMovePaperThickness = new System.Windows.Forms.TextBox();
             this.panelMovePaper.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -380,6 +380,24 @@
             this.panelMovePaper.Size = new System.Drawing.Size(150, 131);
             this.panelMovePaper.TabIndex = 55;
             // 
+            // txtMovePaperThickness
+            // 
+            this.txtMovePaperThickness.Location = new System.Drawing.Point(50, 88);
+            this.txtMovePaperThickness.Name = "txtMovePaperThickness";
+            this.txtMovePaperThickness.ReadOnly = true;
+            this.txtMovePaperThickness.Size = new System.Drawing.Size(72, 21);
+            this.txtMovePaperThickness.TabIndex = 7;
+            this.txtMovePaperThickness.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(2, 92);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 12);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "去纸后";
+            // 
             // txtMovePaperWeight
             // 
             this.txtMovePaperWeight.Location = new System.Drawing.Point(52, 7);
@@ -388,6 +406,15 @@
             this.txtMovePaperWeight.Size = new System.Drawing.Size(72, 21);
             this.txtMovePaperWeight.TabIndex = 7;
             this.txtMovePaperWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(129, 92);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(17, 12);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "mm";
             // 
             // label7
             // 
@@ -407,34 +434,7 @@
             this.label8.TabIndex = 2;
             this.label8.Text = "g";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(129, 92);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(17, 12);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "mm";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(2, 92);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 12);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "去纸后";
-            // 
-            // txtMovePaperThickness
-            // 
-            this.txtMovePaperThickness.Location = new System.Drawing.Point(50, 88);
-            this.txtMovePaperThickness.Name = "txtMovePaperThickness";
-            this.txtMovePaperThickness.ReadOnly = true;
-            this.txtMovePaperThickness.Size = new System.Drawing.Size(72, 21);
-            this.txtMovePaperThickness.TabIndex = 7;
-            this.txtMovePaperThickness.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // CircleTargetDensityCalculator
+            // CalculatorCircleTargetDensity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -473,11 +473,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelMovePaper);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "CircleTargetDensityCalculator";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Name = "CalculatorCircleTargetDensity";
             this.Text = "圆形靶材密度估算工具";
             this.panelMovePaper.ResumeLayout(false);
             this.panelMovePaper.PerformLayout();

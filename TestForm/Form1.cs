@@ -34,5 +34,23 @@ namespace TestForm
             CalculatorCircleTargetDensity ctdc = new CalculatorCircleTargetDensity();
             ctdc.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            CalculatorPressureFromT1D1D2ToT2 calculator = new CalculatorPressureFromT1D1D2ToT2();
+            calculator.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            CalculatorPressureFromPDtoT calculator = new CalculatorPressureFromPDtoT();
+            calculator.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            CalculatorPressureFromTDToP calculator = new CalculatorPressureFromTDToP();
+            calculator.ShowDialog();
+        }
     }
 }

@@ -14,6 +14,7 @@ namespace PMICalculator
         public CalculatorCircleTargetDensity()
         {
             InitializeComponent();
+            FormCommonOperate.SetFormToFixedSingleDialog(this);
         }
 
         private void btnClear_Click(object sender, EventArgs e)

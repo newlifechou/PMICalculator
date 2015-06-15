@@ -7,7 +7,7 @@ using System.Windows.Forms;
 namespace PMICalculator
 {
     /// <summary>
-    /// 这个静态类主要用于常用的Form操作
+    /// 这个静态类主要用于通用的Form操作
     /// </summary>
     public class FormCommonOperate
     {
@@ -38,7 +38,16 @@ namespace PMICalculator
                 throw new Exception("所有输入必须是数字");
             }
         }
-
-
+        /// <summary>
+        /// 将窗体设置为必要的对话框模式
+        /// </summary>
+        /// <param name="form"></param>
+        public static void SetFormToFixedSingleDialog(Form form)
+        {
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.FormBorderStyle = FormBorderStyle.FixedSingle;
+            form.MinimizeBox = false;
+            form.MaximizeBox = false;
+        }
     }
 }

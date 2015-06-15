@@ -14,6 +14,7 @@ namespace PMICalculator
         public CalculatorArchimedesDensity()
         {
             InitializeComponent();
+            FormCommonOperate.SetFormToFixedSingleDialog(this);
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)
@@ -27,18 +28,10 @@ namespace PMICalculator
                 FormCommonOperate.ConvertStringToDouble(txtW2, out w2);
                 FormCommonOperate.ConvertStringToDouble(txtTheoreticalDensity, out thereticaldensity);
 
-                try
-                {
-                    CalculateTargetDensity tdc = new CalculateTargetDensity();
-                    tdc.CalculateArchimedeTargetDensity(weight, w1, w2, thereticaldensity);
-                    txtRealDensity.Text = tdc.RealDensity.ToString("N3");
-                    txtRelativeDensity.Text = (tdc.RelativeDensity * 100).ToString("N2");
-                }
-                catch (Exception ex)
-                {
-                    //将错误继续抛出，让最外层的trycatch来处理
-                    throw ex;
-                }
+                CalculateTargetDensity tdc = new CalculateTargetDensity();
+                tdc.CalculateArchimedeTargetDensity(weight, w1, w2, thereticaldensity);
+                txtRealDensity.Text = tdc.RealDensity.ToString("N3");
+                txtRelativeDensity.Text = (tdc.RelativeDensity * 100).ToString("N2");
 
             }
             catch (Exception ex)

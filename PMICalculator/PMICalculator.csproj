@@ -41,6 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalculatorPressureFromPDtoT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculatorPressureFromPDtoT.Designer.cs">
+      <DependentUpon>CalculatorPressureFromPDtoT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculatorPressureFromT1D1D2ToT2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculatorPressureFromT1D1D2ToT2.Designer.cs">
+      <DependentUpon>CalculatorPressureFromT1D1D2ToT2.cs</DependentUpon>
+    </Compile>
     <Compile Include="CalculatorArchimedesDensity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +66,12 @@
     <Compile Include="CalculatorCircleTargetDensity.Designer.cs">
       <DependentUpon>CalculatorCircleTargetDensity.cs</DependentUpon>
     </Compile>
+    <Compile Include="CalculatorPressureFromTDToP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculatorPressureFromTDToP.Designer.cs">
+      <DependentUpon>CalculatorPressureFromTDToP.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCommonOperate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CalculatorRectangleTargetDensity.cs">
@@ -65,11 +83,20 @@
     <Compile Include="CalculateTargetDensity.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CalculatorPressureFromPDtoT.resx">
+      <DependentUpon>CalculatorPressureFromPDtoT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculatorPressureFromT1D1D2ToT2.resx">
+      <DependentUpon>CalculatorPressureFromT1D1D2ToT2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CalculatorArchimedesDensity.resx">
       <DependentUpon>CalculatorArchimedesDensity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CalculatorCircleTargetDensity.resx">
       <DependentUpon>CalculatorCircleTargetDensity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculatorPressureFromTDToP.resx">
+      <DependentUpon>CalculatorPressureFromTDToP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CalculatorRectangleTargetDensity.resx">
       <DependentUpon>CalculatorRectangleTargetDensity.cs</DependentUpon>

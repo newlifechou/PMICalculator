@@ -28,7 +28,6 @@ namespace PMICostCalculator
             cboItemStyle.DataSource = null;
             cboItemStyle.DataSource = itemStyles;
         }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
             //TODO:输入数据验证

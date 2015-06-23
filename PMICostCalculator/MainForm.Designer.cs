@@ -326,7 +326,7 @@
             this.txtTotalCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTotalCost.BackColor = System.Drawing.SystemColors.HotTrack;
             this.txtTotalCost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTotalCost.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtTotalCost.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtTotalCost.ForeColor = System.Drawing.SystemColors.Control;
             this.txtTotalCost.Location = new System.Drawing.Point(357, 496);
             this.txtTotalCost.Name = "txtTotalCost";

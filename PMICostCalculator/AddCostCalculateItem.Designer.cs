@@ -38,9 +38,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtItemCost = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.chkKeepShow = new System.Windows.Forms.CheckBox();
             this.txtItemRemark = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.chkKeepShow = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnAdd
@@ -66,7 +66,7 @@
             // 
             this.txtItemName.Location = new System.Drawing.Point(83, 12);
             this.txtItemName.Name = "txtItemName";
-            this.txtItemName.Size = new System.Drawing.Size(287, 21);
+            this.txtItemName.Size = new System.Drawing.Size(171, 21);
             this.txtItemName.TabIndex = 2;
             // 
             // label2
@@ -84,7 +84,7 @@
             this.cboItemType.FormattingEnabled = true;
             this.cboItemType.Location = new System.Drawing.Point(83, 38);
             this.cboItemType.Name = "cboItemType";
-            this.cboItemType.Size = new System.Drawing.Size(287, 20);
+            this.cboItemType.Size = new System.Drawing.Size(171, 20);
             this.cboItemType.TabIndex = 3;
             // 
             // label3
@@ -102,7 +102,7 @@
             this.cboItemStyle.FormattingEnabled = true;
             this.cboItemStyle.Location = new System.Drawing.Point(83, 64);
             this.cboItemStyle.Name = "cboItemStyle";
-            this.cboItemStyle.Size = new System.Drawing.Size(287, 20);
+            this.cboItemStyle.Size = new System.Drawing.Size(171, 20);
             this.cboItemStyle.TabIndex = 3;
             // 
             // label4
@@ -118,18 +118,30 @@
             // 
             this.txtItemCost.Location = new System.Drawing.Point(83, 91);
             this.txtItemCost.Name = "txtItemCost";
-            this.txtItemCost.Size = new System.Drawing.Size(287, 21);
+            this.txtItemCost.Size = new System.Drawing.Size(171, 21);
             this.txtItemCost.TabIndex = 2;
             this.txtItemCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(376, 85);
+            this.button2.Location = new System.Drawing.Point(283, 84);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(87, 32);
             this.button2.TabIndex = 0;
             this.button2.Text = "<=CalcTool";
             this.button2.UseVisualStyleBackColor = true;
+            // 
+            // chkKeepShow
+            // 
+            this.chkKeepShow.AutoSize = true;
+            this.chkKeepShow.Checked = true;
+            this.chkKeepShow.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkKeepShow.Location = new System.Drawing.Point(12, 279);
+            this.chkKeepShow.Name = "chkKeepShow";
+            this.chkKeepShow.Size = new System.Drawing.Size(252, 16);
+            this.chkKeepShow.TabIndex = 4;
+            this.chkKeepShow.Text = "Don\'t close this window after addition";
+            this.chkKeepShow.UseVisualStyleBackColor = true;
             // 
             // txtItemRemark
             // 
@@ -149,23 +161,11 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "ItemRemark";
             // 
-            // chkKeepShow
-            // 
-            this.chkKeepShow.AutoSize = true;
-            this.chkKeepShow.Checked = true;
-            this.chkKeepShow.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkKeepShow.Location = new System.Drawing.Point(12, 279);
-            this.chkKeepShow.Name = "chkKeepShow";
-            this.chkKeepShow.Size = new System.Drawing.Size(252, 16);
-            this.chkKeepShow.TabIndex = 4;
-            this.chkKeepShow.Text = "Don\'t close this window after addition";
-            this.chkKeepShow.UseVisualStyleBackColor = true;
-            // 
             // AddCostCalculateItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(475, 320);
+            this.ClientSize = new System.Drawing.Size(386, 320);
             this.Controls.Add(this.chkKeepShow);
             this.Controls.Add(this.cboItemStyle);
             this.Controls.Add(this.cboItemType);
@@ -198,8 +198,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtItemCost;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox chkKeepShow;
         private System.Windows.Forms.TextBox txtItemRemark;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox chkKeepShow;
     }
 }

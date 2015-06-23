@@ -58,17 +58,31 @@ namespace PMICostCalculator
         /// <param name="e"></param>
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //建立前判断当前的成本计算表是否已经保存
-            if (!IsSaved)
-            {
-                if (MessageBox.Show("当前成本计算表还没有保存，是否保存？","保存",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
-                {
-                    
-                }
-            }
+            CheckCalculateSheetSave();
             NewCostCalcuate f = new NewCostCalcuate();
             f.New += f_New;
             f.ShowDialog();
+        }
+        /// <summary>
+        /// 判断当前计算表是否保存
+        /// <returns>是否取消关闭窗口e.cancel</returns>
+        /// </summary>
+        private bool CheckCalculateSheetSave()
+        {
+            //建立前判断当前的成本计算表是否已经保存
+            if (!IsSaved)
+            {
+                DialogResult dr=MessageBox.Show("当前成本计算表还没有保存，是否保存？", "保存", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                if ( dr== DialogResult.Cancel)
+                {
+                    return true;
+                }
+                else if (dr==DialogResult.Yes)
+                {
+                    //TODO:保存计算表代码
+                }
+            }
+            return false;
         }
 
         private void f_New(object sender, NewCalcualteSheetEventArgs e)
@@ -77,10 +91,13 @@ namespace PMICostCalculator
             CreateTestData();
 
             txtCostCaculateName.Text = CurrentCostCalculateSheet.SheetName;
-            RefreshDgv();
+            ReLoadDgv();
             IsSaved = false;
         }
 
+        /// <summary>
+        ///TODO:临时的数据生成器，过后删除
+        /// </summary>
         private void CreateTestData()
         {
             Random r = new Random();
@@ -130,11 +147,7 @@ namespace PMICostCalculator
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             //如果还没有保存当前计算表
-            if (!IsSaved)
-            {
-                MessageBox.Show("尚未保存当前计算表，是否保存?");
-                //TODO:这里添加保存计算表的代码
-            }
+            e.Cancel=CheckCalculateSheetSave();
         }
 
         private void btnDelCost_Click(object sender, EventArgs e)
@@ -148,10 +161,13 @@ namespace PMICostCalculator
             string ItemName = dgvCostCalculateList.CurrentRow.Cells[0].Value.ToString() ;
             int deleteIndex=CurrentCostCalculateSheet.CostCalculateSheetList.FindIndex(i => i.ItemName == ItemName);
             CurrentCostCalculateSheet.CostCalculateSheetList.RemoveAt(deleteIndex);
-            RefreshDgv();
+            ReLoadDgv();
         }
 
-        private void RefreshDgv()
+        /// <summary>
+        /// 重新加载数据到dgv
+        /// </summary>
+        private void ReLoadDgv()
         {
             CurrentCostCalculateSheet.CostCalculateSheetList.Sort();
             dgvCostCalculateList.DataSource = null;
@@ -181,8 +197,7 @@ namespace PMICostCalculator
         private void f_AddCostCalculateItemEvent(object sender, NewCostCalcualteItemEventArgs e)
         {
             CurrentCostCalculateSheet.CostCalculateSheetList.Add(e.CostItem);
-            RefreshDgv();
-
+            ReLoadDgv();
         }
 
     }

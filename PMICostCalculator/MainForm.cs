@@ -17,6 +17,7 @@ namespace PMICostCalculator
         public MainForm()
         {
             InitializeComponent();
+            //this.WindowState = FormWindowState.Maximized;
             //初始化
             IsSaved = true;
         }
@@ -116,6 +117,21 @@ namespace PMICostCalculator
                 MessageBox.Show("尚未保存当前计算表，是否保存?");
                 //TODO:这里添加保存计算表的代码
             }
+        }
+
+        private void btnDelCost_Click(object sender, EventArgs e)
+        {
+            if (dgvCostCalculateList.SelectedRows.Count==0)
+            {
+                return;
+            }
+            //TODO:这里添加删除确认
+
+            string ItemName = dgvCostCalculateList.CurrentRow.Cells[0].Value.ToString() ;
+            int deleteIndex=CurrentCostCalculateSheet.CostCalculateSheetList.FindIndex(i => i.ItemName == ItemName);
+            CurrentCostCalculateSheet.CostCalculateSheetList.RemoveAt(deleteIndex);
+            dgvCostCalculateList.DataSource = null;
+            dgvCostCalculateList.DataSource = CurrentCostCalculateSheet.CostCalculateSheetList;
         }
 
 

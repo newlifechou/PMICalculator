@@ -251,6 +251,7 @@
             this.btnDelCost.TabIndex = 10;
             this.btnDelCost.Text = "Delete";
             this.btnDelCost.UseVisualStyleBackColor = true;
+            this.btnDelCost.Click += new System.EventHandler(this.btnDelCost_Click);
             // 
             // btnAddCost
             // 

@@ -313,8 +313,8 @@
             // 
             // btnViewBrief
             // 
-            this.btnViewBrief.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnViewBrief.Location = new System.Drawing.Point(18, 496);
+            this.btnViewBrief.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnViewBrief.Location = new System.Drawing.Point(152, 495);
             this.btnViewBrief.Name = "btnViewBrief";
             this.btnViewBrief.Size = new System.Drawing.Size(158, 38);
             this.btnViewBrief.TabIndex = 11;
@@ -327,12 +327,12 @@
             this.txtTotalCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTotalCost.BackColor = System.Drawing.SystemColors.HotTrack;
             this.txtTotalCost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTotalCost.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtTotalCost.Font = new System.Drawing.Font("SimSun", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtTotalCost.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtTotalCost.Location = new System.Drawing.Point(357, 496);
+            this.txtTotalCost.Location = new System.Drawing.Point(357, 495);
             this.txtTotalCost.Name = "txtTotalCost";
             this.txtTotalCost.ReadOnly = true;
-            this.txtTotalCost.Size = new System.Drawing.Size(211, 35);
+            this.txtTotalCost.Size = new System.Drawing.Size(211, 38);
             this.txtTotalCost.TabIndex = 12;
             this.txtTotalCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -340,7 +340,7 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(316, 510);
+            this.label2.Location = new System.Drawing.Point(316, 508);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 12);
             this.label2.TabIndex = 13;

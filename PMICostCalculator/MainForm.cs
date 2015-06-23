@@ -56,6 +56,8 @@ namespace PMICostCalculator
         {
             CurrentCostCalculateSheet = new CostCalculateSheet(e.CostCalculateName);
             CreateTestData();
+            CalculateTotal();
+
             CurrentCostCalculateSheet.CostCalculateSheetList.Sort();
             txtCostCaculateName.Text = CurrentCostCalculateSheet.SheetName;
             dgvCostCalculateList.DataSource = null;
@@ -132,9 +134,19 @@ namespace PMICostCalculator
             CurrentCostCalculateSheet.CostCalculateSheetList.RemoveAt(deleteIndex);
             dgvCostCalculateList.DataSource = null;
             dgvCostCalculateList.DataSource = CurrentCostCalculateSheet.CostCalculateSheetList;
+            CalculateTotal();
         }
 
-
+        //计算总成本
+        private void CalculateTotal()
+        {
+            decimal sum = 0;
+            foreach (var item in CurrentCostCalculateSheet.CostCalculateSheetList)
+            {
+                sum += item.ItemCost;
+            }
+            txtTotalCost.Text = sum.ToString("N2");
+        }
 
     }
 }

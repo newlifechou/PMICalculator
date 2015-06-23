@@ -49,7 +49,7 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCostCaculateName = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtTotalCost = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnDelCost = new System.Windows.Forms.Button();
@@ -217,12 +217,13 @@
             this.txtCostCaculateName.Size = new System.Drawing.Size(441, 21);
             this.txtCostCaculateName.TabIndex = 3;
             // 
-            // textBox7
+            // txtTotalCost
             // 
-            this.textBox7.Location = new System.Drawing.Point(52, 5);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 21);
-            this.textBox7.TabIndex = 2;
+            this.txtTotalCost.Location = new System.Drawing.Point(52, 5);
+            this.txtTotalCost.Name = "txtTotalCost";
+            this.txtTotalCost.Size = new System.Drawing.Size(100, 21);
+            this.txtTotalCost.TabIndex = 2;
+            this.txtTotalCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label2
             // 
@@ -236,7 +237,7 @@
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.textBox7);
+            this.panel1.Controls.Add(this.txtTotalCost);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(417, 500);
             this.panel1.Name = "panel1";
@@ -333,7 +334,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCostCaculateName;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtTotalCost;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnDelCost;

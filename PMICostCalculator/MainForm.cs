@@ -25,10 +25,10 @@ namespace PMICostCalculator
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
             this.dgvCostCalculateList.AutoGenerateColumns = false;
+
             //初始化
             IsSaved = true;
         }
-
         /// <summary>
         /// 切换界面语言
         /// </summary>
@@ -72,12 +72,13 @@ namespace PMICostCalculator
             //建立前判断当前的成本计算表是否已经保存
             if (!IsSaved)
             {
-                DialogResult dr=MessageBox.Show("当前成本计算表还没有保存，是否保存？", "保存", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
-                if ( dr== DialogResult.Cancel)
+                DialogResult dr = MessageBox.Show("当前成本计算表还没有保存，是否保存？",
+                    "保存", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                if (dr == DialogResult.Cancel)
                 {
                     return true;
                 }
-                else if (dr==DialogResult.Yes)
+                else if (dr == DialogResult.Yes)
                 {
                     //TODO:保存计算表代码
                 }
@@ -87,6 +88,7 @@ namespace PMICostCalculator
 
         private void f_New(object sender, NewCalcualteSheetEventArgs e)
         {
+            //初始化当前计算表
             CurrentCostCalculateSheet = new CostCalculateSheet(e.CostCalculateName);
             CreateTestData();
 
@@ -147,19 +149,24 @@ namespace PMICostCalculator
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             //如果还没有保存当前计算表
-            e.Cancel=CheckCalculateSheetSave();
+            e.Cancel = CheckCalculateSheetSave();
         }
 
         private void btnDelCost_Click(object sender, EventArgs e)
         {
-            if (dgvCostCalculateList.SelectedRows.Count==0)
+            if (HasNoCurrentCalcualteSheet())
+            {
+                return;
+            }
+
+            if (dgvCostCalculateList.SelectedRows.Count == 0)
             {
                 return;
             }
             //TODO:这里添加删除确认
 
-            string ItemName = dgvCostCalculateList.CurrentRow.Cells[0].Value.ToString() ;
-            int deleteIndex=CurrentCostCalculateSheet.CostCalculateSheetList.FindIndex(i => i.ItemName == ItemName);
+            string ItemName = dgvCostCalculateList.CurrentRow.Cells[0].Value.ToString();
+            int deleteIndex = CurrentCostCalculateSheet.CostCalculateSheetList.FindIndex(i => i.ItemName == ItemName);
             CurrentCostCalculateSheet.CostCalculateSheetList.RemoveAt(deleteIndex);
             ReLoadDgv();
         }
@@ -186,9 +193,19 @@ namespace PMICostCalculator
             }
             txtTotalCost.Text = sum.ToString("N2");
         }
-
+        /// <summary>
+        /// 检查当前计算表是否存在
+        /// </summary>
+        private bool HasNoCurrentCalcualteSheet()
+        {
+            return CurrentCostCalculateSheet == null;
+        }
         private void btnAddCost_Click(object sender, EventArgs e)
         {
+            if (HasNoCurrentCalcualteSheet())
+            {
+                return;
+            }
             AddCostCalculateItem f = new AddCostCalculateItem();
             f.AddCostCalculateItemEvent += f_AddCostCalculateItemEvent;
             f.ShowDialog();
@@ -198,6 +215,14 @@ namespace PMICostCalculator
         {
             CurrentCostCalculateSheet.CostCalculateSheetList.Add(e.CostItem);
             ReLoadDgv();
+        }
+
+        private void btnViewBrief_Click(object sender, EventArgs e)
+        {
+            if (HasNoCurrentCalcualteSheet())
+            {
+                return;
+            }
         }
 
     }

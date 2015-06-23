@@ -17,7 +17,8 @@ namespace PMICostCalculator
         public MainForm()
         {
             InitializeComponent();
-            //this.WindowState = FormWindowState.Maximized;
+            this.WindowState = FormWindowState.Maximized;
+            this.dgvCostCalculateList.AutoGenerateColumns = false;
             //初始化
             IsSaved = true;
         }
@@ -52,16 +53,13 @@ namespace PMICostCalculator
             f.ShowDialog();
         }
 
-        private void f_New(object sender, NewCalcualteEventArgs e)
+        private void f_New(object sender, NewCalcualteSheetEventArgs e)
         {
             CurrentCostCalculateSheet = new CostCalculateSheet(e.CostCalculateName);
             CreateTestData();
-            CalculateTotal();
 
-            CurrentCostCalculateSheet.CostCalculateSheetList.Sort();
             txtCostCaculateName.Text = CurrentCostCalculateSheet.SheetName;
-            dgvCostCalculateList.DataSource = null;
-            dgvCostCalculateList.DataSource = CurrentCostCalculateSheet.CostCalculateSheetList;
+            RefreshDgv();
             IsSaved = false;
         }
 
@@ -91,7 +89,7 @@ namespace PMICostCalculator
                         cci.ItemStyle = CostCalculateStyle.Product;
                         break;
                     case 4:
-                        cci.ItemType = CostCalculateType.PacageCost;
+                        cci.ItemType = CostCalculateType.PackageCost;
                         cci.ItemStyle = CostCalculateStyle.Experiement;
                         break;
                     default:
@@ -132,8 +130,15 @@ namespace PMICostCalculator
             string ItemName = dgvCostCalculateList.CurrentRow.Cells[0].Value.ToString() ;
             int deleteIndex=CurrentCostCalculateSheet.CostCalculateSheetList.FindIndex(i => i.ItemName == ItemName);
             CurrentCostCalculateSheet.CostCalculateSheetList.RemoveAt(deleteIndex);
+            RefreshDgv();
+        }
+
+        private void RefreshDgv()
+        {
+            CurrentCostCalculateSheet.CostCalculateSheetList.Sort();
             dgvCostCalculateList.DataSource = null;
             dgvCostCalculateList.DataSource = CurrentCostCalculateSheet.CostCalculateSheetList;
+            //dgvCostCalculateList.Refresh();
             CalculateTotal();
         }
 
@@ -146,6 +151,20 @@ namespace PMICostCalculator
                 sum += item.ItemCost;
             }
             txtTotalCost.Text = sum.ToString("N2");
+        }
+
+        private void btnAddCost_Click(object sender, EventArgs e)
+        {
+            AddCostCalculateItem f = new AddCostCalculateItem();
+            f.AddCostCalculateItemEvent += f_AddCostCalculateItemEvent;
+            f.ShowDialog();
+        }
+
+        private void f_AddCostCalculateItemEvent(object sender, NewCostCalcualteItemEventArgs e)
+        {
+            CurrentCostCalculateSheet.CostCalculateSheetList.Add(e.CostItem);
+            RefreshDgv();
+
         }
 
     }

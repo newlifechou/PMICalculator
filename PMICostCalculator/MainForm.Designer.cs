@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,6 +56,11 @@
             this.btnDelCost = new System.Windows.Forms.Button();
             this.btnAddCost = new System.Windows.Forms.Button();
             this.dgvCostCalculateList = new System.Windows.Forms.DataGridView();
+            this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemStyle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemRemark = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -220,17 +226,18 @@
             // 
             // txtTotalCost
             // 
-            this.txtTotalCost.Location = new System.Drawing.Point(52, 5);
+            this.txtTotalCost.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtTotalCost.ForeColor = System.Drawing.Color.Blue;
+            this.txtTotalCost.Location = new System.Drawing.Point(44, 1);
             this.txtTotalCost.Name = "txtTotalCost";
-            this.txtTotalCost.ReadOnly = true;
-            this.txtTotalCost.Size = new System.Drawing.Size(100, 21);
+            this.txtTotalCost.Size = new System.Drawing.Size(211, 35);
             this.txtTotalCost.TabIndex = 2;
             this.txtTotalCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 9);
+            this.label2.Location = new System.Drawing.Point(3, 15);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 12);
             this.label2.TabIndex = 6;
@@ -241,9 +248,9 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.txtTotalCost);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(417, 500);
+            this.panel1.Location = new System.Drawing.Point(313, 495);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(162, 34);
+            this.panel1.Size = new System.Drawing.Size(258, 39);
             this.panel1.TabIndex = 7;
             // 
             // btnDelCost
@@ -264,6 +271,7 @@
             this.btnAddCost.TabIndex = 9;
             this.btnAddCost.Text = "Add";
             this.btnAddCost.UseVisualStyleBackColor = true;
+            this.btnAddCost.Click += new System.EventHandler(this.btnAddCost_Click);
             // 
             // dgvCostCalculateList
             // 
@@ -273,6 +281,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvCostCalculateList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCostCalculateList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ItemName,
+            this.ItemType,
+            this.ItemStyle,
+            this.ItemCost,
+            this.ItemRemark});
             this.dgvCostCalculateList.Location = new System.Drawing.Point(18, 95);
             this.dgvCostCalculateList.MultiSelect = false;
             this.dgvCostCalculateList.Name = "dgvCostCalculateList";
@@ -281,6 +295,48 @@
             this.dgvCostCalculateList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCostCalculateList.Size = new System.Drawing.Size(550, 394);
             this.dgvCostCalculateList.TabIndex = 8;
+            // 
+            // ItemName
+            // 
+            this.ItemName.DataPropertyName = "ItemName";
+            this.ItemName.HeaderText = "ItemName";
+            this.ItemName.Name = "ItemName";
+            this.ItemName.ReadOnly = true;
+            this.ItemName.Width = 250;
+            // 
+            // ItemType
+            // 
+            this.ItemType.DataPropertyName = "ItemType";
+            this.ItemType.HeaderText = "ItemType";
+            this.ItemType.Name = "ItemType";
+            this.ItemType.ReadOnly = true;
+            this.ItemType.Width = 200;
+            // 
+            // ItemStyle
+            // 
+            this.ItemStyle.DataPropertyName = "ItemStyle";
+            this.ItemStyle.HeaderText = "ItemStyle";
+            this.ItemStyle.Name = "ItemStyle";
+            this.ItemStyle.ReadOnly = true;
+            this.ItemStyle.Width = 150;
+            // 
+            // ItemCost
+            // 
+            this.ItemCost.DataPropertyName = "ItemCost";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue;
+            this.ItemCost.DefaultCellStyle = dataGridViewCellStyle1;
+            this.ItemCost.HeaderText = "ItemCost";
+            this.ItemCost.Name = "ItemCost";
+            this.ItemCost.ReadOnly = true;
+            // 
+            // ItemRemark
+            // 
+            this.ItemRemark.DataPropertyName = "ItemRemark";
+            this.ItemRemark.HeaderText = "ItemRemark";
+            this.ItemRemark.Name = "ItemRemark";
+            this.ItemRemark.ReadOnly = true;
+            this.ItemRemark.Width = 450;
             // 
             // MainForm
             // 
@@ -342,6 +398,11 @@
         private System.Windows.Forms.Button btnDelCost;
         private System.Windows.Forms.Button btnAddCost;
         private System.Windows.Forms.DataGridView dgvCostCalculateList;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemStyle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemCost;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemRemark;
     }
 }
 

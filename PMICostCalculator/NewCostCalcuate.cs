@@ -25,15 +25,12 @@ namespace PMICostCalculator
         {
             try
             {
-                if (string.IsNullOrEmpty(txtCostCalcualteName.Text))
+                //检验文件名是否合法
+                if (!FileOperate.IsValideFileName(txtCostCalcualteName.Text))
                 {
-                    //TODO:后面切换语言的时候要考虑
-                    throw new Exception("名称不能为空");
+                    throw new Exception("计算表名不能为空且不能有特殊符号");
                 }
-                //TODO:符合windows文件命名要求
-
                 //TODO:这里要检测是否和已有保存的文件文件名冲突
-
 
                 //触发事件
                 if (New!=null)

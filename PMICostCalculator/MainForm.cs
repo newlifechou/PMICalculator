@@ -15,5 +15,31 @@ namespace PMICostCalculator
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// 切换界面语言
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void LanguageSwitch(object sender, EventArgs e)
+        {
+            ToolStripMenuItem CurrentItem = sender as ToolStripMenuItem;
+
+            foreach (var item in languageToolStripMenuItem.DropDownItems)
+            {
+                ToolStripMenuItem TmpItem = item as ToolStripMenuItem;
+                if (TmpItem.Name==CurrentItem.Name)
+                {
+                    TmpItem.Checked = true;
+                }
+                else
+                {
+                   TmpItem.Checked = false;
+                }
+            }
+        }
+
+
+
     }
 }

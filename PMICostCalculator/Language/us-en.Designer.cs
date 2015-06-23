@@ -59,5 +59,50 @@ namespace PMICostCalculator.Language {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exit.
+        /// </summary>
+        internal static string menu_exit {
+            get {
+                return ResourceManager.GetString("menu_exit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File.
+        /// </summary>
+        internal static string menu_file {
+            get {
+                return ResourceManager.GetString("menu_file", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New.
+        /// </summary>
+        internal static string menu_new {
+            get {
+                return ResourceManager.GetString("menu_new", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open.
+        /// </summary>
+        internal static string menu_open {
+            get {
+                return ResourceManager.GetString("menu_open", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save.
+        /// </summary>
+        internal static string menu_save {
+            get {
+                return ResourceManager.GetString("menu_save", resourceCulture);
+            }
+        }
     }
 }

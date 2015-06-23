@@ -166,6 +166,8 @@ namespace PMICostCalculator
                 CurrentCostCalculateSheet = doc.ReadFromXMLDoc(fileName);
 
                 LoadCurrentCostSheetData();
+                //设置为已经保存
+                SetCurrentCalculateSheetSaved();
             }
             catch (Exception ex)
             {

@@ -39,7 +39,14 @@ namespace PMICostCalculator
 
         public int CompareTo(CostCalculateItem other)
         {
-            return this.ItemType.CompareTo(other.ItemType);
+            if (this.ItemType.CompareTo(other.ItemType)!=0)
+            {
+                return this.ItemType.CompareTo(other.ItemType);
+            }
+            else
+            {
+                return this.ItemStyle.CompareTo(other.ItemStyle);
+            }
         }
     }
 }

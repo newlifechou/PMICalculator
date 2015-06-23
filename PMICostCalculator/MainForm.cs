@@ -66,7 +66,7 @@ namespace PMICostCalculator
         private void CreateTestData()
         {
             Random r = new Random();
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 30; i++)
             {
                 CostCalculateItem cci = new CostCalculateItem();
                 cci.ItemName = "1506" + r.Next(10, 99) + "_SJ";

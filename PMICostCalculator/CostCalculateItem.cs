@@ -11,9 +11,8 @@ namespace PMICostCalculator
     /// </summary>
     class CostCalculateItem
     {
-        //成本计算类的ID和订单名称
-        public string ID { get; set; }
-        public string OrderName { get; set; }
+        //成本计算类的名称
+        public string CostCalculateName { get; set; }
 
         //所有计算的大项，每个大项包含很多小项
         public List<CostItem> MaterialsCosts {get;set;}

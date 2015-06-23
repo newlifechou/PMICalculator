@@ -14,7 +14,7 @@ namespace PMICostCalculator
         public OpenCostCalcuate()
         {
             InitializeComponent();
-            FormOperate.SetFormToDialog(this);
+            FormOperate.SetFormToDialog(this,false);
         }
     }
 }

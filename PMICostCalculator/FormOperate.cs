@@ -15,15 +15,15 @@ namespace PMICostCalculator
         /// 设置窗体为居中显示的对话框
         /// </summary>
         /// <param name="form"></param>
-        public static void SetFormToDialog(Form form)
+        public static void SetFormToDialog(Form form,bool showInTaskBar)
         {
             if (form != null)
             {
                 form.MaximizeBox = false;
                 form.MinimizeBox = false;
-                form.FormBorderStyle = FormBorderStyle.FixedDialog;
+                form.FormBorderStyle = FormBorderStyle.FixedSingle;
                 form.StartPosition = FormStartPosition.CenterScreen;
-                form.ShowInTaskbar = false;
+                form.ShowInTaskbar = showInTaskBar;
             }
         }
     }

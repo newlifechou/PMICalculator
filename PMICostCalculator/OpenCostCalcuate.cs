@@ -37,6 +37,8 @@ namespace PMICostCalculator
             if (File.Exists(filename))
             {
                 File.Delete(filename);
+                MessageBox.Show("删除成功");
+                LoadXMLFiles();
             }
         }
 
@@ -69,7 +71,8 @@ namespace PMICostCalculator
             foreach (var item in files)
             {
                 ListViewItem lvi = new ListViewItem();
-                lvi.Text = item.Name;
+                string filename = item.Name.Substring(0, item.Name.LastIndexOf('.'));
+                lvi.Text =filename;
                 lvi.SubItems.Add(item.CreationTime.ToString());
                 lvi.SubItems.Add(item.LastWriteTime.ToString());
                 lvi.SubItems.Add(item.FullName);

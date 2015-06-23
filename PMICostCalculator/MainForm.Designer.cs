@@ -76,7 +76,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(584, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(784, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -195,7 +195,7 @@
             this.toolStripStatusLabel1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 540);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(584, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(784, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -265,7 +265,7 @@
             this.dgvCostCalculateList.ReadOnly = true;
             this.dgvCostCalculateList.RowTemplate.Height = 23;
             this.dgvCostCalculateList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCostCalculateList.Size = new System.Drawing.Size(550, 394);
+            this.dgvCostCalculateList.Size = new System.Drawing.Size(750, 394);
             this.dgvCostCalculateList.TabIndex = 8;
             // 
             // ItemName
@@ -315,9 +315,9 @@
             // btnViewBrief
             // 
             this.btnViewBrief.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnViewBrief.Location = new System.Drawing.Point(152, 495);
+            this.btnViewBrief.Location = new System.Drawing.Point(407, 495);
             this.btnViewBrief.Name = "btnViewBrief";
-            this.btnViewBrief.Size = new System.Drawing.Size(158, 38);
+            this.btnViewBrief.Size = new System.Drawing.Size(103, 38);
             this.btnViewBrief.TabIndex = 11;
             this.btnViewBrief.Text = "ViewBrief";
             this.btnViewBrief.UseVisualStyleBackColor = true;
@@ -330,7 +330,7 @@
             this.txtTotalCost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTotalCost.Font = new System.Drawing.Font("SimSun", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtTotalCost.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtTotalCost.Location = new System.Drawing.Point(357, 495);
+            this.txtTotalCost.Location = new System.Drawing.Point(557, 495);
             this.txtTotalCost.Name = "txtTotalCost";
             this.txtTotalCost.ReadOnly = true;
             this.txtTotalCost.Size = new System.Drawing.Size(211, 38);
@@ -341,7 +341,7 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(316, 508);
+            this.label2.Location = new System.Drawing.Point(516, 508);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 12);
             this.label2.TabIndex = 13;
@@ -352,7 +352,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(584, 562);
+            this.ClientSize = new System.Drawing.Size(784, 562);
             this.Controls.Add(this.txtTotalCost);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnViewBrief);

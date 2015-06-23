@@ -31,7 +31,10 @@ namespace PMICostCalculator
         private void btnAdd_Click(object sender, EventArgs e)
         {
             //TODO:输入数据验证
-
+            if (string.IsNullOrEmpty(txtItemName.Text))
+            {
+                return;
+            }
             if (AddCostCalculateItemEvent != null)
             {
                 NewCostCalcualteItemEventArgs args = new NewCostCalcualteItemEventArgs();

@@ -23,7 +23,9 @@ namespace PMICostCalculator
         /// </summary>
         public string ItemRemark { get; set; }
 
-
-
+        /// <summary>
+        /// 该计算项目是产品还是试验
+        /// </summary>
+        public CostCalculateType ItemType { get; set; }
     }
 }

@@ -6,7 +6,7 @@ using System.Text;
 namespace PMICostCalculator
 {
     /// <summary>
-    /// 成本计算类
+    /// 成本计算大类
     /// 这个类对应每一个成本表，或者对应每一个保存的XML文件
     /// </summary>
     class CostCalculateItem

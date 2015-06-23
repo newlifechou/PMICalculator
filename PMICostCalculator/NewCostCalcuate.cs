@@ -14,7 +14,39 @@ namespace PMICostCalculator
         public NewCostCalcuate()
         {
             InitializeComponent();
-            FormOperate.SetFormToDialog(this,false);
+            FormOperate.SetFormToDialog(this, false);
         }
+        /// <summary>
+        /// 通过这个事件操作主窗体的数据加载
+        /// </summary>
+        public event EventHandler<NewCalcualteEventArgs> New;
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(txtCostCalcualteName.Text))
+                {
+                    //TODO:后面切换语言的时候要考虑
+                    throw new Exception("名称不能为空");
+                }
+                //TODO:这里要检测是否和已有保存的文件文件名冲突
+
+
+                //触发事件
+                if (New!=null)
+                {
+                    NewCalcualteEventArgs args = new NewCalcualteEventArgs();
+                    args.CostCalculateName = txtCostCalcualteName.Text;
+                    New(this,args);
+                }
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
     }
 }

@@ -8,7 +8,7 @@ namespace PMICostCalculator
     /// <summary>
     /// 计算类型枚举，生产还是实验
     /// </summary>
-    enum CostCalculateType
+    public enum CostCalculateType
     {
         Product,
         Experiement

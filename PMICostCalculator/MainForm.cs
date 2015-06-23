@@ -11,10 +11,15 @@ namespace PMICostCalculator
 {
     public partial class MainForm : Form
     {
+        private CostCalculateItem currentCostCalculateItem;
+        private bool IsSaved; 
+
         public MainForm()
         {
             InitializeComponent();
             FormOperate.SetFormToDialog(this, true);
+            //初始化
+            IsSaved = true;
         }
 
         /// <summary>
@@ -29,13 +34,13 @@ namespace PMICostCalculator
             foreach (var item in languageToolStripMenuItem.DropDownItems)
             {
                 ToolStripMenuItem TmpItem = item as ToolStripMenuItem;
-                if (TmpItem.Name==CurrentItem.Name)
+                if (TmpItem.Name == CurrentItem.Name)
                 {
                     TmpItem.Checked = true;
                 }
                 else
                 {
-                   TmpItem.Checked = false;
+                    TmpItem.Checked = false;
                 }
             }
         }
@@ -43,13 +48,42 @@ namespace PMICostCalculator
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
             NewCostCalcuate f = new NewCostCalcuate();
+            f.New += f_New;
             f.ShowDialog();
+        }
+
+        private void f_New(object sender, NewCalcualteEventArgs e)
+        {
+            currentCostCalculateItem = new CostCalculateItem(e.CostCalculateName);
+
+            CostItem tmp = new CostItem();
+            tmp.ItemName = "150619_SJ";
+            tmp.ItemCost = 5000;
+            tmp.ItemRemark = "暂时让三杰熔炼一部分";
+            tmp.ItemType = CostCalculateType.Product;
+            currentCostCalculateItem.MaterialsCosts = new List<CostItem>();
+            currentCostCalculateItem.MaterialsCosts.Add(tmp);
+
+            txtCostCaculateName.Text = currentCostCalculateItem.CostCalculateName;
+            dgvMaterialsCost.DataSource = null;
+            dgvMaterialsCost.DataSource = currentCostCalculateItem.MaterialsCosts;
+            IsSaved = false;
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenCostCalcuate f = new OpenCostCalcuate();
             f.ShowDialog();
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //如果还没有保存当前计算表
+            if (!IsSaved)
+            {
+                MessageBox.Show("尚未保存当前计算表，是否保存?");
+                //TODO:这里添加保存计算表的代码
+            }
         }
 
 

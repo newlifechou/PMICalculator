@@ -227,7 +227,7 @@
             // 
             // btnDelCost
             // 
-            this.btnDelCost.Location = new System.Drawing.Point(109, 66);
+            this.btnDelCost.Location = new System.Drawing.Point(109, 57);
             this.btnDelCost.Name = "btnDelCost";
             this.btnDelCost.Size = new System.Drawing.Size(75, 23);
             this.btnDelCost.TabIndex = 10;
@@ -237,7 +237,7 @@
             // 
             // btnAddCost
             // 
-            this.btnAddCost.Location = new System.Drawing.Point(18, 66);
+            this.btnAddCost.Location = new System.Drawing.Point(18, 57);
             this.btnAddCost.Name = "btnAddCost";
             this.btnAddCost.Size = new System.Drawing.Size(75, 23);
             this.btnAddCost.TabIndex = 9;
@@ -259,13 +259,13 @@
             this.ItemStyle,
             this.ItemCost,
             this.ItemRemark});
-            this.dgvCostCalculateList.Location = new System.Drawing.Point(18, 95);
+            this.dgvCostCalculateList.Location = new System.Drawing.Point(18, 86);
             this.dgvCostCalculateList.MultiSelect = false;
             this.dgvCostCalculateList.Name = "dgvCostCalculateList";
             this.dgvCostCalculateList.ReadOnly = true;
             this.dgvCostCalculateList.RowTemplate.Height = 23;
             this.dgvCostCalculateList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCostCalculateList.Size = new System.Drawing.Size(750, 394);
+            this.dgvCostCalculateList.Size = new System.Drawing.Size(750, 403);
             this.dgvCostCalculateList.TabIndex = 8;
             // 
             // ItemName

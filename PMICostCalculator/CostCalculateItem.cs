@@ -6,29 +6,27 @@ using System.Text;
 namespace PMICostCalculator
 {
     /// <summary>
-    /// 成本计算大类
-    /// 这个类对应每一个成本表，或者对应每一个保存的XML文件
+    /// 成本小项类
     /// </summary>
     public class CostCalculateItem
     {
-        //成本计算类的名称
-        public string CostCalculateName { get; set; }
+        /// <summary>
+        /// 项目名称
+        /// </summary>
+        public string ItemName { get; set; }
 
-        //所有计算的大项，每个大项包含很多小项
-        public List<CostItem> MaterialsCosts {get;set;}
-        public List<CostItem> PowderProcessCosts { get; set; }
-        public List<CostItem> VHPCosts { get; set; }
-        public List<CostItem> MachiningCosts{ get; set; }
-        public List<CostItem> TestingAndPacagingCost { get; set; }
+        /// <summary>
+        /// 该计算项目是产品还是试验
+        /// </summary>
+        public CostCalculateType ItemType { get; set; }
 
-        public CostCalculateItem()
-        {
-
-        }
-        public CostCalculateItem(string name)
-        {
-            this.CostCalculateName = name;
-        }
-
+        /// <summary>
+        /// 项目成本
+        /// </summary>
+        public decimal ItemCost { get; set; }
+        /// <summary>
+        /// 项目备注
+        /// </summary>
+        public string ItemRemark { get; set; }
     }
 }

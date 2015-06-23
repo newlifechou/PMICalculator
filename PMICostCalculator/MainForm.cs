@@ -11,7 +11,7 @@ namespace PMICostCalculator
 {
     public partial class MainForm : Form
     {
-        private CostCalculateItem currentCostCalculateItem;
+        private CostCalculateSheet currentCostCalculateItem;
         private bool IsSaved; 
 
         public MainForm()
@@ -54,14 +54,14 @@ namespace PMICostCalculator
 
         private void f_New(object sender, NewCalcualteEventArgs e)
         {
-            currentCostCalculateItem = new CostCalculateItem(e.CostCalculateName);
+            currentCostCalculateItem = new CostCalculateSheet(e.CostCalculateName);
 
-            CostItem tmp = new CostItem();
+            CostCalculateItem tmp = new CostCalculateItem();
             tmp.ItemName = "150619_SJ";
             tmp.ItemCost = 5000;
             tmp.ItemRemark = "暂时让三杰熔炼一部分";
             tmp.ItemType = CostCalculateType.Product;
-            currentCostCalculateItem.MaterialsCosts = new List<CostItem>();
+            currentCostCalculateItem.MaterialsCosts = new List<CostCalculateItem>();
             currentCostCalculateItem.MaterialsCosts.Add(tmp);
 
             txtCostCaculateName.Text = currentCostCalculateItem.CostCalculateName;

@@ -94,7 +94,6 @@ namespace PMICostCalculator
 
             txtCostCaculateName.Text = CurrentCostCalculateSheet.SheetName;
             ReLoadDgv();
-            IsSaved = false;
         }
 
         /// <summary>
@@ -103,7 +102,7 @@ namespace PMICostCalculator
         private void CreateTestData()
         {
             Random r = new Random();
-            for (int i = 0; i < 30; i++)
+            for (int i = 0; i < 15; i++)
             {
                 CostCalculateItem cci = new CostCalculateItem();
                 cci.ItemName = "1506" + r.Next(10, 99) + "_SJ";
@@ -164,13 +163,31 @@ namespace PMICostCalculator
                 return;
             }
             //TODO:这里添加删除确认
-
+            if (MessageBox.Show("确定要删除选定计算项?","确定删除",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.No)
+            {
+                return;
+            }
             string ItemName = dgvCostCalculateList.CurrentRow.Cells[0].Value.ToString();
             int deleteIndex = CurrentCostCalculateSheet.CostCalculateSheetList.FindIndex(i => i.ItemName == ItemName);
             CurrentCostCalculateSheet.CostCalculateSheetList.RemoveAt(deleteIndex);
             ReLoadDgv();
         }
-
+        /// <summary>
+        /// 设置当前计算表为未保存状态
+        /// </summary>
+        private void SetCurrentCalculateSheetNotSaved()
+        {
+            IsSaved = false;
+            this.Text = "PMICostCalculator " + "-Not Saved";
+        }
+        /// <summary>
+        /// 设置当前计算表为保存状态
+        /// </summary>
+        private void SetCurrentCalculateSheetSaved()
+        {
+            IsSaved = true;
+            this.Text = "PMICostCalculator " + "-Saved";
+        }
         /// <summary>
         /// 重新加载数据到dgv
         /// </summary>
@@ -181,6 +198,7 @@ namespace PMICostCalculator
             dgvCostCalculateList.DataSource = CurrentCostCalculateSheet.CostCalculateSheetList;
             //dgvCostCalculateList.Refresh();
             CalculateTotal();
+            SetCurrentCalculateSheetNotSaved();
         }
 
         //计算总成本
@@ -223,6 +241,13 @@ namespace PMICostCalculator
             {
                 return;
             }
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //TODO:添加当前计算表保存代码，和Form_Closing共享
+
+            SetCurrentCalculateSheetSaved();
         }
 
     }

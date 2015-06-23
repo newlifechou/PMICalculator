@@ -15,6 +15,23 @@ namespace PMICostCalculator
     /// </summary>
     public class XMLDocOp
     {
+        /// <summary>
+        /// 保存成本计算表数据到XML文件
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <param name="sheet"></param>
+        public void SaveToXMLDoc(string fileName,CostCalculateSheet sheet)
+        {
 
+        }
+        /// <summary>
+        /// 从XML文件中读取数据并返回成本计算表
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <returns></returns>
+        public CostCalculateSheet ReadFromXMLDoc(string fileName)
+        {
+            return null;
+        }
     }
 }

@@ -205,22 +205,24 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(17, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 12);
+            this.label1.Size = new System.Drawing.Size(113, 12);
             this.label1.TabIndex = 2;
-            this.label1.Text = "CostCalculateName";
+            this.label1.Text = "CostCalcualteSheet";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtCostCaculateName
             // 
-            this.txtCostCaculateName.Location = new System.Drawing.Point(128, 33);
+            this.txtCostCaculateName.Location = new System.Drawing.Point(136, 33);
             this.txtCostCaculateName.Name = "txtCostCaculateName";
             this.txtCostCaculateName.ReadOnly = true;
-            this.txtCostCaculateName.Size = new System.Drawing.Size(441, 21);
+            this.txtCostCaculateName.Size = new System.Drawing.Size(433, 21);
             this.txtCostCaculateName.TabIndex = 3;
             // 
             // txtTotalCost
             // 
             this.txtTotalCost.Location = new System.Drawing.Point(52, 5);
             this.txtTotalCost.Name = "txtTotalCost";
+            this.txtTotalCost.ReadOnly = true;
             this.txtTotalCost.Size = new System.Drawing.Size(100, 21);
             this.txtTotalCost.TabIndex = 2;
             this.txtTotalCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;

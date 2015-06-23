@@ -90,6 +90,7 @@
     <Compile Include="OpenCostCalcuate.Designer.cs">
       <DependentUpon>OpenCostCalcuate.cs</DependentUpon>
     </Compile>
+    <Compile Include="XMLDocOp.cs" />
     <EmbeddedResource Include="AddCostCalculateItem.resx">
       <DependentUpon>AddCostCalculateItem.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +120,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

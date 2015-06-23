@@ -11,7 +11,13 @@ namespace PMICostCalculator
 {
     public partial class MainForm : Form
     {
+        /// <summary>
+        /// 当前成本计算表
+        /// </summary>
         private CostCalculateSheet CurrentCostCalculateSheet;
+        /// <summary>
+        /// 当前文件是否保存Flag
+        /// </summary>
         private bool IsSaved;
 
         public MainForm()
@@ -45,9 +51,21 @@ namespace PMICostCalculator
                 }
             }
         }
-
+        /// <summary>
+        /// 建立新的成本计算表
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //建立前判断当前的成本计算表是否已经保存
+            if (!IsSaved)
+            {
+                if (MessageBox.Show("当前成本计算表还没有保存，是否保存？","保存",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
+                {
+                    
+                }
+            }
             NewCostCalcuate f = new NewCostCalcuate();
             f.New += f_New;
             f.ShowDialog();

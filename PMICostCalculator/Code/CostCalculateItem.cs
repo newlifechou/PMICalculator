@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml.Serialization;
 
 namespace PMICostCalculator
 {
     /// <summary>
     /// 成本小项类
     /// </summary>
+    [Serializable]
     public class CostCalculateItem:IComparable<CostCalculateItem>
     {
         /// <summary>

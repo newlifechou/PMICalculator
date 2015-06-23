@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
 
 namespace PMICostCalculator
 {
@@ -92,6 +93,11 @@ namespace PMICostCalculator
             CurrentCostCalculateSheet = new CostCalculateSheet(e.CostCalculateName);
             CreateTestData();
 
+            LoadCurrentCostSheetData();
+        }
+
+        private void LoadCurrentCostSheetData()
+        {
             txtCostCaculateName.Text = CurrentCostCalculateSheet.SheetName;
             ReLoadDgv();
         }
@@ -141,8 +147,24 @@ namespace PMICostCalculator
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenCostCalcuate f = new OpenCostCalcuate();
-            f.ShowDialog();
+            //OpenCostCalcuate f = new OpenCostCalcuate();
+            //f.ShowDialog();
+            if (CheckCalculateSheetSave())
+            {
+                return;
+            }
+            try
+            {
+                XMLDocOp doc = new XMLDocOp();
+                string fileName = Path.Combine(Environment.CurrentDirectory, Properties.Settings.Default.WorkingDirectory, "test.xml");
+                CurrentCostCalculateSheet = doc.ReadFromXMLDoc(fileName);
+
+                LoadCurrentCostSheetData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -163,7 +185,7 @@ namespace PMICostCalculator
                 return;
             }
             //TODO:这里添加删除确认
-            if (MessageBox.Show("确定要删除选定计算项?","确定删除",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.No)
+            if (MessageBox.Show("确定要删除选定计算项?", "确定删除", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
             {
                 return;
             }
@@ -246,8 +268,21 @@ namespace PMICostCalculator
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //TODO:添加当前计算表保存代码，和Form_Closing共享
-
-            SetCurrentCalculateSheetSaved();
+            if (!IsSaved)
+            {
+                try
+                {
+                    XMLDocOp doc = new XMLDocOp();
+                    string fileName = Path.Combine(Environment.CurrentDirectory, Properties.Settings.Default.WorkingDirectory, CurrentCostCalculateSheet.SheetName + ".xml");
+                    doc.SaveToXMLDoc(fileName, CurrentCostCalculateSheet);
+                    MessageBox.Show("保存成功");
+                    SetCurrentCalculateSheetSaved();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)

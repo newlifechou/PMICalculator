@@ -5,6 +5,7 @@ using System.Text;
 using System.Xml;
 using System.Xml.Linq;
 using System.IO;
+using System.Xml.Serialization;
 
 
 namespace PMICostCalculator
@@ -23,7 +24,10 @@ namespace PMICostCalculator
         /// <param name="sheet"></param>
         public void SaveToXMLDoc(string fileName,CostCalculateSheet sheet)
         {
-
+            TextWriter tr = new StreamWriter(fileName);
+            XmlSerializer xs = new XmlSerializer(typeof(CostCalculateSheet));
+            xs.Serialize(tr, sheet);
+            tr.Close();           
         }
         /// <summary>
         /// 从XML文件中读取数据并返回成本计算表
@@ -32,7 +36,12 @@ namespace PMICostCalculator
         /// <returns></returns>
         public CostCalculateSheet ReadFromXMLDoc(string fileName)
         {
-            return null;
+            CostCalculateSheet ccs;
+            FileStream fs = new FileStream(fileName, FileMode.Open);
+            XmlSerializer xs = new XmlSerializer(typeof(CostCalculateSheet));
+            ccs = (CostCalculateSheet)xs.Deserialize(fs);
+            fs.Close();
+            return ccs;
         }
     }
 }

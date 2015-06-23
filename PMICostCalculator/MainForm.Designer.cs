@@ -218,7 +218,7 @@
             this.txtCostCaculateName.Location = new System.Drawing.Point(128, 33);
             this.txtCostCaculateName.Name = "txtCostCaculateName";
             this.txtCostCaculateName.ReadOnly = true;
-            this.txtCostCaculateName.Size = new System.Drawing.Size(240, 21);
+            this.txtCostCaculateName.Size = new System.Drawing.Size(441, 21);
             this.txtCostCaculateName.TabIndex = 3;
             // 
             // flowLayoutPanel1
@@ -252,7 +252,7 @@
             this.btnDelMateraislCost.Name = "btnDelMateraislCost";
             this.btnDelMateraislCost.Size = new System.Drawing.Size(75, 23);
             this.btnDelMateraislCost.TabIndex = 1;
-            this.btnDelMateraislCost.Text = "Del";
+            this.btnDelMateraislCost.Text = "Delete";
             this.btnDelMateraislCost.UseVisualStyleBackColor = true;
             // 
             // btnAddMateraislCost

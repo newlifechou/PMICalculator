@@ -14,6 +14,7 @@ namespace PMICostCalculator
         public MainForm()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         /// <summary>

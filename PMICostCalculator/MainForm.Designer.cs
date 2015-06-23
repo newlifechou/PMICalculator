@@ -50,9 +50,6 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCostCaculateName = new System.Windows.Forms.TextBox();
-            this.txtTotalCost = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnDelCost = new System.Windows.Forms.Button();
             this.btnAddCost = new System.Windows.Forms.Button();
             this.dgvCostCalculateList = new System.Windows.Forms.DataGridView();
@@ -61,9 +58,11 @@
             this.ItemStyle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemRemark = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnViewBrief = new System.Windows.Forms.Button();
+            this.txtTotalCost = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCostCalculateList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -224,35 +223,6 @@
             this.txtCostCaculateName.Size = new System.Drawing.Size(433, 21);
             this.txtCostCaculateName.TabIndex = 3;
             // 
-            // txtTotalCost
-            // 
-            this.txtTotalCost.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtTotalCost.ForeColor = System.Drawing.Color.Blue;
-            this.txtTotalCost.Location = new System.Drawing.Point(44, 1);
-            this.txtTotalCost.Name = "txtTotalCost";
-            this.txtTotalCost.Size = new System.Drawing.Size(211, 35);
-            this.txtTotalCost.TabIndex = 2;
-            this.txtTotalCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 12);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Total";
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.txtTotalCost);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(313, 495);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(258, 39);
-            this.panel1.TabIndex = 7;
-            // 
             // btnDelCost
             // 
             this.btnDelCost.Location = new System.Drawing.Point(109, 66);
@@ -325,6 +295,8 @@
             this.ItemCost.DataPropertyName = "ItemCost";
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle1.Format = "N2";
+            dataGridViewCellStyle1.NullValue = "-";
             this.ItemCost.DefaultCellStyle = dataGridViewCellStyle1;
             this.ItemCost.HeaderText = "ItemCost";
             this.ItemCost.Name = "ItemCost";
@@ -338,16 +310,52 @@
             this.ItemRemark.ReadOnly = true;
             this.ItemRemark.Width = 450;
             // 
+            // btnViewBrief
+            // 
+            this.btnViewBrief.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnViewBrief.Location = new System.Drawing.Point(18, 496);
+            this.btnViewBrief.Name = "btnViewBrief";
+            this.btnViewBrief.Size = new System.Drawing.Size(158, 38);
+            this.btnViewBrief.TabIndex = 11;
+            this.btnViewBrief.Text = "ViewBrief";
+            this.btnViewBrief.UseVisualStyleBackColor = true;
+            // 
+            // txtTotalCost
+            // 
+            this.txtTotalCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTotalCost.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.txtTotalCost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTotalCost.Font = new System.Drawing.Font("SimSun", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtTotalCost.ForeColor = System.Drawing.SystemColors.Control;
+            this.txtTotalCost.Location = new System.Drawing.Point(357, 496);
+            this.txtTotalCost.Name = "txtTotalCost";
+            this.txtTotalCost.ReadOnly = true;
+            this.txtTotalCost.Size = new System.Drawing.Size(211, 35);
+            this.txtTotalCost.TabIndex = 12;
+            this.txtTotalCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(316, 510);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 12);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Total";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(584, 562);
+            this.Controls.Add(this.txtTotalCost);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnViewBrief);
             this.Controls.Add(this.btnDelCost);
             this.Controls.Add(this.btnAddCost);
             this.Controls.Add(this.dgvCostCalculateList);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtCostCaculateName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.statusStrip1);
@@ -362,8 +370,6 @@
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCostCalculateList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -392,9 +398,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCostCaculateName;
-        private System.Windows.Forms.TextBox txtTotalCost;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnDelCost;
         private System.Windows.Forms.Button btnAddCost;
         private System.Windows.Forms.DataGridView dgvCostCalculateList;
@@ -403,6 +406,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemStyle;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemCost;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemRemark;
+        private System.Windows.Forms.Button btnViewBrief;
+        private System.Windows.Forms.TextBox txtTotalCost;
+        private System.Windows.Forms.Label label2;
     }
 }
 

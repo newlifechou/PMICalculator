@@ -19,10 +19,10 @@ namespace PMICostCalculator
             FormOperate.SetFormToDialog(this, false);
 
             //初始化
-            lvFileList.Columns.Add("文件名",200);
-            lvFileList.Columns.Add("创建时间",200);
-            lvFileList.Columns.Add("修改时间",200);
-            lvFileList.Columns.Add("详细地址",400);
+            lvFileList.Columns.Add("FileName",200);
+            lvFileList.Columns.Add("CreateTime",200);
+            lvFileList.Columns.Add("Updatetime",200);
+            lvFileList.Columns.Add("Details",400);
         }
         public event EventHandler<CalcualteSheetEventArgs> OpenDoc;
 

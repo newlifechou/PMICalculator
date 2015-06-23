@@ -12,22 +12,19 @@ namespace PMICostCalculator
     public class CostCalculateSheet
     {
         //成本计算类的名称
-        public string CostCalculateName { get; set; }
+        public string SheetName { get; set; }
 
-        //所有计算的大项，每个大项包含很多小项
-        public List<CostCalculateItem> MaterialsCosts {get;set;}
-        public List<CostCalculateItem> PowderProcessCosts { get; set; }
-        public List<CostCalculateItem> VHPCosts { get; set; }
-        public List<CostCalculateItem> MachiningCosts{ get; set; }
-        public List<CostCalculateItem> TestingAndPacagingCost { get; set; }
+        //所有成本项目
+        public List<CostCalculateItem> CostCalculateSheetList{get;set;}
 
         public CostCalculateSheet()
         {
 
         }
-        public CostCalculateSheet(string name)
+        public CostCalculateSheet(string sheetName)
         {
-            this.CostCalculateName = name;
+            this.SheetName = sheetName;
+            this.CostCalculateSheetList = new List<CostCalculateItem>();
         }
 
     }

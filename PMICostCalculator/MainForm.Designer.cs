@@ -49,20 +49,16 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCostCaculateName = new System.Windows.Forms.TextBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnDelMateraislCost = new System.Windows.Forms.Button();
-            this.btnAddMateraislCost = new System.Windows.Forms.Button();
-            this.dgvMaterialsCost = new System.Windows.Forms.DataGridView();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnDelCost = new System.Windows.Forms.Button();
+            this.btnAddCost = new System.Windows.Forms.Button();
+            this.dgvCostCalculateList = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMaterialsCost)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCostCalculateList)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -221,62 +217,6 @@
             this.txtCostCaculateName.Size = new System.Drawing.Size(441, 21);
             this.txtCostCaculateName.TabIndex = 3;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.flowLayoutPanel1.Controls.Add(this.groupBox1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(13, 60);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(557, 434);
-            this.flowLayoutPanel1.TabIndex = 5;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.btnDelMateraislCost);
-            this.groupBox1.Controls.Add(this.btnAddMateraislCost);
-            this.groupBox1.Controls.Add(this.dgvMaterialsCost);
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(526, 149);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Materials Costs";
-            // 
-            // btnDelMateraislCost
-            // 
-            this.btnDelMateraislCost.Location = new System.Drawing.Point(88, 118);
-            this.btnDelMateraislCost.Name = "btnDelMateraislCost";
-            this.btnDelMateraislCost.Size = new System.Drawing.Size(75, 23);
-            this.btnDelMateraislCost.TabIndex = 1;
-            this.btnDelMateraislCost.Text = "Delete";
-            this.btnDelMateraislCost.UseVisualStyleBackColor = true;
-            // 
-            // btnAddMateraislCost
-            // 
-            this.btnAddMateraislCost.Location = new System.Drawing.Point(7, 118);
-            this.btnAddMateraislCost.Name = "btnAddMateraislCost";
-            this.btnAddMateraislCost.Size = new System.Drawing.Size(75, 23);
-            this.btnAddMateraislCost.TabIndex = 1;
-            this.btnAddMateraislCost.Text = "Add";
-            this.btnAddMateraislCost.UseVisualStyleBackColor = true;
-            // 
-            // dgvMaterialsCost
-            // 
-            this.dgvMaterialsCost.AllowUserToAddRows = false;
-            this.dgvMaterialsCost.AllowUserToDeleteRows = false;
-            this.dgvMaterialsCost.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMaterialsCost.Location = new System.Drawing.Point(6, 20);
-            this.dgvMaterialsCost.Name = "dgvMaterialsCost";
-            this.dgvMaterialsCost.ReadOnly = true;
-            this.dgvMaterialsCost.RowTemplate.Height = 23;
-            this.dgvMaterialsCost.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMaterialsCost.Size = new System.Drawing.Size(514, 92);
-            this.dgvMaterialsCost.TabIndex = 0;
-            // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(52, 5);
@@ -298,10 +238,45 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.textBox7);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(407, 500);
+            this.panel1.Location = new System.Drawing.Point(417, 500);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(162, 34);
             this.panel1.TabIndex = 7;
+            // 
+            // btnDelCost
+            // 
+            this.btnDelCost.Location = new System.Drawing.Point(109, 66);
+            this.btnDelCost.Name = "btnDelCost";
+            this.btnDelCost.Size = new System.Drawing.Size(75, 23);
+            this.btnDelCost.TabIndex = 10;
+            this.btnDelCost.Text = "Delete";
+            this.btnDelCost.UseVisualStyleBackColor = true;
+            // 
+            // btnAddCost
+            // 
+            this.btnAddCost.Location = new System.Drawing.Point(18, 66);
+            this.btnAddCost.Name = "btnAddCost";
+            this.btnAddCost.Size = new System.Drawing.Size(75, 23);
+            this.btnAddCost.TabIndex = 9;
+            this.btnAddCost.Text = "Add";
+            this.btnAddCost.UseVisualStyleBackColor = true;
+            // 
+            // dgvCostCalculateList
+            // 
+            this.dgvCostCalculateList.AllowUserToAddRows = false;
+            this.dgvCostCalculateList.AllowUserToDeleteRows = false;
+            this.dgvCostCalculateList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvCostCalculateList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCostCalculateList.Location = new System.Drawing.Point(18, 95);
+            this.dgvCostCalculateList.MultiSelect = false;
+            this.dgvCostCalculateList.Name = "dgvCostCalculateList";
+            this.dgvCostCalculateList.ReadOnly = true;
+            this.dgvCostCalculateList.RowTemplate.Height = 23;
+            this.dgvCostCalculateList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvCostCalculateList.Size = new System.Drawing.Size(550, 394);
+            this.dgvCostCalculateList.TabIndex = 8;
             // 
             // MainForm
             // 
@@ -309,12 +284,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(584, 562);
+            this.Controls.Add(this.btnDelCost);
+            this.Controls.Add(this.btnAddCost);
+            this.Controls.Add(this.dgvCostCalculateList);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtCostCaculateName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MinimumSize = new System.Drawing.Size(600, 400);
@@ -325,11 +302,9 @@
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMaterialsCost)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCostCalculateList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -357,14 +332,12 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCostCaculateName;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnDelMateraislCost;
-        private System.Windows.Forms.Button btnAddMateraislCost;
-        private System.Windows.Forms.DataGridView dgvMaterialsCost;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnDelCost;
+        private System.Windows.Forms.Button btnAddCost;
+        private System.Windows.Forms.DataGridView dgvCostCalculateList;
     }
 }
 

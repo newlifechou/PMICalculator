@@ -11,13 +11,12 @@ namespace PMICostCalculator
 {
     public partial class MainForm : Form
     {
-        private CostCalculateSheet currentCostCalculateItem;
-        private bool IsSaved; 
+        private CostCalculateSheet CurrentCostCalculateSheet;
+        private bool IsSaved;
 
         public MainForm()
         {
             InitializeComponent();
-            FormOperate.SetFormToDialog(this, true);
             //初始化
             IsSaved = true;
         }
@@ -54,20 +53,53 @@ namespace PMICostCalculator
 
         private void f_New(object sender, NewCalcualteEventArgs e)
         {
-            currentCostCalculateItem = new CostCalculateSheet(e.CostCalculateName);
-
-            CostCalculateItem tmp = new CostCalculateItem();
-            tmp.ItemName = "150619_SJ";
-            tmp.ItemCost = 5000;
-            tmp.ItemRemark = "暂时让三杰熔炼一部分";
-            tmp.ItemType = CostCalculateType.Product;
-            currentCostCalculateItem.MaterialsCosts = new List<CostCalculateItem>();
-            currentCostCalculateItem.MaterialsCosts.Add(tmp);
-
-            txtCostCaculateName.Text = currentCostCalculateItem.CostCalculateName;
-            dgvMaterialsCost.DataSource = null;
-            dgvMaterialsCost.DataSource = currentCostCalculateItem.MaterialsCosts;
+            CurrentCostCalculateSheet = new CostCalculateSheet(e.CostCalculateName);
+            CreateTestData();
+            CurrentCostCalculateSheet.CostCalculateSheetList.Sort();
+            txtCostCaculateName.Text = CurrentCostCalculateSheet.SheetName;
+            dgvCostCalculateList.DataSource = null;
+            dgvCostCalculateList.DataSource = CurrentCostCalculateSheet.CostCalculateSheetList;
             IsSaved = false;
+        }
+
+        private void CreateTestData()
+        {
+            Random r = new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                CostCalculateItem cci = new CostCalculateItem();
+                cci.ItemName = "1506" + r.Next(10, 99) + "_SJ";
+                switch (r.Next(10, 99) % 5)
+                {
+                    case 0:
+                        cci.ItemType = CostCalculateType.MaterialsCost;
+                        cci.ItemStyle = CostCalculateStyle.Product;
+                        break;
+                    case 1:
+                        cci.ItemType = CostCalculateType.PowderProcessCost;
+                        cci.ItemStyle = CostCalculateStyle.Product;
+                        break;
+                    case 2:
+                        cci.ItemType = CostCalculateType.VHPCost;
+                        cci.ItemStyle = CostCalculateStyle.Experiement;
+                        break;
+                    case 3:
+                        cci.ItemType = CostCalculateType.MachineCost;
+                        cci.ItemStyle = CostCalculateStyle.Product;
+                        break;
+                    case 4:
+                        cci.ItemType = CostCalculateType.PacageCost;
+                        cci.ItemStyle = CostCalculateStyle.Experiement;
+                        break;
+                    default:
+                        cci.ItemType = CostCalculateType.BondingCost;
+                        cci.ItemStyle = CostCalculateStyle.Experiement;
+                        break;
+                }
+                cci.ItemCost = r.Next(1000, 9999);
+                cci.ItemRemark = "三杰提供原料" + r.Next(10, 99);
+                CurrentCostCalculateSheet.CostCalculateSheetList.Add(cci);
+            }
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)

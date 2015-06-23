@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="CostCalculateSheet.cs" />
     <Compile Include="CostCalculateItem.cs" />
+    <Compile Include="CostCalculateStyle.cs" />
     <Compile Include="CostCalculateType.cs" />
     <Compile Include="FormOperate.cs" />
     <Compile Include="Language\us-en.Designer.cs">

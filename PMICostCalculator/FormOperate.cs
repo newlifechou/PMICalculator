@@ -9,7 +9,7 @@ namespace PMICostCalculator
     /// <summary>
     /// 窗体操作类
     /// </summary>
-    static class FormOperate
+    public static class FormOperate
     {
         /// <summary>
         /// 设置窗体为居中显示的对话框

@@ -6,11 +6,15 @@ using System.Text;
 namespace PMICostCalculator
 {
     /// <summary>
-    /// 计算类型枚举，生产还是实验
+    /// 计算类型枚举
     /// </summary>
     public enum CostCalculateType
     {
-        Product,
-        Experiement
+        MaterialsCost,
+        PowderProcessCost,
+        VHPCost,
+        MachineCost,
+        PacageCost,
+        BondingCost
     }
 }

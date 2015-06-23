@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CostCalculateItem.cs" />
+    <Compile Include="CostItem.cs" />
     <Compile Include="FormOperate.cs" />
     <Compile Include="Language\us-en.Designer.cs">
       <AutoGen>True</AutoGen>

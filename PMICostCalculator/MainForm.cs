@@ -15,6 +15,7 @@ namespace PMICostCalculator
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+            this.WindowState = FormWindowState.Maximized;
         }
 
         /// <summary>

@@ -28,55 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.btnOpen = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.lvFileList = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
-            // button1
+            // btnOpen
             // 
-            this.button1.Location = new System.Drawing.Point(237, 271);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 35);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Open";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnOpen.Location = new System.Drawing.Point(450, 271);
+            this.btnOpen.Name = "btnOpen";
+            this.btnOpen.Size = new System.Drawing.Size(122, 35);
+            this.btnOpen.TabIndex = 1;
+            this.btnOpen.Text = "Open";
+            this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
-            // button2
+            // btnDelete
             // 
-            this.button2.Location = new System.Drawing.Point(13, 271);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 35);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Delete";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(13, 271);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(122, 35);
+            this.btnDelete.TabIndex = 1;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // listView1
+            // lvFileList
             // 
-            this.listView1.Location = new System.Drawing.Point(13, 13);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(346, 252);
-            this.listView1.TabIndex = 2;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.lvFileList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lvFileList.FullRowSelect = true;
+            this.lvFileList.Location = new System.Drawing.Point(13, 13);
+            this.lvFileList.MultiSelect = false;
+            this.lvFileList.Name = "lvFileList";
+            this.lvFileList.Size = new System.Drawing.Size(559, 252);
+            this.lvFileList.TabIndex = 2;
+            this.lvFileList.UseCompatibleStateImageBehavior = false;
+            this.lvFileList.View = System.Windows.Forms.View.Details;
             // 
             // OpenCostCalcuate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 318);
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(584, 318);
+            this.Controls.Add(this.lvFileList);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnOpen);
             this.Name = "OpenCostCalcuate";
             this.Text = "OpenCostCalcuate";
+            this.Load += new System.EventHandler(this.OpenCostCalcuate_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button btnOpen;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.ListView lvFileList;
     }
 }

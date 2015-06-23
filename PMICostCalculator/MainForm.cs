@@ -88,10 +88,10 @@ namespace PMICostCalculator
             return false;
         }
 
-        private void f_New(object sender, NewCalcualteSheetEventArgs e)
+        private void f_New(object sender, CalcualteSheetEventArgs e)
         {
             //初始化当前计算表
-            CurrentCostCalculateSheet = new CostCalculateSheet(e.CostCalculateName);
+            CurrentCostCalculateSheet = new CostCalculateSheet(e.CalcualteSheetFileName);
             CreateTestData();
 
             LoadCurrentCostSheetData();
@@ -148,8 +148,13 @@ namespace PMICostCalculator
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //OpenCostCalcuate f = new OpenCostCalcuate();
-            //f.ShowDialog();
+            OpenCostCalcuate f = new OpenCostCalcuate();
+            f.OpenDoc += f_OpenDoc;
+            f.ShowDialog();
+        }
+
+        void f_OpenDoc(object sender, CalcualteSheetEventArgs e)
+        {
             if (CheckCalculateSheetSave())
             {
                 return;
@@ -157,7 +162,7 @@ namespace PMICostCalculator
             try
             {
                 XMLDocOp doc = new XMLDocOp();
-                string fileName = Path.Combine(Environment.CurrentDirectory, Properties.Settings.Default.WorkingDirectory, "test.xml");
+                string fileName = e.CalcualteSheetFileName;
                 CurrentCostCalculateSheet = doc.ReadFromXMLDoc(fileName);
 
                 LoadCurrentCostSheetData();

@@ -5,8 +5,8 @@ using System.Text;
 
 namespace PMICostCalculator
 {
-    public class NewCalcualteSheetEventArgs : EventArgs
+    public class CalcualteSheetEventArgs : EventArgs
     {
-        public string CostCalculateName { get; set; }
+        public string CalcualteSheetFileName { get; set; }
     }
 }

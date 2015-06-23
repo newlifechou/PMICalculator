@@ -58,7 +58,7 @@
     <Compile Include="Code\CostCalculateStyle.cs" />
     <Compile Include="Code\CostCalculateType.cs" />
     <Compile Include="Code\FormOperate.cs" />
-    <Compile Include="FileOperate.cs" />
+    <Compile Include="Code\FileOperate.cs" />
     <Compile Include="Language\us-en.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -75,7 +75,7 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Code\NewCalcualteSheetEventArgs.cs" />
+    <Compile Include="Code\CalcualteSheetEventArgs.cs" />
     <Compile Include="NewCostCalcuate.cs">
       <SubType>Form</SubType>
     </Compile>

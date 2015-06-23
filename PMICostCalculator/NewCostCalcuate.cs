@@ -30,6 +30,8 @@ namespace PMICostCalculator
                     //TODO:后面切换语言的时候要考虑
                     throw new Exception("名称不能为空");
                 }
+                //TODO:符合windows文件命名要求
+
                 //TODO:这里要检测是否和已有保存的文件文件名冲突
 
 

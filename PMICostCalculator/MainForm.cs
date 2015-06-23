@@ -82,6 +82,7 @@ namespace PMICostCalculator
                 else if (dr == DialogResult.Yes)
                 {
                     //TODO:保存计算表代码
+                    SaveCurrentCostSheet();
                 }
             }
             return false;
@@ -266,6 +267,11 @@ namespace PMICostCalculator
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveCurrentCostSheet();
+        }
+
+        private void SaveCurrentCostSheet()
         {
             //TODO:添加当前计算表保存代码，和Form_Closing共享
             if (!IsSaved)

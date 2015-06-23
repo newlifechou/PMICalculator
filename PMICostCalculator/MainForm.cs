@@ -40,6 +40,18 @@ namespace PMICostCalculator
             }
         }
 
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NewCostCalcuate f = new NewCostCalcuate();
+            f.ShowDialog();
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenCostCalcuate f = new OpenCostCalcuate();
+            f.ShowDialog();
+        }
+
 
 
     }

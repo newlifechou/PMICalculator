@@ -99,44 +99,44 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(108, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 6);
             // 
             // settingToolStripMenuItem
             // 
             this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
-            this.settingToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.settingToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.settingToolStripMenuItem.Text = "Setting";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(108, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(149, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -234,7 +234,7 @@
             // 
             // btnDelCost
             // 
-            this.btnDelCost.Location = new System.Drawing.Point(111, 111);
+            this.btnDelCost.Location = new System.Drawing.Point(111, 99);
             this.btnDelCost.Name = "btnDelCost";
             this.btnDelCost.Size = new System.Drawing.Size(75, 25);
             this.btnDelCost.TabIndex = 10;
@@ -244,7 +244,7 @@
             // 
             // btnAddCost
             // 
-            this.btnAddCost.Location = new System.Drawing.Point(20, 111);
+            this.btnAddCost.Location = new System.Drawing.Point(20, 99);
             this.btnAddCost.Name = "btnAddCost";
             this.btnAddCost.Size = new System.Drawing.Size(75, 25);
             this.btnAddCost.TabIndex = 9;
@@ -267,7 +267,7 @@
             this.ItemStyle,
             this.ItemCost,
             this.ItemRemark});
-            this.dgvCostCalculateList.Location = new System.Drawing.Point(18, 142);
+            this.dgvCostCalculateList.Location = new System.Drawing.Point(18, 129);
             this.dgvCostCalculateList.MultiSelect = false;
             this.dgvCostCalculateList.Name = "dgvCostCalculateList";
             this.dgvCostCalculateList.ReadOnly = true;
@@ -325,7 +325,7 @@
             // btnViewBrief
             // 
             this.btnViewBrief.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnViewBrief.Location = new System.Drawing.Point(369, 536);
+            this.btnViewBrief.Location = new System.Drawing.Point(369, 532);
             this.btnViewBrief.Name = "btnViewBrief";
             this.btnViewBrief.Size = new System.Drawing.Size(141, 41);
             this.btnViewBrief.TabIndex = 11;
@@ -340,7 +340,7 @@
             this.txtTotalCost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTotalCost.Font = new System.Drawing.Font("SimSun", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtTotalCost.ForeColor = System.Drawing.Color.Red;
-            this.txtTotalCost.Location = new System.Drawing.Point(557, 537);
+            this.txtTotalCost.Location = new System.Drawing.Point(557, 533);
             this.txtTotalCost.Name = "txtTotalCost";
             this.txtTotalCost.ReadOnly = true;
             this.txtTotalCost.Size = new System.Drawing.Size(211, 38);
@@ -351,7 +351,7 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(516, 550);
+            this.label2.Location = new System.Drawing.Point(516, 546);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 13;
@@ -368,7 +368,7 @@
             this.txtRemark.Name = "txtRemark";
             this.txtRemark.ReadOnly = true;
             this.txtRemark.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtRemark.Size = new System.Drawing.Size(632, 50);
+            this.txtRemark.Size = new System.Drawing.Size(632, 37);
             this.txtRemark.TabIndex = 3;
             // 
             // label3

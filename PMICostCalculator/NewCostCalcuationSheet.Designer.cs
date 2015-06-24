@@ -53,7 +53,7 @@
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(12, 133);
+            this.btnNew.Location = new System.Drawing.Point(12, 102);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(325, 43);
             this.btnNew.TabIndex = 2;
@@ -76,7 +76,7 @@
             this.txtRemark.Multiline = true;
             this.txtRemark.Name = "txtRemark";
             this.txtRemark.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtRemark.Size = new System.Drawing.Size(325, 79);
+            this.txtRemark.Size = new System.Drawing.Size(325, 48);
             this.txtRemark.TabIndex = 1;
             // 
             // NewCostCalcuationSheet
@@ -84,7 +84,7 @@
             this.AcceptButton = this.btnNew;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(349, 188);
+            this.ClientSize = new System.Drawing.Size(349, 154);
             this.Controls.Add(this.btnNew);
             this.Controls.Add(this.txtRemark);
             this.Controls.Add(this.txtCostCalcualteName);

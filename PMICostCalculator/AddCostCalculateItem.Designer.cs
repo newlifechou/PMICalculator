@@ -150,7 +150,6 @@
             this.txtItemRemark.Name = "txtItemRemark";
             this.txtItemRemark.Size = new System.Drawing.Size(287, 138);
             this.txtItemRemark.TabIndex = 2;
-            this.txtItemRemark.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label5
             // 

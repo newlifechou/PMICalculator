@@ -92,7 +92,7 @@ namespace PMICostCalculator
         {
             //初始化当前计算表
             CurrentCostCalculateSheet = new CostCalculateSheet(e.CalcualteSheetFileName);
-            CreateTestData();
+            //CreateTestData();
 
             LoadCurrentCostSheetData();
         }

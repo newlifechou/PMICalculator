@@ -223,6 +223,8 @@ namespace PMICostCalculator
         private void ReLoadDgv()
         {
             dgvCostCalculateList.DataSource = null;
+            SetCurrentCalculateSheetNotSaved();
+            //如果数据列表=0，跳过加载数据操作
             if (CurrentCostCalculateSheet.CostCalculateSheetList.Count==0)
             {
                 return;
@@ -231,7 +233,6 @@ namespace PMICostCalculator
             dgvCostCalculateList.DataSource = CurrentCostCalculateSheet.CostCalculateSheetList;
             //dgvCostCalculateList.Refresh();
             CalculateTotal();
-            SetCurrentCalculateSheetNotSaved();
         }
 
         //计算总成本

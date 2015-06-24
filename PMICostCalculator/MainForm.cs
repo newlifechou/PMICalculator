@@ -330,5 +330,11 @@ namespace PMICostCalculator
                 }
             }
         }
+
+        private void settingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Settings f = new Settings();
+            f.ShowDialog();
+        }
     }
 }

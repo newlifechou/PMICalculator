@@ -51,7 +51,8 @@
             this.txtStatisticData.ReadOnly = true;
             this.txtStatisticData.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtStatisticData.Size = new System.Drawing.Size(430, 538);
-            this.txtStatisticData.TabIndex = 0;
+            this.txtStatisticData.TabIndex = 10;
+            this.txtStatisticData.TabStop = false;
             // 
             // chart1
             // 

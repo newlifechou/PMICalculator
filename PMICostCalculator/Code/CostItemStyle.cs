@@ -8,6 +8,6 @@ namespace PMICostCalculator
     public enum CostItemStyle
     {
         Product,
-        Experiement
+        Experiment
     }
 }

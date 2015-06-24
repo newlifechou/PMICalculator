@@ -55,12 +55,14 @@
             // 
             // chart1
             // 
+            this.chart1.BackColor = System.Drawing.Color.WhiteSmoke;
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(452, 12);
             this.chart1.Name = "chart1";
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series1.Legend = "Legend1";

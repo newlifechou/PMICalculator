@@ -15,7 +15,7 @@ namespace PMICostCalculator
         /// <summary>
         /// 当前成本计算表
         /// </summary>
-        private CostCalculateSheet CurrentCostCalculateSheet;
+        private CostCalculateSheet CurrentCalculateSheet;
         /// <summary>
         /// 当前文件是否保存Flag
         /// </summary>
@@ -38,10 +38,20 @@ namespace PMICostCalculator
         /// <param name="e"></param>
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CheckCalculateSheetSave();
+            if (CheckCalculateSheetSave())
+            {
+                return;
+            }
             NewCostCalcuate f = new NewCostCalcuate();
             f.New += f_New;
             f.ShowDialog();
+        }
+        private void f_New(object sender, CalcualteSheetEventArgs e)
+        {
+            //初始化当前计算表
+            CurrentCalculateSheet = new CostCalculateSheet(e.CalcualteSheetFileName);
+            //CreateTestData();
+            LoadCurrentCostSheetData();
         }
         /// <summary>
         /// 判断当前计算表是否保存
@@ -65,82 +75,76 @@ namespace PMICostCalculator
             }
             return false;
         }
-
-        private void f_New(object sender, CalcualteSheetEventArgs e)
-        {
-            //初始化当前计算表
-            CurrentCostCalculateSheet = new CostCalculateSheet(e.CalcualteSheetFileName);
-            //CreateTestData();
-            LoadCurrentCostSheetData();
-        }
-
+        /// <summary>
+        /// 加载当前计算表到窗体
+        /// </summary>
         private void LoadCurrentCostSheetData()
         {
-            txtCostCaculateName.Text = CurrentCostCalculateSheet.SheetName;
+            txtCostCaculateName.Text = CurrentCalculateSheet.SheetName;
             ReLoadDgv();
         }
 
         /// <summary>
         ///TODO:临时的数据生成器，过后删除
         /// </summary>
-        private void CreateTestData()
-        {
-            Random r = new Random();
-            for (int i = 0; i < 15; i++)
-            {
-                CostCalculateItem cci = new CostCalculateItem();
-                cci.ItemName = "1506" + r.Next(10, 99) + "_SJ";
-                switch (r.Next(10, 99) % 5)
-                {
-                    case 0:
-                        cci.ItemType = CostCalculateType.MaterialsCost;
-                        cci.ItemStyle = CostCalculateStyle.Product;
-                        break;
-                    case 1:
-                        cci.ItemType = CostCalculateType.PowderProcessCost;
-                        cci.ItemStyle = CostCalculateStyle.Product;
-                        break;
-                    case 2:
-                        cci.ItemType = CostCalculateType.VHPCost;
-                        cci.ItemStyle = CostCalculateStyle.Experiement;
-                        break;
-                    case 3:
-                        cci.ItemType = CostCalculateType.MachineCost;
-                        cci.ItemStyle = CostCalculateStyle.Product;
-                        break;
-                    case 4:
-                        cci.ItemType = CostCalculateType.PackageCost;
-                        cci.ItemStyle = CostCalculateStyle.Experiement;
-                        break;
-                    default:
-                        cci.ItemType = CostCalculateType.BondingCost;
-                        cci.ItemStyle = CostCalculateStyle.Experiement;
-                        break;
-                }
-                cci.ItemCost = r.Next(1000, 9999);
-                cci.ItemRemark = "三杰提供原料" + r.Next(10, 99);
-                CurrentCostCalculateSheet.CostCalculateSheetList.Add(cci);
-            }
-        }
+        //private void CreateTestData()
+        //{
+        //    Random r = new Random();
+        //    for (int i = 0; i < 15; i++)
+        //    {
+        //        CostCalculateItem cci = new CostCalculateItem();
+        //        cci.ItemName = "1506" + r.Next(10, 99) + "_SJ";
+        //        switch (r.Next(10, 99) % 5)
+        //        {
+        //            case 0:
+        //                cci.ItemType = CostCalculateType.MaterialsCost;
+        //                cci.ItemStyle = CostCalculateStyle.Product;
+        //                break;
+        //            case 1:
+        //                cci.ItemType = CostCalculateType.PowderProcessCost;
+        //                cci.ItemStyle = CostCalculateStyle.Product;
+        //                break;
+        //            case 2:
+        //                cci.ItemType = CostCalculateType.VHPCost;
+        //                cci.ItemStyle = CostCalculateStyle.Experiement;
+        //                break;
+        //            case 3:
+        //                cci.ItemType = CostCalculateType.MachineCost;
+        //                cci.ItemStyle = CostCalculateStyle.Product;
+        //                break;
+        //            case 4:
+        //                cci.ItemType = CostCalculateType.PackageCost;
+        //                cci.ItemStyle = CostCalculateStyle.Experiement;
+        //                break;
+        //            default:
+        //                cci.ItemType = CostCalculateType.BondingCost;
+        //                cci.ItemStyle = CostCalculateStyle.Experiement;
+        //                break;
+        //        }
+        //        cci.ItemCost = r.Next(1000, 9999);
+        //        cci.ItemRemark = "三杰提供原料" + r.Next(10, 99);
+        //        CurrentCalculateSheet.CostCalculateSheetList.Add(cci);
+        //    }
+        //}
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            OpenCostCalcuate f = new OpenCostCalcuate();
-            f.OpenDoc += f_OpenDoc;
-            f.ShowDialog();
-        }
-
-        void f_OpenDoc(object sender, CalcualteSheetEventArgs e)
         {
             if (CheckCalculateSheetSave())
             {
                 return;
             }
+            OpenCostCalcuate f = new OpenCostCalcuate();
+            f.OpenDoc += f_OpenDoc;
+            f.ShowDialog();
+        }
+
+       private  void f_OpenDoc(object sender, CalcualteSheetEventArgs e)
+        {
             try
             {
                 XMLDocOp doc = new XMLDocOp();
                 string fileName = e.CalcualteSheetFileName;
-                CurrentCostCalculateSheet = doc.Read(fileName);
+                CurrentCalculateSheet = doc.Read(fileName);
 
                 LoadCurrentCostSheetData();
                 //设置为已经保存
@@ -175,8 +179,8 @@ namespace PMICostCalculator
                 return;
             }
             string ItemName = dgvCostCalculateList.CurrentRow.Cells[0].Value.ToString();
-            int deleteIndex = CurrentCostCalculateSheet.CostCalculateSheetList.FindIndex(i => i.ItemName == ItemName);
-            CurrentCostCalculateSheet.CostCalculateSheetList.RemoveAt(deleteIndex);
+            int deleteIndex = CurrentCalculateSheet.CostCalculateSheetList.FindIndex(i => i.ItemName == ItemName);
+            CurrentCalculateSheet.CostCalculateSheetList.RemoveAt(deleteIndex);
             ReLoadDgv();
         }
         /// <summary>
@@ -203,12 +207,12 @@ namespace PMICostCalculator
             dgvCostCalculateList.DataSource = null;
             SetCurrentCalculateSheetNotSaved();
             //如果数据列表=0，跳过加载数据操作
-            if (CurrentCostCalculateSheet.CostCalculateSheetList.Count==0)
+            if (CurrentCalculateSheet.CostCalculateSheetList.Count==0)
             {
                 return;
             }
-            CurrentCostCalculateSheet.CostCalculateSheetList.Sort();
-            dgvCostCalculateList.DataSource = CurrentCostCalculateSheet.CostCalculateSheetList;
+            CurrentCalculateSheet.CostCalculateSheetList.Sort();
+            dgvCostCalculateList.DataSource = CurrentCalculateSheet.CostCalculateSheetList;
             //dgvCostCalculateList.Refresh();
             CalculateTotal();
         }
@@ -217,7 +221,7 @@ namespace PMICostCalculator
         private void CalculateTotal()
         {
             decimal sum = 0;
-            foreach (var item in CurrentCostCalculateSheet.CostCalculateSheetList)
+            foreach (var item in CurrentCalculateSheet.CostCalculateSheetList)
             {
                 sum += item.ItemCost;
             }
@@ -228,8 +232,9 @@ namespace PMICostCalculator
         /// </summary>
         private bool HasNoCurrentCalcualteSheet()
         {
-            return CurrentCostCalculateSheet == null;
+            return CurrentCalculateSheet == null;
         }
+
         private void btnAddCost_Click(object sender, EventArgs e)
         {
             if (HasNoCurrentCalcualteSheet())
@@ -244,7 +249,7 @@ namespace PMICostCalculator
         private void f_AddCostCalculateItemEvent(object sender, NewCostCalcualteItemEventArgs e)
         {
             //检测项目名称是否和已经存在的重名
-            foreach (var item in CurrentCostCalculateSheet.CostCalculateSheetList)
+            foreach (var item in CurrentCalculateSheet.CostCalculateSheetList)
             {
                 if (item.ItemName==e.CostItem.ItemName)
                 {
@@ -252,7 +257,7 @@ namespace PMICostCalculator
                     return;
                 }
             }
-            CurrentCostCalculateSheet.CostCalculateSheetList.Add(e.CostItem);
+            CurrentCalculateSheet.CostCalculateSheetList.Add(e.CostItem);
             ReLoadDgv();
         }
 
@@ -279,8 +284,8 @@ namespace PMICostCalculator
                 try
                 {
                     XMLDocOp doc = new XMLDocOp();
-                    string fileName = Path.Combine(Environment.CurrentDirectory, Properties.Settings.Default.WorkingDirectory, CurrentCostCalculateSheet.SheetName + ".xml");
-                    doc.Save(fileName, CurrentCostCalculateSheet);
+                    string fileName = Path.Combine(Environment.CurrentDirectory, Properties.Settings.Default.WorkingDirectory, CurrentCalculateSheet.SheetName + ".xml");
+                    doc.Save(fileName, CurrentCalculateSheet);
                     MessageBox.Show("保存成功");
                     SetCurrentCalculateSheetSaved();
                 }

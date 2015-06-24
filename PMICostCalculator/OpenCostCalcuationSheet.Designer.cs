@@ -1,6 +1,6 @@
 ﻿namespace PMICostCalculator
 {
-    partial class OpenCostCalcuate
+    partial class OpenCostCalcuationSheet
     {
         /// <summary>
         /// Required designer variable.
@@ -35,9 +35,9 @@
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(450, 271);
+            this.btnOpen.Location = new System.Drawing.Point(450, 294);
             this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(122, 35);
+            this.btnOpen.Size = new System.Drawing.Size(122, 38);
             this.btnOpen.TabIndex = 1;
             this.btnOpen.Text = "Open";
             this.btnOpen.UseVisualStyleBackColor = true;
@@ -45,9 +45,9 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(13, 271);
+            this.btnDelete.Location = new System.Drawing.Point(13, 294);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(122, 35);
+            this.btnDelete.Size = new System.Drawing.Size(122, 38);
             this.btnDelete.TabIndex = 1;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -59,25 +59,25 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lvFileList.FullRowSelect = true;
-            this.lvFileList.Location = new System.Drawing.Point(13, 13);
+            this.lvFileList.Location = new System.Drawing.Point(13, 14);
             this.lvFileList.MultiSelect = false;
             this.lvFileList.Name = "lvFileList";
-            this.lvFileList.Size = new System.Drawing.Size(559, 252);
+            this.lvFileList.Size = new System.Drawing.Size(559, 273);
             this.lvFileList.TabIndex = 2;
             this.lvFileList.UseCompatibleStateImageBehavior = false;
             this.lvFileList.View = System.Windows.Forms.View.Details;
             this.lvFileList.DoubleClick += new System.EventHandler(this.btnOpen_Click);
             // 
-            // OpenCostCalcuate
+            // OpenCostCalcuationSheet
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 318);
+            this.ClientSize = new System.Drawing.Size(584, 345);
             this.Controls.Add(this.lvFileList);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnOpen);
-            this.Name = "OpenCostCalcuate";
-            this.Text = "OpenCostCalcuate";
+            this.Name = "OpenCostCalcuationSheet";
+            this.Text = "OpenCostCalcuationSheet";
             this.Load += new System.EventHandler(this.OpenCostCalcuate_Load);
             this.ResumeLayout(false);
 

@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace PMICostCalculator
 {
-    public partial class NewCostCalcuate : Form
+    public partial class NewCostCalcuationSheet : Form
     {
-        public NewCostCalcuate()
+        public NewCostCalcuationSheet()
         {
             InitializeComponent();
             FormOperate.SetFormToDialog(this, false);

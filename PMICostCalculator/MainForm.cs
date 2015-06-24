@@ -42,7 +42,7 @@ namespace PMICostCalculator
             {
                 return;
             }
-            NewCostCalcuate f = new NewCostCalcuate();
+            NewCostCalcuationSheet f = new NewCostCalcuationSheet();
             f.New += f_New;
             f.ShowDialog();
         }
@@ -133,7 +133,7 @@ namespace PMICostCalculator
             {
                 return;
             }
-            OpenCostCalcuate f = new OpenCostCalcuate();
+            OpenCostCalcuationSheet f = new OpenCostCalcuationSheet();
             f.OpenDoc += f_OpenDoc;
             f.ShowDialog();
         }
@@ -241,7 +241,7 @@ namespace PMICostCalculator
             {
                 return;
             }
-            AddCostCalculateItem f = new AddCostCalculateItem();
+            AddCostItem f = new AddCostItem();
             f.AddCostCalculateItemEvent += f_AddCostCalculateItemEvent;
             f.ShowDialog();
         }

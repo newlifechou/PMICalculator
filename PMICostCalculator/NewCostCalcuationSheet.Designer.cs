@@ -1,6 +1,6 @@
 ﻿namespace PMICostCalculator
 {
-    partial class NewCostCalcuate
+    partial class NewCostCalcuationSheet
     {
         /// <summary>
         /// Required designer variable.
@@ -36,40 +36,40 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Location = new System.Drawing.Point(12, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 12);
+            this.label1.Size = new System.Drawing.Size(134, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "CaluatorSheetName";
+            this.label1.Text = "CostCalcuationSheetName";
             // 
             // txtCostCalcualteName
             // 
-            this.txtCostCalcualteName.Location = new System.Drawing.Point(125, 9);
+            this.txtCostCalcualteName.Location = new System.Drawing.Point(144, 10);
             this.txtCostCalcualteName.Name = "txtCostCalcualteName";
-            this.txtCostCalcualteName.Size = new System.Drawing.Size(212, 21);
+            this.txtCostCalcualteName.Size = new System.Drawing.Size(193, 20);
             this.txtCostCalcualteName.TabIndex = 1;
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(12, 36);
+            this.btnNew.Location = new System.Drawing.Point(12, 39);
             this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(325, 40);
+            this.btnNew.Size = new System.Drawing.Size(325, 43);
             this.btnNew.TabIndex = 2;
             this.btnNew.Text = "New";
             this.btnNew.UseVisualStyleBackColor = true;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
-            // NewCostCalcuate
+            // NewCostCalcuationSheet
             // 
             this.AcceptButton = this.btnNew;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(349, 86);
+            this.ClientSize = new System.Drawing.Size(349, 93);
             this.Controls.Add(this.btnNew);
             this.Controls.Add(this.txtCostCalcualteName);
             this.Controls.Add(this.label1);
-            this.Name = "NewCostCalcuate";
-            this.Text = "NewCostCalcuate";
+            this.Name = "NewCostCalcuationSheet";
+            this.Text = "NewCostCalcuationSheet";
             this.ResumeLayout(false);
             this.PerformLayout();
 

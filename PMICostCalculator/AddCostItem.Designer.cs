@@ -1,6 +1,6 @@
 ﻿namespace PMICostCalculator
 {
-    partial class AddCostCalculateItem
+    partial class AddCostItem
     {
         /// <summary>
         /// Required designer variable.

@@ -14,6 +14,7 @@ namespace PMICostCalculator
     /// XML文件操作类
     /// TODO:后面考虑转换为继承接口，拓展数据库操作类出来
     /// 考虑使用xml文件的序列化来继续保存和读取
+    /// 后面考虑将读和写的操作规范统一一下
     /// </summary>
     public class XMLDocOp : ICostDataOperate
     {

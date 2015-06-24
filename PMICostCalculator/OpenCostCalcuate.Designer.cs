@@ -66,6 +66,7 @@
             this.lvFileList.TabIndex = 2;
             this.lvFileList.UseCompatibleStateImageBehavior = false;
             this.lvFileList.View = System.Windows.Forms.View.Details;
+            this.lvFileList.DoubleClick += new System.EventHandler(this.btnOpen_Click);
             // 
             // OpenCostCalcuate
             // 

@@ -62,6 +62,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtRemark = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.estimationMRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CalcEveryComponentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
+            this.densityDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.periodicTableOfElementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.graphiteMoldDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
+            this.specificCalculationTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCostCalculateList)).BeginInit();
@@ -140,6 +148,15 @@
             // 
             // toolToolStripMenuItem
             // 
+            this.toolToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.estimationMRToolStripMenuItem,
+            this.CalcEveryComponentsToolStripMenuItem,
+            this.toolStripMenuItem3,
+            this.densityDataToolStripMenuItem,
+            this.periodicTableOfElementsToolStripMenuItem,
+            this.graphiteMoldDataToolStripMenuItem,
+            this.toolStripMenuItem4,
+            this.specificCalculationTableToolStripMenuItem});
             this.toolToolStripMenuItem.Name = "toolToolStripMenuItem";
             this.toolToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.toolToolStripMenuItem.Text = "Tool";
@@ -373,6 +390,52 @@
             this.label3.Text = "Remark";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // estimationMRToolStripMenuItem
+            // 
+            this.estimationMRToolStripMenuItem.Name = "estimationMRToolStripMenuItem";
+            this.estimationMRToolStripMenuItem.Size = new System.Drawing.Size(263, 22);
+            this.estimationMRToolStripMenuItem.Text = "Estimation Of Material Requirement";
+            // 
+            // CalcEveryComponentsToolStripMenuItem
+            // 
+            this.CalcEveryComponentsToolStripMenuItem.Name = "CalcEveryComponentsToolStripMenuItem";
+            this.CalcEveryComponentsToolStripMenuItem.Size = new System.Drawing.Size(263, 22);
+            this.CalcEveryComponentsToolStripMenuItem.Text = "Calculation Of Every Components";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(260, 6);
+            // 
+            // densityDataToolStripMenuItem
+            // 
+            this.densityDataToolStripMenuItem.Name = "densityDataToolStripMenuItem";
+            this.densityDataToolStripMenuItem.Size = new System.Drawing.Size(263, 22);
+            this.densityDataToolStripMenuItem.Text = "Compound Density Data";
+            // 
+            // periodicTableOfElementsToolStripMenuItem
+            // 
+            this.periodicTableOfElementsToolStripMenuItem.Name = "periodicTableOfElementsToolStripMenuItem";
+            this.periodicTableOfElementsToolStripMenuItem.Size = new System.Drawing.Size(263, 22);
+            this.periodicTableOfElementsToolStripMenuItem.Text = "Periodic Table Of Elements";
+            // 
+            // graphiteMoldDataToolStripMenuItem
+            // 
+            this.graphiteMoldDataToolStripMenuItem.Name = "graphiteMoldDataToolStripMenuItem";
+            this.graphiteMoldDataToolStripMenuItem.Size = new System.Drawing.Size(263, 22);
+            this.graphiteMoldDataToolStripMenuItem.Text = "Graphite Mold Data";
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(260, 6);
+            // 
+            // specificCalculationTableToolStripMenuItem
+            // 
+            this.specificCalculationTableToolStripMenuItem.Name = "specificCalculationTableToolStripMenuItem";
+            this.specificCalculationTableToolStripMenuItem.Size = new System.Drawing.Size(263, 22);
+            this.specificCalculationTableToolStripMenuItem.Text = "Specific Calculation Table";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -441,6 +504,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemRemark;
         private System.Windows.Forms.TextBox txtRemark;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ToolStripMenuItem estimationMRToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CalcEveryComponentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem densityDataToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem periodicTableOfElementsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem graphiteMoldDataToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem specificCalculationTableToolStripMenuItem;
     }
 }
 

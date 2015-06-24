@@ -30,8 +30,11 @@ namespace PMICostCalculator
                 {
                     throw new Exception("计算表名不能为空且不能有特殊符号");
                 }
-                //TODO:这里要检测是否和已有保存的文件文件名冲突
-
+                //检测是否和已有保存的文件文件名冲突
+                if (FileOperate.IsFileAlreadyExist(txtCostCalcualteName.Text,Properties.Settings.Default.WorkingDirectory))
+                {
+                    throw new Exception("该文件名已被占用，请更改");
+                }
                 //触发事件
                 if (New!=null)
                 {

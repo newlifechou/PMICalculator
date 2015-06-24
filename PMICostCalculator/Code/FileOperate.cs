@@ -12,6 +12,26 @@ namespace PMICostCalculator
     public static class FileOperate
     {
         /// <summary>
+        /// 判断文件夹里是否存在某个文件
+        /// </summary>
+        /// <param name="filename"></param>
+        /// <param name="dirpath"></param>
+        /// <returns></returns>
+        public static bool IsFileAlreadyExist(string filename,string dirpath)
+        {
+            bool isFileExist = false;
+            DirectoryInfo dir = new DirectoryInfo(dirpath);
+            foreach (var item in dir.GetFiles())
+            {
+                if (item.Name==filename+".xml")
+                {
+                    isFileExist = true;
+                    break;
+                }
+            }
+            return isFileExist;
+        }
+        /// <summary>
         /// 获取选定文件夹下的所有xml文件
         /// </summary>
         /// <param name="dir"></param>

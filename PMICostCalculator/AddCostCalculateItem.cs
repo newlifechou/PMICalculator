@@ -35,16 +35,21 @@ namespace PMICostCalculator
             {
                 return;
             }
+
+            decimal tmpValue;
+            if (!decimal.TryParse(txtItemCost.Text, out tmpValue))
+            {
+                MessageBox.Show("cost must be number");
+                return;
+            }
             if (AddCostCalculateItemEvent != null)
             {
                 NewCostCalcualteItemEventArgs args = new NewCostCalcualteItemEventArgs();
                 //TODO:完成参数的设置
                 args.CostItem.ItemName = txtItemName.Text;
-                args.CostItem.ItemType =(CostCalculateType) Enum.Parse(typeof(CostCalculateType), cboItemType.SelectedItem.ToString(), false);
+                args.CostItem.ItemType = (CostCalculateType)Enum.Parse(typeof(CostCalculateType), cboItemType.SelectedItem.ToString(), false);
                 args.CostItem.ItemStyle = (CostCalculateStyle)Enum.Parse(typeof(CostCalculateStyle), cboItemStyle.SelectedItem.ToString(), false);
-                decimal tmpValue;
-                decimal.TryParse(txtItemCost.Text, out tmpValue);
-                args.CostItem.ItemCost=tmpValue;
+                args.CostItem.ItemCost = tmpValue;
                 args.CostItem.ItemRemark = txtItemRemark.Text;
 
                 AddCostCalculateItemEvent(this, args);

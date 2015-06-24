@@ -261,6 +261,15 @@ namespace PMICostCalculator
 
         private void f_AddCostCalculateItemEvent(object sender, NewCostCalcualteItemEventArgs e)
         {
+            //检测项目名称是否和已经存在的重名
+            foreach (var item in CurrentCostCalculateSheet.CostCalculateSheetList)
+            {
+                if (item.ItemName==e.CostItem.ItemName)
+                {
+                    MessageBox.Show("ItemName must be different from those already exist");
+                    return;
+                }
+            }
             CurrentCostCalculateSheet.CostCalculateSheetList.Add(e.CostItem);
             ReLoadDgv();
         }

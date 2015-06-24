@@ -6,7 +6,7 @@ namespace PMICostCalculator
     /// </summary>
     public interface ICostDataOperate
     {
-        CostCalculateSheet Read(string fileName);
-        void Save(string fileName, CostCalculateSheet sheet);
+        CostCalculationSheet Read(string fileName);
+        void Save(string fileName, CostCalculationSheet sheet);
     }
 }

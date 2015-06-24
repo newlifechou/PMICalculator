@@ -11,22 +11,22 @@ namespace PMICostCalculator
     /// 这个类对应每一个成本表，或者对应每一个保存的XML文件
     /// </summary>
     [Serializable]
-    public class CostCalculateSheet
+    public class CostCalculationSheet
     {
         //成本计算类的名称
         public string SheetName { get; set; }
 
         //所有成本项目
-        public List<CostCalculateItem> CostCalculateSheetList{get;set;}
+        public List<CostItem> CostCalculateSheetList{get;set;}
 
-        public CostCalculateSheet()
+        public CostCalculationSheet()
         {
-            this.CostCalculateSheetList = new List<CostCalculateItem>();
+            this.CostCalculateSheetList = new List<CostItem>();
         }
-        public CostCalculateSheet(string sheetName)
+        public CostCalculationSheet(string sheetName)
         {
             this.SheetName = sheetName;
-            this.CostCalculateSheetList = new List<CostCalculateItem>();
+            this.CostCalculateSheetList = new List<CostItem>();
         }
 
     }

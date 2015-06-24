@@ -24,7 +24,7 @@ namespace PMICostCalculator
             lvFileList.Columns.Add("Updatetime", 200);
             lvFileList.Columns.Add("Details", 400);
         }
-        public event EventHandler<CalcualteSheetEventArgs> OpenDoc;
+        public event EventHandler<CostCalcualtionSheetEventArgs> OpenDoc;
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -52,7 +52,7 @@ namespace PMICostCalculator
             }
             if (OpenDoc != null)
             {
-                CalcualteSheetEventArgs args = new CalcualteSheetEventArgs();
+                CostCalcualtionSheetEventArgs args = new CostCalcualtionSheetEventArgs();
                 args.CalcualteSheetFileName = lvFileList.SelectedItems[0].SubItems[3].Text;
                 OpenDoc(this, args);
             }

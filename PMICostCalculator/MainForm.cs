@@ -15,7 +15,7 @@ namespace PMICostCalculator
         /// <summary>
         /// 当前成本计算表
         /// </summary>
-        private CostCalculateSheet CurrentCalculateSheet;
+        private CostCalculationSheet CurrentCalculateSheet;
         /// <summary>
         /// 当前文件是否保存Flag
         /// </summary>
@@ -46,10 +46,10 @@ namespace PMICostCalculator
             f.New += f_New;
             f.ShowDialog();
         }
-        private void f_New(object sender, CalcualteSheetEventArgs e)
+        private void f_New(object sender, CostCalcualtionSheetEventArgs e)
         {
             //初始化当前计算表
-            CurrentCalculateSheet = new CostCalculateSheet(e.CalcualteSheetFileName);
+            CurrentCalculateSheet = new CostCalculationSheet(e.CalcualteSheetFileName);
             //CreateTestData();
             LoadCurrentCostSheetData();
         }
@@ -138,7 +138,7 @@ namespace PMICostCalculator
             f.ShowDialog();
         }
 
-       private  void f_OpenDoc(object sender, CalcualteSheetEventArgs e)
+       private  void f_OpenDoc(object sender, CostCalcualtionSheetEventArgs e)
         {
             try
             {
@@ -246,7 +246,7 @@ namespace PMICostCalculator
             f.ShowDialog();
         }
 
-        private void f_AddCostCalculateItemEvent(object sender, NewCostCalcualteItemEventArgs e)
+        private void f_AddCostCalculateItemEvent(object sender, NewCostItemEventArgs e)
         {
             //检测项目名称是否和已经存在的重名
             foreach (var item in CurrentCalculateSheet.CostCalculateSheetList)

@@ -17,14 +17,14 @@ namespace PMICostCalculator
             FormOperate.SetFormToDialog(this, false);
             LoadCbo();
         }
-        public event EventHandler<NewCostCalcualteItemEventArgs> AddCostCalculateItemEvent;
+        public event EventHandler<NewCostItemEventArgs> AddCostCalculateItemEvent;
 
         private void LoadCbo()
         {
-            string[] itemTypes = Enum.GetNames(typeof(CostCalculateType));
+            string[] itemTypes = Enum.GetNames(typeof(CostItemType));
             cboItemType.DataSource = null;
             cboItemType.DataSource = itemTypes;
-            string[] itemStyles = Enum.GetNames(typeof(CostCalculateStyle));
+            string[] itemStyles = Enum.GetNames(typeof(CostItemStyle));
             cboItemStyle.DataSource = null;
             cboItemStyle.DataSource = itemStyles;
         }
@@ -44,11 +44,11 @@ namespace PMICostCalculator
             }
             if (AddCostCalculateItemEvent != null)
             {
-                NewCostCalcualteItemEventArgs args = new NewCostCalcualteItemEventArgs();
+                NewCostItemEventArgs args = new NewCostItemEventArgs();
                
                 args.CostItem.ItemName = txtItemName.Text;
-                args.CostItem.ItemType = (CostCalculateType)Enum.Parse(typeof(CostCalculateType), cboItemType.SelectedItem.ToString(), false);
-                args.CostItem.ItemStyle = (CostCalculateStyle)Enum.Parse(typeof(CostCalculateStyle), cboItemStyle.SelectedItem.ToString(), false);
+                args.CostItem.ItemType = (CostItemType)Enum.Parse(typeof(CostItemType), cboItemType.SelectedItem.ToString(), false);
+                args.CostItem.ItemStyle = (CostItemStyle)Enum.Parse(typeof(CostItemStyle), cboItemStyle.SelectedItem.ToString(), false);
                 args.CostItem.ItemCost = tmpValue;
                 args.CostItem.ItemRemark = txtItemRemark.Text;
 

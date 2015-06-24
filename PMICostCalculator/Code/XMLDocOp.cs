@@ -22,10 +22,10 @@ namespace PMICostCalculator
         /// </summary>
         /// <param name="fileName"></param>
         /// <param name="sheet"></param>
-        public void Save(string fileName,CostCalculateSheet sheet)
+        public void Save(string fileName,CostCalculationSheet sheet)
         {
             TextWriter tr = new StreamWriter(fileName);
-            XmlSerializer xs = new XmlSerializer(typeof(CostCalculateSheet));
+            XmlSerializer xs = new XmlSerializer(typeof(CostCalculationSheet));
             xs.Serialize(tr, sheet);
             tr.Close();           
         }
@@ -34,12 +34,12 @@ namespace PMICostCalculator
         /// </summary>
         /// <param name="fileName"></param>
         /// <returns></returns>
-        public CostCalculateSheet Read(string fileName)
+        public CostCalculationSheet Read(string fileName)
         {
-            CostCalculateSheet ccs;
+            CostCalculationSheet ccs;
             FileStream fs = new FileStream(fileName, FileMode.Open);
-            XmlSerializer xs = new XmlSerializer(typeof(CostCalculateSheet));
-            ccs = (CostCalculateSheet)xs.Deserialize(fs);
+            XmlSerializer xs = new XmlSerializer(typeof(CostCalculationSheet));
+            ccs = (CostCalculationSheet)xs.Deserialize(fs);
             fs.Close();
             return ccs;
         }

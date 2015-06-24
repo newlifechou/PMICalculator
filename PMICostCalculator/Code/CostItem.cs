@@ -10,7 +10,7 @@ namespace PMICostCalculator
     /// 成本小项类
     /// </summary>
     [Serializable]
-    public class CostCalculateItem:IComparable<CostCalculateItem>
+    public class CostItem:IComparable<CostItem>
     {
         /// <summary>
         /// 项目名称
@@ -20,12 +20,12 @@ namespace PMICostCalculator
         /// <summary>
         /// 计算项的类别
         /// </summary>
-        public CostCalculateType ItemType { get; set; }
+        public CostItemType ItemType { get; set; }
 
         /// <summary>
         /// 试验还是产品
         /// </summary>
-        public CostCalculateStyle ItemStyle { get; set; }
+        public CostItemStyle ItemStyle { get; set; }
 
         /// <summary>
         /// 项目成本花费
@@ -37,7 +37,7 @@ namespace PMICostCalculator
         /// </summary>
         public string ItemRemark { get; set; }
 
-        public int CompareTo(CostCalculateItem other)
+        public int CompareTo(CostItem other)
         {
             if (this.ItemType.CompareTo(other.ItemType)!=0)
             {

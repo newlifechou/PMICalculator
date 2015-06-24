@@ -5,15 +5,15 @@ using System.Text;
 
 namespace PMICostCalculator
 {
-    public class NewCostCalcualteItemEventArgs:EventArgs
+    public class NewCostItemEventArgs:EventArgs
     {
-        public CostCalculateItem CostItem { get; set; }
+        public CostItem CostItem { get; set; }
         /// <summary>
         /// 初始化引用变量
         /// </summary>
-        public NewCostCalcualteItemEventArgs()
+        public NewCostItemEventArgs()
         {
-            CostItem = new CostCalculateItem();
+            CostItem = new CostItem();
         }
     }
 }

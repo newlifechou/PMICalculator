@@ -66,7 +66,7 @@ namespace PMICostCalculator
             chart.Series.Clear();
             chart.Series.Add(series);
             chart.Name = chartName;
-            chart.BackColor = Color.WhiteSmoke;
+            chart.BackColor = Color.Gray;
             chart.Titles.Add(chartName+" Statistic");
         }
         /// <summary>

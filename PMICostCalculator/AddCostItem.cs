@@ -53,6 +53,8 @@ namespace PMICostCalculator
                 args.CostItem.ItemRemark = txtItemRemark.Text;
 
                 AddCostCalculateItemEvent(this, args);
+
+                txtItemName.Clear();
             }
             if (!chkKeepShow.Checked)
             {

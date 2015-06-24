@@ -55,7 +55,7 @@
             // 
             // chart1
             // 
-            this.chart1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.chart1.BackColor = System.Drawing.Color.Gray;
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";

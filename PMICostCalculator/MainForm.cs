@@ -49,7 +49,7 @@ namespace PMICostCalculator
         private void f_New(object sender, CostCalcualtionSheetEventArgs e)
         {
             //初始化当前计算表
-            CurrentCalculateSheet = new CostCalculationSheet(e.CalcualteSheetFileName);
+            CurrentCalculateSheet = new CostCalculationSheet(e.CalcualteSheetFileName,e.Remark);
             //CreateTestData();
             LoadCurrentCostSheetData();
         }
@@ -81,6 +81,7 @@ namespace PMICostCalculator
         private void LoadCurrentCostSheetData()
         {
             txtCostCaculateName.Text = CurrentCalculateSheet.SheetName;
+            txtRemark.Text = CurrentCalculateSheet.Remark;
             ReLoadDgv();
         }
 
@@ -179,8 +180,8 @@ namespace PMICostCalculator
                 return;
             }
             string ItemName = dgvCostCalculateList.CurrentRow.Cells[0].Value.ToString();
-            int deleteIndex = CurrentCalculateSheet.CostCalculateSheetList.FindIndex(i => i.ItemName == ItemName);
-            CurrentCalculateSheet.CostCalculateSheetList.RemoveAt(deleteIndex);
+            int deleteIndex = CurrentCalculateSheet.CostCalculationSheetList.FindIndex(i => i.ItemName == ItemName);
+            CurrentCalculateSheet.CostCalculationSheetList.RemoveAt(deleteIndex);
             ReLoadDgv();
         }
         /// <summary>
@@ -207,12 +208,12 @@ namespace PMICostCalculator
             dgvCostCalculateList.DataSource = null;
             SetCurrentCalculateSheetNotSaved();
             //如果数据列表=0，跳过加载数据操作
-            if (CurrentCalculateSheet.CostCalculateSheetList.Count==0)
+            if (CurrentCalculateSheet.CostCalculationSheetList.Count==0)
             {
                 return;
             }
-            CurrentCalculateSheet.CostCalculateSheetList.Sort();
-            dgvCostCalculateList.DataSource = CurrentCalculateSheet.CostCalculateSheetList;
+            CurrentCalculateSheet.CostCalculationSheetList.Sort();
+            dgvCostCalculateList.DataSource = CurrentCalculateSheet.CostCalculationSheetList;
             //dgvCostCalculateList.Refresh();
             CalculateTotal();
         }
@@ -221,7 +222,7 @@ namespace PMICostCalculator
         private void CalculateTotal()
         {
             decimal sum = 0;
-            foreach (var item in CurrentCalculateSheet.CostCalculateSheetList)
+            foreach (var item in CurrentCalculateSheet.CostCalculationSheetList)
             {
                 sum += item.ItemCost;
             }
@@ -249,7 +250,7 @@ namespace PMICostCalculator
         private void f_AddCostCalculateItemEvent(object sender, NewCostItemEventArgs e)
         {
             //检测项目名称是否和已经存在的重名
-            foreach (var item in CurrentCalculateSheet.CostCalculateSheetList)
+            foreach (var item in CurrentCalculateSheet.CostCalculationSheetList)
             {
                 if (item.ItemName==e.CostItem.ItemName)
                 {
@@ -257,7 +258,7 @@ namespace PMICostCalculator
                     return;
                 }
             }
-            CurrentCalculateSheet.CostCalculateSheetList.Add(e.CostItem);
+            CurrentCalculateSheet.CostCalculationSheetList.Add(e.CostItem);
             ReLoadDgv();
         }
 

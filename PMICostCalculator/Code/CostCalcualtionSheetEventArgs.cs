@@ -8,5 +8,6 @@ namespace PMICostCalculator
     public class CostCalcualtionSheetEventArgs : EventArgs
     {
         public string CalcualteSheetFileName { get; set; }
+        public string Remark { get; set; }
     }
 }

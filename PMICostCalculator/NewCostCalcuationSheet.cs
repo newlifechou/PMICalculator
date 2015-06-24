@@ -40,6 +40,7 @@ namespace PMICostCalculator
                 {
                     CostCalcualtionSheetEventArgs args = new CostCalcualtionSheetEventArgs();
                     args.CalcualteSheetFileName = txtCostCalcualteName.Text;
+                    args.Remark = txtRemark.Text;
                     New(this,args);
                 }
                 this.Close();

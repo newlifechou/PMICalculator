@@ -8,9 +8,10 @@ namespace PMICostCalculator
 {
     /// <summary>
     /// 成本小项类
+    /// 不要轻易更改这个类的成员名称和数量，否则对应的已经生成的xml文件会存在兼容性问题
     /// </summary>
     [Serializable]
-    public class CostItem:IComparable<CostItem>
+    public class CostItem : IComparable<CostItem>
     {
         /// <summary>
         /// 项目名称
@@ -39,7 +40,7 @@ namespace PMICostCalculator
 
         public int CompareTo(CostItem other)
         {
-            if (this.ItemType.CompareTo(other.ItemType)!=0)
+            if (this.ItemType.CompareTo(other.ItemType) != 0)
             {
                 return this.ItemType.CompareTo(other.ItemType);
             }

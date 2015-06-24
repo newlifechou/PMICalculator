@@ -61,6 +61,8 @@
             this.btnViewBrief = new System.Windows.Forms.Button();
             this.txtTotalCost = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtRemark = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCostCalculateList)).BeginInit();
@@ -211,7 +213,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 40);
+            this.label1.Location = new System.Drawing.Point(15, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 13);
             this.label1.TabIndex = 2;
@@ -220,7 +222,11 @@
             // 
             // txtCostCaculateName
             // 
-            this.txtCostCaculateName.Location = new System.Drawing.Point(136, 36);
+            this.txtCostCaculateName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCostCaculateName.BackColor = System.Drawing.Color.White;
+            this.txtCostCaculateName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCostCaculateName.Location = new System.Drawing.Point(136, 30);
             this.txtCostCaculateName.Name = "txtCostCaculateName";
             this.txtCostCaculateName.ReadOnly = true;
             this.txtCostCaculateName.Size = new System.Drawing.Size(353, 20);
@@ -228,7 +234,7 @@
             // 
             // btnDelCost
             // 
-            this.btnDelCost.Location = new System.Drawing.Point(109, 62);
+            this.btnDelCost.Location = new System.Drawing.Point(111, 111);
             this.btnDelCost.Name = "btnDelCost";
             this.btnDelCost.Size = new System.Drawing.Size(75, 25);
             this.btnDelCost.TabIndex = 10;
@@ -238,7 +244,7 @@
             // 
             // btnAddCost
             // 
-            this.btnAddCost.Location = new System.Drawing.Point(18, 62);
+            this.btnAddCost.Location = new System.Drawing.Point(20, 111);
             this.btnAddCost.Name = "btnAddCost";
             this.btnAddCost.Size = new System.Drawing.Size(75, 25);
             this.btnAddCost.TabIndex = 9;
@@ -261,7 +267,7 @@
             this.ItemStyle,
             this.ItemCost,
             this.ItemRemark});
-            this.dgvCostCalculateList.Location = new System.Drawing.Point(18, 93);
+            this.dgvCostCalculateList.Location = new System.Drawing.Point(18, 142);
             this.dgvCostCalculateList.MultiSelect = false;
             this.dgvCostCalculateList.Name = "dgvCostCalculateList";
             this.dgvCostCalculateList.ReadOnly = true;
@@ -269,7 +275,7 @@
             this.dgvCostCalculateList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvCostCalculateList.RowTemplate.Height = 23;
             this.dgvCostCalculateList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCostCalculateList.Size = new System.Drawing.Size(750, 437);
+            this.dgvCostCalculateList.Size = new System.Drawing.Size(750, 388);
             this.dgvCostCalculateList.TabIndex = 8;
             // 
             // ItemName
@@ -351,6 +357,30 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "Total";
             // 
+            // txtRemark
+            // 
+            this.txtRemark.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRemark.BackColor = System.Drawing.Color.White;
+            this.txtRemark.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRemark.Location = new System.Drawing.Point(136, 58);
+            this.txtRemark.Multiline = true;
+            this.txtRemark.Name = "txtRemark";
+            this.txtRemark.ReadOnly = true;
+            this.txtRemark.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtRemark.Size = new System.Drawing.Size(632, 50);
+            this.txtRemark.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(15, 61);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Remark";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -363,7 +393,9 @@
             this.Controls.Add(this.btnDelCost);
             this.Controls.Add(this.btnAddCost);
             this.Controls.Add(this.dgvCostCalculateList);
+            this.Controls.Add(this.txtRemark);
             this.Controls.Add(this.txtCostCaculateName);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -416,6 +448,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemStyle;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemCost;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemRemark;
+        private System.Windows.Forms.TextBox txtRemark;
+        private System.Windows.Forms.Label label3;
     }
 }
 

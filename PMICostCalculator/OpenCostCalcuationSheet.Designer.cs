@@ -31,11 +31,13 @@
             this.btnOpen = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.lvFileList = new System.Windows.Forms.ListView();
+            this.btnExport = new System.Windows.Forms.Button();
+            this.btnImport = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(450, 294);
+            this.btnOpen.Location = new System.Drawing.Point(448, 294);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(122, 38);
             this.btnOpen.TabIndex = 1;
@@ -45,7 +47,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(13, 294);
+            this.btnDelete.Location = new System.Drawing.Point(303, 295);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(122, 38);
             this.btnDelete.TabIndex = 1;
@@ -68,12 +70,33 @@
             this.lvFileList.View = System.Windows.Forms.View.Details;
             this.lvFileList.DoubleClick += new System.EventHandler(this.btnOpen_Click);
             // 
+            // btnExport
+            // 
+            this.btnExport.Location = new System.Drawing.Point(158, 294);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(122, 38);
+            this.btnExport.TabIndex = 1;
+            this.btnExport.Text = "Export";
+            this.btnExport.UseVisualStyleBackColor = true;
+            // 
+            // btnImport
+            // 
+            this.btnImport.Location = new System.Drawing.Point(13, 293);
+            this.btnImport.Name = "btnImport";
+            this.btnImport.Size = new System.Drawing.Size(122, 38);
+            this.btnImport.TabIndex = 1;
+            this.btnImport.Text = "Import";
+            this.btnImport.UseVisualStyleBackColor = true;
+            // 
             // OpenCostCalcuationSheet
             // 
+            this.AcceptButton = this.btnOpen;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 345);
             this.Controls.Add(this.lvFileList);
+            this.Controls.Add(this.btnImport);
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnOpen);
             this.Name = "OpenCostCalcuationSheet";
@@ -88,5 +111,7 @@
         private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.ListView lvFileList;
+        private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.Button btnImport;
     }
 }

@@ -144,12 +144,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\" />
+    <Folder Include="UserDocs\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="calculator.ico" />
-    <Content Include="UserDocs\SampleDataDoc.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="开发日志.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

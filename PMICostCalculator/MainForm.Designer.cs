@@ -53,14 +53,14 @@
             this.btnDelCost = new System.Windows.Forms.Button();
             this.btnAddCost = new System.Windows.Forms.Button();
             this.dgvCostCalculateList = new System.Windows.Forms.DataGridView();
+            this.btnViewBrief = new System.Windows.Forms.Button();
+            this.txtTotalCost = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemStyle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemRemark = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnViewBrief = new System.Windows.Forms.Button();
-            this.txtTotalCost = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCostCalculateList)).BeginInit();
@@ -97,44 +97,44 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(108, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 6);
             // 
             // settingToolStripMenuItem
             // 
             this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
-            this.settingToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.settingToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.settingToolStripMenuItem.Text = "Setting";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(108, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(149, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -250,6 +250,7 @@
             // 
             this.dgvCostCalculateList.AllowUserToAddRows = false;
             this.dgvCostCalculateList.AllowUserToDeleteRows = false;
+            this.dgvCostCalculateList.AllowUserToResizeRows = false;
             this.dgvCostCalculateList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -264,10 +265,47 @@
             this.dgvCostCalculateList.MultiSelect = false;
             this.dgvCostCalculateList.Name = "dgvCostCalculateList";
             this.dgvCostCalculateList.ReadOnly = true;
+            this.dgvCostCalculateList.RowHeadersWidth = 30;
+            this.dgvCostCalculateList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvCostCalculateList.RowTemplate.Height = 23;
             this.dgvCostCalculateList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCostCalculateList.Size = new System.Drawing.Size(750, 403);
             this.dgvCostCalculateList.TabIndex = 8;
+            // 
+            // btnViewBrief
+            // 
+            this.btnViewBrief.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnViewBrief.Location = new System.Drawing.Point(407, 495);
+            this.btnViewBrief.Name = "btnViewBrief";
+            this.btnViewBrief.Size = new System.Drawing.Size(103, 38);
+            this.btnViewBrief.TabIndex = 11;
+            this.btnViewBrief.Text = "ViewBrief";
+            this.btnViewBrief.UseVisualStyleBackColor = true;
+            this.btnViewBrief.Click += new System.EventHandler(this.btnViewBrief_Click);
+            // 
+            // txtTotalCost
+            // 
+            this.txtTotalCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTotalCost.BackColor = System.Drawing.SystemColors.Control;
+            this.txtTotalCost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTotalCost.Font = new System.Drawing.Font("SimSun", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtTotalCost.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtTotalCost.Location = new System.Drawing.Point(557, 495);
+            this.txtTotalCost.Name = "txtTotalCost";
+            this.txtTotalCost.ReadOnly = true;
+            this.txtTotalCost.Size = new System.Drawing.Size(211, 38);
+            this.txtTotalCost.TabIndex = 12;
+            this.txtTotalCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(516, 508);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 12);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Total";
             // 
             // ItemName
             // 
@@ -312,41 +350,6 @@
             this.ItemRemark.Name = "ItemRemark";
             this.ItemRemark.ReadOnly = true;
             this.ItemRemark.Width = 450;
-            // 
-            // btnViewBrief
-            // 
-            this.btnViewBrief.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnViewBrief.Location = new System.Drawing.Point(407, 495);
-            this.btnViewBrief.Name = "btnViewBrief";
-            this.btnViewBrief.Size = new System.Drawing.Size(103, 38);
-            this.btnViewBrief.TabIndex = 11;
-            this.btnViewBrief.Text = "ViewBrief";
-            this.btnViewBrief.UseVisualStyleBackColor = true;
-            this.btnViewBrief.Click += new System.EventHandler(this.btnViewBrief_Click);
-            // 
-            // txtTotalCost
-            // 
-            this.txtTotalCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalCost.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.txtTotalCost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTotalCost.Font = new System.Drawing.Font("SimSun", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtTotalCost.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtTotalCost.Location = new System.Drawing.Point(557, 495);
-            this.txtTotalCost.Name = "txtTotalCost";
-            this.txtTotalCost.ReadOnly = true;
-            this.txtTotalCost.Size = new System.Drawing.Size(211, 38);
-            this.txtTotalCost.TabIndex = 12;
-            this.txtTotalCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(516, 508);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 12);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Total";
             // 
             // MainForm
             // 
@@ -405,14 +408,14 @@
         private System.Windows.Forms.Button btnDelCost;
         private System.Windows.Forms.Button btnAddCost;
         private System.Windows.Forms.DataGridView dgvCostCalculateList;
+        private System.Windows.Forms.Button btnViewBrief;
+        private System.Windows.Forms.TextBox txtTotalCost;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemType;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemStyle;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemCost;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemRemark;
-        private System.Windows.Forms.Button btnViewBrief;
-        private System.Windows.Forms.TextBox txtTotalCost;
-        private System.Windows.Forms.Label label2;
     }
 }
 

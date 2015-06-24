@@ -93,7 +93,6 @@ namespace PMICostCalculator
             //初始化当前计算表
             CurrentCostCalculateSheet = new CostCalculateSheet(e.CalcualteSheetFileName);
             //CreateTestData();
-
             LoadCurrentCostSheetData();
         }
 
@@ -223,8 +222,12 @@ namespace PMICostCalculator
         /// </summary>
         private void ReLoadDgv()
         {
-            CurrentCostCalculateSheet.CostCalculateSheetList.Sort();
             dgvCostCalculateList.DataSource = null;
+            if (CurrentCostCalculateSheet.CostCalculateSheetList.Count==0)
+            {
+                return;
+            }
+            CurrentCostCalculateSheet.CostCalculateSheetList.Sort();
             dgvCostCalculateList.DataSource = CurrentCostCalculateSheet.CostCalculateSheetList;
             //dgvCostCalculateList.Refresh();
             CalculateTotal();
@@ -310,6 +313,11 @@ namespace PMICostCalculator
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("PMICostCalcualtor\r\nWelcome to use","About",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
 
     }

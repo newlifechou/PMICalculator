@@ -21,7 +21,7 @@ namespace PMICostCalculator
 
         public CostCalculateSheet()
         {
-
+            this.CostCalculateSheetList = new List<CostCalculateItem>();
         }
         public CostCalculateSheet(string sheetName)
         {

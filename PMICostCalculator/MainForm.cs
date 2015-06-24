@@ -62,8 +62,8 @@ namespace PMICostCalculator
             //建立前判断当前的成本计算表是否已经保存
             if (!IsSaved)
             {
-                DialogResult dr = MessageBox.Show("当前成本计算表还没有保存，是否保存？",
-                    "保存", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                DialogResult dr = MessageBox.Show("CurrentCostCalculationSheet is not saved. Save It?",
+                    "Save", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
                 if (dr == DialogResult.Cancel)
                 {
                     return true;
@@ -175,7 +175,7 @@ namespace PMICostCalculator
                 return;
             }
 
-            if (MessageBox.Show("确定要删除选定计算项?", "确定删除", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            if (MessageBox.Show("Are you sure to delete this CostItem?", "Delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
             {
                 return;
             }
@@ -289,7 +289,7 @@ namespace PMICostCalculator
                     XMLDocOp doc = new XMLDocOp();
                     string fileName = Path.Combine(Environment.CurrentDirectory, Properties.Settings.Default.WorkingDirectory, CurrentCalculateSheet.SheetName + ".xml");
                     doc.Save(fileName, CurrentCalculateSheet);
-                    MessageBox.Show("保存成功");
+                    MessageBox.Show("Save Successfully!");
                     SetCurrentCalculateSheetSaved();
                 }
                 catch (Exception ex)

@@ -28,12 +28,12 @@ namespace PMICostCalculator
                 //检验文件名是否合法
                 if (!FileOperate.IsValideFileName(txtCostCalcualteName.Text))
                 {
-                    throw new Exception("计算表名不能为空且不能有特殊符号");
+                    throw new Exception("The Name must be illeage");
                 }
                 //检测是否和已有保存的文件文件名冲突
                 if (FileOperate.IsFileAlreadyExist(txtCostCalcualteName.Text,Properties.Settings.Default.WorkingDirectory))
                 {
-                    throw new Exception("该文件名已被占用，请更改");
+                    throw new Exception("Same name files exsit, change another name");
                 }
                 //触发事件
                 if (New!=null)

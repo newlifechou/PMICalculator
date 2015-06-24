@@ -33,12 +33,12 @@ namespace PMICostCalculator
                 return;
             }
             string filename = lvFileList.SelectedItems[0].SubItems[3].Text;
-            if (MessageBox.Show("Delete this file?", "Delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Want to delete this file?", "Delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 if (File.Exists(filename))
                 {
                     File.Delete(filename);
-                    MessageBox.Show("删除成功");
+                    MessageBox.Show("Delete Successfully");
                     LoadXMLFiles();
                 }
             }

@@ -68,7 +68,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(424, 264);
+            this.chart1.Size = new System.Drawing.Size(520, 264);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
             // 
@@ -85,7 +85,7 @@
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(424, 264);
+            this.chart2.Size = new System.Drawing.Size(520, 264);
             this.chart2.TabIndex = 1;
             this.chart2.Text = "chart1";
             // 
@@ -93,7 +93,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 562);
+            this.ClientSize = new System.Drawing.Size(984, 562);
             this.Controls.Add(this.chart2);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.txtStatisticData);

@@ -30,6 +30,7 @@ namespace PMICostCalculator
 
         private void Statistic_Load(object sender, EventArgs e)
         {
+            this.Text = "Statistic -" + cs.SheetName;
             CalculateData();
             FillBriefTxt();
             ShowChart();
@@ -44,6 +45,11 @@ namespace PMICostCalculator
         }
         private void DrawPieChart(Chart chart,List<ItemCountUnit> itemlist,string chartName)
         {
+            if (itemlist.Count==0)
+            {
+                return;
+            }
+
             Series series = new Series(chartName);
             series.ChartType = SeriesChartType.Pie;
             series.Palette = ChartColorPalette.Fire;

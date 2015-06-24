@@ -67,7 +67,10 @@ namespace PMICostCalculator
         private void LoadXMLFiles()
         {
             string dirpath = Properties.Settings.Default.WorkingDirectory;
-            List<FileInfo> files = FileOperate.GetFiles(dirpath);
+            List<FileInfo> filesOrigin = FileOperate.GetFiles(dirpath);
+            //按照文件的创建时间排序,最新的在最前面
+            List<FileInfo> files = filesOrigin.OrderByDescending(r => r.CreationTime).ToList<FileInfo>() ;
+
             lvFileList.BeginUpdate();
             lvFileList.Items.Clear();
             foreach (var item in files)

@@ -264,7 +264,7 @@ namespace PMICostCalculator
 
         private void btnStatistic_Click(object sender, EventArgs e)
         {
-            if (HasNoCurrentCalcualteSheet())
+            if (HasNoCurrentCalcualteSheet()||CurrentCalculateSheet.CostItemList.Count==0)
             {
                 return;
             }

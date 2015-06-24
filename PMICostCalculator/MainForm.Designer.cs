@@ -53,14 +53,14 @@
             this.btnDelCost = new System.Windows.Forms.Button();
             this.btnAddCost = new System.Windows.Forms.Button();
             this.dgvCostCalculateList = new System.Windows.Forms.DataGridView();
-            this.btnViewBrief = new System.Windows.Forms.Button();
-            this.txtTotalCost = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemStyle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemRemark = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnViewBrief = new System.Windows.Forms.Button();
+            this.txtTotalCost = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCostCalculateList)).BeginInit();
@@ -194,7 +194,7 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 540);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 587);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(784, 22);
             this.statusStrip1.TabIndex = 1;
@@ -211,26 +211,26 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 37);
+            this.label1.Location = new System.Drawing.Point(17, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 12);
+            this.label1.Size = new System.Drawing.Size(100, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "CostCalcualteSheet";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtCostCaculateName
             // 
-            this.txtCostCaculateName.Location = new System.Drawing.Point(136, 33);
+            this.txtCostCaculateName.Location = new System.Drawing.Point(136, 36);
             this.txtCostCaculateName.Name = "txtCostCaculateName";
             this.txtCostCaculateName.ReadOnly = true;
-            this.txtCostCaculateName.Size = new System.Drawing.Size(433, 21);
+            this.txtCostCaculateName.Size = new System.Drawing.Size(353, 20);
             this.txtCostCaculateName.TabIndex = 3;
             // 
             // btnDelCost
             // 
-            this.btnDelCost.Location = new System.Drawing.Point(109, 57);
+            this.btnDelCost.Location = new System.Drawing.Point(109, 62);
             this.btnDelCost.Name = "btnDelCost";
-            this.btnDelCost.Size = new System.Drawing.Size(75, 23);
+            this.btnDelCost.Size = new System.Drawing.Size(75, 25);
             this.btnDelCost.TabIndex = 10;
             this.btnDelCost.Text = "Delete";
             this.btnDelCost.UseVisualStyleBackColor = true;
@@ -238,9 +238,9 @@
             // 
             // btnAddCost
             // 
-            this.btnAddCost.Location = new System.Drawing.Point(18, 57);
+            this.btnAddCost.Location = new System.Drawing.Point(18, 62);
             this.btnAddCost.Name = "btnAddCost";
-            this.btnAddCost.Size = new System.Drawing.Size(75, 23);
+            this.btnAddCost.Size = new System.Drawing.Size(75, 25);
             this.btnAddCost.TabIndex = 9;
             this.btnAddCost.Text = "Add";
             this.btnAddCost.UseVisualStyleBackColor = true;
@@ -261,7 +261,7 @@
             this.ItemStyle,
             this.ItemCost,
             this.ItemRemark});
-            this.dgvCostCalculateList.Location = new System.Drawing.Point(18, 86);
+            this.dgvCostCalculateList.Location = new System.Drawing.Point(18, 93);
             this.dgvCostCalculateList.MultiSelect = false;
             this.dgvCostCalculateList.Name = "dgvCostCalculateList";
             this.dgvCostCalculateList.ReadOnly = true;
@@ -269,43 +269,8 @@
             this.dgvCostCalculateList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvCostCalculateList.RowTemplate.Height = 23;
             this.dgvCostCalculateList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCostCalculateList.Size = new System.Drawing.Size(750, 403);
+            this.dgvCostCalculateList.Size = new System.Drawing.Size(750, 437);
             this.dgvCostCalculateList.TabIndex = 8;
-            // 
-            // btnViewBrief
-            // 
-            this.btnViewBrief.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnViewBrief.Location = new System.Drawing.Point(369, 495);
-            this.btnViewBrief.Name = "btnViewBrief";
-            this.btnViewBrief.Size = new System.Drawing.Size(141, 38);
-            this.btnViewBrief.TabIndex = 11;
-            this.btnViewBrief.Text = "ViewBrief";
-            this.btnViewBrief.UseVisualStyleBackColor = true;
-            this.btnViewBrief.Click += new System.EventHandler(this.btnViewBrief_Click);
-            // 
-            // txtTotalCost
-            // 
-            this.txtTotalCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTotalCost.BackColor = System.Drawing.SystemColors.Control;
-            this.txtTotalCost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTotalCost.Font = new System.Drawing.Font("SimSun", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtTotalCost.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtTotalCost.Location = new System.Drawing.Point(557, 495);
-            this.txtTotalCost.Name = "txtTotalCost";
-            this.txtTotalCost.ReadOnly = true;
-            this.txtTotalCost.Size = new System.Drawing.Size(211, 38);
-            this.txtTotalCost.TabIndex = 12;
-            this.txtTotalCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(516, 508);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 12);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Total";
             // 
             // ItemName
             // 
@@ -351,12 +316,47 @@
             this.ItemRemark.ReadOnly = true;
             this.ItemRemark.Width = 550;
             // 
+            // btnViewBrief
+            // 
+            this.btnViewBrief.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnViewBrief.Location = new System.Drawing.Point(369, 536);
+            this.btnViewBrief.Name = "btnViewBrief";
+            this.btnViewBrief.Size = new System.Drawing.Size(141, 41);
+            this.btnViewBrief.TabIndex = 11;
+            this.btnViewBrief.Text = "ViewBrief";
+            this.btnViewBrief.UseVisualStyleBackColor = true;
+            this.btnViewBrief.Click += new System.EventHandler(this.btnViewBrief_Click);
+            // 
+            // txtTotalCost
+            // 
+            this.txtTotalCost.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTotalCost.BackColor = System.Drawing.Color.White;
+            this.txtTotalCost.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTotalCost.Font = new System.Drawing.Font("SimSun", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtTotalCost.ForeColor = System.Drawing.Color.Red;
+            this.txtTotalCost.Location = new System.Drawing.Point(557, 537);
+            this.txtTotalCost.Name = "txtTotalCost";
+            this.txtTotalCost.ReadOnly = true;
+            this.txtTotalCost.Size = new System.Drawing.Size(211, 38);
+            this.txtTotalCost.TabIndex = 12;
+            this.txtTotalCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(516, 550);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(31, 13);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Total";
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(784, 562);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(784, 609);
             this.Controls.Add(this.txtTotalCost);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnViewBrief);
@@ -369,7 +369,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.MinimumSize = new System.Drawing.Size(600, 400);
+            this.MinimumSize = new System.Drawing.Size(600, 430);
             this.Name = "MainForm";
             this.Text = "PMICostCalculator";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);

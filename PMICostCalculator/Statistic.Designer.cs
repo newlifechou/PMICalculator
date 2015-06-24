@@ -44,13 +44,13 @@
             // txtStatisticData
             // 
             this.txtStatisticData.BackColor = System.Drawing.Color.White;
-            this.txtStatisticData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStatisticData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStatisticData.Location = new System.Drawing.Point(12, 12);
             this.txtStatisticData.Multiline = true;
             this.txtStatisticData.Name = "txtStatisticData";
             this.txtStatisticData.ReadOnly = true;
             this.txtStatisticData.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtStatisticData.Size = new System.Drawing.Size(430, 538);
+            this.txtStatisticData.Size = new System.Drawing.Size(367, 538);
             this.txtStatisticData.TabIndex = 10;
             this.txtStatisticData.TabStop = false;
             // 
@@ -61,7 +61,7 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(452, 12);
+            this.chart1.Location = new System.Drawing.Point(385, 12);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Fire;
             series1.ChartArea = "ChartArea1";
@@ -79,7 +79,7 @@
             this.chart2.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(452, 286);
+            this.chart2.Location = new System.Drawing.Point(385, 286);
             this.chart2.Name = "chart2";
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
@@ -94,7 +94,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 562);
+            this.ClientSize = new System.Drawing.Size(913, 562);
             this.Controls.Add(this.chart2);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.txtStatisticData);

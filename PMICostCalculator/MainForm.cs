@@ -46,7 +46,7 @@ namespace PMICostCalculator
             f.New += f_New;
             f.ShowDialog();
         }
-        private void f_New(object sender, CostCalcualtionSheetEventArgs e)
+        private void f_New(object sender, CostCalculationSheetEventArgs e)
         {
             //初始化当前计算表
             CurrentCalculateSheet = new CostCalculationSheet(e.CalcualteSheetFileName,e.Remark);
@@ -139,7 +139,7 @@ namespace PMICostCalculator
             f.ShowDialog();
         }
 
-       private  void f_OpenDoc(object sender, CostCalcualtionSheetEventArgs e)
+       private  void f_OpenDoc(object sender, CostCalculationSheetEventArgs e)
         {
             try
             {

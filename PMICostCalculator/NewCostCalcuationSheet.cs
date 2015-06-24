@@ -19,7 +19,7 @@ namespace PMICostCalculator
         /// <summary>
         /// 通过这个事件操作主窗体的数据加载
         /// </summary>
-        public event EventHandler<CostCalcualtionSheetEventArgs> New;
+        public event EventHandler<CostCalculationSheetEventArgs> New;
 
         private void btnNew_Click(object sender, EventArgs e)
         {
@@ -38,7 +38,7 @@ namespace PMICostCalculator
                 //触发事件
                 if (New!=null)
                 {
-                    CostCalcualtionSheetEventArgs args = new CostCalcualtionSheetEventArgs();
+                    CostCalculationSheetEventArgs args = new CostCalculationSheetEventArgs();
                     args.CalcualteSheetFileName = txtCostCalcualteName.Text;
                     args.Remark = txtRemark.Text;
                     New(this,args);

@@ -78,7 +78,7 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Code\CostCalcualtionSheetEventArgs.cs" />
+    <Compile Include="Code\CostCalculationSheetEventArgs.cs" />
     <Compile Include="NewCostCalcuationSheet.cs">
       <SubType>Form</SubType>
     </Compile>

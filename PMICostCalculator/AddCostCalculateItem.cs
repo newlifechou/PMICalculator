@@ -30,7 +30,7 @@ namespace PMICostCalculator
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            //TODO:输入数据验证
+           
             if (string.IsNullOrEmpty(txtItemName.Text))
             {
                 return;
@@ -39,13 +39,13 @@ namespace PMICostCalculator
             decimal tmpValue;
             if (!decimal.TryParse(txtItemCost.Text, out tmpValue))
             {
-                MessageBox.Show("cost must be number");
+                MessageBox.Show("ItemCost must be number");
                 return;
             }
             if (AddCostCalculateItemEvent != null)
             {
                 NewCostCalcualteItemEventArgs args = new NewCostCalcualteItemEventArgs();
-                //TODO:完成参数的设置
+               
                 args.CostItem.ItemName = txtItemName.Text;
                 args.CostItem.ItemType = (CostCalculateType)Enum.Parse(typeof(CostCalculateType), cboItemType.SelectedItem.ToString(), false);
                 args.CostItem.ItemStyle = (CostCalculateStyle)Enum.Parse(typeof(CostCalculateStyle), cboItemStyle.SelectedItem.ToString(), false);

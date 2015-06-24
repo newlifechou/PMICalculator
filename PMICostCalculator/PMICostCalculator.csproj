@@ -59,6 +59,7 @@
     <Compile Include="Code\CostCalculateType.cs" />
     <Compile Include="Code\FormOperate.cs" />
     <Compile Include="Code\FileOperate.cs" />
+    <Compile Include="Code\ICostData.cs" />
     <Compile Include="Language\us-en.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

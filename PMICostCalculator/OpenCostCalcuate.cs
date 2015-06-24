@@ -19,26 +19,28 @@ namespace PMICostCalculator
             FormOperate.SetFormToDialog(this, false);
 
             //初始化
-            lvFileList.Columns.Add("FileName",200);
-            lvFileList.Columns.Add("CreateTime",200);
-            lvFileList.Columns.Add("Updatetime",200);
-            lvFileList.Columns.Add("Details",400);
+            lvFileList.Columns.Add("FileName", 200);
+            lvFileList.Columns.Add("CreateTime", 200);
+            lvFileList.Columns.Add("Updatetime", 200);
+            lvFileList.Columns.Add("Details", 400);
         }
         public event EventHandler<CalcualteSheetEventArgs> OpenDoc;
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (lvFileList.SelectedItems.Count==0)
+            if (lvFileList.SelectedItems.Count == 0)
             {
                 return;
             }
             string filename = lvFileList.SelectedItems[0].SubItems[3].Text;
-            //TODO:确认删除判断
-            if (File.Exists(filename))
+            if (MessageBox.Show("Delete this file?", "Delete?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                File.Delete(filename);
-                MessageBox.Show("删除成功");
-                LoadXMLFiles();
+                if (File.Exists(filename))
+                {
+                    File.Delete(filename);
+                    MessageBox.Show("删除成功");
+                    LoadXMLFiles();
+                }
             }
         }
 
@@ -48,7 +50,7 @@ namespace PMICostCalculator
             {
                 return;
             }
-            if (OpenDoc!=null)
+            if (OpenDoc != null)
             {
                 CalcualteSheetEventArgs args = new CalcualteSheetEventArgs();
                 args.CalcualteSheetFileName = lvFileList.SelectedItems[0].SubItems[3].Text;
@@ -72,7 +74,7 @@ namespace PMICostCalculator
             {
                 ListViewItem lvi = new ListViewItem();
                 string filename = item.Name.Substring(0, item.Name.LastIndexOf('.'));
-                lvi.Text =filename;
+                lvi.Text = filename;
                 lvi.SubItems.Add(item.CreationTime.ToString());
                 lvi.SubItems.Add(item.LastWriteTime.ToString());
                 lvi.SubItems.Add(item.FullName);

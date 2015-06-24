@@ -30,28 +30,7 @@ namespace PMICostCalculator
             //初始化
             IsSaved = true;
         }
-        /// <summary>
-        /// 切换界面语言
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void LanguageSwitch(object sender, EventArgs e)
-        {
-            ToolStripMenuItem CurrentItem = sender as ToolStripMenuItem;
-
-            foreach (var item in languageToolStripMenuItem.DropDownItems)
-            {
-                ToolStripMenuItem TmpItem = item as ToolStripMenuItem;
-                if (TmpItem.Name == CurrentItem.Name)
-                {
-                    TmpItem.Checked = true;
-                }
-                else
-                {
-                    TmpItem.Checked = false;
-                }
-            }
-        }
+        
         /// <summary>
         /// 建立新的成本计算表
         /// </summary>
@@ -81,7 +60,6 @@ namespace PMICostCalculator
                 }
                 else if (dr == DialogResult.Yes)
                 {
-                    //TODO:保存计算表代码
                     SaveCurrentCostSheet();
                 }
             }
@@ -162,7 +140,7 @@ namespace PMICostCalculator
             {
                 XMLDocOp doc = new XMLDocOp();
                 string fileName = e.CalcualteSheetFileName;
-                CurrentCostCalculateSheet = doc.ReadFromXMLDoc(fileName);
+                CurrentCostCalculateSheet = doc.Read(fileName);
 
                 LoadCurrentCostSheetData();
                 //设置为已经保存
@@ -191,7 +169,7 @@ namespace PMICostCalculator
             {
                 return;
             }
-            //TODO:这里添加删除确认
+
             if (MessageBox.Show("确定要删除选定计算项?", "确定删除", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
             {
                 return;
@@ -291,16 +269,18 @@ namespace PMICostCalculator
             SaveCurrentCostSheet();
         }
 
+        /// <summary>
+        /// 保存当前的计算表
+        /// </summary>
         private void SaveCurrentCostSheet()
         {
-            //TODO:添加当前计算表保存代码，和Form_Closing共享
             if (!IsSaved)
             {
                 try
                 {
                     XMLDocOp doc = new XMLDocOp();
                     string fileName = Path.Combine(Environment.CurrentDirectory, Properties.Settings.Default.WorkingDirectory, CurrentCostCalculateSheet.SheetName + ".xml");
-                    doc.SaveToXMLDoc(fileName, CurrentCostCalculateSheet);
+                    doc.Save(fileName, CurrentCostCalculateSheet);
                     MessageBox.Show("保存成功");
                     SetCurrentCalculateSheetSaved();
                 }
@@ -320,6 +300,27 @@ namespace PMICostCalculator
         {
             MessageBox.Show("PMICostCalcualtor\r\nWelcome to use","About",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
+        /// <summary>
+        /// 切换界面语言
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void LanguageSwitch(object sender, EventArgs e)
+        {
+            ToolStripMenuItem CurrentItem = sender as ToolStripMenuItem;
 
+            foreach (var item in languageToolStripMenuItem.DropDownItems)
+            {
+                ToolStripMenuItem TmpItem = item as ToolStripMenuItem;
+                if (TmpItem.Name == CurrentItem.Name)
+                {
+                    TmpItem.Checked = true;
+                }
+                else
+                {
+                    TmpItem.Checked = false;
+                }
+            }
+        }
     }
 }

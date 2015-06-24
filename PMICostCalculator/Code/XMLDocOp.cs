@@ -15,14 +15,14 @@ namespace PMICostCalculator
     /// TODO:后面考虑转换为继承接口，拓展数据库操作类出来
     /// 考虑使用xml文件的序列化来继续保存和读取
     /// </summary>
-    public class XMLDocOp
+    public class XMLDocOp : ICostDataOperate
     {
         /// <summary>
         /// 保存成本计算表数据到XML文件
         /// </summary>
         /// <param name="fileName"></param>
         /// <param name="sheet"></param>
-        public void SaveToXMLDoc(string fileName,CostCalculateSheet sheet)
+        public void Save(string fileName,CostCalculateSheet sheet)
         {
             TextWriter tr = new StreamWriter(fileName);
             XmlSerializer xs = new XmlSerializer(typeof(CostCalculateSheet));
@@ -34,7 +34,7 @@ namespace PMICostCalculator
         /// </summary>
         /// <param name="fileName"></param>
         /// <returns></returns>
-        public CostCalculateSheet ReadFromXMLDoc(string fileName)
+        public CostCalculateSheet Read(string fileName)
         {
             CostCalculateSheet ccs;
             FileStream fs = new FileStream(fileName, FileMode.Open);

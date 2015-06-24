@@ -13,8 +13,9 @@ namespace PMICostCalculator
         MaterialsCost,
         PowderProcessCost,
         VHPCost,
-        MachineCost,
+        MachiningCost,
         PackageCost,
-        BondingCost
+        BondingCost,
+        DeliveryCost
     }
 }

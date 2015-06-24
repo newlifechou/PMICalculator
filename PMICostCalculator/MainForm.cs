@@ -180,8 +180,8 @@ namespace PMICostCalculator
                 return;
             }
             string ItemName = dgvCostCalculateList.CurrentRow.Cells[0].Value.ToString();
-            int deleteIndex = CurrentCalculateSheet.CostCalculationSheetList.FindIndex(i => i.ItemName == ItemName);
-            CurrentCalculateSheet.CostCalculationSheetList.RemoveAt(deleteIndex);
+            int deleteIndex = CurrentCalculateSheet.CostItemList.FindIndex(i => i.ItemName == ItemName);
+            CurrentCalculateSheet.CostItemList.RemoveAt(deleteIndex);
             ReLoadDgv();
         }
         /// <summary>
@@ -208,12 +208,12 @@ namespace PMICostCalculator
             dgvCostCalculateList.DataSource = null;
             SetCurrentCalculateSheetNotSaved();
             //如果数据列表=0，跳过加载数据操作
-            if (CurrentCalculateSheet.CostCalculationSheetList.Count==0)
+            if (CurrentCalculateSheet.CostItemList.Count==0)
             {
                 return;
             }
-            CurrentCalculateSheet.CostCalculationSheetList.Sort();
-            dgvCostCalculateList.DataSource = CurrentCalculateSheet.CostCalculationSheetList;
+            CurrentCalculateSheet.CostItemList.Sort();
+            dgvCostCalculateList.DataSource = CurrentCalculateSheet.CostItemList;
             //dgvCostCalculateList.Refresh();
             CalculateTotal();
         }
@@ -222,7 +222,7 @@ namespace PMICostCalculator
         private void CalculateTotal()
         {
             decimal sum = 0;
-            foreach (var item in CurrentCalculateSheet.CostCalculationSheetList)
+            foreach (var item in CurrentCalculateSheet.CostItemList)
             {
                 sum += item.ItemCost;
             }
@@ -250,7 +250,7 @@ namespace PMICostCalculator
         private void f_AddCostCalculateItemEvent(object sender, NewCostItemEventArgs e)
         {
             //检测项目名称是否和已经存在的重名
-            foreach (var item in CurrentCalculateSheet.CostCalculationSheetList)
+            foreach (var item in CurrentCalculateSheet.CostItemList)
             {
                 if (item.ItemName==e.CostItem.ItemName)
                 {
@@ -258,16 +258,18 @@ namespace PMICostCalculator
                     return;
                 }
             }
-            CurrentCalculateSheet.CostCalculationSheetList.Add(e.CostItem);
+            CurrentCalculateSheet.CostItemList.Add(e.CostItem);
             ReLoadDgv();
         }
 
-        private void btnViewBrief_Click(object sender, EventArgs e)
+        private void btnStatistic_Click(object sender, EventArgs e)
         {
             if (HasNoCurrentCalcualteSheet())
             {
                 return;
             }
+            Statistic f = new Statistic(CurrentCalculateSheet);
+            f.ShowDialog();
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)

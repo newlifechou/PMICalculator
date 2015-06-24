@@ -58,7 +58,7 @@
             this.ItemStyle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemRemark = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnViewBrief = new System.Windows.Forms.Button();
+            this.btnStatistic = new System.Windows.Forms.Button();
             this.txtTotalCost = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtRemark = new System.Windows.Forms.TextBox();
@@ -99,44 +99,44 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(108, 6);
             // 
             // settingToolStripMenuItem
             // 
             this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
-            this.settingToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.settingToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.settingToolStripMenuItem.Text = "Setting";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(108, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -322,16 +322,16 @@
             this.ItemRemark.ReadOnly = true;
             this.ItemRemark.Width = 550;
             // 
-            // btnViewBrief
+            // btnStatistic
             // 
-            this.btnViewBrief.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnViewBrief.Location = new System.Drawing.Point(369, 532);
-            this.btnViewBrief.Name = "btnViewBrief";
-            this.btnViewBrief.Size = new System.Drawing.Size(141, 41);
-            this.btnViewBrief.TabIndex = 11;
-            this.btnViewBrief.Text = "ViewBrief";
-            this.btnViewBrief.UseVisualStyleBackColor = true;
-            this.btnViewBrief.Click += new System.EventHandler(this.btnViewBrief_Click);
+            this.btnStatistic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnStatistic.Location = new System.Drawing.Point(369, 532);
+            this.btnStatistic.Name = "btnStatistic";
+            this.btnStatistic.Size = new System.Drawing.Size(141, 41);
+            this.btnStatistic.TabIndex = 11;
+            this.btnStatistic.Text = "Statistic";
+            this.btnStatistic.UseVisualStyleBackColor = true;
+            this.btnStatistic.Click += new System.EventHandler(this.btnStatistic_Click);
             // 
             // txtTotalCost
             // 
@@ -389,7 +389,7 @@
             this.ClientSize = new System.Drawing.Size(784, 609);
             this.Controls.Add(this.txtTotalCost);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnViewBrief);
+            this.Controls.Add(this.btnStatistic);
             this.Controls.Add(this.btnDelCost);
             this.Controls.Add(this.btnAddCost);
             this.Controls.Add(this.dgvCostCalculateList);
@@ -440,7 +440,7 @@
         private System.Windows.Forms.Button btnDelCost;
         private System.Windows.Forms.Button btnAddCost;
         private System.Windows.Forms.DataGridView dgvCostCalculateList;
-        private System.Windows.Forms.Button btnViewBrief;
+        private System.Windows.Forms.Button btnStatistic;
         private System.Windows.Forms.TextBox txtTotalCost;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemName;

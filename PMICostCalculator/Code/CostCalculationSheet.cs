@@ -21,18 +21,18 @@ namespace PMICostCalculator
         public string Remark { get; set; }
 
         //所有成本项目
-        public List<CostItem> CostCalculationSheetList{get;set;}
+        public List<CostItem> CostItemList{get;set;}
 
         public CostCalculationSheet()
         {
-            this.CostCalculationSheetList = new List<CostItem>();
+            this.CostItemList = new List<CostItem>();
         }
 
         public CostCalculationSheet(string sheetName,string remark)
         {
             this.SheetName = sheetName;
             this.Remark = remark;
-            this.CostCalculationSheetList = new List<CostItem>();
+            this.CostItemList = new List<CostItem>();
         }
 
     }

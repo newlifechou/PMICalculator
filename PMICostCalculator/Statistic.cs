@@ -43,7 +43,7 @@ namespace PMICostCalculator
             {
                 return;
             }
-            sb.Append("Total:");
+            sb.Append("Total=");
             sb.AppendLine(total.ToString("N2"));
 
             sb.AppendLine("========================================");

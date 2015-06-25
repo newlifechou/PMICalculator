@@ -55,6 +55,8 @@ namespace PMICostCalculator
                 AddCostCalculateItemEvent(this, args);
 
                 txtItemName.Clear();
+                txtItemCost.Clear();
+                txtItemRemark.Clear();
             }
             if (!chkKeepShow.Checked)
             {
@@ -82,6 +84,11 @@ namespace PMICostCalculator
                     CostVHPProcess fvhp = new CostVHPProcess();
                     fvhp.FillIn += Common_FillIn;
                     fvhp.ShowDialog();
+                    break;
+                case "MachiningCost":
+                    CostMachiningProcess fm = new CostMachiningProcess();
+                    fm.FillIn += Common_FillIn;
+                    fm.ShowDialog();
                     break;
                 default:
                     MessageBox.Show("There is No Specific Calculator For this Category");

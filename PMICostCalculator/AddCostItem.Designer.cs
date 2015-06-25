@@ -40,6 +40,7 @@
             this.chkKeepShow = new System.Windows.Forms.CheckBox();
             this.txtItemRemark = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnCalculator = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAdd
@@ -115,9 +116,12 @@
             // 
             // txtItemCost
             // 
+            this.txtItemCost.BackColor = System.Drawing.Color.Wheat;
+            this.txtItemCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtItemCost.ForeColor = System.Drawing.Color.Blue;
             this.txtItemCost.Location = new System.Drawing.Point(83, 99);
             this.txtItemCost.Name = "txtItemCost";
-            this.txtItemCost.Size = new System.Drawing.Size(171, 20);
+            this.txtItemCost.Size = new System.Drawing.Size(171, 31);
             this.txtItemCost.TabIndex = 2;
             this.txtItemCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -135,26 +139,37 @@
             // 
             // txtItemRemark
             // 
-            this.txtItemRemark.Location = new System.Drawing.Point(83, 130);
+            this.txtItemRemark.Location = new System.Drawing.Point(83, 136);
             this.txtItemRemark.Multiline = true;
             this.txtItemRemark.Name = "txtItemRemark";
-            this.txtItemRemark.Size = new System.Drawing.Size(287, 149);
+            this.txtItemRemark.Size = new System.Drawing.Size(287, 143);
             this.txtItemRemark.TabIndex = 2;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 130);
+            this.label5.Location = new System.Drawing.Point(12, 136);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 13);
             this.label5.TabIndex = 1;
             this.label5.Text = "ItemRemark";
+            // 
+            // btnCalculator
+            // 
+            this.btnCalculator.Location = new System.Drawing.Point(260, 99);
+            this.btnCalculator.Name = "btnCalculator";
+            this.btnCalculator.Size = new System.Drawing.Size(110, 28);
+            this.btnCalculator.TabIndex = 5;
+            this.btnCalculator.Text = "Calculator";
+            this.btnCalculator.UseVisualStyleBackColor = true;
+            this.btnCalculator.Click += new System.EventHandler(this.btnCalculator_Click);
             // 
             // AddCostItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 347);
+            this.Controls.Add(this.btnCalculator);
             this.Controls.Add(this.chkKeepShow);
             this.Controls.Add(this.cboItemType);
             this.Controls.Add(this.cboItemCategory);
@@ -188,5 +203,6 @@
         private System.Windows.Forms.CheckBox chkKeepShow;
         private System.Windows.Forms.TextBox txtItemRemark;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnCalculator;
     }
 }

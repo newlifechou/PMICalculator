@@ -55,6 +55,7 @@
       <DependentUpon>AddCostItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Code\CostCalculationSheet.cs" />
+    <Compile Include="Code\CostCalculatorArgs.cs" />
     <Compile Include="Code\CostItem.cs" />
     <Compile Include="Code\CostItemType.cs" />
     <Compile Include="Code\CostItemCategory.cs" />

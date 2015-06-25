@@ -61,5 +61,32 @@ namespace PMICostCalculator
                 this.Close();
             }
         }
+
+        private void btnCalculator_Click(object sender, EventArgs e)
+        {
+
+            switch (cboItemCategory.SelectedItem.ToString())
+            {
+                //如果CostItemCategory有变化，则这里必须跟着变化
+                case "PowderProcessCost":
+                    CostPowderProcess f = new CostPowderProcess();
+                    f.FillIn += f_FillIn;
+                    f.ShowDialog();
+                    break;
+                default:
+                    MessageBox.Show("There is No Specific Calculator For this Category");
+                    break;
+            }
+        }
+        /// <summary>
+        /// 粉末计算器事件响应
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void f_FillIn(object sender, CostCalculatorArgs e)
+        {
+            txtItemCost.Text = e.CostValue.ToString("N2");
+            txtItemRemark.Text = e.Remark;
+        }
     }
 }

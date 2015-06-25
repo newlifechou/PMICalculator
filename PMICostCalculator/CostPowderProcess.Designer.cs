@@ -37,7 +37,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(182, 12);
+            this.btnOK.Location = new System.Drawing.Point(234, 12);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(90, 47);
             this.btnOK.TabIndex = 0;
@@ -47,17 +47,17 @@
             // 
             // txtUnitCostPowderProcess
             // 
-            this.txtUnitCostPowderProcess.Location = new System.Drawing.Point(89, 12);
+            this.txtUnitCostPowderProcess.Location = new System.Drawing.Point(118, 12);
             this.txtUnitCostPowderProcess.Name = "txtUnitCostPowderProcess";
-            this.txtUnitCostPowderProcess.Size = new System.Drawing.Size(87, 20);
+            this.txtUnitCostPowderProcess.Size = new System.Drawing.Size(110, 20);
             this.txtUnitCostPowderProcess.TabIndex = 1;
             this.txtUnitCostPowderProcess.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtPowderWeight
             // 
-            this.txtPowderWeight.Location = new System.Drawing.Point(89, 39);
+            this.txtPowderWeight.Location = new System.Drawing.Point(118, 39);
             this.txtPowderWeight.Name = "txtPowderWeight";
-            this.txtPowderWeight.Size = new System.Drawing.Size(87, 20);
+            this.txtPowderWeight.Size = new System.Drawing.Size(110, 20);
             this.txtPowderWeight.TabIndex = 2;
             this.txtPowderWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -75,15 +75,15 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 42);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 13);
+            this.label2.Size = new System.Drawing.Size(92, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Power Weight";
+            this.label2.Text = "Power Weight(kg)";
             // 
             // CostPowderProcess
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 76);
+            this.ClientSize = new System.Drawing.Size(336, 76);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPowderWeight);
@@ -91,6 +91,7 @@
             this.Controls.Add(this.btnOK);
             this.Name = "CostPowderProcess";
             this.Text = "CostPowderProcess";
+            this.Load += new System.EventHandler(this.CostPowderProcess_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

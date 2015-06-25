@@ -60,16 +60,18 @@
             this.btnDelCost = new System.Windows.Forms.Button();
             this.btnAddCost = new System.Windows.Forms.Button();
             this.dgvCostCalculateList = new System.Windows.Forms.DataGridView();
-            this.btnStatistic = new System.Windows.Forms.Button();
-            this.txtTotalCost = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtRemark = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemRemark = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnStatistic = new System.Windows.Forms.Button();
+            this.txtTotalCost = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtRemark = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.statisticToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.multipleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCostCalculateList)).BeginInit();
@@ -79,6 +81,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
+            this.statisticToolStripMenuItem,
             this.toolToolStripMenuItem,
             this.languageToolStripMenuItem,
             this.helpToolStripMenuItem});
@@ -244,7 +247,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -334,6 +337,50 @@
             this.dgvCostCalculateList.Size = new System.Drawing.Size(750, 388);
             this.dgvCostCalculateList.TabIndex = 8;
             // 
+            // ItemName
+            // 
+            this.ItemName.DataPropertyName = "ItemName";
+            this.ItemName.HeaderText = "ItemName";
+            this.ItemName.Name = "ItemName";
+            this.ItemName.ReadOnly = true;
+            this.ItemName.Width = 250;
+            // 
+            // ItemCategory
+            // 
+            this.ItemCategory.DataPropertyName = "ItemCategory";
+            this.ItemCategory.HeaderText = "ItemCategory";
+            this.ItemCategory.Name = "ItemCategory";
+            this.ItemCategory.ReadOnly = true;
+            this.ItemCategory.Width = 200;
+            // 
+            // ItemType
+            // 
+            this.ItemType.DataPropertyName = "ItemType";
+            this.ItemType.HeaderText = "ItemType";
+            this.ItemType.Name = "ItemType";
+            this.ItemType.ReadOnly = true;
+            this.ItemType.Width = 150;
+            // 
+            // ItemCost
+            // 
+            this.ItemCost.DataPropertyName = "ItemCost";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle1.Format = "N2";
+            dataGridViewCellStyle1.NullValue = "-";
+            this.ItemCost.DefaultCellStyle = dataGridViewCellStyle1;
+            this.ItemCost.HeaderText = "ItemCost";
+            this.ItemCost.Name = "ItemCost";
+            this.ItemCost.ReadOnly = true;
+            // 
+            // ItemRemark
+            // 
+            this.ItemRemark.DataPropertyName = "ItemRemark";
+            this.ItemRemark.HeaderText = "ItemRemark";
+            this.ItemRemark.Name = "ItemRemark";
+            this.ItemRemark.ReadOnly = true;
+            this.ItemRemark.Width = 550;
+            // 
             // btnStatistic
             // 
             this.btnStatistic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -393,49 +440,19 @@
             this.label3.Text = "Remark";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // ItemName
+            // statisticToolStripMenuItem
             // 
-            this.ItemName.DataPropertyName = "ItemName";
-            this.ItemName.HeaderText = "ItemName";
-            this.ItemName.Name = "ItemName";
-            this.ItemName.ReadOnly = true;
-            this.ItemName.Width = 250;
+            this.statisticToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.multipleToolStripMenuItem});
+            this.statisticToolStripMenuItem.Name = "statisticToolStripMenuItem";
+            this.statisticToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.statisticToolStripMenuItem.Text = "Statistic";
             // 
-            // ItemCategory
+            // multipleToolStripMenuItem
             // 
-            this.ItemCategory.DataPropertyName = "ItemCategory";
-            this.ItemCategory.HeaderText = "ItemCategory";
-            this.ItemCategory.Name = "ItemCategory";
-            this.ItemCategory.ReadOnly = true;
-            this.ItemCategory.Width = 200;
-            // 
-            // ItemType
-            // 
-            this.ItemType.DataPropertyName = "ItemType";
-            this.ItemType.HeaderText = "ItemType";
-            this.ItemType.Name = "ItemType";
-            this.ItemType.ReadOnly = true;
-            this.ItemType.Width = 150;
-            // 
-            // ItemCost
-            // 
-            this.ItemCost.DataPropertyName = "ItemCost";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle1.Format = "N2";
-            dataGridViewCellStyle1.NullValue = "-";
-            this.ItemCost.DefaultCellStyle = dataGridViewCellStyle1;
-            this.ItemCost.HeaderText = "ItemCost";
-            this.ItemCost.Name = "ItemCost";
-            this.ItemCost.ReadOnly = true;
-            // 
-            // ItemRemark
-            // 
-            this.ItemRemark.DataPropertyName = "ItemRemark";
-            this.ItemRemark.HeaderText = "ItemRemark";
-            this.ItemRemark.Name = "ItemRemark";
-            this.ItemRemark.ReadOnly = true;
-            this.ItemRemark.Width = 550;
+            this.multipleToolStripMenuItem.Name = "multipleToolStripMenuItem";
+            this.multipleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.multipleToolStripMenuItem.Text = "Multiple";
             // 
             // MainForm
             // 
@@ -513,6 +530,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemType;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemCost;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemRemark;
+        private System.Windows.Forms.ToolStripMenuItem statisticToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem multipleToolStripMenuItem;
     }
 }
 

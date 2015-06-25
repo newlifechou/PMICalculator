@@ -34,5 +34,41 @@ namespace PMICostCalculator.Properties {
                 this["WorkingDirectory"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("600")]
+        public decimal UnitCostPowderProcess {
+            get {
+                return ((decimal)(this["UnitCostPowderProcess"]));
+            }
+            set {
+                this["UnitCostPowderProcess"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("3000")]
+        public decimal UnitCostVHP {
+            get {
+                return ((decimal)(this["UnitCostVHP"]));
+            }
+            set {
+                this["UnitCostVHP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("500")]
+        public decimal UnitCostMachine {
+            get {
+                return ((decimal)(this["UnitCostMachine"]));
+            }
+            set {
+                this["UnitCostMachine"] = value;
+            }
+        }
     }
 }

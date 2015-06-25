@@ -5,5 +5,14 @@
     <Setting Name="WorkingDirectory" Type="System.String" Scope="User">
       <Value Profile="(Default)">UserDocs</Value>
     </Setting>
+    <Setting Name="UnitCostPowderProcess" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">600</Value>
+    </Setting>
+    <Setting Name="UnitCostVHP" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">3000</Value>
+    </Setting>
+    <Setting Name="UnitCostMachine" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

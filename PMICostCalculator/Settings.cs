@@ -15,6 +15,39 @@ namespace PMICostCalculator
         {
             InitializeComponent();
             FormOperate.SetFormToDialog(this, false);
+            LoadSettings();
+
+        }
+
+        private void LoadSettings()
+        {
+            try
+            {
+                txtUnitCostPowderProcess.Text = Properties.Settings.Default.UnitCostPowderProcess.ToString("N2");
+                txtUnitCostVHP.Text = Properties.Settings.Default.UnitCostVHP.ToString("N2");
+                txtUnitCostMachining.Text = Properties.Settings.Default.UnitCostMachine.ToString("N2");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            decimal UnitCostPowderProcess, UnitCostVHP, UnitCostMachining;
+            UnitCostMachining = UnitCostPowderProcess = UnitCostVHP = 0;
+            if (decimal.TryParse(txtUnitCostPowderProcess.Text,out UnitCostPowderProcess)&&
+                decimal.TryParse(txtUnitCostVHP.Text,out UnitCostVHP)&&
+                decimal.TryParse(txtUnitCostMachining.Text,out UnitCostMachining))
+            {
+                MessageBox.Show("All The Setting Values must be numbers");
+                return;
+            }
+            Properties.Settings.Default.UnitCostPowderProcess = UnitCostPowderProcess;
+            Properties.Settings.Default.UnitCostVHP = UnitCostVHP;
+            Properties.Settings.Default.UnitCostMachine = UnitCostMachining;
+            Properties.Settings.Default.Save();
         }
     }
 }

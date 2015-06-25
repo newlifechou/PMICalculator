@@ -62,6 +62,12 @@
     <Compile Include="Code\FileOperate.cs" />
     <Compile Include="Code\ICostData.cs" />
     <Compile Include="Code\ItemCountUnit.cs" />
+    <Compile Include="CostPowderProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostPowderProcess.Designer.cs">
+      <DependentUpon>CostPowderProcess.cs</DependentUpon>
+    </Compile>
     <Compile Include="Language\us-en.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -109,6 +115,9 @@
     </Compile>
     <EmbeddedResource Include="AddCostItem.resx">
       <DependentUpon>AddCostItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostPowderProcess.resx">
+      <DependentUpon>CostPowderProcess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Language\us-en.resx">
       <Generator>ResXFileCodeGenerator</Generator>

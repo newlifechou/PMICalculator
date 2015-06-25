@@ -97,6 +97,24 @@
     <Compile Include="CalculatorWeightingDensityByWt.Designer.cs">
       <DependentUpon>CalculatorWeightingDensityByWt.cs</DependentUpon>
     </Compile>
+    <Compile Include="MoldInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoldInventory.Designer.cs">
+      <DependentUpon>MoldInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElementInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElementInventory.Designer.cs">
+      <DependentUpon>ElementInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DensityInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DensityInventory.Designer.cs">
+      <DependentUpon>DensityInventory.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCommonOperate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CalculatorRectangleTargetDensity.cs">
@@ -138,6 +156,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CalculatorWeightingDensityByWt.resx">
       <DependentUpon>CalculatorWeightingDensityByWt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoldInventory.resx">
+      <DependentUpon>MoldInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElementInventory.resx">
+      <DependentUpon>ElementInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DensityInventory.resx">
+      <DependentUpon>DensityInventory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

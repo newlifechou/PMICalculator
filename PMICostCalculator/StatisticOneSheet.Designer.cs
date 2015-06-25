@@ -1,6 +1,6 @@
 ﻿namespace PMICostCalculator
 {
-    partial class Statistic
+    partial class StatisticOneSheet
     {
         /// <summary>
         /// Required designer variable.

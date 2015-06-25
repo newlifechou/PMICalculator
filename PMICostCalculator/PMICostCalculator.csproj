@@ -138,11 +138,17 @@
     <Compile Include="Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Statistic.cs">
+    <Compile Include="StatisticOneSheet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Statistic.Designer.cs">
-      <DependentUpon>Statistic.cs</DependentUpon>
+    <Compile Include="StatisticOneSheet.Designer.cs">
+      <DependentUpon>StatisticOneSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticManySheets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticManySheets.Designer.cs">
+      <DependentUpon>StatisticManySheets.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AddCostItem.resx">
       <DependentUpon>AddCostItem.cs</DependentUpon>
@@ -194,8 +200,11 @@
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Statistic.resx">
-      <DependentUpon>Statistic.cs</DependentUpon>
+    <EmbeddedResource Include="StatisticOneSheet.resx">
+      <DependentUpon>StatisticOneSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticManySheets.resx">
+      <DependentUpon>StatisticManySheets.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="CalculationExcels\已知CIGS,Sb,NaS的质量配比.xlsx">

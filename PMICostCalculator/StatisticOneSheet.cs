@@ -10,14 +10,14 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace PMICostCalculator
 {
-    public partial class Statistic : Form
+    public partial class StatisticOneSheet : Form
     {
         private CostCalculationSheet cs;
         private List<ItemCountUnit> ItemCategorysCount;
         private List<ItemCountUnit> ItemTypesCount;
         private decimal Total;
 
-        public Statistic(CostCalculationSheet cs)
+        public StatisticOneSheet(CostCalculationSheet cs)
         {
             InitializeComponent();
             FormOperate.SetFormToDialog(this, false);

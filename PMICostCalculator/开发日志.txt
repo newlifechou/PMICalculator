@@ -74,3 +74,15 @@
 	2016-6-25
 	今天将xml数据格式命名更加的规范了一下
 	以后考虑做一个能够同时处理多个文件，然后对这个多个文件内的数据进行统计处理功能
+
+	思路：
+	将所有的文件读入到datagridview中
+	是否纳入统计Check项目+是否发货Check项+文件名+创建日期+最后更新日期
+	将【是否纳入统计Check项目】选中的行读入List<SheetItem>
+	SheetItem结构
+	CostCalculationSheet+是否发货Check项
+	然后分别计算每个Sheet的总成本+每个Sheet的Product成本+每个Sheet的Experiment成本
+	计算所有Sheet的总成本
+	计算所有【发货Check项】的总成本
+	计算所有【未发货Check项】的总成本
+

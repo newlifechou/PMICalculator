@@ -227,7 +227,7 @@ namespace PMICostCalculator
             {
                 return;
             }
-            Statistic f = new Statistic(CurrentCalculateSheet);
+            StatisticOneSheet f = new StatisticOneSheet(CurrentCalculateSheet);
             f.ShowDialog();
         }
 

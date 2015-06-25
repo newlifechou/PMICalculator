@@ -41,13 +41,17 @@ namespace PMICostCalculator
                 decimal.TryParse(txtUnitCostVHP.Text,out UnitCostVHP)&&
                 decimal.TryParse(txtUnitCostMachining.Text,out UnitCostMachining))
             {
-                MessageBox.Show("All The Setting Values must be numbers");
-                return;
+                Properties.Settings.Default.UnitCostPowderProcess = UnitCostPowderProcess;
+                Properties.Settings.Default.UnitCostVHP = UnitCostVHP;
+                Properties.Settings.Default.UnitCostMachine = UnitCostMachining;
+                Properties.Settings.Default.Save();
+                this.Close();
             }
-            Properties.Settings.Default.UnitCostPowderProcess = UnitCostPowderProcess;
-            Properties.Settings.Default.UnitCostVHP = UnitCostVHP;
-            Properties.Settings.Default.UnitCostMachine = UnitCostMachining;
-            Properties.Settings.Default.Save();
+            else
+            {
+                MessageBox.Show("All The Setting Values must be numbers");
+            }
+
         }
     }
 }

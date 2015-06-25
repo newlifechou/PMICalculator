@@ -63,11 +63,29 @@
     <Compile Include="Code\FileOperate.cs" />
     <Compile Include="Code\ICostData.cs" />
     <Compile Include="Code\ItemCountUnit.cs" />
+    <Compile Include="CostBondingProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostBondingProcess.Designer.cs">
+      <DependentUpon>CostBondingProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostDeliveryProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostDeliveryProcess.Designer.cs">
+      <DependentUpon>CostDeliveryProcess.cs</DependentUpon>
+    </Compile>
     <Compile Include="CostMachiningProcess.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CostMachiningProcess.Designer.cs">
       <DependentUpon>CostMachiningProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostPackageProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostPackageProcess.Designer.cs">
+      <DependentUpon>CostPackageProcess.cs</DependentUpon>
     </Compile>
     <Compile Include="CostPowderProcess.cs">
       <SubType>Form</SubType>
@@ -129,8 +147,17 @@
     <EmbeddedResource Include="AddCostItem.resx">
       <DependentUpon>AddCostItem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CostBondingProcess.resx">
+      <DependentUpon>CostBondingProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostDeliveryProcess.resx">
+      <DependentUpon>CostDeliveryProcess.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CostMachiningProcess.resx">
       <DependentUpon>CostMachiningProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostPackageProcess.resx">
+      <DependentUpon>CostPackageProcess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CostPowderProcess.resx">
       <DependentUpon>CostPowderProcess.cs</DependentUpon>

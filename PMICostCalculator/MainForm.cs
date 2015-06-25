@@ -295,5 +295,11 @@ namespace PMICostCalculator
             Settings f = new Settings();
             f.ShowDialog();
         }
+
+        private void periodSheetsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StatisticSheetsSelect sss = new StatisticSheetsSelect();
+            sss.ShowDialog();
+        }
     }
 }

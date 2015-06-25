@@ -36,7 +36,7 @@
             // 
             // btnOpen
             // 
-            this.btnOpen.Location = new System.Drawing.Point(448, 294);
+            this.btnOpen.Location = new System.Drawing.Point(448, 413);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(122, 38);
             this.btnOpen.TabIndex = 1;
@@ -46,7 +46,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(303, 295);
+            this.btnDelete.Location = new System.Drawing.Point(303, 414);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(122, 38);
             this.btnDelete.TabIndex = 1;
@@ -63,7 +63,7 @@
             this.lvFileList.Location = new System.Drawing.Point(13, 14);
             this.lvFileList.MultiSelect = false;
             this.lvFileList.Name = "lvFileList";
-            this.lvFileList.Size = new System.Drawing.Size(559, 273);
+            this.lvFileList.Size = new System.Drawing.Size(559, 391);
             this.lvFileList.TabIndex = 2;
             this.lvFileList.UseCompatibleStateImageBehavior = false;
             this.lvFileList.View = System.Windows.Forms.View.Details;
@@ -71,7 +71,7 @@
             // 
             // btnOpenWorkDirectory
             // 
-            this.btnOpenWorkDirectory.Location = new System.Drawing.Point(13, 293);
+            this.btnOpenWorkDirectory.Location = new System.Drawing.Point(13, 412);
             this.btnOpenWorkDirectory.Name = "btnOpenWorkDirectory";
             this.btnOpenWorkDirectory.Size = new System.Drawing.Size(159, 38);
             this.btnOpenWorkDirectory.TabIndex = 1;
@@ -79,17 +79,17 @@
             this.btnOpenWorkDirectory.UseVisualStyleBackColor = true;
             this.btnOpenWorkDirectory.Click += new System.EventHandler(this.btnOpenWorkDirectory_Click);
             // 
-            // OpenCostCalcuationSheet
+            // OpenSheet
             // 
             this.AcceptButton = this.btnOpen;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 345);
+            this.ClientSize = new System.Drawing.Size(584, 462);
             this.Controls.Add(this.lvFileList);
             this.Controls.Add(this.btnOpenWorkDirectory);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnOpen);
-            this.Name = "OpenCostCalcuationSheet";
+            this.Name = "OpenSheet";
             this.Text = "OpenCostCalcuationSheet";
             this.Load += new System.EventHandler(this.OpenCostCalcuate_Load);
             this.ResumeLayout(false);

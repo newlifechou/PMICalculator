@@ -61,7 +61,7 @@
             this.dgvCostCalculateList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvCostCalculateList.RowTemplate.Height = 23;
             this.dgvCostCalculateList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCostCalculateList.Size = new System.Drawing.Size(715, 402);
+            this.dgvCostCalculateList.Size = new System.Drawing.Size(560, 395);
             this.dgvCostCalculateList.TabIndex = 9;
             // 
             // Choosed
@@ -96,18 +96,18 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(546, 420);
+            this.button1.Location = new System.Drawing.Point(391, 413);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(181, 42);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Statistic";
+            this.button1.Text = "Statistic Results";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // StatisticSheetsSelect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(739, 469);
+            this.ClientSize = new System.Drawing.Size(584, 462);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvCostCalculateList);
             this.Name = "StatisticSheetsSelect";

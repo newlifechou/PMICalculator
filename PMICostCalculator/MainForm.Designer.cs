@@ -70,6 +70,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtRemark = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.statisticToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.periodSheetsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCostCalculateList)).BeginInit();
@@ -79,6 +81,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
+            this.statisticToolStripMenuItem,
             this.toolToolStripMenuItem,
             this.languageToolStripMenuItem,
             this.helpToolStripMenuItem});
@@ -435,6 +438,21 @@
             this.label3.Text = "Remark";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // statisticToolStripMenuItem
+            // 
+            this.statisticToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.periodSheetsToolStripMenuItem});
+            this.statisticToolStripMenuItem.Name = "statisticToolStripMenuItem";
+            this.statisticToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.statisticToolStripMenuItem.Text = "&Statistic";
+            // 
+            // periodSheetsToolStripMenuItem
+            // 
+            this.periodSheetsToolStripMenuItem.Name = "periodSheetsToolStripMenuItem";
+            this.periodSheetsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.periodSheetsToolStripMenuItem.Text = "Period Sheets";
+            this.periodSheetsToolStripMenuItem.Click += new System.EventHandler(this.periodSheetsToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -511,6 +529,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemType;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemCost;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemRemark;
+        private System.Windows.Forms.ToolStripMenuItem statisticToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem periodSheetsToolStripMenuItem;
     }
 }
 

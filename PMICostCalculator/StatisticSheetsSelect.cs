@@ -14,6 +14,7 @@ namespace PMICostCalculator
         public StatisticSheetsSelect()
         {
             InitializeComponent();
+            FormOperate.SetFormToDialog(this, false);
         }
     }
 }

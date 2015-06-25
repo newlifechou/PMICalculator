@@ -217,6 +217,8 @@ namespace PMICostCalculator
                     return;
                 }
             }
+
+
             CurrentCalculateSheet.CostItemList.Add(e.CostItem);
             ReLoadDgv();
         }

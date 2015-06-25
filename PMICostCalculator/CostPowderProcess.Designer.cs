@@ -28,37 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.txtUnitCostPowderProcess = new System.Windows.Forms.TextBox();
+            this.txtPowderWeight = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnOK
             // 
-            this.button1.Location = new System.Drawing.Point(182, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 47);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "OK";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnOK.Location = new System.Drawing.Point(182, 12);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(90, 47);
+            this.btnOK.TabIndex = 0;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
-            // textBox1
+            // txtUnitCostPowderProcess
             // 
-            this.textBox1.Location = new System.Drawing.Point(89, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(87, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtUnitCostPowderProcess.Location = new System.Drawing.Point(89, 12);
+            this.txtUnitCostPowderProcess.Name = "txtUnitCostPowderProcess";
+            this.txtUnitCostPowderProcess.Size = new System.Drawing.Size(87, 20);
+            this.txtUnitCostPowderProcess.TabIndex = 1;
+            this.txtUnitCostPowderProcess.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox2
+            // txtPowderWeight
             // 
-            this.textBox2.Location = new System.Drawing.Point(89, 39);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(87, 20);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtPowderWeight.Location = new System.Drawing.Point(89, 39);
+            this.txtPowderWeight.Name = "txtPowderWeight";
+            this.txtPowderWeight.Size = new System.Drawing.Size(87, 20);
+            this.txtPowderWeight.TabIndex = 2;
+            this.txtPowderWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label1
             // 
@@ -74,9 +75,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 42);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 13);
+            this.label2.Size = new System.Drawing.Size(74, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "PowerWeight";
+            this.label2.Text = "Power Weight";
             // 
             // CostPowderProcess
             // 
@@ -85,9 +86,9 @@
             this.ClientSize = new System.Drawing.Size(284, 76);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtPowderWeight);
+            this.Controls.Add(this.txtUnitCostPowderProcess);
+            this.Controls.Add(this.btnOK);
             this.Name = "CostPowderProcess";
             this.Text = "CostPowderProcess";
             this.ResumeLayout(false);
@@ -97,9 +98,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.TextBox txtUnitCostPowderProcess;
+        private System.Windows.Forms.TextBox txtPowderWeight;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

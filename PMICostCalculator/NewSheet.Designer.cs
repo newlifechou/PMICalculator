@@ -49,7 +49,7 @@
             this.txtCostCalcualteName.Location = new System.Drawing.Point(144, 10);
             this.txtCostCalcualteName.Name = "txtCostCalcualteName";
             this.txtCostCalcualteName.Size = new System.Drawing.Size(193, 20);
-            this.txtCostCalcualteName.TabIndex = 1;
+            this.txtCostCalcualteName.TabIndex = 0;
             // 
             // btnNew
             // 
@@ -79,7 +79,7 @@
             this.txtRemark.Size = new System.Drawing.Size(325, 48);
             this.txtRemark.TabIndex = 1;
             // 
-            // NewCostCalcuationSheet
+            // NewSheet
             // 
             this.AcceptButton = this.btnNew;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -90,7 +90,7 @@
             this.Controls.Add(this.txtCostCalcualteName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "NewCostCalcuationSheet";
+            this.Name = "NewSheet";
             this.Text = "NewCostCalcuationSheet";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -289,7 +289,7 @@ namespace PMICostCalculator
                     XMLDocOp doc = new XMLDocOp();
                     string fileName = Path.Combine(Environment.CurrentDirectory, Properties.Settings.Default.WorkingDirectory, CurrentCalculateSheet.SheetName + ".xml");
                     doc.Save(fileName, CurrentCalculateSheet);
-                    MessageBox.Show("Save Successfully!");
+                    MessageBox.Show("Save Successfully!","Information",MessageBoxButtons.OK,MessageBoxIcon.Information);
                     SetCurrentCalculateSheetSaved();
                 }
                 catch (Exception ex)

@@ -14,5 +14,14 @@
     <Setting Name="UnitCostMachine" Type="System.Decimal" Scope="User">
       <Value Profile="(Default)">500</Value>
     </Setting>
+    <Setting Name="UnitCostBonding" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="UnitCostDelivery" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="UnitCostPackage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

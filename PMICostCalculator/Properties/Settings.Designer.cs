@@ -70,5 +70,41 @@ namespace PMICostCalculator.Properties {
                 this["UnitCostMachine"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1000")]
+        public decimal UnitCostBonding {
+            get {
+                return ((decimal)(this["UnitCostBonding"]));
+            }
+            set {
+                this["UnitCostBonding"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("500")]
+        public decimal UnitCostDelivery {
+            get {
+                return ((decimal)(this["UnitCostDelivery"]));
+            }
+            set {
+                this["UnitCostDelivery"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("200")]
+        public string UnitCostPackage {
+            get {
+                return ((string)(this["UnitCostPackage"]));
+            }
+            set {
+                this["UnitCostPackage"] = value;
+            }
+        }
     }
 }

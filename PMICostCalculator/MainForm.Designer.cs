@@ -290,7 +290,7 @@
             // 
             // btnDelCost
             // 
-            this.btnDelCost.Location = new System.Drawing.Point(111, 99);
+            this.btnDelCost.Location = new System.Drawing.Point(111, 83);
             this.btnDelCost.Name = "btnDelCost";
             this.btnDelCost.Size = new System.Drawing.Size(75, 25);
             this.btnDelCost.TabIndex = 10;
@@ -300,7 +300,7 @@
             // 
             // btnAddCost
             // 
-            this.btnAddCost.Location = new System.Drawing.Point(20, 99);
+            this.btnAddCost.Location = new System.Drawing.Point(20, 83);
             this.btnAddCost.Name = "btnAddCost";
             this.btnAddCost.Size = new System.Drawing.Size(75, 25);
             this.btnAddCost.TabIndex = 9;
@@ -323,7 +323,7 @@
             this.ItemType,
             this.ItemCost,
             this.ItemRemark});
-            this.dgvCostCalculateList.Location = new System.Drawing.Point(18, 129);
+            this.dgvCostCalculateList.Location = new System.Drawing.Point(18, 113);
             this.dgvCostCalculateList.MultiSelect = false;
             this.dgvCostCalculateList.Name = "dgvCostCalculateList";
             this.dgvCostCalculateList.ReadOnly = true;
@@ -331,7 +331,7 @@
             this.dgvCostCalculateList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvCostCalculateList.RowTemplate.Height = 23;
             this.dgvCostCalculateList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCostCalculateList.Size = new System.Drawing.Size(750, 388);
+            this.dgvCostCalculateList.Size = new System.Drawing.Size(750, 401);
             this.dgvCostCalculateList.TabIndex = 8;
             // 
             // ItemName
@@ -420,11 +420,9 @@
             this.txtRemark.BackColor = System.Drawing.Color.White;
             this.txtRemark.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRemark.Location = new System.Drawing.Point(136, 58);
-            this.txtRemark.Multiline = true;
             this.txtRemark.Name = "txtRemark";
             this.txtRemark.ReadOnly = true;
-            this.txtRemark.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtRemark.Size = new System.Drawing.Size(632, 37);
+            this.txtRemark.Size = new System.Drawing.Size(632, 20);
             this.txtRemark.TabIndex = 3;
             // 
             // label3

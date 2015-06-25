@@ -69,6 +69,12 @@
     <Compile Include="CostPowderProcess.Designer.cs">
       <DependentUpon>CostPowderProcess.cs</DependentUpon>
     </Compile>
+    <Compile Include="CostVHPProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostVHPProcess.Designer.cs">
+      <DependentUpon>CostVHPProcess.cs</DependentUpon>
+    </Compile>
     <Compile Include="Language\us-en.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CostPowderProcess.resx">
       <DependentUpon>CostPowderProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostVHPProcess.resx">
+      <DependentUpon>CostVHPProcess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Language\us-en.resx">
       <Generator>ResXFileCodeGenerator</Generator>

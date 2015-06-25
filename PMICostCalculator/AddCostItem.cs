@@ -30,7 +30,7 @@ namespace PMICostCalculator
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
-           
+
             if (string.IsNullOrEmpty(txtItemName.Text))
             {
                 return;
@@ -45,7 +45,7 @@ namespace PMICostCalculator
             if (AddCostCalculateItemEvent != null)
             {
                 NewCostItemEventArgs args = new NewCostItemEventArgs();
-               
+
                 args.CostItem.ItemName = txtItemName.Text;
                 args.CostItem.ItemCategory = (CostItemCategory)Enum.Parse(typeof(CostItemCategory), cboItemCategory.SelectedItem.ToString(), false);
                 args.CostItem.ItemType = (CostItemType)Enum.Parse(typeof(CostItemType), cboItemType.SelectedItem.ToString(), false);
@@ -74,14 +74,30 @@ namespace PMICostCalculator
             {
                 //如果CostItemCategory有变化，则这里必须跟着变化
                 case "PowderProcessCost":
-                    CostPowderProcess f = new CostPowderProcess();
-                    f.FillIn += f_FillIn;
-                    f.ShowDialog();
+                    CostPowderProcess fpowder = new CostPowderProcess();
+                    fpowder.FillIn += f_FillIn;
+                    fpowder.ShowDialog();
+                    break;
+                case "VHPCost":
+                    CostVHPProcess fvhp = new CostVHPProcess();
+                    fvhp.FillIn += fvhp_FillIn;
+                    fvhp.ShowDialog();
                     break;
                 default:
                     MessageBox.Show("There is No Specific Calculator For this Category");
                     break;
             }
+        }
+        /// <summary>
+        /// VHP成本计算器响应事件
+        /// 考虑和下面的进行合并
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void fvhp_FillIn(object sender, CostCalculatorArgs e)
+        {
+            txtItemCost.Text = e.CostValue.ToString("N2");
+            txtItemRemark.Text = e.Remark;
         }
         /// <summary>
         /// 粉末计算器事件响应

@@ -59,6 +59,7 @@
             this.txtPowderWeight.Name = "txtPowderWeight";
             this.txtPowderWeight.Size = new System.Drawing.Size(110, 20);
             this.txtPowderWeight.TabIndex = 2;
+            this.txtPowderWeight.Text = "0";
             this.txtPowderWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label1

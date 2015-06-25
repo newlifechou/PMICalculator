@@ -32,12 +32,10 @@ namespace PMICostCalculator
                     CostCalculatorArgs args = new CostCalculatorArgs();
                     args.CostValue = unitPrice * (decimal)deviceTime;
                     StringBuilder sb = new StringBuilder();
-                    sb.Append("UnitCost:");
-                    sb.Append(unitPrice.ToString("N2"));
-                    sb.AppendLine("RMB/Device/Time");
-                    sb.Append("Device*Time");
+                    sb.Append("UnitCost(RMB/Device/Time):");
+                    sb.AppendLine(unitPrice.ToString("N2"));
+                    sb.Append("Device*Time:");
                     sb.Append(deviceTime.ToString());
-                    sb.Append("Device*Time");
                     args.Remark = sb.ToString();
                     FillIn(this, args);
                     this.Close();

@@ -32,12 +32,10 @@ namespace PMICostCalculator
                     CostCalculatorArgs args = new CostCalculatorArgs();
                     args.CostValue = unitPrice * (decimal)powderWeight;
                     StringBuilder sb = new StringBuilder();
-                    sb.Append("UnitCost:");
-                    sb.Append(unitPrice.ToString("N2"));
-                    sb.AppendLine("RMB/kg");
-                    sb.Append("PowderWeight");
+                    sb.Append("UnitCost(RMB/kg):");
+                    sb.AppendLine(unitPrice.ToString("N2"));
+                    sb.Append("PowderWeight(kg):");
                     sb.Append(powderWeight.ToString());
-                    sb.Append("kg");
                     args.Remark = sb.ToString();
                     FillIn(this, args);
                     this.Close();

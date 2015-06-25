@@ -89,7 +89,7 @@ namespace PMICostCalculator
             }
         }
         /// <summary>
-        /// 通用的事件响应
+        /// 通用的事件响应方法
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

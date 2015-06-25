@@ -58,6 +58,7 @@ namespace PMICostCalculator
             {
                 DataPoint dp = new DataPoint();
                 dp.LegendText = item.Name;
+                dp.LabelToolTip = item.Name;
                 dp.Label = (item.Value / Total).ToString("P");
                 dp.YValues[0] = (double)item.Value;
                 series.Points.Add(dp);

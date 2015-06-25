@@ -64,5 +64,11 @@ namespace TestForm
             CalculatorWeightingDensityByAt calculator = new CalculatorWeightingDensityByAt();
             calculator.ShowDialog();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            CalculatorMaterialRequirement calculator = new CalculatorMaterialRequirement();
+            calculator.ShowDialog();
+        }
     }
 }

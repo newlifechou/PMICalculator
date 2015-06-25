@@ -75,12 +75,12 @@ namespace PMICostCalculator
                 //如果CostItemCategory有变化，则这里必须跟着变化
                 case "PowderProcessCost":
                     CostPowderProcess fpowder = new CostPowderProcess();
-                    fpowder.FillIn += f_FillIn;
+                    fpowder.FillIn += Common_FillIn;
                     fpowder.ShowDialog();
                     break;
                 case "VHPCost":
                     CostVHPProcess fvhp = new CostVHPProcess();
-                    fvhp.FillIn += fvhp_FillIn;
+                    fvhp.FillIn += Common_FillIn;
                     fvhp.ShowDialog();
                     break;
                 default:
@@ -89,22 +89,11 @@ namespace PMICostCalculator
             }
         }
         /// <summary>
-        /// VHP成本计算器响应事件
-        /// 考虑和下面的进行合并
+        /// 通用的事件响应
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void fvhp_FillIn(object sender, CostCalculatorArgs e)
-        {
-            txtItemCost.Text = e.CostValue.ToString("N2");
-            txtItemRemark.Text = e.Remark;
-        }
-        /// <summary>
-        /// 粉末计算器事件响应
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void f_FillIn(object sender, CostCalculatorArgs e)
+        private void Common_FillIn(object sender, CostCalculatorArgs e)
         {
             txtItemCost.Text = e.CostValue.ToString("N2");
             txtItemRemark.Text = e.Remark;

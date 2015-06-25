@@ -148,6 +148,7 @@ namespace PMICostCalculator
         {
             IsSaved = false;
             this.Text = "PMICostCalculator " + "-Not Saved";
+            txtStatus.Text = "Current sheet is not saved";
         }
         /// <summary>
         /// 设置当前计算表为保存状态
@@ -156,6 +157,7 @@ namespace PMICostCalculator
         {
             IsSaved = true;
             this.Text = "PMICostCalculator " + "-Saved";
+            txtStatus.Text = "Current sheet is saved";
         }
         /// <summary>
         /// 重新加载数据到dgv

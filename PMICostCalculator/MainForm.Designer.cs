@@ -54,7 +54,7 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.txtStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCostCaculateName = new System.Windows.Forms.TextBox();
             this.btnDelCost = new System.Windows.Forms.Button();
@@ -251,20 +251,20 @@
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
+            this.txtStatus});
             this.statusStrip1.Location = new System.Drawing.Point(0, 587);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(784, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel1
+            // txtStatus
             // 
-            this.toolStripStatusLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.toolStripStatusLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(67, 17);
-            this.toolStripStatusLabel1.Text = "状态栏信息";
+            this.txtStatus.BackColor = System.Drawing.Color.Transparent;
+            this.txtStatus.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtStatus.Name = "txtStatus";
+            this.txtStatus.Size = new System.Drawing.Size(39, 17);
+            this.txtStatus.Text = "Status";
             // 
             // label1
             // 
@@ -286,7 +286,7 @@
             this.txtCostCaculateName.Name = "txtCostCaculateName";
             this.txtCostCaculateName.ReadOnly = true;
             this.txtCostCaculateName.Size = new System.Drawing.Size(402, 20);
-            this.txtCostCaculateName.TabIndex = 3;
+            this.txtCostCaculateName.TabIndex = 1;
             // 
             // btnDelCost
             // 
@@ -423,7 +423,7 @@
             this.txtRemark.Name = "txtRemark";
             this.txtRemark.ReadOnly = true;
             this.txtRemark.Size = new System.Drawing.Size(681, 20);
-            this.txtRemark.TabIndex = 3;
+            this.txtRemark.TabIndex = 2;
             // 
             // label3
             // 
@@ -485,7 +485,7 @@
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel txtStatus;
         private System.Windows.Forms.ToolStripMenuItem settingToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.Label label1;

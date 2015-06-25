@@ -40,8 +40,8 @@ namespace PMICostCalculator
         /// </summary>
         private void ShowChart()
         {
-            DrawPieChart(chart1, ItemCategorysCount, "ItemTypes");
-            DrawPieChart(chart2, ItemTypesCount, "ItemStyles");
+            DrawPieChart(chart1, ItemCategorysCount, "ItemCategorys");
+            DrawPieChart(chart2, ItemTypesCount, "ItemTypes");
         }
         private void DrawPieChart(Chart chart,List<ItemCountUnit> itemlist,string chartName)
         {

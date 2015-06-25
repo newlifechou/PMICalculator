@@ -60,16 +60,16 @@
             this.btnDelCost = new System.Windows.Forms.Button();
             this.btnAddCost = new System.Windows.Forms.Button();
             this.dgvCostCalculateList = new System.Windows.Forms.DataGridView();
-            this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemStyle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemRemark = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnStatistic = new System.Windows.Forms.Button();
             this.txtTotalCost = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtRemark = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemRemark = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCostCalculateList)).BeginInit();
@@ -319,8 +319,8 @@
             this.dgvCostCalculateList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCostCalculateList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ItemName,
+            this.ItemCategory,
             this.ItemType,
-            this.ItemStyle,
             this.ItemCost,
             this.ItemRemark});
             this.dgvCostCalculateList.Location = new System.Drawing.Point(18, 129);
@@ -333,50 +333,6 @@
             this.dgvCostCalculateList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCostCalculateList.Size = new System.Drawing.Size(750, 388);
             this.dgvCostCalculateList.TabIndex = 8;
-            // 
-            // ItemName
-            // 
-            this.ItemName.DataPropertyName = "ItemName";
-            this.ItemName.HeaderText = "ItemName";
-            this.ItemName.Name = "ItemName";
-            this.ItemName.ReadOnly = true;
-            this.ItemName.Width = 250;
-            // 
-            // ItemType
-            // 
-            this.ItemType.DataPropertyName = "ItemType";
-            this.ItemType.HeaderText = "ItemType";
-            this.ItemType.Name = "ItemType";
-            this.ItemType.ReadOnly = true;
-            this.ItemType.Width = 200;
-            // 
-            // ItemStyle
-            // 
-            this.ItemStyle.DataPropertyName = "ItemStyle";
-            this.ItemStyle.HeaderText = "ItemStyle";
-            this.ItemStyle.Name = "ItemStyle";
-            this.ItemStyle.ReadOnly = true;
-            this.ItemStyle.Width = 150;
-            // 
-            // ItemCost
-            // 
-            this.ItemCost.DataPropertyName = "ItemCost";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle1.Format = "N2";
-            dataGridViewCellStyle1.NullValue = "-";
-            this.ItemCost.DefaultCellStyle = dataGridViewCellStyle1;
-            this.ItemCost.HeaderText = "ItemCost";
-            this.ItemCost.Name = "ItemCost";
-            this.ItemCost.ReadOnly = true;
-            // 
-            // ItemRemark
-            // 
-            this.ItemRemark.DataPropertyName = "ItemRemark";
-            this.ItemRemark.HeaderText = "ItemRemark";
-            this.ItemRemark.Name = "ItemRemark";
-            this.ItemRemark.ReadOnly = true;
-            this.ItemRemark.Width = 550;
             // 
             // btnStatistic
             // 
@@ -436,6 +392,50 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Remark";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // ItemName
+            // 
+            this.ItemName.DataPropertyName = "ItemName";
+            this.ItemName.HeaderText = "ItemName";
+            this.ItemName.Name = "ItemName";
+            this.ItemName.ReadOnly = true;
+            this.ItemName.Width = 250;
+            // 
+            // ItemCategory
+            // 
+            this.ItemCategory.DataPropertyName = "ItemCategory";
+            this.ItemCategory.HeaderText = "ItemCategory";
+            this.ItemCategory.Name = "ItemCategory";
+            this.ItemCategory.ReadOnly = true;
+            this.ItemCategory.Width = 200;
+            // 
+            // ItemType
+            // 
+            this.ItemType.DataPropertyName = "ItemType";
+            this.ItemType.HeaderText = "ItemType";
+            this.ItemType.Name = "ItemType";
+            this.ItemType.ReadOnly = true;
+            this.ItemType.Width = 150;
+            // 
+            // ItemCost
+            // 
+            this.ItemCost.DataPropertyName = "ItemCost";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle1.Format = "N2";
+            dataGridViewCellStyle1.NullValue = "-";
+            this.ItemCost.DefaultCellStyle = dataGridViewCellStyle1;
+            this.ItemCost.HeaderText = "ItemCost";
+            this.ItemCost.Name = "ItemCost";
+            this.ItemCost.ReadOnly = true;
+            // 
+            // ItemRemark
+            // 
+            this.ItemRemark.DataPropertyName = "ItemRemark";
+            this.ItemRemark.HeaderText = "ItemRemark";
+            this.ItemRemark.Name = "ItemRemark";
+            this.ItemRemark.ReadOnly = true;
+            this.ItemRemark.Width = 550;
             // 
             // MainForm
             // 
@@ -498,11 +498,6 @@
         private System.Windows.Forms.Button btnStatistic;
         private System.Windows.Forms.TextBox txtTotalCost;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ItemName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ItemType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ItemStyle;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ItemCost;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ItemRemark;
         private System.Windows.Forms.TextBox txtRemark;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ToolStripMenuItem estimationMRToolStripMenuItem;
@@ -513,6 +508,11 @@
         private System.Windows.Forms.ToolStripMenuItem graphiteMoldDataToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem specificCalculationTableToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemCategory;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemCost;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemRemark;
     }
 }
 

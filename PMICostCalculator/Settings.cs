@@ -14,6 +14,7 @@ namespace PMICostCalculator
         public Settings()
         {
             InitializeComponent();
+            FormOperate.SetFormToDialog(this, false);
         }
     }
 }

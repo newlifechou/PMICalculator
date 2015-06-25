@@ -21,12 +21,12 @@ namespace PMICostCalculator
 
         private void LoadCbo()
         {
+            string[] itemCategorys = Enum.GetNames(typeof(CostItemCategory));
+            cboItemCategory.DataSource = null;
+            cboItemCategory.DataSource = itemCategorys;
             string[] itemTypes = Enum.GetNames(typeof(CostItemType));
             cboItemType.DataSource = null;
             cboItemType.DataSource = itemTypes;
-            string[] itemStyles = Enum.GetNames(typeof(CostItemStyle));
-            cboItemStyle.DataSource = null;
-            cboItemStyle.DataSource = itemStyles;
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -47,8 +47,8 @@ namespace PMICostCalculator
                 NewCostItemEventArgs args = new NewCostItemEventArgs();
                
                 args.CostItem.ItemName = txtItemName.Text;
+                args.CostItem.ItemCategory = (CostItemCategory)Enum.Parse(typeof(CostItemCategory), cboItemCategory.SelectedItem.ToString(), false);
                 args.CostItem.ItemType = (CostItemType)Enum.Parse(typeof(CostItemType), cboItemType.SelectedItem.ToString(), false);
-                args.CostItem.ItemStyle = (CostItemStyle)Enum.Parse(typeof(CostItemStyle), cboItemStyle.SelectedItem.ToString(), false);
                 args.CostItem.ItemCost = tmpValue;
                 args.CostItem.ItemRemark = txtItemRemark.Text;
 

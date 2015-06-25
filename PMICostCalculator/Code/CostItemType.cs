@@ -5,17 +5,9 @@ using System.Text;
 
 namespace PMICostCalculator
 {
-    /// <summary>
-    /// 计算类型枚举
-    /// </summary>
     public enum CostItemType
     {
-        MaterialsCost,
-        PowderProcessCost,
-        VHPCost,
-        MachiningCost,
-        PackageCost,
-        BondingCost,
-        DeliveryCost
+        Product,
+        Experiment
     }
 }

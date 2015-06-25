@@ -32,9 +32,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtItemName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.cboItemType = new System.Windows.Forms.ComboBox();
+            this.cboItemCategory = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.cboItemStyle = new System.Windows.Forms.ComboBox();
+            this.cboItemType = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtItemCost = new System.Windows.Forms.TextBox();
             this.chkKeepShow = new System.Windows.Forms.CheckBox();
@@ -73,36 +73,36 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 44);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 13);
+            this.label2.Size = new System.Drawing.Size(69, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "ItemType";
+            this.label2.Text = "ItemCategory";
             // 
-            // cboItemType
+            // cboItemCategory
             // 
-            this.cboItemType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboItemType.FormattingEnabled = true;
-            this.cboItemType.Location = new System.Drawing.Point(83, 41);
-            this.cboItemType.Name = "cboItemType";
-            this.cboItemType.Size = new System.Drawing.Size(171, 21);
-            this.cboItemType.TabIndex = 3;
+            this.cboItemCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboItemCategory.FormattingEnabled = true;
+            this.cboItemCategory.Location = new System.Drawing.Point(83, 41);
+            this.cboItemCategory.Name = "cboItemCategory";
+            this.cboItemCategory.Size = new System.Drawing.Size(171, 21);
+            this.cboItemCategory.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 73);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 13);
+            this.label3.Size = new System.Drawing.Size(51, 13);
             this.label3.TabIndex = 1;
-            this.label3.Text = "ItemStyle";
+            this.label3.Text = "ItemType";
             // 
-            // cboItemStyle
+            // cboItemType
             // 
-            this.cboItemStyle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboItemStyle.FormattingEnabled = true;
-            this.cboItemStyle.Location = new System.Drawing.Point(83, 69);
-            this.cboItemStyle.Name = "cboItemStyle";
-            this.cboItemStyle.Size = new System.Drawing.Size(171, 21);
-            this.cboItemStyle.TabIndex = 3;
+            this.cboItemType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboItemType.FormattingEnabled = true;
+            this.cboItemType.Location = new System.Drawing.Point(83, 69);
+            this.cboItemType.Name = "cboItemType";
+            this.cboItemType.Size = new System.Drawing.Size(171, 21);
+            this.cboItemType.TabIndex = 3;
             // 
             // label4
             // 
@@ -156,8 +156,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 347);
             this.Controls.Add(this.chkKeepShow);
-            this.Controls.Add(this.cboItemStyle);
             this.Controls.Add(this.cboItemType);
+            this.Controls.Add(this.cboItemCategory);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtItemRemark);
             this.Controls.Add(this.txtItemCost);
@@ -180,9 +180,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtItemName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cboItemType;
+        private System.Windows.Forms.ComboBox cboItemCategory;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cboItemStyle;
+        private System.Windows.Forms.ComboBox cboItemType;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtItemCost;
         private System.Windows.Forms.CheckBox chkKeepShow;

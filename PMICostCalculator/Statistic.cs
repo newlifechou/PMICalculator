@@ -13,8 +13,8 @@ namespace PMICostCalculator
     public partial class Statistic : Form
     {
         private CostCalculationSheet cs;
+        private List<ItemCountUnit> ItemCategorysCount;
         private List<ItemCountUnit> ItemTypesCount;
-        private List<ItemCountUnit> ItemStylesCount;
         private decimal Total;
 
         public Statistic(CostCalculationSheet cs)
@@ -23,8 +23,8 @@ namespace PMICostCalculator
             FormOperate.SetFormToDialog(this, false);
             //初始化
             this.cs = cs;
+            ItemCategorysCount = new List<ItemCountUnit>();
             ItemTypesCount = new List<ItemCountUnit>();
-            ItemStylesCount = new List<ItemCountUnit>();
             Total = 0;
         }
 
@@ -40,8 +40,8 @@ namespace PMICostCalculator
         /// </summary>
         private void ShowChart()
         {
-            DrawPieChart(chart1, ItemTypesCount, "ItemTypes");
-            DrawPieChart(chart2, ItemStylesCount, "ItemStyles");
+            DrawPieChart(chart1, ItemCategorysCount, "ItemTypes");
+            DrawPieChart(chart2, ItemTypesCount, "ItemStyles");
         }
         private void DrawPieChart(Chart chart,List<ItemCountUnit> itemlist,string chartName)
         {
@@ -86,7 +86,7 @@ namespace PMICostCalculator
             sb.AppendLine(Total.ToString("N2"));
 
             sb.AppendLine("========================================");
-            foreach (var item in ItemTypesCount)
+            foreach (var item in ItemCategorysCount)
             {
                 sb.Append(item.Name);
                 sb.Append("=");
@@ -99,7 +99,7 @@ namespace PMICostCalculator
 
             sb.AppendLine("========================================");
 
-            foreach (var item in ItemStylesCount)
+            foreach (var item in ItemTypesCount)
             {
                 sb.Append(item.Name);
                 sb.Append("=");
@@ -128,12 +128,28 @@ namespace PMICostCalculator
                 return;
             }
 
-            string[] itemTypes = Enum.GetNames(typeof(CostItemType));
+            string[] itemCategorys = Enum.GetNames(typeof(CostItemCategory));
 
-            string[] itemStyles = Enum.GetNames(typeof(CostItemStyle));
+            string[] itemTypes = Enum.GetNames(typeof(CostItemType));
 
 
             //统计itemTypes数据
+            foreach (var itemCategory in itemCategorys)
+            {
+                decimal sum = 0;
+                foreach (var item in cs.CostItemList)
+                {
+                    if (item.ItemCategory.ToString() == itemCategory)
+                    {
+                        sum += item.ItemCost;
+                    }
+                }
+                ItemCountUnit tmp = new ItemCountUnit();
+                tmp.Name = itemCategory;
+                tmp.Value = sum;
+                ItemCategorysCount.Add(tmp);
+            }
+            //统计itemStyles数据
             foreach (var itemType in itemTypes)
             {
                 decimal sum = 0;
@@ -148,22 +164,6 @@ namespace PMICostCalculator
                 tmp.Name = itemType;
                 tmp.Value = sum;
                 ItemTypesCount.Add(tmp);
-            }
-            //统计itemStyles数据
-            foreach (var itemStyle in itemStyles)
-            {
-                decimal sum = 0;
-                foreach (var item in cs.CostItemList)
-                {
-                    if (item.ItemStyle.ToString() == itemStyle)
-                    {
-                        sum += item.ItemCost;
-                    }
-                }
-                ItemCountUnit tmp = new ItemCountUnit();
-                tmp.Name = itemStyle;
-                tmp.Value = sum;
-                ItemStylesCount.Add(tmp);
             }
         }
 

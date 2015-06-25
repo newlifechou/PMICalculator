@@ -21,12 +21,12 @@ namespace PMICostCalculator
         /// <summary>
         /// 计算项的类别
         /// </summary>
-        public CostItemType ItemType { get; set; }
+        public CostItemCategory ItemCategory{ get; set; }
 
         /// <summary>
         /// 试验还是产品
         /// </summary>
-        public CostItemStyle ItemStyle { get; set; }
+        public CostItemType ItemType { get; set; }
 
         /// <summary>
         /// 项目成本花费
@@ -40,13 +40,13 @@ namespace PMICostCalculator
 
         public int CompareTo(CostItem other)
         {
-            if (this.ItemType.CompareTo(other.ItemType) != 0)
+            if (this.ItemCategory.CompareTo(other.ItemCategory) != 0)
             {
-                return this.ItemType.CompareTo(other.ItemType);
+                return this.ItemCategory.CompareTo(other.ItemCategory);
             }
             else
             {
-                return this.ItemStyle.CompareTo(other.ItemStyle);
+                return this.ItemType.CompareTo(other.ItemType);
             }
         }
     }

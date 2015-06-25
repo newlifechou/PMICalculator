@@ -56,8 +56,8 @@
     </Compile>
     <Compile Include="Code\CostCalculationSheet.cs" />
     <Compile Include="Code\CostItem.cs" />
-    <Compile Include="Code\CostItemStyle.cs" />
     <Compile Include="Code\CostItemType.cs" />
+    <Compile Include="Code\CostItemCategory.cs" />
     <Compile Include="Code\FormOperate.cs" />
     <Compile Include="Code\FileOperate.cs" />
     <Compile Include="Code\ICostData.cs" />

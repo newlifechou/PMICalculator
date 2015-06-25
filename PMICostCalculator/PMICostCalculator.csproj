@@ -79,20 +79,20 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Code\CostCalculationSheetEventArgs.cs" />
-    <Compile Include="NewCostCalcuationSheet.cs">
+    <Compile Include="NewSheet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewCostCalcuationSheet.Designer.cs">
-      <DependentUpon>NewCostCalcuationSheet.cs</DependentUpon>
+    <Compile Include="NewSheet.Designer.cs">
+      <DependentUpon>NewSheet.cs</DependentUpon>
     </Compile>
     <Compile Include="Code\NewCostItemEventArgs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="OpenCostCalcuationSheet.cs">
+    <Compile Include="OpenSheet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OpenCostCalcuationSheet.Designer.cs">
-      <DependentUpon>OpenCostCalcuationSheet.cs</DependentUpon>
+    <Compile Include="OpenSheet.Designer.cs">
+      <DependentUpon>OpenSheet.cs</DependentUpon>
     </Compile>
     <Compile Include="Code\XMLDocOp.cs" />
     <Compile Include="Settings.cs">
@@ -121,11 +121,11 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewCostCalcuationSheet.resx">
-      <DependentUpon>NewCostCalcuationSheet.cs</DependentUpon>
+    <EmbeddedResource Include="NewSheet.resx">
+      <DependentUpon>NewSheet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OpenCostCalcuationSheet.resx">
-      <DependentUpon>OpenCostCalcuationSheet.cs</DependentUpon>
+    <EmbeddedResource Include="OpenSheet.resx">
+      <DependentUpon>OpenSheet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

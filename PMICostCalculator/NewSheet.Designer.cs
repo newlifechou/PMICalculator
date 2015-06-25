@@ -1,6 +1,6 @@
 ﻿namespace PMICostCalculator
 {
-    partial class NewCostCalcuationSheet
+    partial class NewSheet
     {
         /// <summary>
         /// Required designer variable.

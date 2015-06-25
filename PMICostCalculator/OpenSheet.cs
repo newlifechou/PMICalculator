@@ -11,9 +11,9 @@ using System.IO;
 
 namespace PMICostCalculator
 {
-    public partial class OpenCostCalcuationSheet : Form
+    public partial class OpenSheet : Form
     {
-        public OpenCostCalcuationSheet()
+        public OpenSheet()
         {
             InitializeComponent();
             FormOperate.SetFormToDialog(this, false);

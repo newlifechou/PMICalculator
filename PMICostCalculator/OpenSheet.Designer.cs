@@ -1,6 +1,6 @@
 ﻿namespace PMICostCalculator
 {
-    partial class OpenCostCalcuationSheet
+    partial class OpenSheet
     {
         /// <summary>
         /// Required designer variable.

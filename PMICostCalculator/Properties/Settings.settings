@@ -20,7 +20,7 @@
     <Setting Name="UnitCostDelivery" Type="System.Decimal" Scope="User">
       <Value Profile="(Default)">500</Value>
     </Setting>
-    <Setting Name="UnitCostPackage" Type="System.String" Scope="User">
+    <Setting Name="UnitCostPackage" Type="System.Decimal" Scope="User">
       <Value Profile="(Default)">200</Value>
     </Setting>
   </Settings>

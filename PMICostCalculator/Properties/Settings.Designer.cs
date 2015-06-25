@@ -98,9 +98,9 @@ namespace PMICostCalculator.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("200")]
-        public string UnitCostPackage {
+        public decimal UnitCostPackage {
             get {
-                return ((string)(this["UnitCostPackage"]));
+                return ((decimal)(this["UnitCostPackage"]));
             }
             set {
                 this["UnitCostPackage"] = value;

@@ -90,6 +90,21 @@ namespace PMICostCalculator
                     fm.FillIn += Common_FillIn;
                     fm.ShowDialog();
                     break;
+                case "PackageCost":
+                    CostPackageProcess fp = new CostPackageProcess();
+                    fp.FillIn += Common_FillIn;
+                    fp.ShowDialog();
+                    break;
+                case "BondingCost":
+                    CostBondingProcess fbp = new CostBondingProcess();
+                    fbp.FillIn += Common_FillIn;
+                    fbp.ShowDialog();
+                    break;
+                case "DeliveryCost":
+                    CostDeliveryProcess fdp = new CostDeliveryProcess();
+                    fdp.FillIn += Common_FillIn;
+                    fdp.ShowDialog();
+                    break;
                 default:
                     MessageBox.Show("There is No Specific Calculator For this Category");
                     break;

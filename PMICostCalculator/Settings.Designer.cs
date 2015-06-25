@@ -39,6 +39,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.txtUnitCostPackaging = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtUnitCostBonding = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtUnitCostDelivery = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,12 +133,21 @@
             // 
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtUnitCostPowderProcess);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txtUnitCostVHP);
             this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.txtUnitCostDelivery);
+            this.groupBox1.Controls.Add(this.txtUnitCostBonding);
+            this.groupBox1.Controls.Add(this.txtUnitCostPackaging);
             this.groupBox1.Controls.Add(this.txtUnitCostMachining);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
@@ -147,6 +165,84 @@
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // txtUnitCostPackaging
+            // 
+            this.txtUnitCostPackaging.Location = new System.Drawing.Point(168, 112);
+            this.txtUnitCostPackaging.Name = "txtUnitCostPackaging";
+            this.txtUnitCostPackaging.Size = new System.Drawing.Size(87, 20);
+            this.txtUnitCostPackaging.TabIndex = 4;
+            this.txtUnitCostPackaging.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(261, 115);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(63, 13);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "RMB/Piece";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 115);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(115, 13);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "UnitCost Of Packaging";
+            // 
+            // txtUnitCostBonding
+            // 
+            this.txtUnitCostBonding.Location = new System.Drawing.Point(168, 138);
+            this.txtUnitCostBonding.Name = "txtUnitCostBonding";
+            this.txtUnitCostBonding.Size = new System.Drawing.Size(87, 20);
+            this.txtUnitCostBonding.TabIndex = 4;
+            this.txtUnitCostBonding.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(261, 141);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(63, 13);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "RMB/Piece";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 141);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(103, 13);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "UnitCost Of Bonding";
+            // 
+            // txtUnitCostDelivery
+            // 
+            this.txtUnitCostDelivery.Location = new System.Drawing.Point(168, 164);
+            this.txtUnitCostDelivery.Name = "txtUnitCostDelivery";
+            this.txtUnitCostDelivery.Size = new System.Drawing.Size(87, 20);
+            this.txtUnitCostDelivery.TabIndex = 4;
+            this.txtUnitCostDelivery.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(261, 167);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(63, 13);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "RMB/Piece";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 167);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(102, 13);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "UnitCost Of Delivery";
             // 
             // Settings
             // 
@@ -176,5 +272,14 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtUnitCostDelivery;
+        private System.Windows.Forms.TextBox txtUnitCostBonding;
+        private System.Windows.Forms.TextBox txtUnitCostPackaging;
     }
 }

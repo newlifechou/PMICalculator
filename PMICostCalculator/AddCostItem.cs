@@ -61,7 +61,12 @@ namespace PMICostCalculator
                 this.Close();
             }
         }
-
+        /// <summary>
+        /// 弹出对应的成本计算器
+        /// 需要简化和灵活处理的地方
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCalculator_Click(object sender, EventArgs e)
         {
 

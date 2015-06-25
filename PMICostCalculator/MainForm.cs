@@ -85,49 +85,6 @@ namespace PMICostCalculator
             ReLoadDgv();
         }
 
-        /// <summary>
-        ///TODO:临时的数据生成器，过后删除
-        /// </summary>
-        //private void CreateTestData()
-        //{
-        //    Random r = new Random();
-        //    for (int i = 0; i < 15; i++)
-        //    {
-        //        CostCalculateItem cci = new CostCalculateItem();
-        //        cci.ItemName = "1506" + r.Next(10, 99) + "_SJ";
-        //        switch (r.Next(10, 99) % 5)
-        //        {
-        //            case 0:
-        //                cci.ItemType = CostCalculateType.MaterialsCost;
-        //                cci.ItemStyle = CostCalculateStyle.Product;
-        //                break;
-        //            case 1:
-        //                cci.ItemType = CostCalculateType.PowderProcessCost;
-        //                cci.ItemStyle = CostCalculateStyle.Product;
-        //                break;
-        //            case 2:
-        //                cci.ItemType = CostCalculateType.VHPCost;
-        //                cci.ItemStyle = CostCalculateStyle.Experiement;
-        //                break;
-        //            case 3:
-        //                cci.ItemType = CostCalculateType.MachineCost;
-        //                cci.ItemStyle = CostCalculateStyle.Product;
-        //                break;
-        //            case 4:
-        //                cci.ItemType = CostCalculateType.PackageCost;
-        //                cci.ItemStyle = CostCalculateStyle.Experiement;
-        //                break;
-        //            default:
-        //                cci.ItemType = CostCalculateType.BondingCost;
-        //                cci.ItemStyle = CostCalculateStyle.Experiement;
-        //                break;
-        //        }
-        //        cci.ItemCost = r.Next(1000, 9999);
-        //        cci.ItemRemark = "三杰提供原料" + r.Next(10, 99);
-        //        CurrentCalculateSheet.CostCalculateSheetList.Add(cci);
-        //    }
-        //}
-
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (CheckCalculateSheetSave())

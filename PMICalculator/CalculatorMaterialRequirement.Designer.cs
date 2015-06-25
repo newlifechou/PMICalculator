@@ -44,17 +44,19 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dgvCostCalculateList = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
-            this.Diameter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Thickness = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.NameType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Diameter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Thickness = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCostCalculateList)).BeginInit();
             this.SuspendLayout();
@@ -201,7 +203,6 @@
             // 
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox4);
@@ -220,9 +221,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "计算区域";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(244, 19);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(91, 29);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "模具库";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(258, 93);
+            this.button2.Location = new System.Drawing.Point(12, 183);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(91, 29);
             this.button2.TabIndex = 2;
@@ -238,11 +248,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvCostCalculateList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCostCalculateList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NameType,
             this.Diameter,
             this.Thickness,
             this.Number,
             this.Weight});
-            this.dgvCostCalculateList.Location = new System.Drawing.Point(12, 186);
+            this.dgvCostCalculateList.Location = new System.Drawing.Point(12, 214);
             this.dgvCostCalculateList.MultiSelect = false;
             this.dgvCostCalculateList.Name = "dgvCostCalculateList";
             this.dgvCostCalculateList.ReadOnly = true;
@@ -250,45 +261,8 @@
             this.dgvCostCalculateList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvCostCalculateList.RowTemplate.Height = 23;
             this.dgvCostCalculateList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCostCalculateList.Size = new System.Drawing.Size(463, 140);
+            this.dgvCostCalculateList.Size = new System.Drawing.Size(463, 112);
             this.dgvCostCalculateList.TabIndex = 9;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(258, 19);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 29);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "模具库";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // Diameter
-            // 
-            this.Diameter.DataPropertyName = "Diameter";
-            this.Diameter.HeaderText = "模具直径";
-            this.Diameter.Name = "Diameter";
-            this.Diameter.ReadOnly = true;
-            // 
-            // Thickness
-            // 
-            this.Thickness.DataPropertyName = "Thickness";
-            this.Thickness.HeaderText = "热压厚度";
-            this.Thickness.Name = "Thickness";
-            this.Thickness.ReadOnly = true;
-            // 
-            // Number
-            // 
-            this.Number.DataPropertyName = "Number";
-            this.Number.HeaderText = "热压数目";
-            this.Number.Name = "Number";
-            this.Number.ReadOnly = true;
-            // 
-            // Weight
-            // 
-            this.Weight.DataPropertyName = "Weight";
-            this.Weight.HeaderText = "粉末重量";
-            this.Weight.Name = "Weight";
-            this.Weight.ReadOnly = true;
             // 
             // textBox6
             // 
@@ -329,6 +303,55 @@
             this.label11.TabIndex = 1;
             this.label11.Text = "g/cm3";
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(384, 183);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(91, 29);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "删除";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // NameType
+            // 
+            this.NameType.DataPropertyName = "NameType";
+            this.NameType.HeaderText = "原料类型";
+            this.NameType.Name = "NameType";
+            this.NameType.ReadOnly = true;
+            this.NameType.Width = 80;
+            // 
+            // Diameter
+            // 
+            this.Diameter.DataPropertyName = "Diameter";
+            this.Diameter.HeaderText = "模具直径";
+            this.Diameter.Name = "Diameter";
+            this.Diameter.ReadOnly = true;
+            this.Diameter.Width = 80;
+            // 
+            // Thickness
+            // 
+            this.Thickness.DataPropertyName = "Thickness";
+            this.Thickness.HeaderText = "热压厚度";
+            this.Thickness.Name = "Thickness";
+            this.Thickness.ReadOnly = true;
+            this.Thickness.Width = 80;
+            // 
+            // Number
+            // 
+            this.Number.DataPropertyName = "Number";
+            this.Number.HeaderText = "热压数目";
+            this.Number.Name = "Number";
+            this.Number.ReadOnly = true;
+            this.Number.Width = 80;
+            // 
+            // Weight
+            // 
+            this.Weight.DataPropertyName = "Weight";
+            this.Weight.HeaderText = "粉末重量";
+            this.Weight.Name = "Weight";
+            this.Weight.ReadOnly = true;
+            this.Weight.Width = 80;
+            // 
             // CalculatorMaterialRequirement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -336,6 +359,8 @@
             this.ClientSize = new System.Drawing.Size(487, 387);
             this.Controls.Add(this.dgvCostCalculateList);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -374,13 +399,15 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dgvCostCalculateList;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Diameter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Thickness;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Number;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Weight;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NameType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Diameter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Thickness;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Number;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Weight;
     }
 }

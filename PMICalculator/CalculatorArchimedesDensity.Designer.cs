@@ -47,7 +47,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.btnCalculate = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtWeight
@@ -210,30 +209,19 @@
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(124, 195);
+            this.btnCalculate.Location = new System.Drawing.Point(12, 195);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(99, 42);
+            this.btnCalculate.Size = new System.Drawing.Size(211, 42);
             this.btnCalculate.TabIndex = 5;
             this.btnCalculate.Text = "计算";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
-            // 
-            // btnClear
-            // 
-            this.btnClear.Location = new System.Drawing.Point(12, 195);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(99, 42);
-            this.btnClear.TabIndex = 6;
-            this.btnClear.Text = "清空";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // CalculatorArchimedesDensity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(235, 258);
-            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.txtRelativeDensity);
             this.Controls.Add(this.txtRealDensity);
@@ -281,6 +269,5 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button btnCalculate;
-        private System.Windows.Forms.Button btnClear;
     }
 }

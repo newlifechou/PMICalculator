@@ -70,5 +70,11 @@ namespace TestForm
             CalculatorMaterialRequirement calculator = new CalculatorMaterialRequirement();
             calculator.ShowDialog();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            CalculatorSimpleSubstanceOfEveryCompound calcualtor = new CalculatorSimpleSubstanceOfEveryCompound();
+            calcualtor.ShowDialog();
+        }
     }
 }

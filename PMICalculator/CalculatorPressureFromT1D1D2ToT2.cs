@@ -36,10 +36,5 @@ namespace PMICalculator
                 MessageBox.Show(ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            FormCommonOperate.ClearAllTextBoxInForm(this);
-        }
     }
 }

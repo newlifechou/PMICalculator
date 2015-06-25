@@ -14,6 +14,7 @@ namespace PMICalculator
         public CalculatorSimpleSubstanceOfEveryCompound()
         {
             InitializeComponent();
+            FormCommonOperate.SetFormToFixedSingleDialog(this);
         }
     }
 }

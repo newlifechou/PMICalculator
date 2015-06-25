@@ -17,11 +17,6 @@ namespace PMICalculator
             FormCommonOperate.SetFormToFixedSingleDialog(this);
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            FormCommonOperate.ClearAllTextBoxInForm(this);
-        }
-
         private void btnCalculate_Click(object sender, EventArgs e)
         {
             try

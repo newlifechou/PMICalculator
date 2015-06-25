@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.dgv = new System.Windows.Forms.DataGridView();
+            this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemWt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemDensity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.txtWeightingDensity = new System.Windows.Forms.TextBox();
@@ -43,9 +46,6 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemWt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ItemDensity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,138 +58,13 @@
             this.ItemName,
             this.ItemWt,
             this.ItemDensity});
-            this.dgv.Location = new System.Drawing.Point(12, 168);
+            this.dgv.Location = new System.Drawing.Point(12, 182);
             this.dgv.Name = "dgv";
             this.dgv.ReadOnly = true;
             this.dgv.RowTemplate.Height = 23;
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv.Size = new System.Drawing.Size(371, 182);
+            this.dgv.Size = new System.Drawing.Size(371, 197);
             this.dgv.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "成分名称";
-            // 
-            // btnCalculate
-            // 
-            this.btnCalculate.Location = new System.Drawing.Point(12, 356);
-            this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(371, 57);
-            this.btnCalculate.TabIndex = 5;
-            this.btnCalculate.Text = "计算";
-            this.btnCalculate.UseVisualStyleBackColor = true;
-            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
-            // 
-            // txtWeightingDensity
-            // 
-            this.txtWeightingDensity.Location = new System.Drawing.Point(120, 420);
-            this.txtWeightingDensity.Name = "txtWeightingDensity";
-            this.txtWeightingDensity.ReadOnly = true;
-            this.txtWeightingDensity.Size = new System.Drawing.Size(261, 21);
-            this.txtWeightingDensity.TabIndex = 3;
-            this.txtWeightingDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 424);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 12);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "混合物的加权密度";
-            // 
-            // txtItemName
-            // 
-            this.txtItemName.Location = new System.Drawing.Point(72, 24);
-            this.txtItemName.Name = "txtItemName";
-            this.txtItemName.Size = new System.Drawing.Size(100, 21);
-            this.txtItemName.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 54);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 12);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "所占Wt%";
-            // 
-            // txtItemWt
-            // 
-            this.txtItemWt.Location = new System.Drawing.Point(72, 51);
-            this.txtItemWt.Name = "txtItemWt";
-            this.txtItemWt.Size = new System.Drawing.Size(100, 21);
-            this.txtItemWt.TabIndex = 2;
-            this.txtItemWt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 81);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 12);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "成分密度";
-            // 
-            // txtItemDensity
-            // 
-            this.txtItemDensity.Location = new System.Drawing.Point(72, 78);
-            this.txtItemDensity.Name = "txtItemDensity";
-            this.txtItemDensity.Size = new System.Drawing.Size(100, 21);
-            this.txtItemDensity.TabIndex = 3;
-            this.txtItemDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(178, 54);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(11, 12);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "%";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(178, 81);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 12);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "g/cm3";
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Location = new System.Drawing.Point(12, 105);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(137, 33);
-            this.btnAdd.TabIndex = 4;
-            this.btnAdd.Text = "添加成分";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(244, 105);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(137, 33);
-            this.btnDelete.TabIndex = 7;
-            this.btnDelete.Text = "删除选定成分";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 147);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(155, 12);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "需确保输入的Wt的总和为100";
             // 
             // ItemName
             // 
@@ -212,11 +87,137 @@
             this.ItemDensity.Name = "ItemDensity";
             this.ItemDensity.ReadOnly = true;
             // 
-            // CalculatorWeightingDensity
+            // label1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "成分名称";
+            // 
+            // btnCalculate
+            // 
+            this.btnCalculate.Location = new System.Drawing.Point(12, 386);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(371, 62);
+            this.btnCalculate.TabIndex = 5;
+            this.btnCalculate.Text = "计算";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
+            // 
+            // txtWeightingDensity
+            // 
+            this.txtWeightingDensity.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWeightingDensity.Location = new System.Drawing.Point(120, 455);
+            this.txtWeightingDensity.Name = "txtWeightingDensity";
+            this.txtWeightingDensity.ReadOnly = true;
+            this.txtWeightingDensity.Size = new System.Drawing.Size(261, 31);
+            this.txtWeightingDensity.TabIndex = 3;
+            this.txtWeightingDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(13, 463);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "混合物的加权密度";
+            // 
+            // txtItemName
+            // 
+            this.txtItemName.Location = new System.Drawing.Point(72, 26);
+            this.txtItemName.Name = "txtItemName";
+            this.txtItemName.Size = new System.Drawing.Size(100, 20);
+            this.txtItemName.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(13, 59);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "所占Wt%";
+            // 
+            // txtItemWt
+            // 
+            this.txtItemWt.Location = new System.Drawing.Point(72, 55);
+            this.txtItemWt.Name = "txtItemWt";
+            this.txtItemWt.Size = new System.Drawing.Size(100, 20);
+            this.txtItemWt.TabIndex = 2;
+            this.txtItemWt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 88);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "成分密度";
+            // 
+            // txtItemDensity
+            // 
+            this.txtItemDensity.Location = new System.Drawing.Point(72, 85);
+            this.txtItemDensity.Name = "txtItemDensity";
+            this.txtItemDensity.Size = new System.Drawing.Size(100, 20);
+            this.txtItemDensity.TabIndex = 3;
+            this.txtItemDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(178, 59);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(15, 13);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "%";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(178, 88);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(38, 13);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "g/cm3";
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(12, 114);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(137, 36);
+            this.btnAdd.TabIndex = 4;
+            this.btnAdd.Text = "添加成分";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(244, 114);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(137, 36);
+            this.btnDelete.TabIndex = 7;
+            this.btnDelete.Text = "删除选定成分";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(13, 159);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(159, 13);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "需确保输入的Wt的总和为100";
+            // 
+            // CalculatorWeightingDensityByWt
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(393, 460);
+            this.ClientSize = new System.Drawing.Size(393, 498);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtItemDensity);
@@ -232,7 +233,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv);
-            this.Name = "CalculatorWeightingDensity";
+            this.Name = "CalculatorWeightingDensityByWt";
             this.Text = "加权密度计算器-知道Wt比例";
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);

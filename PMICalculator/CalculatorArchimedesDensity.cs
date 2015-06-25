@@ -40,15 +40,5 @@ namespace PMICalculator
             }
 
         }
-
-        /// <summary>
-        /// 清空Textbox操作
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            FormCommonOperate.ClearAllTextBoxInForm(this);
-        }
     }
 }

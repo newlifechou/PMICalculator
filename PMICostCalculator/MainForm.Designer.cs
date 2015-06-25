@@ -271,9 +271,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(15, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 13);
+            this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "CostCalcualteSheet";
+            this.label1.Text = "Sheet Name";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtCostCaculateName
@@ -282,10 +282,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCostCaculateName.BackColor = System.Drawing.Color.White;
             this.txtCostCaculateName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCostCaculateName.Location = new System.Drawing.Point(136, 30);
+            this.txtCostCaculateName.Location = new System.Drawing.Point(87, 30);
             this.txtCostCaculateName.Name = "txtCostCaculateName";
             this.txtCostCaculateName.ReadOnly = true;
-            this.txtCostCaculateName.Size = new System.Drawing.Size(353, 20);
+            this.txtCostCaculateName.Size = new System.Drawing.Size(402, 20);
             this.txtCostCaculateName.TabIndex = 3;
             // 
             // btnDelCost
@@ -419,10 +419,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtRemark.BackColor = System.Drawing.Color.White;
             this.txtRemark.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtRemark.Location = new System.Drawing.Point(136, 58);
+            this.txtRemark.Location = new System.Drawing.Point(87, 58);
             this.txtRemark.Name = "txtRemark";
             this.txtRemark.ReadOnly = true;
-            this.txtRemark.Size = new System.Drawing.Size(632, 20);
+            this.txtRemark.Size = new System.Drawing.Size(681, 20);
             this.txtRemark.TabIndex = 3;
             // 
             // label3

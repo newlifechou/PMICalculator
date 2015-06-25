@@ -9,35 +9,33 @@ using System.Windows.Forms;
 
 namespace PMICostCalculator
 {
-    public partial class CostMachiningProcess : Form
+    public partial class CostVHPProcess : Form
     {
         public event EventHandler<CostCalculatorArgs> FillIn;
-        public CostMachiningProcess()
+        public CostVHPProcess()
         {
             InitializeComponent();
             FormOperate.SetFormToDialog(this, false);
         }
-
-        private void CostMachiningProcess_Load(object sender, EventArgs e)
+        private void CostVHPProcess_Load(object sender, EventArgs e)
         {
-            txtUnitCostMachining.Text = Properties.Settings.Default.UnitCostMachine.ToString("N2");
+            txtUnitCost.Text = Properties.Settings.Default.UnitCostVHP.ToString("N2");
         }
-
         private void btnOK_Click(object sender, EventArgs e)
         {
             if (FillIn != null)
             {
                 decimal unitPrice = 0;
-                double pieces = 0;
-                if (decimal.TryParse(txtUnitCostMachining.Text, out unitPrice) && double.TryParse(txtPowderPieces.Text, out pieces))
+                double CalcNumber = 0;
+                if (decimal.TryParse(txtUnitCost.Text, out unitPrice) && double.TryParse(txtCalcNumber.Text, out CalcNumber))
                 {
                     CostCalculatorArgs args = new CostCalculatorArgs();
-                    args.CostValue = unitPrice * (decimal)pieces;
+                    args.CostValue = unitPrice * (decimal)CalcNumber;
                     StringBuilder sb = new StringBuilder();
-                    sb.Append("UnitCost(RMB/Pieces):");
+                    sb.Append(label1.Text);
                     sb.AppendLine(unitPrice.ToString("N2"));
-                    sb.Append("Pieces Of Targets:");
-                    sb.Append(pieces.ToString());
+                    sb.Append(label2.Text);
+                    sb.Append(CalcNumber.ToString());
                     args.Remark = sb.ToString();
                     FillIn(this, args);
                     this.Close();

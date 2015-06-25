@@ -9,33 +9,33 @@ using System.Windows.Forms;
 
 namespace PMICostCalculator
 {
-    public partial class CostVHPProcess : Form
+    public partial class CostPowderProcess : Form
     {
         public event EventHandler<CostCalculatorArgs> FillIn;
-        public CostVHPProcess()
+        public CostPowderProcess()
         {
             InitializeComponent();
             FormOperate.SetFormToDialog(this, false);
         }
-        private void CostVHPProcess_Load(object sender, EventArgs e)
+        private void CostPowderProcess_Load(object sender, EventArgs e)
         {
-            txtUnitCostVHPProcess.Text = Properties.Settings.Default.UnitCostVHP.ToString("N2");
+            txtUnitCost.Text = Properties.Settings.Default.UnitCostPowderProcess.ToString("N2");
         }
         private void btnOK_Click(object sender, EventArgs e)
         {
-            if (FillIn != null)
+            if (FillIn!=null)
             {
                 decimal unitPrice = 0;
-                double deviceTime = 0;
-                if (decimal.TryParse(txtUnitCostVHPProcess.Text, out unitPrice) && double.TryParse(txtDeviceTime.Text, out deviceTime))
+                double CalcNumber = 0;
+                if (decimal.TryParse(txtUnitCost.Text, out unitPrice)&&double.TryParse(txtCalcNumber.Text,out CalcNumber))
                 {
                     CostCalculatorArgs args = new CostCalculatorArgs();
-                    args.CostValue = unitPrice * (decimal)deviceTime;
+                    args.CostValue = unitPrice * (decimal)CalcNumber;
                     StringBuilder sb = new StringBuilder();
-                    sb.Append("UnitCost(RMB/Device/Time):");
+                    sb.Append(label1.Text);
                     sb.AppendLine(unitPrice.ToString("N2"));
-                    sb.Append("Device*Time:");
-                    sb.Append(deviceTime.ToString());
+                    sb.Append(label2.Text);
+                    sb.Append(CalcNumber.ToString());
                     args.Remark = sb.ToString();
                     FillIn(this, args);
                     this.Close();

@@ -63,40 +63,40 @@
     <Compile Include="Code\FileOperate.cs" />
     <Compile Include="Code\ICostData.cs" />
     <Compile Include="Code\ItemCountUnit.cs" />
-    <Compile Include="CostBondingProcess.cs">
+    <Compile Include="CostCalculator\CostBondingProcess.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CostBondingProcess.Designer.cs">
+    <Compile Include="CostCalculator\CostBondingProcess.Designer.cs">
       <DependentUpon>CostBondingProcess.cs</DependentUpon>
     </Compile>
-    <Compile Include="CostDeliveryProcess.cs">
+    <Compile Include="CostCalculator\CostDeliveryProcess.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CostDeliveryProcess.Designer.cs">
+    <Compile Include="CostCalculator\CostDeliveryProcess.Designer.cs">
       <DependentUpon>CostDeliveryProcess.cs</DependentUpon>
     </Compile>
-    <Compile Include="CostMachiningProcess.cs">
+    <Compile Include="CostCalculator\CostMachiningProcess.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CostMachiningProcess.Designer.cs">
+    <Compile Include="CostCalculator\CostMachiningProcess.Designer.cs">
       <DependentUpon>CostMachiningProcess.cs</DependentUpon>
     </Compile>
-    <Compile Include="CostPackageProcess.cs">
+    <Compile Include="CostCalculator\CostPackageProcess.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CostPackageProcess.Designer.cs">
+    <Compile Include="CostCalculator\CostPackageProcess.Designer.cs">
       <DependentUpon>CostPackageProcess.cs</DependentUpon>
     </Compile>
-    <Compile Include="CostPowderProcess.cs">
+    <Compile Include="CostCalculator\CostPowderProcess.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CostPowderProcess.Designer.cs">
+    <Compile Include="CostCalculator\CostPowderProcess.Designer.cs">
       <DependentUpon>CostPowderProcess.cs</DependentUpon>
     </Compile>
-    <Compile Include="CostVHPProcess.cs">
+    <Compile Include="CostCalculator\CostVHPProcess.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CostVHPProcess.Designer.cs">
+    <Compile Include="CostCalculator\CostVHPProcess.Designer.cs">
       <DependentUpon>CostVHPProcess.cs</DependentUpon>
     </Compile>
     <Compile Include="Language\us-en.Designer.cs">
@@ -147,22 +147,22 @@
     <EmbeddedResource Include="AddCostItem.resx">
       <DependentUpon>AddCostItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CostBondingProcess.resx">
+    <EmbeddedResource Include="CostCalculator\CostBondingProcess.resx">
       <DependentUpon>CostBondingProcess.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CostDeliveryProcess.resx">
+    <EmbeddedResource Include="CostCalculator\CostDeliveryProcess.resx">
       <DependentUpon>CostDeliveryProcess.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CostMachiningProcess.resx">
+    <EmbeddedResource Include="CostCalculator\CostMachiningProcess.resx">
       <DependentUpon>CostMachiningProcess.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CostPackageProcess.resx">
+    <EmbeddedResource Include="CostCalculator\CostPackageProcess.resx">
       <DependentUpon>CostPackageProcess.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CostPowderProcess.resx">
+    <EmbeddedResource Include="CostCalculator\CostPowderProcess.resx">
       <DependentUpon>CostPowderProcess.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CostVHPProcess.resx">
+    <EmbeddedResource Include="CostCalculator\CostVHPProcess.resx">
       <DependentUpon>CostVHPProcess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Language\us-en.resx">

@@ -30,8 +30,8 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtDeviceTime = new System.Windows.Forms.TextBox();
-            this.txtUnitCostVHPProcess = new System.Windows.Forms.TextBox();
+            this.txtCalcNumber = new System.Windows.Forms.TextBox();
+            this.txtUnitCost = new System.Windows.Forms.TextBox();
             this.btnOK = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -40,35 +40,35 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(13, 42);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 13);
+            this.label2.Size = new System.Drawing.Size(71, 13);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Device*Time";
+            this.label2.Text = "Device*Time:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 13);
+            this.label1.Size = new System.Drawing.Size(101, 13);
             this.label1.TabIndex = 8;
-            this.label1.Text = "RMB/Device/Time";
+            this.label1.Text = "RMB/Device/Time:";
             // 
-            // txtDeviceTime
+            // txtCalcNumber
             // 
-            this.txtDeviceTime.Location = new System.Drawing.Point(119, 39);
-            this.txtDeviceTime.Name = "txtDeviceTime";
-            this.txtDeviceTime.Size = new System.Drawing.Size(110, 20);
-            this.txtDeviceTime.TabIndex = 6;
-            this.txtDeviceTime.Text = "1";
-            this.txtDeviceTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtCalcNumber.Location = new System.Drawing.Point(119, 39);
+            this.txtCalcNumber.Name = "txtCalcNumber";
+            this.txtCalcNumber.Size = new System.Drawing.Size(110, 20);
+            this.txtCalcNumber.TabIndex = 6;
+            this.txtCalcNumber.Text = "1";
+            this.txtCalcNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // txtUnitCostVHPProcess
+            // txtUnitCost
             // 
-            this.txtUnitCostVHPProcess.Location = new System.Drawing.Point(119, 12);
-            this.txtUnitCostVHPProcess.Name = "txtUnitCostVHPProcess";
-            this.txtUnitCostVHPProcess.Size = new System.Drawing.Size(110, 20);
-            this.txtUnitCostVHPProcess.TabIndex = 5;
-            this.txtUnitCostVHPProcess.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtUnitCost.Location = new System.Drawing.Point(119, 12);
+            this.txtUnitCost.Name = "txtUnitCost";
+            this.txtUnitCost.Size = new System.Drawing.Size(110, 20);
+            this.txtUnitCost.TabIndex = 5;
+            this.txtUnitCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btnOK
             // 
@@ -87,8 +87,8 @@
             this.ClientSize = new System.Drawing.Size(334, 72);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtDeviceTime);
-            this.Controls.Add(this.txtUnitCostVHPProcess);
+            this.Controls.Add(this.txtCalcNumber);
+            this.Controls.Add(this.txtUnitCost);
             this.Controls.Add(this.btnOK);
             this.Name = "CostVHPProcess";
             this.Text = "CostVHPProcess";
@@ -102,8 +102,8 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtDeviceTime;
-        private System.Windows.Forms.TextBox txtUnitCostVHPProcess;
+        private System.Windows.Forms.TextBox txtCalcNumber;
+        private System.Windows.Forms.TextBox txtUnitCost;
         private System.Windows.Forms.Button btnOK;
     }
 }

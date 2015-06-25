@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.btnOK = new System.Windows.Forms.Button();
-            this.txtUnitCostPowderProcess = new System.Windows.Forms.TextBox();
-            this.txtPowderWeight = new System.Windows.Forms.TextBox();
+            this.txtUnitCost = new System.Windows.Forms.TextBox();
+            this.txtCalcNumber = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -45,40 +45,40 @@
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
-            // txtUnitCostPowderProcess
+            // txtUnitCost
             // 
-            this.txtUnitCostPowderProcess.Location = new System.Drawing.Point(118, 12);
-            this.txtUnitCostPowderProcess.Name = "txtUnitCostPowderProcess";
-            this.txtUnitCostPowderProcess.Size = new System.Drawing.Size(110, 20);
-            this.txtUnitCostPowderProcess.TabIndex = 1;
-            this.txtUnitCostPowderProcess.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtUnitCost.Location = new System.Drawing.Point(118, 12);
+            this.txtUnitCost.Name = "txtUnitCost";
+            this.txtUnitCost.Size = new System.Drawing.Size(110, 20);
+            this.txtUnitCost.TabIndex = 1;
+            this.txtUnitCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // txtPowderWeight
+            // txtCalcNumber
             // 
-            this.txtPowderWeight.Location = new System.Drawing.Point(118, 39);
-            this.txtPowderWeight.Name = "txtPowderWeight";
-            this.txtPowderWeight.Size = new System.Drawing.Size(110, 20);
-            this.txtPowderWeight.TabIndex = 2;
-            this.txtPowderWeight.Text = "1";
-            this.txtPowderWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtCalcNumber.Location = new System.Drawing.Point(118, 39);
+            this.txtCalcNumber.Name = "txtCalcNumber";
+            this.txtCalcNumber.Size = new System.Drawing.Size(110, 20);
+            this.txtCalcNumber.TabIndex = 2;
+            this.txtCalcNumber.Text = "1";
+            this.txtCalcNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.Size = new System.Drawing.Size(51, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "RMB/kg";
+            this.label1.Text = "RMB/kg:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 42);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 13);
+            this.label2.Size = new System.Drawing.Size(95, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Power Weight(kg)";
+            this.label2.Text = "Power Weight(kg):";
             // 
             // CostPowderProcess
             // 
@@ -87,8 +87,8 @@
             this.ClientSize = new System.Drawing.Size(336, 76);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtPowderWeight);
-            this.Controls.Add(this.txtUnitCostPowderProcess);
+            this.Controls.Add(this.txtCalcNumber);
+            this.Controls.Add(this.txtUnitCost);
             this.Controls.Add(this.btnOK);
             this.Name = "CostPowderProcess";
             this.Text = "CostPowderProcess";
@@ -101,8 +101,8 @@
         #endregion
 
         private System.Windows.Forms.Button btnOK;
-        private System.Windows.Forms.TextBox txtUnitCostPowderProcess;
-        private System.Windows.Forms.TextBox txtPowderWeight;
+        private System.Windows.Forms.TextBox txtUnitCost;
+        private System.Windows.Forms.TextBox txtCalcNumber;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

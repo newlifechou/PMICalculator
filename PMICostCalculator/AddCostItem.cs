@@ -75,6 +75,11 @@ namespace PMICostCalculator
             switch (cboItemCategory.SelectedItem.ToString())
             {
                 //如果CostItemCategory有变化，则这里必须跟着变化
+                case "MaterialsCost":
+                    CostMaterialsProcess fcmp = new CostMaterialsProcess();
+                    fcmp.FillIn += Common_FillIn;
+                    fcmp.ShowDialog();
+                    break;
                 case "PowderProcessCost":
                     CostPowderProcess fpowder = new CostPowderProcess();
                     fpowder.FillIn += Common_FillIn;

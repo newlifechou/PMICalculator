@@ -99,6 +99,12 @@
     <Compile Include="CostCalculator\CostVHPProcess.Designer.cs">
       <DependentUpon>CostVHPProcess.cs</DependentUpon>
     </Compile>
+    <Compile Include="CostCalculator\CostMaterialsProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostCalculator\CostMaterialsProcess.Designer.cs">
+      <DependentUpon>CostMaterialsProcess.cs</DependentUpon>
+    </Compile>
     <Compile Include="Language\us-en.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -176,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CostCalculator\CostVHPProcess.resx">
       <DependentUpon>CostVHPProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostCalculator\CostMaterialsProcess.resx">
+      <DependentUpon>CostMaterialsProcess.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Language\us-en.resx">
       <Generator>ResXFileCodeGenerator</Generator>

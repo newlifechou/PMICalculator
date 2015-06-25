@@ -150,6 +150,12 @@
     <Compile Include="StatisticManySheets.Designer.cs">
       <DependentUpon>StatisticManySheets.cs</DependentUpon>
     </Compile>
+    <Compile Include="StatisticSheetsSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticSheetsSelect.Designer.cs">
+      <DependentUpon>StatisticSheetsSelect.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddCostItem.resx">
       <DependentUpon>AddCostItem.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StatisticManySheets.resx">
       <DependentUpon>StatisticManySheets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticSheetsSelect.resx">
+      <DependentUpon>StatisticSheetsSelect.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="CalculationExcels\已知CIGS,Sb,NaS的质量配比.xlsx">

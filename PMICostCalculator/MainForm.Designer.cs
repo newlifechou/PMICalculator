@@ -46,7 +46,7 @@
             this.CalcEveryComponentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
             this.densityDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.periodicTableOfElementsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.periodicTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.graphiteMoldDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
             this.specificCalculationTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -108,45 +108,45 @@
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.newToolStripMenuItem.Text = "New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(108, 6);
             // 
             // settingToolStripMenuItem
             // 
             this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
-            this.settingToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.settingToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.settingToolStripMenuItem.Text = "Setting";
             this.settingToolStripMenuItem.Click += new System.EventHandler(this.settingToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(108, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -162,7 +162,7 @@
             // periodSheetsToolStripMenuItem
             // 
             this.periodSheetsToolStripMenuItem.Name = "periodSheetsToolStripMenuItem";
-            this.periodSheetsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.periodSheetsToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.periodSheetsToolStripMenuItem.Text = "Period Sheets";
             this.periodSheetsToolStripMenuItem.Click += new System.EventHandler(this.periodSheetsToolStripMenuItem_Click);
             // 
@@ -173,7 +173,7 @@
             this.CalcEveryComponentsToolStripMenuItem,
             this.toolStripMenuItem3,
             this.densityDataToolStripMenuItem,
-            this.periodicTableOfElementsToolStripMenuItem,
+            this.periodicTableToolStripMenuItem,
             this.graphiteMoldDataToolStripMenuItem,
             this.toolStripMenuItem4,
             this.specificCalculationTableToolStripMenuItem});
@@ -204,11 +204,12 @@
             this.densityDataToolStripMenuItem.Size = new System.Drawing.Size(263, 22);
             this.densityDataToolStripMenuItem.Text = "Compound Density Data";
             // 
-            // periodicTableOfElementsToolStripMenuItem
+            // periodicTableToolStripMenuItem
             // 
-            this.periodicTableOfElementsToolStripMenuItem.Name = "periodicTableOfElementsToolStripMenuItem";
-            this.periodicTableOfElementsToolStripMenuItem.Size = new System.Drawing.Size(263, 22);
-            this.periodicTableOfElementsToolStripMenuItem.Text = "Periodic Table Of Elements";
+            this.periodicTableToolStripMenuItem.Name = "periodicTableToolStripMenuItem";
+            this.periodicTableToolStripMenuItem.Size = new System.Drawing.Size(263, 22);
+            this.periodicTableToolStripMenuItem.Text = "Periodic Table";
+            this.periodicTableToolStripMenuItem.Click += new System.EventHandler(this.periodicTableToolStripMenuItem_Click);
             // 
             // graphiteMoldDataToolStripMenuItem
             // 
@@ -521,7 +522,7 @@
         private System.Windows.Forms.ToolStripMenuItem CalcEveryComponentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem densityDataToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem periodicTableOfElementsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem periodicTableToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem graphiteMoldDataToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem specificCalculationTableToolStripMenuItem;

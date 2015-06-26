@@ -99,6 +99,7 @@
     </Compile>
     <Compile Include="Code\EntityDensityItem.cs" />
     <Compile Include="Code\EntityElementItem.cs" />
+    <Compile Include="Code\EntityGraphitePaperItemcs.cs" />
     <Compile Include="DensityInventory.cs">
       <SubType>Form</SubType>
     </Compile>

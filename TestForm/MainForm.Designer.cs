@@ -182,7 +182,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(258, 9);
+            this.label1.Location = new System.Drawing.Point(252, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(392, 33);
             this.label1.TabIndex = 1;
@@ -196,9 +196,9 @@
             this.groupBox1.Controls.Add(this.button7);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button11);
-            this.groupBox1.Location = new System.Drawing.Point(12, 64);
+            this.groupBox1.Location = new System.Drawing.Point(12, 52);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(285, 368);
+            this.groupBox1.Size = new System.Drawing.Size(290, 368);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "密度计算相关";
@@ -208,7 +208,7 @@
             this.groupBox2.Controls.Add(this.button6);
             this.groupBox2.Controls.Add(this.button4);
             this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Location = new System.Drawing.Point(308, 64);
+            this.groupBox2.Location = new System.Drawing.Point(306, 52);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(285, 368);
             this.groupBox2.TabIndex = 3;
@@ -222,7 +222,7 @@
             this.groupBox3.Controls.Add(this.button12);
             this.groupBox3.Controls.Add(this.button14);
             this.groupBox3.Controls.Add(this.button13);
-            this.groupBox3.Location = new System.Drawing.Point(599, 64);
+            this.groupBox3.Location = new System.Drawing.Point(599, 52);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(285, 368);
             this.groupBox3.TabIndex = 4;
@@ -242,7 +242,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(896, 444);
+            this.ClientSize = new System.Drawing.Size(896, 477);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);

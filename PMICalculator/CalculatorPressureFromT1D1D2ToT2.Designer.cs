@@ -1,4 +1,4 @@
-﻿namespace PMICalculator
+﻿namespace PMICalculatorDll
 {
     partial class CalculatorPressureFromT1D1D2ToT2
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace PMICalculator
+namespace PMICalculatorDll
 {
     /// <summary>
     /// 加权密度用到的item

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace PMICalculator
+namespace PMICalculatorDll
 {
     /// <summary>
     /// 这个静态类主要用于通用的Form操作

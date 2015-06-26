@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace PMICalculator
+namespace PMICalculatorDll
 {
     /// <summary>
     /// 这个类主要用于热压机的压力换算

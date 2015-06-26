@@ -7,8 +7,8 @@
     <ProjectGuid>{ED6152FD-39C3-4BCA-85A8-76CDAC51B258}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PMICalculator</RootNamespace>
-    <AssemblyName>PMICalculator</AssemblyName>
+    <RootNamespace>PMICalculatorDll</RootNamespace>
+    <AssemblyName>PMICalculatorDll</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

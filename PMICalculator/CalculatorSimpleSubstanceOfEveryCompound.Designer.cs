@@ -1,4 +1,4 @@
-﻿namespace PMICalculator
+﻿namespace PMICalculatorDll
 {
     partial class CalculatorSimpleSubstanceOfEveryCompound
     {

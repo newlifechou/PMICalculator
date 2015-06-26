@@ -75,9 +75,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PMICalculator\PMICalculator.csproj">
+    <ProjectReference Include="..\PMICalculator\PMICalculatorDll.csproj">
       <Project>{ed6152fd-39c3-4bca-85a8-76cdac51b258}</Project>
-      <Name>PMICalculator</Name>
+      <Name>PMICalculatorDll</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

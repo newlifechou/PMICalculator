@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCalculator", "TestForm\TestCalculator.csproj", "{B26F5936-B60D-42B8-B5C6-D0A4A91DCD89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMISpecificCalculator", "TestForm\PMISpecificCalculator.csproj", "{B26F5936-B60D-42B8-B5C6-D0A4A91DCD89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMICalculator", "PMICalculator\PMICalculator.csproj", "{ED6152FD-39C3-4BCA-85A8-76CDAC51B258}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMICalculatorDll", "PMICalculator\PMICalculatorDll.csproj", "{ED6152FD-39C3-4BCA-85A8-76CDAC51B258}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMICostCalculator", "PMICostCalculator\PMICostCalculator.csproj", "{2FF18702-8F7E-4C0F-8265-FA66353C5501}"
 EndProject

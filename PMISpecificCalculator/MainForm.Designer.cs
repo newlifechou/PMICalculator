@@ -182,11 +182,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(252, 9);
+            this.label1.Location = new System.Drawing.Point(194, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(392, 33);
+            this.label1.Size = new System.Drawing.Size(508, 33);
             this.label1.TabIndex = 1;
-            this.label1.Text = "成都先锋材料专用计算器集合";
+            this.label1.Text = "成都先锋材料有限公司专用计算器集合";
             // 
             // groupBox1
             // 

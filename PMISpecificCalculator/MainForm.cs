@@ -77,5 +77,17 @@ namespace PMISpecificCalculator
             CalculatorSimpleSubstanceOfEveryCompound calcualtor = new CalculatorSimpleSubstanceOfEveryCompound();
             calcualtor.ShowDialog();
         }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            CalculatorFillMaterials calcualtor = new CalculatorFillMaterials();
+            calcualtor.ShowDialog();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            CalculatorExcelSheets calcualtor = new CalculatorExcelSheets();
+            calcualtor.ShowDialog();
+        }
     }
 }

@@ -45,8 +45,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -234,15 +234,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "原料计算相关";
             // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(20, 296);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(249, 51);
-            this.button14.TabIndex = 0;
-            this.button14.Text = "各类专用计算表";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
             // button15
             // 
             this.button15.Location = new System.Drawing.Point(20, 26);
@@ -251,6 +242,17 @@
             this.button15.TabIndex = 0;
             this.button15.Text = "装料计算器";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(20, 296);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(249, 51);
+            this.button14.TabIndex = 0;
+            this.button14.Text = "各类专用计算表";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // linkLabel1
             // 

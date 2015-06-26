@@ -41,6 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalculatorExcelSheets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculatorExcelSheets.Designer.cs">
+      <DependentUpon>CalculatorExcelSheets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalculatorFillMaterials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculatorFillMaterials.Designer.cs">
+      <DependentUpon>CalculatorFillMaterials.cs</DependentUpon>
+    </Compile>
     <Compile Include="Code\CalculateWeightingDensity.cs" />
     <Compile Include="CalculatorMaterialRequirement.cs">
       <SubType>Form</SubType>
@@ -125,6 +137,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CalculatorExcelSheets.resx">
+      <DependentUpon>CalculatorExcelSheets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculatorFillMaterials.resx">
+      <DependentUpon>CalculatorFillMaterials.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CalculatorMaterialRequirement.resx">
       <DependentUpon>CalculatorMaterialRequirement.cs</DependentUpon>
     </EmbeddedResource>

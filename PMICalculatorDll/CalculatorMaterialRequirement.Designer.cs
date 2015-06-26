@@ -44,6 +44,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dgvCostCalculateList = new System.Windows.Forms.DataGridView();
@@ -54,8 +56,6 @@
             this.Weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label11 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -230,6 +230,28 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "计算区域";
             // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(149, 28);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(97, 17);
+            this.radioButton2.TabIndex = 4;
+            this.radioButton2.Text = "试验所需原料";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Location = new System.Drawing.Point(18, 28);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(97, 17);
+            this.radioButton1.TabIndex = 4;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "产品所需原料";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(244, 55);
@@ -330,28 +352,6 @@
             this.button4.TabIndex = 2;
             this.button4.Text = "删除";
             this.button4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(18, 28);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(97, 17);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "产品所需原料";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(149, 28);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(97, 17);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.Text = "试验所需原料";
-            this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // textBox7
             // 

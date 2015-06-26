@@ -47,6 +47,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.btnCalculate = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtWeight
@@ -211,17 +212,27 @@
             // 
             this.btnCalculate.Location = new System.Drawing.Point(12, 195);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(211, 42);
+            this.btnCalculate.Size = new System.Drawing.Size(296, 42);
             this.btnCalculate.TabIndex = 5;
             this.btnCalculate.Text = "计算";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(214, 96);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(91, 29);
+            this.button2.TabIndex = 58;
+            this.button2.Text = "密度库";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // CalculatorArchimedesDensity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(235, 258);
+            this.ClientSize = new System.Drawing.Size(320, 258);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.txtRelativeDensity);
             this.Controls.Add(this.txtRealDensity);
@@ -269,5 +280,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.Button button2;
     }
 }

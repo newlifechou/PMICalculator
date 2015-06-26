@@ -117,6 +117,12 @@
     </Compile>
     <Compile Include="Code\CalculateTargetDensity.cs" />
     <Compile Include="Code\WeightingDensityItem.cs" />
+    <Compile Include="SimpleElementInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimpleElementInventory.Designer.cs">
+      <DependentUpon>SimpleElementInventory.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CalculatorMaterialRequirement.resx">
@@ -151,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DensityInventory.resx">
       <DependentUpon>DensityInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimpleElementInventory.resx">
+      <DependentUpon>SimpleElementInventory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -187,7 +196,9 @@
     <Content Include="ExtraTool\PeriodicTable.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="SubstanceData.xml" />
+    <Resource Include="SubstanceData.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

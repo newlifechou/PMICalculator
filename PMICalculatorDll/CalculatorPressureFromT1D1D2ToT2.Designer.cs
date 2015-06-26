@@ -46,6 +46,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -102,10 +104,12 @@
             this.txtT1.Name = "txtT1";
             this.txtT1.Size = new System.Drawing.Size(80, 20);
             this.txtT1.TabIndex = 2;
+            this.txtT1.Text = "30";
             this.txtT1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtD1);
             this.groupBox1.Controls.Add(this.txtT1);
@@ -125,6 +129,7 @@
             this.txtD1.Name = "txtD1";
             this.txtD1.Size = new System.Drawing.Size(80, 20);
             this.txtD1.TabIndex = 1;
+            this.txtD1.Text = "80";
             this.txtD1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label5
@@ -157,6 +162,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.txtD2);
             this.groupBox2.Controls.Add(this.txtT2);
@@ -185,6 +191,7 @@
             this.txtD2.Name = "txtD2";
             this.txtD2.Size = new System.Drawing.Size(80, 20);
             this.txtD2.TabIndex = 3;
+            this.txtD2.Text = "306";
             this.txtD2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtT2
@@ -223,6 +230,24 @@
             this.label12.Size = new System.Drawing.Size(31, 13);
             this.label12.TabIndex = 0;
             this.label12.Text = "压力";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(185, 17);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(91, 29);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "模具库";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(185, 17);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 29);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "模具库";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // CalculatorPressureFromT1D1D2ToT2
             // 
@@ -266,5 +291,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtD1;
         private System.Windows.Forms.TextBox txtD2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button1;
     }
 }

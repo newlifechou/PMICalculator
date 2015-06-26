@@ -38,6 +38,7 @@
             this.txtP1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCalculate
@@ -65,6 +66,7 @@
             this.txtD1.Name = "txtD1";
             this.txtD1.Size = new System.Drawing.Size(80, 20);
             this.txtD1.TabIndex = 2;
+            this.txtD1.Text = "80";
             this.txtD1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtT1
@@ -73,7 +75,7 @@
             this.txtT1.Name = "txtT1";
             this.txtT1.Size = new System.Drawing.Size(80, 20);
             this.txtT1.TabIndex = 1;
-            this.txtT1.Text = "5";
+            this.txtT1.Text = "30";
             this.txtT1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label2
@@ -131,11 +133,21 @@
             this.label5.TabIndex = 24;
             this.label5.Text = "压强";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(200, 38);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(91, 29);
+            this.button3.TabIndex = 28;
+            this.button3.Text = "模具库";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // CalculatorPressureFromTDToP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(304, 173);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtD1);
@@ -165,5 +177,6 @@
         private System.Windows.Forms.TextBox txtP1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button3;
     }
 }

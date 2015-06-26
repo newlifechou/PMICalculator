@@ -46,6 +46,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -133,17 +134,17 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(19, 26);
+            this.button9.Location = new System.Drawing.Point(20, 80);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(249, 51);
             this.button9.TabIndex = 0;
-            this.button9.Text = "装料专用计算器";
+            this.button9.Text = "订单所需原料计算器";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(19, 80);
+            this.button10.Location = new System.Drawing.Point(20, 134);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(249, 51);
             this.button10.TabIndex = 0;
@@ -162,7 +163,7 @@
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(19, 134);
+            this.button12.Location = new System.Drawing.Point(20, 188);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(249, 51);
             this.button12.TabIndex = 0;
@@ -171,7 +172,7 @@
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(19, 188);
+            this.button13.Location = new System.Drawing.Point(20, 242);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(249, 51);
             this.button13.TabIndex = 0;
@@ -217,6 +218,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.button15);
             this.groupBox3.Controls.Add(this.button9);
             this.groupBox3.Controls.Add(this.button10);
             this.groupBox3.Controls.Add(this.button12);
@@ -231,12 +233,21 @@
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(19, 242);
+            this.button14.Location = new System.Drawing.Point(20, 296);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(249, 51);
             this.button14.TabIndex = 0;
             this.button14.Text = "其他专用计算表";
             this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(20, 26);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(249, 51);
+            this.button15.TabIndex = 0;
+            this.button15.Text = "装料计算器";
+            this.button15.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -277,6 +288,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
     }
 }
 

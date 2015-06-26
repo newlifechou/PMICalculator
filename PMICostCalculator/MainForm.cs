@@ -297,23 +297,6 @@ namespace PMICostCalculator
             Settings f = new Settings();
             f.ShowDialog();
         }
-
-        private void periodSheetsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            StatisticSheetsSelect sss = new StatisticSheetsSelect();
-            sss.ShowDialog();
-        }
-
-        private void periodicTableToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                System.Diagnostics.Process.Start(Path.Combine(Environment.CurrentDirectory, "ExtraTool", "PeriodicTable.exe"));
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
+      
     }
 }

@@ -225,33 +225,6 @@
       <DependentUpon>StatisticSheetsSelect.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
-    <None Include="CalculationExcels\已知CIGS,Sb,NaS的质量配比.xlsx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="CalculationExcels\已知CIGS和KaF的摩尔配比.xlsx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="CalculationExcels\已知CIGS和NaF的摩尔配比.xlsx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="CalculationExcels\已知CIGS和NaF的质量配比.xlsx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="CalculationExcels\已知CuGaSe和KF的摩尔配比.xlsx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="CalculationExcels\已知Ge和B的质量配比.xlsx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="CalculationExcels\已知In2Se3和NaF的摩尔配比.xlsx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="CalculationExcels\已知SeAsGeSi的摩尔成分.xlsx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="CalculationExcels\已知ZnO和MgO的摩尔配比.xlsx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -268,9 +241,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="calculator.ico" />
-    <Content Include="ExtraTool\PeriodicTable.exe">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="SubstanceData.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

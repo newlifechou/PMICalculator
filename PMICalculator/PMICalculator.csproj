@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculateWeightingDensity.cs" />
+    <Compile Include="Code\CalculateWeightingDensity.cs" />
     <Compile Include="CalculatorMaterialRequirement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,7 +66,7 @@
     <Compile Include="CalculatorArchimedesDensity.Designer.cs">
       <DependentUpon>CalculatorArchimedesDensity.cs</DependentUpon>
     </Compile>
-    <Compile Include="CalculatePressure.cs" />
+    <Compile Include="Code\CalculatePressure.cs" />
     <Compile Include="CalculatorCircleTargetDensity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,13 +97,16 @@
     <Compile Include="CalculatorWeightingDensityByWt.Designer.cs">
       <DependentUpon>CalculatorWeightingDensityByWt.cs</DependentUpon>
     </Compile>
+    <Compile Include="Code\EntityDensityItem.cs" />
+    <Compile Include="Code\EntityElementItem.cs" />
     <Compile Include="DensityInventory.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DensityInventory.Designer.cs">
       <DependentUpon>DensityInventory.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCommonOperate.cs" />
+    <Compile Include="Code\FormCommonOperate.cs" />
+    <Compile Include="Code\EntityMoldItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CalculatorRectangleTargetDensity.cs">
       <SubType>Form</SubType>
@@ -111,8 +114,8 @@
     <Compile Include="CalculatorRectangleTargetDensity.Designer.cs">
       <DependentUpon>CalculatorRectangleTargetDensity.cs</DependentUpon>
     </Compile>
-    <Compile Include="CalculateTargetDensity.cs" />
-    <Compile Include="WeightingDensityItem.cs" />
+    <Compile Include="Code\CalculateTargetDensity.cs" />
+    <Compile Include="Code\WeightingDensityItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CalculatorMaterialRequirement.resx">

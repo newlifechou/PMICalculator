@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using PMICalculatorDll;
 
-namespace TestForm
+namespace PMISpecificCalculator
 {
     public partial class MainForm : Form
     {

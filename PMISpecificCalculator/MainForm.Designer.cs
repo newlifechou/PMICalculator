@@ -1,4 +1,4 @@
-﻿namespace TestForm
+﻿namespace PMISpecificCalculator
 {
     partial class MainForm
     {

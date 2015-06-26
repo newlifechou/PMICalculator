@@ -235,7 +235,7 @@
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(249, 51);
             this.button14.TabIndex = 0;
-            this.button14.Text = "其他计算表";
+            this.button14.Text = "其他专用计算表";
             this.button14.UseVisualStyleBackColor = true;
             // 
             // MainForm

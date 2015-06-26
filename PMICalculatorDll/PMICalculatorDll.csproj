@@ -183,6 +183,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DevelopNote.txt" />
     <Content Include="ExtraTool\PeriodicTable.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

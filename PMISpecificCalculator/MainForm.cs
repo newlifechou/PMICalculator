@@ -89,5 +89,10 @@ namespace PMISpecificCalculator
             CalculatorExcelSheets calcualtor = new CalculatorExcelSheets();
             calcualtor.ShowDialog();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("iexplore.exe", "http://www.cd-pmi.com");  
+        }
     }
 }

@@ -211,12 +211,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DevelopNote.txt" />
-    <Content Include="ExtraTool\PeriodicTable.exe">
+    <EmbeddedResource Include="ExtraTool\PeriodicTable.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Resource Include="SubstanceData.xml">
+    </EmbeddedResource>
+    <None Include="SubstanceData.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

@@ -49,6 +49,7 @@
             this.button14 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
+            this.button16 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -225,11 +226,12 @@
             this.groupBox3.Controls.Add(this.button9);
             this.groupBox3.Controls.Add(this.button10);
             this.groupBox3.Controls.Add(this.button12);
+            this.groupBox3.Controls.Add(this.button16);
             this.groupBox3.Controls.Add(this.button14);
             this.groupBox3.Controls.Add(this.button13);
             this.groupBox3.Location = new System.Drawing.Point(599, 52);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(285, 368);
+            this.groupBox3.Size = new System.Drawing.Size(285, 419);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "原料计算相关";
@@ -257,27 +259,37 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(837, 444);
+            this.linkLabel1.Location = new System.Drawing.Point(837, 25);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(31, 13);
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "网站";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(409, 444);
+            this.label2.Location = new System.Drawing.Point(409, 458);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "版本号:1.0.0.0";
             // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(20, 353);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(249, 51);
+            this.button16.TabIndex = 0;
+            this.button16.Text = "元素周期表";
+            this.button16.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(896, 477);
+            this.ClientSize = new System.Drawing.Size(896, 485);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
@@ -317,6 +329,7 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button16;
     }
 }
 

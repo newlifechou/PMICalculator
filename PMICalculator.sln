@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMICalculatorDll", "PMICalc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMISpecificCalculator", "PMISpecificCalculator\PMISpecificCalculator.csproj", "{B26F5936-B60D-42B8-B5C6-D0A4A91DCD89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadDensityDataFromDB", "ReadDensityDataFromDB\ReadDensityDataFromDB.csproj", "{6D4F8DDB-EF83-4203-A29F-2BEA80856119}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B26F5936-B60D-42B8-B5C6-D0A4A91DCD89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B26F5936-B60D-42B8-B5C6-D0A4A91DCD89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B26F5936-B60D-42B8-B5C6-D0A4A91DCD89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D4F8DDB-EF83-4203-A29F-2BEA80856119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D4F8DDB-EF83-4203-A29F-2BEA80856119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D4F8DDB-EF83-4203-A29F-2BEA80856119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D4F8DDB-EF83-4203-A29F-2BEA80856119}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

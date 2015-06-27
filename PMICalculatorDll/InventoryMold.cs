@@ -45,13 +45,15 @@ namespace PMICalculatorDll
             var query = from m in doc.Descendants("Mold")
                         select new
                         {
-                            MoldDiameter = m.Element("Diameter").Value,
+                            MoldDiameter = Convert.ToDouble(m.Element("Diameter").Value),
                             MoldType = m.Element("Type").Value
                         };
-            foreach (var item in query)
+            var list = query.ToList();
+            list.Sort((a, b) => a.MoldDiameter.CompareTo(b.MoldDiameter));
+            foreach (var item in list)
             {
                 ListViewItem lvi = new ListViewItem();
-                lvi.Text = item.MoldDiameter;
+                lvi.Text = item.MoldDiameter.ToString() ;
                 lvi.SubItems.Add(item.MoldType);
                 lvData.Items.Add(lvi);
             }

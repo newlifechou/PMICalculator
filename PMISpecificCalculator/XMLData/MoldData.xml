@@ -24,4 +24,8 @@
     <Diameter>306</Diameter>
     <Type>超强</Type>
   </Mold>
+  <Mold>
+    <Diameter>50.8</Diameter>
+    <Type>普通</Type>
+  </Mold>
 </Molds>

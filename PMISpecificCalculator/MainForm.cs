@@ -15,6 +15,7 @@ namespace PMISpecificCalculator
     {
         private string DataXMLFilePathMold;
         private string DataXMLFilePathSimpleSubstance;
+        private string DataXMLFilePathDensity;
         public MainForm()
         {
             InitializeComponent();
@@ -22,7 +23,7 @@ namespace PMISpecificCalculator
             //这里初始化所有的数据文件路径
             DataXMLFilePathMold = Path.Combine(Environment.CurrentDirectory, "XMLData", "MoldData.xml");
             DataXMLFilePathSimpleSubstance = Path.Combine(Environment.CurrentDirectory, "XMLData", "SubstanceData.xml");
-
+            DataXMLFilePathDensity = Path.Combine(Environment.CurrentDirectory, "XMLData", "Density.xml");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -143,6 +144,13 @@ namespace PMISpecificCalculator
             InventorySimpleElement ise = new InventorySimpleElement();
             ise.DataXMLFilePath = DataXMLFilePathSimpleSubstance;
             ise.ShowDialog();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            InventoryDensity id = new InventoryDensity();
+            id.DataXMLFilePath = DataXMLFilePathDensity;
+            id.ShowDialog();
         }
     }
 }

@@ -119,6 +119,9 @@
   <ItemGroup>
     <Content Include="CalculationExcels\备注.txt" />
     <Content Include="calculator.ico" />
+    <Content Include="XMLData\Density.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="XMLData\MoldData.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

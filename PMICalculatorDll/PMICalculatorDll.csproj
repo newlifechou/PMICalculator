@@ -121,6 +121,12 @@
     </Compile>
     <Compile Include="Code\FormCommonOperate.cs" />
     <Compile Include="Code\EntityMoldItem.cs" />
+    <Compile Include="InventoryGraphitePaper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryGraphitePaper.Designer.cs">
+      <DependentUpon>InventoryGraphitePaper.cs</DependentUpon>
+    </Compile>
     <Compile Include="InventoryMold.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InventoryDensity.resx">
       <DependentUpon>InventoryDensity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryGraphitePaper.resx">
+      <DependentUpon>InventoryGraphitePaper.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InventoryMold.resx">
       <DependentUpon>InventoryMold.cs</DependentUpon>

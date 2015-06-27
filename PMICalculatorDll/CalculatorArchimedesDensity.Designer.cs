@@ -47,7 +47,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.btnCalculate = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnInventoryDensity = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtWeight
@@ -218,21 +218,21 @@
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
-            // button2
+            // btnInventoryDensity
             // 
-            this.button2.Location = new System.Drawing.Point(214, 96);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 29);
-            this.button2.TabIndex = 58;
-            this.button2.Text = "密度库";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnInventoryDensity.Location = new System.Drawing.Point(214, 96);
+            this.btnInventoryDensity.Name = "btnInventoryDensity";
+            this.btnInventoryDensity.Size = new System.Drawing.Size(91, 29);
+            this.btnInventoryDensity.TabIndex = 58;
+            this.btnInventoryDensity.Text = "密度库";
+            this.btnInventoryDensity.UseVisualStyleBackColor = true;
             // 
             // CalculatorArchimedesDensity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(320, 258);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnInventoryDensity);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.txtRelativeDensity);
             this.Controls.Add(this.txtRealDensity);
@@ -280,6 +280,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button btnCalculate;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnInventoryDensity;
     }
 }

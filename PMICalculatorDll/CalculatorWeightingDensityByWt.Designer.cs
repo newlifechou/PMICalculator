@@ -46,7 +46,7 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnInventorySimpleSubstance = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
@@ -214,21 +214,21 @@
             this.label7.TabIndex = 1;
             this.label7.Text = "需确保输入的Wt的总和为100";
             // 
-            // button3
+            // btnInventorySimpleSubstance
             // 
-            this.button3.Location = new System.Drawing.Point(244, 17);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 36);
-            this.button3.TabIndex = 24;
-            this.button3.Text = "元素单质库";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnInventorySimpleSubstance.Location = new System.Drawing.Point(244, 17);
+            this.btnInventorySimpleSubstance.Name = "btnInventorySimpleSubstance";
+            this.btnInventorySimpleSubstance.Size = new System.Drawing.Size(137, 36);
+            this.btnInventorySimpleSubstance.TabIndex = 24;
+            this.btnInventorySimpleSubstance.Text = "元素单质库";
+            this.btnInventorySimpleSubstance.UseVisualStyleBackColor = true;
             // 
             // CalculatorWeightingDensityByWt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(393, 498);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnInventorySimpleSubstance);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtItemDensity);
@@ -272,6 +272,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemWt;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemDensity;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnInventorySimpleSubstance;
     }
 }

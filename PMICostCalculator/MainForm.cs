@@ -267,7 +267,8 @@ namespace PMICostCalculator
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("PMICostCalcualtor\r\nWelcome to use","About",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            About a = new About();
+            a.ShowDialog();
         }
         /// <summary>
         /// 切换界面语言

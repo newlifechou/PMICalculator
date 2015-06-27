@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>clanbomber %281%29.ico</ApplicationIcon>
+    <ApplicationIcon>calculator.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -117,9 +117,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bomb_2.ico" />
     <Content Include="CalculationExcels\备注.txt" />
-    <Content Include="clanbomber %281%29.ico" />
+    <Content Include="calculator.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

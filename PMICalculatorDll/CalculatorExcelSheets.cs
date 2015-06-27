@@ -32,6 +32,10 @@ namespace PMICalculatorDll
             {
                 MessageBox.Show(ex.Message);                
             }
+            finally
+            {
+                this.Close();
+            }
         }
 
         private void CalculatorExcelSheets_Load(object sender, EventArgs e)

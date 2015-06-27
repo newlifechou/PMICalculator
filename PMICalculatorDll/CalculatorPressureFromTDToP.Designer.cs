@@ -38,7 +38,7 @@
             this.txtP1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnInventoryMold = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCalculate
@@ -133,21 +133,22 @@
             this.label5.TabIndex = 24;
             this.label5.Text = "压强";
             // 
-            // button3
+            // btnInventoryMold
             // 
-            this.button3.Location = new System.Drawing.Point(200, 38);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 29);
-            this.button3.TabIndex = 28;
-            this.button3.Text = "模具库";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnInventoryMold.Location = new System.Drawing.Point(200, 38);
+            this.btnInventoryMold.Name = "btnInventoryMold";
+            this.btnInventoryMold.Size = new System.Drawing.Size(91, 29);
+            this.btnInventoryMold.TabIndex = 28;
+            this.btnInventoryMold.Text = "模具库";
+            this.btnInventoryMold.UseVisualStyleBackColor = true;
+            this.btnInventoryMold.Click += new System.EventHandler(this.btnInventoryMold_Click);
             // 
             // CalculatorPressureFromTDToP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(304, 173);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnInventoryMold);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtD1);
@@ -177,6 +178,6 @@
         private System.Windows.Forms.TextBox txtP1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnInventoryMold;
     }
 }

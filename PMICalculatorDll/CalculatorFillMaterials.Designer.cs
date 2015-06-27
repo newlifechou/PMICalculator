@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnInventoryDensity = new System.Windows.Forms.Button();
             this.txtTheoreticalDensity = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnInventoryMold = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtThickness = new System.Windows.Forms.TextBox();
+            this.txtThicnessMore = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtDiameter = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtNumber = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,14 +48,14 @@
             this.btnCalculate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button2
+            // btnInventoryDensity
             // 
-            this.button2.Location = new System.Drawing.Point(266, 6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 29);
-            this.button2.TabIndex = 61;
-            this.button2.Text = "密度库";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnInventoryDensity.Location = new System.Drawing.Point(266, 6);
+            this.btnInventoryDensity.Name = "btnInventoryDensity";
+            this.btnInventoryDensity.Size = new System.Drawing.Size(91, 29);
+            this.btnInventoryDensity.TabIndex = 61;
+            this.btnInventoryDensity.Text = "密度库";
+            this.btnInventoryDensity.UseVisualStyleBackColor = true;
             // 
             // txtTheoreticalDensity
             // 
@@ -93,14 +93,15 @@
             this.label4.TabIndex = 66;
             this.label4.Text = "mm";
             // 
-            // button3
+            // btnInventoryMold
             // 
-            this.button3.Location = new System.Drawing.Point(266, 36);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 29);
-            this.button3.TabIndex = 73;
-            this.button3.Text = "模具库";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnInventoryMold.Location = new System.Drawing.Point(266, 36);
+            this.btnInventoryMold.Name = "btnInventoryMold";
+            this.btnInventoryMold.Size = new System.Drawing.Size(91, 29);
+            this.btnInventoryMold.TabIndex = 73;
+            this.btnInventoryMold.Text = "模具库";
+            this.btnInventoryMold.UseVisualStyleBackColor = true;
+            this.btnInventoryMold.Click += new System.EventHandler(this.btnInventoryMold_Click);
             // 
             // checkBox1
             // 
@@ -115,23 +116,23 @@
             this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtThickness
             // 
-            this.textBox2.Location = new System.Drawing.Point(116, 66);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 62;
-            this.textBox2.Text = "5";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtThickness.Location = new System.Drawing.Point(116, 66);
+            this.txtThickness.Name = "txtThickness";
+            this.txtThickness.Size = new System.Drawing.Size(100, 20);
+            this.txtThickness.TabIndex = 62;
+            this.txtThickness.Text = "5";
+            this.txtThickness.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox4
+            // txtThicnessMore
             // 
-            this.textBox4.Location = new System.Drawing.Point(116, 92);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 63;
-            this.textBox4.Text = "0.5";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtThicnessMore.Location = new System.Drawing.Point(116, 92);
+            this.txtThicnessMore.Name = "txtThicnessMore";
+            this.txtThicnessMore.Size = new System.Drawing.Size(100, 20);
+            this.txtThicnessMore.TabIndex = 63;
+            this.txtThicnessMore.Text = "0.5";
+            this.txtThicnessMore.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label6
             // 
@@ -142,14 +143,14 @@
             this.label6.TabIndex = 67;
             this.label6.Text = "mm";
             // 
-            // textBox3
+            // txtDiameter
             // 
-            this.textBox3.Location = new System.Drawing.Point(116, 40);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 64;
-            this.textBox3.Text = "233";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDiameter.Location = new System.Drawing.Point(116, 40);
+            this.txtDiameter.Name = "txtDiameter";
+            this.txtDiameter.Size = new System.Drawing.Size(100, 20);
+            this.txtDiameter.TabIndex = 64;
+            this.txtDiameter.Text = "233";
+            this.txtDiameter.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label5
             // 
@@ -160,14 +161,14 @@
             this.label5.TabIndex = 68;
             this.label5.Text = "mm";
             // 
-            // textBox5
+            // txtNumber
             // 
-            this.textBox5.Location = new System.Drawing.Point(116, 118);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 65;
-            this.textBox5.Text = "1";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtNumber.Location = new System.Drawing.Point(116, 118);
+            this.txtNumber.Name = "txtNumber";
+            this.txtNumber.Size = new System.Drawing.Size(100, 20);
+            this.txtNumber.TabIndex = 65;
+            this.txtNumber.Text = "1";
+            this.txtNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label8
             // 
@@ -213,6 +214,7 @@
             this.btnCalculate.TabIndex = 75;
             this.btnCalculate.Text = "计算";
             this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // CalculatorFillMaterials
             // 
@@ -221,19 +223,19 @@
             this.ClientSize = new System.Drawing.Size(373, 195);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnInventoryMold);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtThickness);
+            this.Controls.Add(this.txtThicnessMore);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtDiameter);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtNumber);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnInventoryDensity);
             this.Controls.Add(this.txtTheoreticalDensity);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
@@ -246,19 +248,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnInventoryDensity;
         private System.Windows.Forms.TextBox txtTheoreticalDensity;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnInventoryMold;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtThickness;
+        private System.Windows.Forms.TextBox txtThicnessMore;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtDiameter;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtNumber;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

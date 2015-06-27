@@ -112,6 +112,7 @@
     <Compile Include="Code\EntityDensityItem.cs" />
     <Compile Include="Code\EntityElementItem.cs" />
     <Compile Include="Code\EntityGraphitePaperItemcs.cs" />
+    <Compile Include="InventoryArgs.cs" />
     <Compile Include="InventoryDensity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,9 +202,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DevelopNote.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

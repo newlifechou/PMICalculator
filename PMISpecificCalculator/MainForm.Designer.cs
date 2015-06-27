@@ -160,7 +160,7 @@
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(6, 19);
+            this.button11.Location = new System.Drawing.Point(17, 19);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(249, 51);
             this.button11.TabIndex = 0;
@@ -175,6 +175,7 @@
             this.button12.TabIndex = 0;
             this.button12.Text = "元素库";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button13
             // 
@@ -184,6 +185,7 @@
             this.button13.TabIndex = 0;
             this.button13.Text = "模具库";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // label1
             // 
@@ -257,7 +259,7 @@
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(6, 76);
+            this.button16.Location = new System.Drawing.Point(17, 76);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(249, 51);
             this.button16.TabIndex = 0;

@@ -11,6 +11,7 @@ namespace PMICalculatorDll
 {
     public partial class CalculatorPressureFromT1D1D2ToT2 : Form
     {
+        public string DataXMLFilePath;
         public CalculatorPressureFromT1D1D2ToT2()
         {
             InitializeComponent();
@@ -35,6 +36,33 @@ namespace PMICalculatorDll
             {
                 MessageBox.Show(ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnInventoryMold1_Click(object sender, EventArgs e)
+        {
+            InventoryMold im = new InventoryMold();
+            im.DataXMLFilePath = DataXMLFilePath;
+            im.FillIn += im_FillIn;
+
+            Button btn = sender as Button;
+            ButtonName = btn.Name;
+            im.ShowDialog();
+        }
+        /// <summary>
+        /// 区分按下去的是那个模具库按钮
+        /// </summary>
+        private string ButtonName;
+        private void im_FillIn(object sender, InventoryArgs e)
+        {
+            if (ButtonName == "btnInventoryMold1")
+            {
+                txtD1.Text = e.Para1;
+            }
+            else if (ButtonName == "btnInventoryMold2")
+            {
+                txtD2.Text = e.Para1;
+            }
+
         }
     }
 }

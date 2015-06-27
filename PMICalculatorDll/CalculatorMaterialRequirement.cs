@@ -11,10 +11,24 @@ namespace PMICalculatorDll
 {
     public partial class CalculatorMaterialRequirement : Form
     {
+        public string DataXMLFilePath;
         public CalculatorMaterialRequirement()
         {
             InitializeComponent();
             FormCommonOperate.SetFormToFixedSingleDialog(this);
+        }
+
+        private void btnInventoryMold_Click(object sender, EventArgs e)
+        {
+            InventoryMold IM = new InventoryMold();
+            IM.DataXMLFilePath = DataXMLFilePath;
+            IM.FillIn += IM_FillIn;
+            IM.ShowDialog();
+        }
+
+        private void IM_FillIn(object sender, InventoryArgs e)
+        {
+            txtMoldDiameter.Text = e.Para1;
         }
     }
 }

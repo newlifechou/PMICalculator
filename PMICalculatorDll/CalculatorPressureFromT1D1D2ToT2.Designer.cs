@@ -35,19 +35,19 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtT1 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnInventoryMold1 = new System.Windows.Forms.Button();
             this.txtD1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtP1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnInventoryMold2 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txtD2 = new System.Windows.Forms.TextBox();
             this.txtT2 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -109,7 +109,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.btnInventoryMold1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtD1);
             this.groupBox1.Controls.Add(this.txtT1);
@@ -122,6 +122,16 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "模具1";
+            // 
+            // btnInventoryMold1
+            // 
+            this.btnInventoryMold1.Location = new System.Drawing.Point(185, 17);
+            this.btnInventoryMold1.Name = "btnInventoryMold1";
+            this.btnInventoryMold1.Size = new System.Drawing.Size(91, 29);
+            this.btnInventoryMold1.TabIndex = 3;
+            this.btnInventoryMold1.Text = "模具库";
+            this.btnInventoryMold1.UseVisualStyleBackColor = true;
+            this.btnInventoryMold1.Click += new System.EventHandler(this.btnInventoryMold1_Click);
             // 
             // txtD1
             // 
@@ -162,7 +172,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.btnInventoryMold2);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.txtD2);
             this.groupBox2.Controls.Add(this.txtT2);
@@ -175,6 +185,16 @@
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "模具2";
+            // 
+            // btnInventoryMold2
+            // 
+            this.btnInventoryMold2.Location = new System.Drawing.Point(185, 17);
+            this.btnInventoryMold2.Name = "btnInventoryMold2";
+            this.btnInventoryMold2.Size = new System.Drawing.Size(91, 29);
+            this.btnInventoryMold2.TabIndex = 3;
+            this.btnInventoryMold2.Text = "模具库";
+            this.btnInventoryMold2.UseVisualStyleBackColor = true;
+            this.btnInventoryMold2.Click += new System.EventHandler(this.btnInventoryMold1_Click);
             // 
             // label7
             // 
@@ -231,24 +251,6 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "压力";
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(185, 17);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 29);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "模具库";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(185, 17);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 29);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "模具库";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // CalculatorPressureFromT1D1D2ToT2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,7 +293,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtD1;
         private System.Windows.Forms.TextBox txtD2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnInventoryMold1;
+        private System.Windows.Forms.Button btnInventoryMold2;
     }
 }

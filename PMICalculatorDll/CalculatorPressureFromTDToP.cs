@@ -11,6 +11,7 @@ namespace PMICalculatorDll
 {
     public partial class CalculatorPressureFromTDToP : Form
     {
+        public string DataXMLFilePath;
         public CalculatorPressureFromTDToP()
         {
             InitializeComponent();
@@ -33,6 +34,19 @@ namespace PMICalculatorDll
             {
                 MessageBox.Show(ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnInventoryMold_Click(object sender, EventArgs e)
+        {
+            InventoryMold im = new InventoryMold();
+            im.DataXMLFilePath = DataXMLFilePath;
+            im.FillIn += im_FillIn;
+            im.ShowDialog();
+        }
+
+        private void im_FillIn(object sender, InventoryArgs e)
+        {
+            txtD1.Text = e.Para1;
         }
     }
 }

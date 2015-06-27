@@ -28,43 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.lvData = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
-            // button1
+            // btnOK
             // 
-            this.button1.Location = new System.Drawing.Point(239, 306);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 53);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "OK";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnOK.Location = new System.Drawing.Point(239, 306);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(137, 53);
+            this.btnOK.TabIndex = 3;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
-            // listView1
+            // lvData
             // 
-            this.listView1.Location = new System.Drawing.Point(12, 12);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(364, 287);
-            this.listView1.TabIndex = 2;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.lvData.Location = new System.Drawing.Point(12, 12);
+            this.lvData.Name = "lvData";
+            this.lvData.Size = new System.Drawing.Size(364, 287);
+            this.lvData.TabIndex = 2;
+            this.lvData.UseCompatibleStateImageBehavior = false;
+            this.lvData.DoubleClick += new System.EventHandler(this.btnOK_Click);
             // 
             // InventoryMold
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(387, 369);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.btnOK);
+            this.Controls.Add(this.lvData);
             this.Name = "InventoryMold";
             this.Text = "InventoryMold";
+            this.Load += new System.EventHandler(this.InventoryMold_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.ListView lvData;
     }
 }

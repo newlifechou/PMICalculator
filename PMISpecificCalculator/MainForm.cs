@@ -13,10 +13,16 @@ namespace PMISpecificCalculator
 {
     public partial class MainForm : Form
     {
+        private string DataXMLFilePathMold;
+        private string DataXMLFilePathSimpleSubstance;
         public MainForm()
         {
             InitializeComponent();
             PMICalculatorDll.FormCommonOperate.SetFormToFixedSingleDialog(this);
+            //这里初始化所有的数据文件路径
+            DataXMLFilePathMold = Path.Combine(Environment.CurrentDirectory, "XMLData", "MoldData.xml");
+            DataXMLFilePathSimpleSubstance = Path.Combine(Environment.CurrentDirectory, "XMLData", "SubstanceData.xml");
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,18 +46,21 @@ namespace PMISpecificCalculator
         private void button4_Click(object sender, EventArgs e)
         {
             CalculatorPressureFromT1D1D2ToT2 calculator = new CalculatorPressureFromT1D1D2ToT2();
+            calculator.DataXMLFilePath = DataXMLFilePathMold;
             calculator.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             CalculatorPressureFromPDtoT calculator = new CalculatorPressureFromPDtoT();
+            calculator.DataXMLFilePath = DataXMLFilePathMold;
             calculator.ShowDialog();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             CalculatorPressureFromTDToP calculator = new CalculatorPressureFromTDToP();
+            calculator.DataXMLFilePath = DataXMLFilePathMold;
             calculator.ShowDialog();
         }
 
@@ -70,6 +79,7 @@ namespace PMISpecificCalculator
         private void button9_Click(object sender, EventArgs e)
         {
             CalculatorMaterialRequirement calculator = new CalculatorMaterialRequirement();
+            calculator.DataXMLFilePath = DataXMLFilePathMold;
             calculator.ShowDialog();
         }
 
@@ -81,8 +91,9 @@ namespace PMISpecificCalculator
 
         private void button15_Click(object sender, EventArgs e)
         {
-            CalculatorFillMaterials calcualtor = new CalculatorFillMaterials();
-            calcualtor.ShowDialog();
+            CalculatorFillMaterials calculator = new CalculatorFillMaterials();
+            calculator.DataXMLFilePath = DataXMLFilePathMold;
+            calculator.ShowDialog();
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -118,6 +129,20 @@ namespace PMISpecificCalculator
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            InventoryMold IM = new InventoryMold();
+            IM.DataXMLFilePath = DataXMLFilePathMold;
+            IM.ShowDialog();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            InventorySimpleElement ise = new InventorySimpleElement();
+            ise.DataXMLFilePath = DataXMLFilePathSimpleSubstance;
+            ise.ShowDialog();
         }
     }
 }

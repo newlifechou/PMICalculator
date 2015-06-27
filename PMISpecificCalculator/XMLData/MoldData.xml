@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Molds>
+  <Mold>
+    <Diameter>80</Diameter>
+    <Type>超强</Type>
+  </Mold>
+  <Mold>
+    <Diameter>105</Diameter>
+    <Type>超强</Type>
+  </Mold>
+  <Mold>
+    <Diameter>126</Diameter>
+    <Type>超强</Type>
+  </Mold>
+  <Mold>
+    <Diameter>206</Diameter>
+    <Type>超强</Type>
+  </Mold>
+  <Mold>
+    <Diameter>233</Diameter>
+    <Type>超强</Type>
+  </Mold>
+  <Mold>
+    <Diameter>306</Diameter>
+    <Type>超强</Type>
+  </Mold>
+</Molds>

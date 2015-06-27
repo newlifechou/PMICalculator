@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDensity = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnInventoryDensity = new System.Windows.Forms.Button();
+            this.txtThickness = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtMoldDiameter = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtThicknessMore = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtNumber = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.rdoType2 = new System.Windows.Forms.RadioButton();
+            this.rdoType1 = new System.Windows.Forms.RadioButton();
+            this.btnInventoryMold = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.dgvCostCalculateList = new System.Windows.Forms.DataGridView();
             this.NameType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Diameter = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,26 +55,26 @@
             this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label11 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.txtTotal = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtLoss = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.chkLoss = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCostCalculateList)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtDensity
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(54, 16);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "5.75";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDensity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDensity.Location = new System.Drawing.Point(54, 16);
+            this.txtDensity.Name = "txtDensity";
+            this.txtDensity.Size = new System.Drawing.Size(100, 22);
+            this.txtDensity.TabIndex = 0;
+            this.txtDensity.Text = "5.75";
+            this.txtDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label1
             // 
@@ -85,23 +85,23 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "密度";
             // 
-            // button1
+            // btnInventoryDensity
             // 
-            this.button1.Location = new System.Drawing.Point(214, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 29);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "密度库";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnInventoryDensity.Location = new System.Drawing.Point(214, 12);
+            this.btnInventoryDensity.Name = "btnInventoryDensity";
+            this.btnInventoryDensity.Size = new System.Drawing.Size(91, 29);
+            this.btnInventoryDensity.TabIndex = 2;
+            this.btnInventoryDensity.Text = "密度库";
+            this.btnInventoryDensity.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtThickness
             // 
-            this.textBox2.Location = new System.Drawing.Point(109, 86);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 0;
-            this.textBox2.Text = "5";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtThickness.Location = new System.Drawing.Point(109, 86);
+            this.txtThickness.Name = "txtThickness";
+            this.txtThickness.Size = new System.Drawing.Size(100, 20);
+            this.txtThickness.TabIndex = 0;
+            this.txtThickness.Text = "5";
+            this.txtThickness.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label2
             // 
@@ -112,14 +112,14 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "产品厚度";
             // 
-            // textBox3
+            // txtMoldDiameter
             // 
-            this.textBox3.Location = new System.Drawing.Point(109, 60);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 0;
-            this.textBox3.Text = "233";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMoldDiameter.Location = new System.Drawing.Point(109, 60);
+            this.txtMoldDiameter.Name = "txtMoldDiameter";
+            this.txtMoldDiameter.Size = new System.Drawing.Size(100, 20);
+            this.txtMoldDiameter.TabIndex = 0;
+            this.txtMoldDiameter.Text = "233";
+            this.txtMoldDiameter.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label3
             // 
@@ -130,14 +130,14 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "模具直径";
             // 
-            // textBox4
+            // txtThicknessMore
             // 
-            this.textBox4.Location = new System.Drawing.Point(109, 112);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 0;
-            this.textBox4.Text = "0.5";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtThicknessMore.Location = new System.Drawing.Point(109, 112);
+            this.txtThicknessMore.Name = "txtThicknessMore";
+            this.txtThicknessMore.Size = new System.Drawing.Size(100, 20);
+            this.txtThicknessMore.TabIndex = 0;
+            this.txtThicknessMore.Text = "0.5";
+            this.txtThicknessMore.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // checkBox1
             // 
@@ -179,14 +179,14 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "mm";
             // 
-            // textBox5
+            // txtNumber
             // 
-            this.textBox5.Location = new System.Drawing.Point(109, 138);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 0;
-            this.textBox5.Text = "1";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtNumber.Location = new System.Drawing.Point(109, 138);
+            this.txtNumber.Name = "txtNumber";
+            this.txtNumber.Size = new System.Drawing.Size(100, 20);
+            this.txtNumber.TabIndex = 0;
+            this.txtNumber.Text = "1";
+            this.txtNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label7
             // 
@@ -208,17 +208,17 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.rdoType2);
+            this.groupBox1.Controls.Add(this.rdoType1);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.btnInventoryMold);
             this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.txtThickness);
+            this.groupBox1.Controls.Add(this.txtThicknessMore);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtMoldDiameter);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.txtNumber);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
@@ -230,45 +230,46 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "计算区域";
             // 
-            // radioButton2
+            // rdoType2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(149, 28);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(97, 17);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.Text = "试验所需原料";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdoType2.AutoSize = true;
+            this.rdoType2.Location = new System.Drawing.Point(149, 28);
+            this.rdoType2.Name = "rdoType2";
+            this.rdoType2.Size = new System.Drawing.Size(97, 17);
+            this.rdoType2.TabIndex = 4;
+            this.rdoType2.Text = "试验所需原料";
+            this.rdoType2.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdoType1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(18, 28);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(97, 17);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "产品所需原料";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdoType1.AutoSize = true;
+            this.rdoType1.Checked = true;
+            this.rdoType1.Location = new System.Drawing.Point(18, 28);
+            this.rdoType1.Name = "rdoType1";
+            this.rdoType1.Size = new System.Drawing.Size(97, 17);
+            this.rdoType1.TabIndex = 4;
+            this.rdoType1.TabStop = true;
+            this.rdoType1.Text = "产品所需原料";
+            this.rdoType1.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnInventoryMold
             // 
-            this.button3.Location = new System.Drawing.Point(244, 55);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 29);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "模具库";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnInventoryMold.Location = new System.Drawing.Point(244, 55);
+            this.btnInventoryMold.Name = "btnInventoryMold";
+            this.btnInventoryMold.Size = new System.Drawing.Size(91, 29);
+            this.btnInventoryMold.TabIndex = 2;
+            this.btnInventoryMold.Text = "模具库";
+            this.btnInventoryMold.UseVisualStyleBackColor = true;
+            this.btnInventoryMold.Click += new System.EventHandler(this.btnInventoryMold_Click);
             // 
-            // button2
+            // btnAdd
             // 
-            this.button2.Location = new System.Drawing.Point(12, 229);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 29);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "添加";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAdd.Location = new System.Drawing.Point(12, 229);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(91, 29);
+            this.btnAdd.TabIndex = 2;
+            this.btnAdd.Text = "添加";
+            this.btnAdd.UseVisualStyleBackColor = true;
             // 
             // dgvCostCalculateList
             // 
@@ -344,26 +345,26 @@
             this.label11.TabIndex = 1;
             this.label11.Text = "g/cm3";
             // 
-            // button4
+            // btnDelete
             // 
-            this.button4.Location = new System.Drawing.Point(384, 229);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(91, 29);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "删除";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(384, 229);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(91, 29);
+            this.btnDelete.TabIndex = 2;
+            this.btnDelete.Text = "删除";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // textBox7
+            // txtTotal
             // 
-            this.textBox7.BackColor = System.Drawing.Color.Wheat;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.Color.Blue;
-            this.textBox7.Location = new System.Drawing.Point(341, 404);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(112, 31);
-            this.textBox7.TabIndex = 0;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtTotal.BackColor = System.Drawing.Color.Wheat;
+            this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal.ForeColor = System.Drawing.Color.Blue;
+            this.txtTotal.Location = new System.Drawing.Point(341, 404);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ReadOnly = true;
+            this.txtTotal.Size = new System.Drawing.Size(112, 31);
+            this.txtTotal.TabIndex = 0;
+            this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label12
             // 
@@ -383,14 +384,14 @@
             this.label13.TabIndex = 1;
             this.label13.Text = "g";
             // 
-            // textBox8
+            // txtLoss
             // 
-            this.textBox8.Location = new System.Drawing.Point(341, 378);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(112, 20);
-            this.textBox8.TabIndex = 0;
-            this.textBox8.Text = "100";
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtLoss.Location = new System.Drawing.Point(341, 378);
+            this.txtLoss.Name = "txtLoss";
+            this.txtLoss.Size = new System.Drawing.Size(112, 20);
+            this.txtLoss.TabIndex = 0;
+            this.txtLoss.Text = "100";
+            this.txtLoss.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label15
             // 
@@ -401,18 +402,18 @@
             this.label15.TabIndex = 1;
             this.label15.Text = "g";
             // 
-            // checkBox2
+            // chkLoss
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Checked = true;
-            this.checkBox2.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox2.Location = new System.Drawing.Point(145, 381);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(194, 17);
-            this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "考虑制粉等其他地方损失的重量";
-            this.checkBox2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkLoss.AutoSize = true;
+            this.chkLoss.Checked = true;
+            this.chkLoss.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkLoss.Location = new System.Drawing.Point(145, 381);
+            this.chkLoss.Name = "chkLoss";
+            this.chkLoss.Size = new System.Drawing.Size(194, 17);
+            this.chkLoss.TabIndex = 3;
+            this.chkLoss.Text = "考虑制粉等其他地方损失的重量";
+            this.chkLoss.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chkLoss.UseVisualStyleBackColor = true;
             // 
             // CalculatorMaterialRequirement
             // 
@@ -421,18 +422,18 @@
             this.ClientSize = new System.Drawing.Size(487, 444);
             this.Controls.Add(this.dgvCostCalculateList);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.chkLoss);
+            this.Controls.Add(this.btnInventoryDensity);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txtLoss);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTotal);
+            this.Controls.Add(this.txtDensity);
             this.Name = "CalculatorMaterialRequirement";
             this.Text = "订单所需原料计算器";
             this.groupBox1.ResumeLayout(false);
@@ -445,39 +446,39 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDensity;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button btnInventoryDensity;
+        private System.Windows.Forms.TextBox txtThickness;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtMoldDiameter;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtThicknessMore;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtNumber;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.DataGridView dgvCostCalculateList;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnInventoryMold;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.DataGridViewTextBoxColumn NameType;
         private System.Windows.Forms.DataGridViewTextBoxColumn Diameter;
         private System.Windows.Forms.DataGridViewTextBoxColumn Thickness;
         private System.Windows.Forms.DataGridViewTextBoxColumn Number;
         private System.Windows.Forms.DataGridViewTextBoxColumn Weight;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.RadioButton rdoType2;
+        private System.Windows.Forms.RadioButton rdoType1;
+        private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtLoss;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox chkLoss;
     }
 }

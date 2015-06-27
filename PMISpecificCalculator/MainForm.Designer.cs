@@ -46,13 +46,15 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
-            this.button16 = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -157,7 +159,7 @@
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(17, 296);
+            this.button11.Location = new System.Drawing.Point(6, 19);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(249, 51);
             this.button11.TabIndex = 0;
@@ -166,7 +168,7 @@
             // 
             // button12
             // 
-            this.button12.Location = new System.Drawing.Point(20, 188);
+            this.button12.Location = new System.Drawing.Point(312, 19);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(249, 51);
             this.button12.TabIndex = 0;
@@ -175,7 +177,7 @@
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(20, 242);
+            this.button13.Location = new System.Drawing.Point(607, 19);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(249, 51);
             this.button13.TabIndex = 0;
@@ -200,10 +202,9 @@
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button7);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.button11);
             this.groupBox1.Location = new System.Drawing.Point(12, 52);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(290, 368);
+            this.groupBox1.Size = new System.Drawing.Size(290, 308);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "密度计算相关";
@@ -215,7 +216,7 @@
             this.groupBox2.Controls.Add(this.button5);
             this.groupBox2.Location = new System.Drawing.Point(306, 52);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(285, 368);
+            this.groupBox2.Size = new System.Drawing.Size(285, 308);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "压力计算相关";
@@ -225,13 +226,10 @@
             this.groupBox3.Controls.Add(this.button15);
             this.groupBox3.Controls.Add(this.button9);
             this.groupBox3.Controls.Add(this.button10);
-            this.groupBox3.Controls.Add(this.button12);
-            this.groupBox3.Controls.Add(this.button16);
             this.groupBox3.Controls.Add(this.button14);
-            this.groupBox3.Controls.Add(this.button13);
             this.groupBox3.Location = new System.Drawing.Point(599, 52);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(285, 419);
+            this.groupBox3.Size = new System.Drawing.Size(285, 308);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "原料计算相关";
@@ -246,9 +244,18 @@
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(6, 76);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(249, 51);
+            this.button16.TabIndex = 0;
+            this.button16.Text = "元素周期表";
+            this.button16.UseVisualStyleBackColor = true;
+            // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(20, 296);
+            this.button14.Location = new System.Drawing.Point(20, 191);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(249, 51);
             this.button14.TabIndex = 0;
@@ -270,26 +277,31 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(409, 458);
+            this.label2.Location = new System.Drawing.Point(414, 523);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "版本号:1.0.0.0";
             // 
-            // button16
+            // groupBox4
             // 
-            this.button16.Location = new System.Drawing.Point(20, 353);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(249, 51);
-            this.button16.TabIndex = 0;
-            this.button16.Text = "元素周期表";
-            this.button16.UseVisualStyleBackColor = true;
+            this.groupBox4.Controls.Add(this.button11);
+            this.groupBox4.Controls.Add(this.button12);
+            this.groupBox4.Controls.Add(this.button13);
+            this.groupBox4.Controls.Add(this.button16);
+            this.groupBox4.Location = new System.Drawing.Point(12, 366);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(872, 144);
+            this.groupBox4.TabIndex = 7;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "常用资料库";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(896, 485);
+            this.ClientSize = new System.Drawing.Size(896, 551);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
@@ -301,6 +313,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,6 +343,7 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }
 

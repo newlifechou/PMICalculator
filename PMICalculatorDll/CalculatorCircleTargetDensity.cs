@@ -11,6 +11,8 @@ namespace PMICalculatorDll
 {
     public partial class CalculatorCircleTargetDensity : Form
     {
+        public string DataXMLFilePathDensity;
+        public string DataXMLFilePathGraphitePaper;
         public CalculatorCircleTargetDensity()
         {
             InitializeComponent();
@@ -60,6 +62,33 @@ namespace PMICalculatorDll
             txtPapterWeight.Enabled = chkIncludeCarbonPaper.Checked;
             txtPaperThickness.Enabled = chkIncludeCarbonPaper.Checked;
             panelMovePaper.Visible = chkIncludeCarbonPaper.Checked;
+        }
+
+        private void btnInventoryGrahpitePaper_Click(object sender, EventArgs e)
+        {
+            InventoryGraphitePaper igp = new InventoryGraphitePaper();
+            igp.DataXMLFilePath = DataXMLFilePathGraphitePaper;
+            igp.FillIn += igp_FillIn;
+            igp.ShowDialog();
+        }
+
+        private void igp_FillIn(object sender, InventoryArgs e)
+        {
+            txtPapterWeight.Text = e.Para2;
+            txtPaperThickness.Text = e.Para3;
+        }
+
+        private void btnInventoryDensity_Click(object sender, EventArgs e)
+        {
+            InventoryDensity id = new InventoryDensity();
+            id.DataXMLFilePath = DataXMLFilePathDensity;
+            id.FillPath += id_FillPath;
+            id.ShowDialog();
+        }
+
+        private void id_FillPath(object sender, InventoryArgs e)
+        {
+            txtTheoreticalDensity.Text = e.Para2;
         }
     }
 }

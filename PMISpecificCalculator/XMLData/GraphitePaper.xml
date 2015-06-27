@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GrahptePaper>
+  <Paper>
+    <Diameter>80</Diameter>
+    <Weight>4.4</Weight>
+    <Thickness>0.5</Thickness>
+  </Paper>
+  <Paper>
+    <Diameter>105</Diameter>
+    <Weight>6.4</Weight>
+    <Thickness>0.5</Thickness>
+  </Paper>
+  <Paper>
+    <Diameter>128</Diameter>
+    <Weight>11</Weight>
+    <Thickness>0.5</Thickness>
+  </Paper>
+  <Paper>
+    <Diameter>155</Diameter>
+    <Weight>14.8</Weight>
+    <Thickness>0.5</Thickness>
+  </Paper>
+  <Paper>
+    <Diameter>233</Diameter>
+    <Weight>33</Weight>
+    <Thickness>0.5</Thickness>
+  </Paper>
+  <Paper>
+    <Diameter>306</Diameter>
+    <Weight>65.4</Weight>
+    <Thickness>0.5</Thickness>
+  </Paper>
+  <Paper>
+    <Diameter>319</Diameter>
+    <Weight>70.2</Weight>
+    <Thickness>0.5</Thickness>
+  </Paper>
+  <Paper>
+    <Diameter>206</Diameter>
+    <Weight>24.9</Weight>
+    <Thickness>0.5</Thickness>
+  </Paper>
+</GrahptePaper>

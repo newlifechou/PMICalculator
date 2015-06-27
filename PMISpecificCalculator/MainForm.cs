@@ -16,6 +16,7 @@ namespace PMISpecificCalculator
         private string DataXMLFilePathMold;
         private string DataXMLFilePathSimpleSubstance;
         private string DataXMLFilePathDensity;
+        private string DataXMLFilePathGraphitePaper;
         public MainForm()
         {
             InitializeComponent();
@@ -24,23 +25,28 @@ namespace PMISpecificCalculator
             DataXMLFilePathMold = Path.Combine(Environment.CurrentDirectory, "XMLData", "MoldData.xml");
             DataXMLFilePathSimpleSubstance = Path.Combine(Environment.CurrentDirectory, "XMLData", "SubstanceData.xml");
             DataXMLFilePathDensity = Path.Combine(Environment.CurrentDirectory, "XMLData", "Density.xml");
+            DataXMLFilePathGraphitePaper = Path.Combine(Environment.CurrentDirectory, "XMLData", "GraphitePaper.xml");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             CalculatorArchimedesDensity adc = new CalculatorArchimedesDensity();
+            adc.DataXMLFilePath = DataXMLFilePathDensity;
             adc.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             CalculatorRectangleTargetDensity rtdc = new CalculatorRectangleTargetDensity();
+            rtdc.DataXMLFilePath = DataXMLFilePathDensity;
             rtdc.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             CalculatorCircleTargetDensity ctdc = new CalculatorCircleTargetDensity();
+            ctdc.DataXMLFilePathDensity = DataXMLFilePathDensity;
+            ctdc.DataXMLFilePathGraphitePaper = DataXMLFilePathGraphitePaper;
             ctdc.ShowDialog();
         }
 
@@ -68,12 +74,14 @@ namespace PMISpecificCalculator
         private void button7_Click(object sender, EventArgs e)
         {
             CalculatorWeightingDensityByWt calculator = new CalculatorWeightingDensityByWt();
+            calculator.DataXMLFilePath = DataXMLFilePathSimpleSubstance;
             calculator.ShowDialog();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             CalculatorWeightingDensityByAt calculator = new CalculatorWeightingDensityByAt();
+            calculator.DataXMLFilePath = DataXMLFilePathSimpleSubstance;
             calculator.ShowDialog();
         }
 
@@ -86,8 +94,9 @@ namespace PMISpecificCalculator
 
         private void button10_Click(object sender, EventArgs e)
         {
-            CalculatorSimpleSubstanceOfEveryCompound calcualtor = new CalculatorSimpleSubstanceOfEveryCompound();
-            calcualtor.ShowDialog();
+            CalculatorSimpleSubstanceOfEveryCompound calculator = new CalculatorSimpleSubstanceOfEveryCompound();
+            calculator.DataXMLFilePath = DataXMLFilePathSimpleSubstance;
+            calculator.ShowDialog();
         }
 
         private void button15_Click(object sender, EventArgs e)

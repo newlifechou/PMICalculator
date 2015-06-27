@@ -49,6 +49,7 @@
             this.lvData.Size = new System.Drawing.Size(364, 287);
             this.lvData.TabIndex = 2;
             this.lvData.UseCompatibleStateImageBehavior = false;
+            this.lvData.DoubleClick += new System.EventHandler(this.btnOK_Click);
             // 
             // InventoryGraphitePaper
             // 

@@ -312,6 +312,7 @@
             this.btnInventoryDensity.TabIndex = 41;
             this.btnInventoryDensity.Text = "密度库";
             this.btnInventoryDensity.UseVisualStyleBackColor = true;
+            this.btnInventoryDensity.Click += new System.EventHandler(this.btnInventoryDensity_Click);
             // 
             // CalculatorRectangleTargetDensity
             // 

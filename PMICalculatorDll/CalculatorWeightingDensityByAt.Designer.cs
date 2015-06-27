@@ -260,6 +260,7 @@
             this.btnInventorySimpleSubstance.TabIndex = 23;
             this.btnInventorySimpleSubstance.Text = "元素单质库";
             this.btnInventorySimpleSubstance.UseVisualStyleBackColor = true;
+            this.btnInventorySimpleSubstance.Click += new System.EventHandler(this.btnInventorySimpleSubstance_Click);
             // 
             // CalculatorWeightingDensityByAt
             // 

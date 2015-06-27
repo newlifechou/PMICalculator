@@ -28,31 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDensity = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dgvCostCalculateList = new System.Windows.Forms.DataGridView();
-            this.Diameter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Thickness = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCalculateList = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnInventorySimpleSubstance = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtMolWeight = new System.Windows.Forms.TextBox();
+            this.txtElementName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtAt = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCostCalculateList)).BeginInit();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCalculateList)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,101 +53,56 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(14, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 13);
+            this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "密度";
+            this.label1.Text = "材料重量";
             // 
-            // textBox1
+            // txtDensity
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(51, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "1000";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDensity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDensity.Location = new System.Drawing.Point(71, 12);
+            this.txtDensity.Name = "txtDensity";
+            this.txtDensity.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtDensity.Size = new System.Drawing.Size(88, 22);
+            this.txtDensity.TabIndex = 2;
+            this.txtDensity.Text = "1000";
+            this.txtDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(157, 17);
+            this.label2.Location = new System.Drawing.Point(165, 17);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.Size = new System.Drawing.Size(13, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "g/cm3";
+            this.label2.Text = "g";
             // 
-            // dgvCostCalculateList
+            // dgvCalculateList
             // 
-            this.dgvCostCalculateList.AllowUserToAddRows = false;
-            this.dgvCostCalculateList.AllowUserToDeleteRows = false;
-            this.dgvCostCalculateList.AllowUserToResizeRows = false;
-            this.dgvCostCalculateList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgvCalculateList.AllowUserToAddRows = false;
+            this.dgvCalculateList.AllowUserToDeleteRows = false;
+            this.dgvCalculateList.AllowUserToResizeRows = false;
+            this.dgvCalculateList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvCostCalculateList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCostCalculateList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Diameter,
-            this.Thickness,
-            this.Number,
-            this.Weight});
-            this.dgvCostCalculateList.Location = new System.Drawing.Point(12, 220);
-            this.dgvCostCalculateList.MultiSelect = false;
-            this.dgvCostCalculateList.Name = "dgvCostCalculateList";
-            this.dgvCostCalculateList.ReadOnly = true;
-            this.dgvCostCalculateList.RowHeadersWidth = 30;
-            this.dgvCostCalculateList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dgvCostCalculateList.RowTemplate.Height = 23;
-            this.dgvCostCalculateList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCostCalculateList.Size = new System.Drawing.Size(470, 140);
-            this.dgvCostCalculateList.TabIndex = 10;
-            // 
-            // Diameter
-            // 
-            this.Diameter.DataPropertyName = "Diameter";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Diameter.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Diameter.HeaderText = "模具直径";
-            this.Diameter.Name = "Diameter";
-            this.Diameter.ReadOnly = true;
-            this.Diameter.Width = 80;
-            // 
-            // Thickness
-            // 
-            this.Thickness.DataPropertyName = "Thickness";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Thickness.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Thickness.HeaderText = "热压厚度";
-            this.Thickness.Name = "Thickness";
-            this.Thickness.ReadOnly = true;
-            this.Thickness.Width = 80;
-            // 
-            // Number
-            // 
-            this.Number.DataPropertyName = "Number";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Number.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Number.HeaderText = "热压数目";
-            this.Number.Name = "Number";
-            this.Number.ReadOnly = true;
-            this.Number.Width = 80;
-            // 
-            // Weight
-            // 
-            this.Weight.DataPropertyName = "Weight";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Weight.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Weight.HeaderText = "粉末重量";
-            this.Weight.Name = "Weight";
-            this.Weight.ReadOnly = true;
-            this.Weight.Width = 80;
+            this.dgvCalculateList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCalculateList.Location = new System.Drawing.Point(12, 220);
+            this.dgvCalculateList.MultiSelect = false;
+            this.dgvCalculateList.Name = "dgvCalculateList";
+            this.dgvCalculateList.ReadOnly = true;
+            this.dgvCalculateList.RowHeadersWidth = 30;
+            this.dgvCalculateList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvCalculateList.RowTemplate.Height = 23;
+            this.dgvCalculateList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvCalculateList.Size = new System.Drawing.Size(470, 140);
+            this.dgvCalculateList.TabIndex = 10;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnInventorySimpleSubstance);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txtMolWeight);
+            this.groupBox1.Controls.Add(this.txtElementName);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.txtAt);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label7);
@@ -175,24 +122,25 @@
             this.btnInventorySimpleSubstance.TabIndex = 2;
             this.btnInventorySimpleSubstance.Text = "元素单质库";
             this.btnInventorySimpleSubstance.UseVisualStyleBackColor = true;
+            this.btnInventorySimpleSubstance.Click += new System.EventHandler(this.btnInventorySimpleSubstance_Click);
             // 
-            // textBox2
+            // txtMolWeight
             // 
-            this.textBox2.Location = new System.Drawing.Point(109, 50);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 0;
-            this.textBox2.Text = "5";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtMolWeight.Location = new System.Drawing.Point(109, 50);
+            this.txtMolWeight.Name = "txtMolWeight";
+            this.txtMolWeight.Size = new System.Drawing.Size(100, 20);
+            this.txtMolWeight.TabIndex = 0;
+            this.txtMolWeight.Text = "5";
+            this.txtMolWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox3
+            // txtElementName
             // 
-            this.textBox3.Location = new System.Drawing.Point(109, 24);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 0;
-            this.textBox3.Text = "元素1";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtElementName.Location = new System.Drawing.Point(109, 24);
+            this.txtElementName.Name = "txtElementName";
+            this.txtElementName.Size = new System.Drawing.Size(100, 20);
+            this.txtElementName.TabIndex = 0;
+            this.txtElementName.Text = "元素1";
+            this.txtElementName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label5
             // 
@@ -203,14 +151,14 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "g/mol";
             // 
-            // textBox5
+            // txtAt
             // 
-            this.textBox5.Location = new System.Drawing.Point(109, 76);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 0;
-            this.textBox5.Text = "1";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAt.Location = new System.Drawing.Point(109, 76);
+            this.txtAt.Name = "txtAt";
+            this.txtAt.Size = new System.Drawing.Size(100, 20);
+            this.txtAt.TabIndex = 0;
+            this.txtAt.Text = "1";
+            this.txtAt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label8
             // 
@@ -248,23 +196,23 @@
             this.label9.TabIndex = 1;
             this.label9.Text = "摩尔分数(At%)";
             // 
-            // button2
+            // btnAdd
             // 
-            this.button2.Location = new System.Drawing.Point(12, 185);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(91, 29);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "添加";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAdd.Location = new System.Drawing.Point(12, 185);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(91, 29);
+            this.btnAdd.TabIndex = 2;
+            this.btnAdd.Text = "添加";
+            this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnDelete
             // 
-            this.button1.Location = new System.Drawing.Point(391, 185);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 29);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "删除";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(391, 185);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(91, 29);
+            this.btnDelete.TabIndex = 2;
+            this.btnDelete.Text = "删除";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
             // CalculatorSimpleSubstanceOfEveryCompound
             // 
@@ -272,15 +220,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(494, 383);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.dgvCostCalculateList);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.dgvCalculateList);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDensity);
             this.Name = "CalculatorSimpleSubstanceOfEveryCompound";
             this.Text = "已知化合物摩尔比，计算化合物的成分单质重量";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCostCalculateList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCalculateList)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -291,24 +239,20 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDensity;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dgvCostCalculateList;
+        private System.Windows.Forms.DataGridView dgvCalculateList;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnInventorySimpleSubstance;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.TextBox txtMolWeight;
+        private System.Windows.Forms.TextBox txtElementName;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtAt;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Diameter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Thickness;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Number;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Weight;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

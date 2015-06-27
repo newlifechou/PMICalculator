@@ -80,11 +80,11 @@ namespace PMICalculatorDll
             if (FillPath != null)
             {
                 InventoryArgs args = new InventoryArgs();
-                args.Para1 = lvData.SelectedItems[0].Text;
-                args.Para2 = lvData.SelectedItems[0].SubItems[0].Text;
-                args.Para3 = lvData.SelectedItems[0].SubItems[1].Text;
-                args.Para4 = lvData.SelectedItems[0].SubItems[2].Text;
-                args.Para5 = lvData.SelectedItems[0].SubItems[3].Text;
+                args.Para1 = lvData.SelectedItems[0].SubItems[1].Text;
+                args.Para2 = lvData.SelectedItems[0].SubItems[2].Text;
+                args.Para3 = lvData.SelectedItems[0].SubItems[3].Text;
+                args.Para4 = lvData.SelectedItems[0].SubItems[4].Text;
+                args.Para5 = lvData.SelectedItems[0].SubItems[5].Text;
 
                 FillPath(this, args);
             }

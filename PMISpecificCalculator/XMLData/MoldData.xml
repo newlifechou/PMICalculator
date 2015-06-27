@@ -9,7 +9,11 @@
     <Type>超强</Type>
   </Mold>
   <Mold>
-    <Diameter>126</Diameter>
+    <Diameter>128</Diameter>
+    <Type>超强</Type>
+  </Mold>
+  <Mold>
+    <Diameter>155</Diameter>
     <Type>超强</Type>
   </Mold>
   <Mold>
@@ -22,6 +26,14 @@
   </Mold>
   <Mold>
     <Diameter>306</Diameter>
+    <Type>超强</Type>
+  </Mold>
+  <Mold>
+    <Diameter>319</Diameter>
+    <Type>超强</Type>
+  </Mold>
+  <Mold>
+    <Diameter>455</Diameter>
     <Type>超强</Type>
   </Mold>
   <Mold>

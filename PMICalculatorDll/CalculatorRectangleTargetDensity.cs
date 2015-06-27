@@ -11,6 +11,7 @@ namespace PMICalculatorDll
 {
     public partial class CalculatorRectangleTargetDensity : Form
     {
+        public string DataXMLFilePath;
         public CalculatorRectangleTargetDensity()
         {
             InitializeComponent();
@@ -49,6 +50,19 @@ namespace PMICalculatorDll
             {
                 MessageBox.Show(ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnInventoryDensity_Click(object sender, EventArgs e)
+        {
+            InventoryDensity id = new InventoryDensity();
+            id.DataXMLFilePath = DataXMLFilePath;
+            id.FillPath += id_FillPath;
+            id.ShowDialog();
+        }
+
+        private void id_FillPath(object sender, InventoryArgs e)
+        {
+            txtTheoreticalDensity.Text = e.Para2;
         }
 
 

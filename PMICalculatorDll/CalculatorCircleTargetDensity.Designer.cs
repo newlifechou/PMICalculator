@@ -67,7 +67,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnInventoryGrahpitePaper = new System.Windows.Forms.Button();
             this.btnInventoryDensity = new System.Windows.Forms.Button();
             this.panelMovePaper.SuspendLayout();
             this.SuspendLayout();
@@ -425,14 +425,15 @@
             this.label8.TabIndex = 2;
             this.label8.Text = "g";
             // 
-            // button1
+            // btnInventoryGrahpitePaper
             // 
-            this.button1.Location = new System.Drawing.Point(260, 30);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 29);
-            this.button1.TabIndex = 56;
-            this.button1.Text = "石墨纸厚重";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnInventoryGrahpitePaper.Location = new System.Drawing.Point(260, 30);
+            this.btnInventoryGrahpitePaper.Name = "btnInventoryGrahpitePaper";
+            this.btnInventoryGrahpitePaper.Size = new System.Drawing.Size(91, 29);
+            this.btnInventoryGrahpitePaper.TabIndex = 56;
+            this.btnInventoryGrahpitePaper.Text = "石墨纸厚重";
+            this.btnInventoryGrahpitePaper.UseVisualStyleBackColor = true;
+            this.btnInventoryGrahpitePaper.Click += new System.EventHandler(this.btnInventoryGrahpitePaper_Click);
             // 
             // btnInventoryDensity
             // 
@@ -442,6 +443,7 @@
             this.btnInventoryDensity.TabIndex = 57;
             this.btnInventoryDensity.Text = "密度库";
             this.btnInventoryDensity.UseVisualStyleBackColor = true;
+            this.btnInventoryDensity.Click += new System.EventHandler(this.btnInventoryDensity_Click);
             // 
             // CalculatorCircleTargetDensity
             // 
@@ -449,7 +451,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(367, 338);
             this.Controls.Add(this.btnInventoryDensity);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnInventoryGrahpitePaper);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.chkIncludeCarbonPaper);
             this.Controls.Add(this.txtPaperThickness);
@@ -533,7 +535,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnInventoryGrahpitePaper;
         private System.Windows.Forms.Button btnInventoryDensity;
     }
 }

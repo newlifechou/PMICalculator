@@ -136,7 +136,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 59);
+            this.label3.Location = new System.Drawing.Point(13, 82);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 1;
@@ -144,7 +144,7 @@
             // 
             // txtItemWt
             // 
-            this.txtItemWt.Location = new System.Drawing.Point(72, 55);
+            this.txtItemWt.Location = new System.Drawing.Point(72, 78);
             this.txtItemWt.Name = "txtItemWt";
             this.txtItemWt.Size = new System.Drawing.Size(100, 20);
             this.txtItemWt.TabIndex = 2;
@@ -153,7 +153,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 88);
+            this.label4.Location = new System.Drawing.Point(13, 55);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 1;
@@ -161,7 +161,7 @@
             // 
             // txtItemDensity
             // 
-            this.txtItemDensity.Location = new System.Drawing.Point(72, 85);
+            this.txtItemDensity.Location = new System.Drawing.Point(72, 52);
             this.txtItemDensity.Name = "txtItemDensity";
             this.txtItemDensity.Size = new System.Drawing.Size(100, 20);
             this.txtItemDensity.TabIndex = 3;
@@ -170,7 +170,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(178, 59);
+            this.label5.Location = new System.Drawing.Point(178, 82);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(15, 13);
             this.label5.TabIndex = 1;
@@ -179,7 +179,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(178, 88);
+            this.label6.Location = new System.Drawing.Point(178, 55);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 13);
             this.label6.TabIndex = 1;
@@ -222,6 +222,7 @@
             this.btnInventorySimpleSubstance.TabIndex = 24;
             this.btnInventorySimpleSubstance.Text = "元素单质库";
             this.btnInventorySimpleSubstance.UseVisualStyleBackColor = true;
+            this.btnInventorySimpleSubstance.Click += new System.EventHandler(this.btnInventorySimpleSubstance_Click);
             // 
             // CalculatorWeightingDensityByWt
             // 

@@ -11,6 +11,7 @@ namespace PMICalculatorDll
 {
     public partial class CalculatorWeightingDensityByAt : Form
     {
+        public string DataXMLFilePath;
         public CalculatorWeightingDensityByAt()
         {
             InitializeComponent();
@@ -75,6 +76,21 @@ namespace PMICalculatorDll
             {
                 MessageBox.Show(ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnInventorySimpleSubstance_Click(object sender, EventArgs e)
+        {
+            InventorySimpleElement ise = new InventorySimpleElement();
+            ise.DataXMLFilePath = DataXMLFilePath;
+            ise.FillPath += ise_FillPath;
+            ise.ShowDialog();
+        }
+
+        private void ise_FillPath(object sender, InventoryArgs e)
+        {
+            txtItemName.Text = e.Para1;
+            txtItemMolWeight.Text = e.Para2;
+            txtItemDensity.Text = e.Para3;
         }
     }
 }

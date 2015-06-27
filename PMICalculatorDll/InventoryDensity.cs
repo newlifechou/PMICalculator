@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace PMICalculatorDll
 {
-    public partial class DensityInventory : Form
+    public partial class InventoryDensity : Form
     {
-        public DensityInventory()
+        public InventoryDensity()
         {
             InitializeComponent();
         }

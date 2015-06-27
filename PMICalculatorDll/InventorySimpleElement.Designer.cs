@@ -1,6 +1,6 @@
 ﻿namespace PMICalculatorDll
 {
-    partial class SimpleElementInventory
+    partial class InventorySimpleElement
     {
         /// <summary>
         /// Required designer variable.

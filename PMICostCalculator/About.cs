@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
+using System.IO;
 
 namespace PMICostCalculator
 {
@@ -19,6 +20,8 @@ namespace PMICostCalculator
             this.labelCopyright.Text = AssemblyCopyright;
             this.labelCompanyName.Text = AssemblyCompany;
             this.textBoxDescription.Text = AssemblyDescription;
+            string readmePath = Path.Combine(Environment.CurrentDirectory, "ReadMe.txt");
+            this.textBoxDescription.Text += File.ReadAllText(readmePath);
         }
 
         #region Assembly Attribute Accessors

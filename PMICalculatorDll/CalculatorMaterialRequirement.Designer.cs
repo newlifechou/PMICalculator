@@ -93,6 +93,7 @@
             this.btnInventoryDensity.TabIndex = 2;
             this.btnInventoryDensity.Text = "密度库";
             this.btnInventoryDensity.UseVisualStyleBackColor = true;
+            this.btnInventoryDensity.Click += new System.EventHandler(this.btnInventoryDensity_Click);
             // 
             // txtThickness
             // 

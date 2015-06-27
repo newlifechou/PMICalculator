@@ -11,7 +11,8 @@ namespace PMICalculatorDll
 {
     public partial class CalculatorFillMaterials : Form
     {
-        public string DataXMLFilePath;
+        public string DataXMLFilePathMold;
+        public string DataXMLFilePathDensity;
         public CalculatorFillMaterials()
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace PMICalculatorDll
         private void btnInventoryMold_Click(object sender, EventArgs e)
         {
             InventoryMold im = new InventoryMold();
-            im.DataXMLFilePath = DataXMLFilePath;
+            im.DataXMLFilePath = DataXMLFilePathMold;
             im.FillIn += im_FillIn;
             im.ShowDialog();
         }
@@ -34,6 +35,19 @@ namespace PMICalculatorDll
         private void btnCalculate_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnInventoryDensity_Click(object sender, EventArgs e)
+        {
+            InventoryDensity id = new InventoryDensity();
+            id.DataXMLFilePath = DataXMLFilePathDensity;
+            id.FillPath += id_FillPath;
+            id.ShowDialog();
+        }
+
+        private void id_FillPath(object sender, InventoryArgs e)
+        {
+            txtTheoreticalDensity.Text = e.Para2;
         }
     }
 }

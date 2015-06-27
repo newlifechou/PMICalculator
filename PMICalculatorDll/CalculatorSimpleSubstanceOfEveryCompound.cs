@@ -28,7 +28,8 @@ namespace PMICalculatorDll
 
         private void ise_FillPath(object sender, InventoryArgs e)
         {
-            
+            txtElementName.Text = e.Para1;
+            txtMolWeight.Text = e.Para2;
         }
     }
 }

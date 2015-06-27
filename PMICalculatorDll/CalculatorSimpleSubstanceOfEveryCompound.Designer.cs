@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txtDensity = new System.Windows.Forms.TextBox();
+            this.txtWeight = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvCalculateList = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -57,16 +57,16 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "材料重量";
             // 
-            // txtDensity
+            // txtWeight
             // 
-            this.txtDensity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDensity.Location = new System.Drawing.Point(71, 12);
-            this.txtDensity.Name = "txtDensity";
-            this.txtDensity.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtDensity.Size = new System.Drawing.Size(88, 22);
-            this.txtDensity.TabIndex = 2;
-            this.txtDensity.Text = "1000";
-            this.txtDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWeight.Location = new System.Drawing.Point(71, 12);
+            this.txtWeight.Name = "txtWeight";
+            this.txtWeight.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtWeight.Size = new System.Drawing.Size(88, 22);
+            this.txtWeight.TabIndex = 2;
+            this.txtWeight.Text = "1000";
+            this.txtWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label2
             // 
@@ -225,7 +225,7 @@
             this.Controls.Add(this.dgvCalculateList);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtDensity);
+            this.Controls.Add(this.txtWeight);
             this.Name = "CalculatorSimpleSubstanceOfEveryCompound";
             this.Text = "已知化合物摩尔比，计算化合物的成分单质重量";
             ((System.ComponentModel.ISupportInitialize)(this.dgvCalculateList)).EndInit();
@@ -239,7 +239,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtDensity;
+        private System.Windows.Forms.TextBox txtWeight;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dgvCalculateList;
         private System.Windows.Forms.GroupBox groupBox1;

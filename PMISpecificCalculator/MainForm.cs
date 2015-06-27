@@ -88,7 +88,8 @@ namespace PMISpecificCalculator
         private void button9_Click(object sender, EventArgs e)
         {
             CalculatorMaterialRequirement calculator = new CalculatorMaterialRequirement();
-            calculator.DataXMLFilePath = DataXMLFilePathMold;
+            calculator.DataXMLFilePathMold = DataXMLFilePathMold;
+            calculator.DataXMLFilePathDensity = DataXMLFilePathDensity;
             calculator.ShowDialog();
         }
 
@@ -102,7 +103,8 @@ namespace PMISpecificCalculator
         private void button15_Click(object sender, EventArgs e)
         {
             CalculatorFillMaterials calculator = new CalculatorFillMaterials();
-            calculator.DataXMLFilePath = DataXMLFilePathMold;
+            calculator.DataXMLFilePathMold = DataXMLFilePathMold;
+            calculator.DataXMLFilePathDensity = DataXMLFilePathDensity;
             calculator.ShowDialog();
         }
 

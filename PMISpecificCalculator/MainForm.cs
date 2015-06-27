@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using PMICalculatorDll;
+using System.IO;
 
 namespace PMISpecificCalculator
 {
@@ -93,6 +94,19 @@ namespace PMISpecificCalculator
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("iexplore.exe", "http://www.cd-pmi.com");  
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string pariodicTablePath=Path.Combine(Environment.CurrentDirectory,"ExtraTool","PeriodicTable.exe");
+                System.Diagnostics.Process.Start(pariodicTablePath);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);                
+            }
         }
     }
 }

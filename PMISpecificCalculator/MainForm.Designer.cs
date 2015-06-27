@@ -46,8 +46,8 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -244,15 +244,6 @@
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
-            // button16
-            // 
-            this.button16.Location = new System.Drawing.Point(6, 76);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(249, 51);
-            this.button16.TabIndex = 0;
-            this.button16.Text = "元素周期表";
-            this.button16.UseVisualStyleBackColor = true;
-            // 
             // button14
             // 
             this.button14.Location = new System.Drawing.Point(20, 191);
@@ -262,6 +253,16 @@
             this.button14.Text = "各类专用计算表";
             this.button14.UseVisualStyleBackColor = true;
             this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(6, 76);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(249, 51);
+            this.button16.TabIndex = 0;
+            this.button16.Text = "元素周期表";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // linkLabel1
             // 

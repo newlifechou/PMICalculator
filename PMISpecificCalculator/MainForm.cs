@@ -87,25 +87,36 @@ namespace PMISpecificCalculator
 
         private void button14_Click(object sender, EventArgs e)
         {
+            string ExcelDir = Path.Combine(Environment.CurrentDirectory, "CalculationExcels");
+            List<FileInfo> ExcelSheets = new List<FileInfo>();
+            if (Directory.Exists(ExcelDir))
+            {
+                foreach (var item in Directory.GetFiles(ExcelDir))
+                {
+                    FileInfo tmp = new FileInfo(item);
+                    ExcelSheets.Add(tmp);
+                }
+            }
             CalculatorExcelSheets calcualtor = new CalculatorExcelSheets();
+            calcualtor.ExcelSheets = ExcelSheets;
             calcualtor.ShowDialog();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("iexplore.exe", "http://www.cd-pmi.com");  
+            System.Diagnostics.Process.Start("iexplore.exe", "http://www.cd-pmi.com");
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
             try
             {
-                string pariodicTablePath=Path.Combine(Environment.CurrentDirectory,"ExtraTool","PeriodicTable.exe");
+                string pariodicTablePath = Path.Combine(Environment.CurrentDirectory, "ExtraTool", "PeriodicTable.exe");
                 System.Diagnostics.Process.Start(pariodicTablePath);
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);                
+                MessageBox.Show(ex.Message);
             }
         }
     }

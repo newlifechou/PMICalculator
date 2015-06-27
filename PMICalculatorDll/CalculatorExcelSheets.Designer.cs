@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lstExcelSheets = new System.Windows.Forms.ListBox();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lstExcelSheets
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(13, 13);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(315, 355);
-            this.listBox1.TabIndex = 0;
+            this.lstExcelSheets.FormattingEnabled = true;
+            this.lstExcelSheets.Location = new System.Drawing.Point(13, 13);
+            this.lstExcelSheets.Name = "lstExcelSheets";
+            this.lstExcelSheets.Size = new System.Drawing.Size(315, 355);
+            this.lstExcelSheets.TabIndex = 0;
             // 
             // btnCalculate
             // 
@@ -48,6 +48,7 @@
             this.btnCalculate.TabIndex = 10;
             this.btnCalculate.Text = "打开选中的计算表";
             this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // CalculatorExcelSheets
             // 
@@ -55,16 +56,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(343, 425);
             this.Controls.Add(this.btnCalculate);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lstExcelSheets);
             this.Name = "CalculatorExcelSheets";
             this.Text = "CalculatorExcelSheets";
+            this.Load += new System.EventHandler(this.CalculatorExcelSheets_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lstExcelSheets;
         private System.Windows.Forms.Button btnCalculate;
     }
 }

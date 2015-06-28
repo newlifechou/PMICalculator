@@ -168,5 +168,10 @@ namespace PMISpecificCalculator
         {
             lbEdtion.Text ="当前版本号："+ Application.ProductVersion;
         }
+
+        private void lbEdtion_DoubleClick(object sender, EventArgs e)
+        {
+            lbEdtion.Text = " xs.zhou";
+        }
     }
 }

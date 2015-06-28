@@ -287,6 +287,8 @@
             this.lbEdtion.Size = new System.Drawing.Size(79, 13);
             this.lbEdtion.TabIndex = 6;
             this.lbEdtion.Text = "版本号:1.0.0.0";
+            this.lbEdtion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbEdtion.DoubleClick += new System.EventHandler(this.lbEdtion_DoubleClick);
             // 
             // groupBox4
             // 

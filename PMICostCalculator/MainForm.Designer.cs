@@ -220,7 +220,7 @@
             this.txtCostCaculateName.Location = new System.Drawing.Point(87, 30);
             this.txtCostCaculateName.Name = "txtCostCaculateName";
             this.txtCostCaculateName.ReadOnly = true;
-            this.txtCostCaculateName.Size = new System.Drawing.Size(402, 20);
+            this.txtCostCaculateName.Size = new System.Drawing.Size(681, 20);
             this.txtCostCaculateName.TabIndex = 1;
             // 
             // btnDelCost

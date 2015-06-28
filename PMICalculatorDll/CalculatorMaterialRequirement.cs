@@ -54,7 +54,7 @@ namespace PMICalculatorDll
             try
             {
                 string nameType = "";
-                double density, d, h1, h2, number, weight;
+                double density, d, h1, h2, number, singleWeight,weight;
                 if (rdoType1.Checked)
                 {
                     nameType = rdoType1.Text;
@@ -73,12 +73,14 @@ namespace PMICalculatorDll
                     h1 += h2;
                 }
                 CommonOperate.ConvertStringToDouble(txtNumber, out number);
-                weight = Math.PI * d * d * h1 / 4000 * density * number;
+                singleWeight = Math.PI * d * d * h1 / 4000 * density;
+                weight = singleWeight* number;
                 MaterialRequirementItem tmp = new MaterialRequirementItem();
                 tmp.NameType = nameType;
                 tmp.Diameter = d;
                 tmp.Thickness = h1;
                 tmp.Number = number;
+                tmp.SingleWeight=singleWeight;
                 tmp.Weight = weight;
                 CalculateList.Add(tmp);
 

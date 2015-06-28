@@ -42,8 +42,8 @@ namespace PMICalculatorDll
             try
             {
                 CommonOperate.ConvertStringToDouble(txtWeight, out totalWeight);
-                double sum, wt, weight;
-                sum = wt = weight = 0;
+                double sum;
+                sum =  0;
                 foreach (var item in CalculateList)
                 {
                     sum += item.At;

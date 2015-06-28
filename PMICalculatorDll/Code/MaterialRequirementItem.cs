@@ -14,6 +14,7 @@ namespace PMICalculatorDll
         public double Diameter { get; set; }
         public double Thickness { get; set; }
         public double Number { get; set; }
+        public double SingleWeight { get; set; }
         public double Weight { get; set; }
     }
 }

@@ -239,11 +239,11 @@
             // rdoType2
             // 
             this.rdoType2.AutoSize = true;
-            this.rdoType2.Location = new System.Drawing.Point(149, 28);
+            this.rdoType2.Location = new System.Drawing.Point(64, 28);
             this.rdoType2.Name = "rdoType2";
-            this.rdoType2.Size = new System.Drawing.Size(97, 17);
+            this.rdoType2.Size = new System.Drawing.Size(49, 17);
             this.rdoType2.TabIndex = 4;
-            this.rdoType2.Text = "试验所需原料";
+            this.rdoType2.Text = "试验";
             this.rdoType2.UseVisualStyleBackColor = true;
             // 
             // rdoType1
@@ -252,10 +252,10 @@
             this.rdoType1.Checked = true;
             this.rdoType1.Location = new System.Drawing.Point(18, 28);
             this.rdoType1.Name = "rdoType1";
-            this.rdoType1.Size = new System.Drawing.Size(97, 17);
+            this.rdoType1.Size = new System.Drawing.Size(49, 17);
             this.rdoType1.TabIndex = 4;
             this.rdoType1.TabStop = true;
-            this.rdoType1.Text = "产品所需原料";
+            this.rdoType1.Text = "产品";
             this.rdoType1.UseVisualStyleBackColor = true;
             // 
             // btnInventoryMold

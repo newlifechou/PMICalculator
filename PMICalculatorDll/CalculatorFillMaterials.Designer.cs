@@ -40,7 +40,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtDiameter = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtNumber = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,6 +48,10 @@
             this.label12 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.btnCalculate = new System.Windows.Forms.Button();
+            this.txtSingle = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtNumber = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnInventoryDensity
@@ -165,15 +168,6 @@
             this.label5.TabIndex = 68;
             this.label5.Text = "mm";
             // 
-            // txtNumber
-            // 
-            this.txtNumber.Location = new System.Drawing.Point(116, 118);
-            this.txtNumber.Name = "txtNumber";
-            this.txtNumber.Size = new System.Drawing.Size(100, 20);
-            this.txtNumber.TabIndex = 65;
-            this.txtNumber.Text = "1";
-            this.txtNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -213,7 +207,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(344, 201);
+            this.label13.Location = new System.Drawing.Point(339, 247);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(13, 13);
             this.label13.TabIndex = 78;
@@ -222,18 +216,18 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(17, 201);
+            this.label12.Location = new System.Drawing.Point(12, 247);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(127, 13);
             this.label12.TabIndex = 77;
-            this.label12.Text = "最终所需要的原料重量";
+            this.label12.Text = "总共所需要的粉末重量";
             // 
             // txtTotal
             // 
             this.txtTotal.BackColor = System.Drawing.Color.Wheat;
             this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotal.ForeColor = System.Drawing.Color.Blue;
-            this.txtTotal.Location = new System.Drawing.Point(148, 192);
+            this.txtTotal.Location = new System.Drawing.Point(143, 238);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(190, 31);
@@ -246,18 +240,60 @@
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(337, 39);
             this.btnCalculate.TabIndex = 79;
-            this.btnCalculate.Text = "开始计算";
+            this.btnCalculate.Text = "计算";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
+            // 
+            // txtSingle
+            // 
+            this.txtSingle.BackColor = System.Drawing.Color.Wheat;
+            this.txtSingle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSingle.ForeColor = System.Drawing.Color.Blue;
+            this.txtSingle.Location = new System.Drawing.Point(143, 201);
+            this.txtSingle.Name = "txtSingle";
+            this.txtSingle.ReadOnly = true;
+            this.txtSingle.Size = new System.Drawing.Size(190, 31);
+            this.txtSingle.TabIndex = 76;
+            this.txtSingle.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 210);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 13);
+            this.label1.TabIndex = 77;
+            this.label1.Text = "单片所需要的粉末重量";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(339, 210);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(13, 13);
+            this.label9.TabIndex = 78;
+            this.label9.Text = "g";
+            // 
+            // txtNumber
+            // 
+            this.txtNumber.Location = new System.Drawing.Point(116, 118);
+            this.txtNumber.Name = "txtNumber";
+            this.txtNumber.Size = new System.Drawing.Size(100, 20);
+            this.txtNumber.TabIndex = 65;
+            this.txtNumber.Text = "1";
+            this.txtNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // CalculatorFillMaterials
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(373, 236);
+            this.ClientSize = new System.Drawing.Size(373, 281);
             this.Controls.Add(this.btnCalculate);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label13);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label12);
+            this.Controls.Add(this.txtSingle);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnInventoryMold);
@@ -297,7 +333,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtDiameter;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtNumber;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -306,5 +341,9 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.TextBox txtSingle;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtNumber;
     }
 }

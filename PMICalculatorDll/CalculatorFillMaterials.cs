@@ -47,7 +47,7 @@ namespace PMICalculatorDll
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            double density, d, h1, h2, number,weight;
+            double density, d, h1, h2, number,singleWeight,weight;
             try
             {
                 CommonOperate.ConvertStringToDouble(txtTheoreticalDensity, out density);
@@ -59,7 +59,9 @@ namespace PMICalculatorDll
                     h1 += h2;
                 }
                 CommonOperate.ConvertStringToDouble(txtNumber, out number);
-                weight = Math.PI * d * d * h1 / 4000 * density * number;
+                singleWeight = Math.PI * d * d * h1 / 4000 * density;
+                weight = singleWeight* number;
+                txtSingle.Text = singleWeight.ToString("N2");
                 txtTotal.Text = weight.ToString("N2");
 
             }

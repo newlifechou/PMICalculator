@@ -50,7 +50,7 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbEdtion = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -279,14 +279,14 @@
             this.linkLabel1.Text = "网站";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // label2
+            // lbEdtion
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(414, 523);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "版本号:1.0.0.0";
+            this.lbEdtion.AutoSize = true;
+            this.lbEdtion.Location = new System.Drawing.Point(414, 523);
+            this.lbEdtion.Name = "lbEdtion";
+            this.lbEdtion.Size = new System.Drawing.Size(79, 13);
+            this.lbEdtion.TabIndex = 6;
+            this.lbEdtion.Text = "版本号:1.0.0.0";
             // 
             // groupBox4
             // 
@@ -307,7 +307,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(896, 551);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbEdtion);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
@@ -316,6 +316,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "专用计算器集合";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
@@ -347,7 +348,7 @@
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbEdtion;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.GroupBox groupBox4;
     }

@@ -49,5 +49,10 @@ namespace PMICalculatorDll
         {
             txtTheoreticalDensity.Text = e.Para2;
         }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

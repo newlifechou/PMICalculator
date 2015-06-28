@@ -45,7 +45,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnCalculate = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
@@ -210,16 +209,6 @@
             this.label7.TabIndex = 72;
             this.label7.Text = "热压数目";
             // 
-            // btnCalculate
-            // 
-            this.btnCalculate.Location = new System.Drawing.Point(23, 144);
-            this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(334, 42);
-            this.btnCalculate.TabIndex = 75;
-            this.btnCalculate.Text = "计算";
-            this.btnCalculate.UseVisualStyleBackColor = true;
-            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -228,6 +217,7 @@
             this.label13.Size = new System.Drawing.Size(13, 13);
             this.label13.TabIndex = 78;
             this.label13.Text = "g";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label12
             // 
@@ -258,7 +248,6 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txtTotal);
-            this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnInventoryMold);
             this.Controls.Add(this.checkBox1);
@@ -302,7 +291,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtTotal;

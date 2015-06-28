@@ -109,9 +109,7 @@
     <Compile Include="CalculatorWeightingDensityByWt.Designer.cs">
       <DependentUpon>CalculatorWeightingDensityByWt.cs</DependentUpon>
     </Compile>
-    <Compile Include="Code\EntityDensityItem.cs" />
-    <Compile Include="Code\EntityElementItem.cs" />
-    <Compile Include="Code\EntityGraphitePaperItemcs.cs" />
+    <Compile Include="Code\WeightingDensityItem.cs" />
     <Compile Include="InventoryArgs.cs" />
     <Compile Include="InventoryDensity.cs">
       <SubType>Form</SubType>
@@ -120,7 +118,6 @@
       <DependentUpon>InventoryDensity.cs</DependentUpon>
     </Compile>
     <Compile Include="Code\FormCommonOperate.cs" />
-    <Compile Include="Code\EntityMoldItem.cs" />
     <Compile Include="InventoryGraphitePaper.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,7 +138,6 @@
       <DependentUpon>CalculatorRectangleTargetDensity.cs</DependentUpon>
     </Compile>
     <Compile Include="Code\CalculateTargetDensity.cs" />
-    <Compile Include="Code\WeightingDensityItem.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

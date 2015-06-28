@@ -163,5 +163,10 @@ namespace PMISpecificCalculator
             id.DataXMLFilePath = DataXMLFilePathDensity;
             id.ShowDialog();
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            lbEdtion.Text ="当前版本号："+ Application.ProductVersion;
+        }
     }
 }

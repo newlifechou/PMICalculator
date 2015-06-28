@@ -236,6 +236,7 @@
             // 
             // txtThickness
             // 
+            this.txtThickness.BackColor = System.Drawing.Color.Wheat;
             this.txtThickness.Location = new System.Drawing.Point(77, 164);
             this.txtThickness.Name = "txtThickness";
             this.txtThickness.ReadOnly = true;
@@ -299,7 +300,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(18, 226);
+            this.label19.Location = new System.Drawing.Point(18, 230);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(55, 13);
             this.label19.TabIndex = 3;
@@ -308,7 +309,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(156, 225);
+            this.label20.Location = new System.Drawing.Point(156, 231);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(38, 13);
             this.label20.TabIndex = 2;
@@ -316,17 +317,19 @@
             // 
             // txtRealDensity
             // 
+            this.txtRealDensity.BackColor = System.Drawing.Color.Wheat;
+            this.txtRealDensity.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRealDensity.Location = new System.Drawing.Point(77, 222);
             this.txtRealDensity.Name = "txtRealDensity";
             this.txtRealDensity.ReadOnly = true;
-            this.txtRealDensity.Size = new System.Drawing.Size(72, 20);
+            this.txtRealDensity.Size = new System.Drawing.Size(72, 31);
             this.txtRealDensity.TabIndex = 45;
             this.txtRealDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(18, 256);
+            this.label21.Location = new System.Drawing.Point(18, 265);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(55, 13);
             this.label21.TabIndex = 3;
@@ -335,7 +338,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(156, 255);
+            this.label22.Location = new System.Drawing.Point(156, 267);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(15, 13);
             this.label22.TabIndex = 2;
@@ -343,16 +346,18 @@
             // 
             // txtRelativeDensity
             // 
-            this.txtRelativeDensity.Location = new System.Drawing.Point(77, 251);
+            this.txtRelativeDensity.BackColor = System.Drawing.Color.Wheat;
+            this.txtRelativeDensity.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRelativeDensity.Location = new System.Drawing.Point(77, 258);
             this.txtRelativeDensity.Name = "txtRelativeDensity";
             this.txtRelativeDensity.ReadOnly = true;
-            this.txtRelativeDensity.Size = new System.Drawing.Size(72, 20);
+            this.txtRelativeDensity.Size = new System.Drawing.Size(72, 31);
             this.txtRelativeDensity.TabIndex = 46;
             this.txtRelativeDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(21, 283);
+            this.btnCalculate.Location = new System.Drawing.Point(21, 297);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(334, 42);
             this.btnCalculate.TabIndex = 9;
@@ -375,6 +380,7 @@
             // 
             // txtMovePaperThickness
             // 
+            this.txtMovePaperThickness.BackColor = System.Drawing.Color.Wheat;
             this.txtMovePaperThickness.Location = new System.Drawing.Point(50, 95);
             this.txtMovePaperThickness.Name = "txtMovePaperThickness";
             this.txtMovePaperThickness.ReadOnly = true;
@@ -465,7 +471,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(367, 338);
+            this.ClientSize = new System.Drawing.Size(367, 347);
             this.Controls.Add(this.btnInventoryDensity);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.chkIncludeCarbonPaper);

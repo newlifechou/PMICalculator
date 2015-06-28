@@ -106,7 +106,7 @@ namespace PMICostCalculator
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("iexplore.exe", "http://www.cd-pmi.com");
+            System.Diagnostics.Process.Start("http://www.cd-pmi.com");
         }
     }
 }

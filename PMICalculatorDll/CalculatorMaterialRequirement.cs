@@ -129,6 +129,7 @@ namespace PMICalculatorDll
             {
                 double loss;
                 CommonOperate.ConvertStringToDouble(txtLoss, out loss);
+                btnCalTotal();
             }
             catch (Exception ex)
             {
@@ -140,6 +141,12 @@ namespace PMICalculatorDll
         private void chkLoss_CheckedChanged(object sender, EventArgs e)
         {
             btnCalTotal();
+            txtLoss.Enabled = chkLoss.Checked;
+        }
+
+        private void chkThicknessMore_CheckedChanged(object sender, EventArgs e)
+        {
+            txtThicknessMore.Enabled = chkThicknessMore.Checked;
         }
     }
 }

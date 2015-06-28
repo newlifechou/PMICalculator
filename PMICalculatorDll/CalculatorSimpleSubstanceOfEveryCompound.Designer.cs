@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.txtWeight = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,6 +49,11 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnCalculate = new System.Windows.Forms.Button();
+            this.ElementName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MolWeight = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.At = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Wt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCalculateList)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -86,6 +95,12 @@
             this.dgvCalculateList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvCalculateList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCalculateList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ElementName,
+            this.MolWeight,
+            this.At,
+            this.Wt,
+            this.Weight});
             this.dgvCalculateList.Location = new System.Drawing.Point(12, 220);
             this.dgvCalculateList.MultiSelect = false;
             this.dgvCalculateList.Name = "dgvCalculateList";
@@ -158,7 +173,7 @@
             this.txtAt.Name = "txtAt";
             this.txtAt.Size = new System.Drawing.Size(100, 20);
             this.txtAt.TabIndex = 0;
-            this.txtAt.Text = "1";
+            this.txtAt.Text = "50";
             this.txtAt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label8
@@ -205,6 +220,7 @@
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "添加";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
@@ -214,6 +230,7 @@
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "删除";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnCalculate
             // 
@@ -223,6 +240,62 @@
             this.btnCalculate.TabIndex = 2;
             this.btnCalculate.Text = "计算";
             this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
+            // 
+            // ElementName
+            // 
+            this.ElementName.DataPropertyName = "ElementName";
+            this.ElementName.HeaderText = "元素名称";
+            this.ElementName.Name = "ElementName";
+            this.ElementName.ReadOnly = true;
+            // 
+            // MolWeight
+            // 
+            this.MolWeight.DataPropertyName = "MolWeight";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle1.Format = "N2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.MolWeight.DefaultCellStyle = dataGridViewCellStyle1;
+            this.MolWeight.HeaderText = "摩尔质量(g/mol)";
+            this.MolWeight.Name = "MolWeight";
+            this.MolWeight.ReadOnly = true;
+            this.MolWeight.Width = 120;
+            // 
+            // At
+            // 
+            this.At.DataPropertyName = "At";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle2.Format = "N2";
+            dataGridViewCellStyle2.NullValue = null;
+            this.At.DefaultCellStyle = dataGridViewCellStyle2;
+            this.At.HeaderText = "At(%)";
+            this.At.Name = "At";
+            this.At.ReadOnly = true;
+            this.At.Width = 60;
+            // 
+            // Wt
+            // 
+            this.Wt.DataPropertyName = "Wt";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle3.Format = "N2";
+            dataGridViewCellStyle3.NullValue = null;
+            this.Wt.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Wt.HeaderText = "Wt(%)";
+            this.Wt.Name = "Wt";
+            this.Wt.ReadOnly = true;
+            this.Wt.Width = 60;
+            // 
+            // Weight
+            // 
+            this.Weight.DataPropertyName = "Weight";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle4.Format = "N2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.Weight.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Weight.HeaderText = "重量(g)";
+            this.Weight.Name = "Weight";
+            this.Weight.ReadOnly = true;
+            this.Weight.Width = 80;
             // 
             // CalculatorSimpleSubstanceOfEveryCompound
             // 
@@ -266,5 +339,10 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ElementName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MolWeight;
+        private System.Windows.Forms.DataGridViewTextBoxColumn At;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Wt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Weight;
     }
 }

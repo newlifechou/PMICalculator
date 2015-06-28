@@ -111,6 +111,7 @@
       <DependentUpon>CalculatorWeightingDensityByWt.cs</DependentUpon>
     </Compile>
     <Compile Include="Code\MaterialRequirementItem.cs" />
+    <Compile Include="Code\SimpleSubstanceItem.cs" />
     <Compile Include="Code\WeightingDensityItem.cs" />
     <Compile Include="InventoryArgs.cs" />
     <Compile Include="InventoryDensity.cs">

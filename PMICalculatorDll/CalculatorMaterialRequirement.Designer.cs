@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtDensity = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnInventoryDensity = new System.Windows.Forms.Button();
@@ -53,6 +53,11 @@
             this.btnInventoryMold = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.dgvCostCalculateList = new System.Windows.Forms.DataGridView();
+            this.NameType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Diameter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Thickness = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label11 = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
             this.txtTotal = new System.Windows.Forms.TextBox();
@@ -61,11 +66,6 @@
             this.txtLoss = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.chkLoss = new System.Windows.Forms.CheckBox();
-            this.Weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Thickness = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Diameter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NameType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCostCalculateList)).BeginInit();
             this.SuspendLayout();
@@ -303,6 +303,55 @@
             this.dgvCostCalculateList.Size = new System.Drawing.Size(463, 112);
             this.dgvCostCalculateList.TabIndex = 9;
             // 
+            // NameType
+            // 
+            this.NameType.DataPropertyName = "NameType";
+            this.NameType.HeaderText = "原料类型";
+            this.NameType.Name = "NameType";
+            this.NameType.ReadOnly = true;
+            // 
+            // Diameter
+            // 
+            this.Diameter.DataPropertyName = "Diameter";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Diameter.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Diameter.HeaderText = "模具直径";
+            this.Diameter.Name = "Diameter";
+            this.Diameter.ReadOnly = true;
+            this.Diameter.Width = 80;
+            // 
+            // Thickness
+            // 
+            this.Thickness.DataPropertyName = "Thickness";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Thickness.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Thickness.HeaderText = "热压厚度";
+            this.Thickness.Name = "Thickness";
+            this.Thickness.ReadOnly = true;
+            this.Thickness.Width = 80;
+            // 
+            // Number
+            // 
+            this.Number.DataPropertyName = "Number";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Number.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Number.HeaderText = "热压数目";
+            this.Number.Name = "Number";
+            this.Number.ReadOnly = true;
+            this.Number.Width = 80;
+            // 
+            // Weight
+            // 
+            this.Weight.DataPropertyName = "Weight";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle4.Format = "N2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.Weight.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Weight.HeaderText = "粉末重量";
+            this.Weight.Name = "Weight";
+            this.Weight.ReadOnly = true;
+            this.Weight.Width = 80;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -358,7 +407,7 @@
             this.txtLoss.Name = "txtLoss";
             this.txtLoss.Size = new System.Drawing.Size(112, 20);
             this.txtLoss.TabIndex = 0;
-            this.txtLoss.Text = "100";
+            this.txtLoss.Text = "0";
             this.txtLoss.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtLoss.TextChanged += new System.EventHandler(this.txtLoss_TextChanged);
             // 
@@ -384,55 +433,6 @@
             this.chkLoss.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chkLoss.UseVisualStyleBackColor = true;
             this.chkLoss.CheckedChanged += new System.EventHandler(this.chkLoss_CheckedChanged);
-            // 
-            // Weight
-            // 
-            this.Weight.DataPropertyName = "Weight";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle4.Format = "N2";
-            dataGridViewCellStyle4.NullValue = null;
-            this.Weight.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Weight.HeaderText = "粉末重量";
-            this.Weight.Name = "Weight";
-            this.Weight.ReadOnly = true;
-            this.Weight.Width = 80;
-            // 
-            // Number
-            // 
-            this.Number.DataPropertyName = "Number";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Number.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Number.HeaderText = "热压数目";
-            this.Number.Name = "Number";
-            this.Number.ReadOnly = true;
-            this.Number.Width = 80;
-            // 
-            // Thickness
-            // 
-            this.Thickness.DataPropertyName = "Thickness";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Thickness.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Thickness.HeaderText = "热压厚度";
-            this.Thickness.Name = "Thickness";
-            this.Thickness.ReadOnly = true;
-            this.Thickness.Width = 80;
-            // 
-            // Diameter
-            // 
-            this.Diameter.DataPropertyName = "Diameter";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Diameter.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Diameter.HeaderText = "模具直径";
-            this.Diameter.Name = "Diameter";
-            this.Diameter.ReadOnly = true;
-            this.Diameter.Width = 80;
-            // 
-            // NameType
-            // 
-            this.NameType.DataPropertyName = "NameType";
-            this.NameType.HeaderText = "原料类型";
-            this.NameType.Name = "NameType";
-            this.NameType.ReadOnly = true;
             // 
             // CalculatorMaterialRequirement
             // 

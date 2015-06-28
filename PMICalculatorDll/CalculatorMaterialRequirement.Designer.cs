@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtDensity = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnInventoryDensity = new System.Windows.Forms.Button();
@@ -36,7 +37,7 @@
             this.txtMoldDiameter = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtThicknessMore = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkThicknessMore = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,11 +50,6 @@
             this.btnInventoryMold = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.dgvCostCalculateList = new System.Windows.Forms.DataGridView();
-            this.NameType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Diameter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Thickness = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label11 = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
             this.txtTotal = new System.Windows.Forms.TextBox();
@@ -62,6 +58,11 @@
             this.txtLoss = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.chkLoss = new System.Windows.Forms.CheckBox();
+            this.NameType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Diameter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Thickness = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCostCalculateList)).BeginInit();
             this.SuspendLayout();
@@ -140,18 +141,18 @@
             this.txtThicknessMore.Text = "0.5";
             this.txtThicknessMore.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // checkBox1
+            // chkThicknessMore
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(5, 112);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(98, 17);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "考虑加工余量";
-            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkThicknessMore.AutoSize = true;
+            this.chkThicknessMore.Checked = true;
+            this.chkThicknessMore.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkThicknessMore.Location = new System.Drawing.Point(5, 112);
+            this.chkThicknessMore.Name = "chkThicknessMore";
+            this.chkThicknessMore.Size = new System.Drawing.Size(98, 17);
+            this.chkThicknessMore.TabIndex = 3;
+            this.chkThicknessMore.Text = "考虑加工余量";
+            this.chkThicknessMore.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chkThicknessMore.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -213,7 +214,7 @@
             this.groupBox1.Controls.Add(this.rdoType1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.btnInventoryMold);
-            this.groupBox1.Controls.Add(this.checkBox1);
+            this.groupBox1.Controls.Add(this.chkThicknessMore);
             this.groupBox1.Controls.Add(this.txtThickness);
             this.groupBox1.Controls.Add(this.txtThicknessMore);
             this.groupBox1.Controls.Add(this.label6);
@@ -298,6 +299,88 @@
             this.dgvCostCalculateList.Size = new System.Drawing.Size(463, 112);
             this.dgvCostCalculateList.TabIndex = 9;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(160, 20);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(38, 13);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "g/cm3";
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(384, 229);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(91, 29);
+            this.btnDelete.TabIndex = 2;
+            this.btnDelete.Text = "删除";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.BackColor = System.Drawing.Color.Wheat;
+            this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal.ForeColor = System.Drawing.Color.Blue;
+            this.txtTotal.Location = new System.Drawing.Point(250, 404);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ReadOnly = true;
+            this.txtTotal.Size = new System.Drawing.Size(203, 31);
+            this.txtTotal.TabIndex = 0;
+            this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(125, 412);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(127, 13);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "最终所需要的原料重量";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(459, 412);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(13, 13);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "g";
+            // 
+            // txtLoss
+            // 
+            this.txtLoss.Location = new System.Drawing.Point(341, 378);
+            this.txtLoss.Name = "txtLoss";
+            this.txtLoss.Size = new System.Drawing.Size(112, 20);
+            this.txtLoss.TabIndex = 0;
+            this.txtLoss.Text = "100";
+            this.txtLoss.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtLoss.TextChanged += new System.EventHandler(this.txtLoss_TextChanged);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(459, 378);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(13, 13);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "g";
+            // 
+            // chkLoss
+            // 
+            this.chkLoss.AutoSize = true;
+            this.chkLoss.Checked = true;
+            this.chkLoss.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkLoss.Location = new System.Drawing.Point(145, 381);
+            this.chkLoss.Name = "chkLoss";
+            this.chkLoss.Size = new System.Drawing.Size(194, 17);
+            this.chkLoss.TabIndex = 3;
+            this.chkLoss.Text = "考虑制粉等其他地方损失的重量";
+            this.chkLoss.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chkLoss.UseVisualStyleBackColor = true;
+            this.chkLoss.CheckedChanged += new System.EventHandler(this.chkLoss_CheckedChanged);
+            // 
             // NameType
             // 
             this.NameType.DataPropertyName = "NameType";
@@ -333,90 +416,13 @@
             // Weight
             // 
             this.Weight.DataPropertyName = "Weight";
+            dataGridViewCellStyle4.Format = "N2";
+            dataGridViewCellStyle4.NullValue = null;
+            this.Weight.DefaultCellStyle = dataGridViewCellStyle4;
             this.Weight.HeaderText = "粉末重量";
             this.Weight.Name = "Weight";
             this.Weight.ReadOnly = true;
             this.Weight.Width = 80;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(160, 20);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(38, 13);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "g/cm3";
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Location = new System.Drawing.Point(384, 229);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(91, 29);
-            this.btnDelete.TabIndex = 2;
-            this.btnDelete.Text = "删除";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // txtTotal
-            // 
-            this.txtTotal.BackColor = System.Drawing.Color.Wheat;
-            this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.ForeColor = System.Drawing.Color.Blue;
-            this.txtTotal.Location = new System.Drawing.Point(341, 404);
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.ReadOnly = true;
-            this.txtTotal.Size = new System.Drawing.Size(112, 31);
-            this.txtTotal.TabIndex = 0;
-            this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(210, 413);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(127, 13);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "最终所需要的原料重量";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(459, 412);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(13, 13);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "g";
-            // 
-            // txtLoss
-            // 
-            this.txtLoss.Location = new System.Drawing.Point(341, 378);
-            this.txtLoss.Name = "txtLoss";
-            this.txtLoss.Size = new System.Drawing.Size(112, 20);
-            this.txtLoss.TabIndex = 0;
-            this.txtLoss.Text = "100";
-            this.txtLoss.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(459, 378);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(13, 13);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "g";
-            // 
-            // chkLoss
-            // 
-            this.chkLoss.AutoSize = true;
-            this.chkLoss.Checked = true;
-            this.chkLoss.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkLoss.Location = new System.Drawing.Point(145, 381);
-            this.chkLoss.Name = "chkLoss";
-            this.chkLoss.Size = new System.Drawing.Size(194, 17);
-            this.chkLoss.TabIndex = 3;
-            this.chkLoss.Text = "考虑制粉等其他地方损失的重量";
-            this.chkLoss.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chkLoss.UseVisualStyleBackColor = true;
             // 
             // CalculatorMaterialRequirement
             // 
@@ -457,7 +463,7 @@
         private System.Windows.Forms.TextBox txtMoldDiameter;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtThicknessMore;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkThicknessMore;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -470,11 +476,6 @@
         private System.Windows.Forms.Button btnInventoryMold;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NameType;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Diameter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Thickness;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Number;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Weight;
         private System.Windows.Forms.RadioButton rdoType2;
         private System.Windows.Forms.RadioButton rdoType1;
         private System.Windows.Forms.TextBox txtTotal;
@@ -483,5 +484,10 @@
         private System.Windows.Forms.TextBox txtLoss;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.CheckBox chkLoss;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NameType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Diameter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Thickness;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Number;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Weight;
     }
 }

@@ -11,6 +11,14 @@ namespace PMICalculatorDll
     /// </summary>
     public class CommonOperate
     {
+
+        public static void IsNullOrEmptyString(TextBox txt)
+        {
+            if (string.IsNullOrEmpty(txt.Text))
+            {
+                throw new Exception("所有输入不能为空");
+            }
+        }
         /// <summary>
         /// 转换string到double，如果不行，就抛出异常
         /// </summary>
@@ -18,10 +26,7 @@ namespace PMICalculatorDll
         /// <param name="number"></param>
         public static void ConvertStringToDouble(TextBox txt, out double number)
         {
-            if (string.IsNullOrEmpty(txt.Text))
-            {
-                throw new Exception("所有输入不能为空");
-            }
+            IsNullOrEmptyString(txt);
             if (!double.TryParse(txt.Text, out number))
             {
                 throw new Exception("所有输入必须是数字");

@@ -13,10 +13,14 @@ namespace PMICalculatorDll
     {
         public string DataXMLFilePathMold;
         public string DataXMLFilePathDensity;
+
+        private List<MaterialRequirementItem> CalculateList;
         public CalculatorMaterialRequirement()
         {
             InitializeComponent();
             CommonOperate.SetFormToFixedSingleDialog(this);
+            CalculateList = new List<MaterialRequirementItem>();
+            dgvCostCalculateList.AutoGenerateColumns = false;
         }
 
         private void btnInventoryMold_Click(object sender, EventArgs e)
@@ -47,12 +51,95 @@ namespace PMICalculatorDll
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string nameType = "";
+                double density, d, h1, h2, number, weight;
+                if (rdoType1.Checked)
+                {
+                    nameType = rdoType1.Text;
+                }
+                if (rdoType2.Checked)
+                {
+                    nameType = rdoType2.Text;
+                }
 
+                CommonOperate.ConvertStringToDouble(txtDensity, out density);
+                CommonOperate.ConvertStringToDouble(txtMoldDiameter, out d);
+                CommonOperate.ConvertStringToDouble(txtThickness, out h1);
+                if (chkThicknessMore.Checked)
+                {
+                    CommonOperate.ConvertStringToDouble(txtThicknessMore, out h2);
+                    h1 += h2;
+                }
+                CommonOperate.ConvertStringToDouble(txtNumber, out number);
+                weight = Math.PI * d * d * h1 / 4000 * density * number;
+                MaterialRequirementItem tmp = new MaterialRequirementItem();
+                tmp.NameType = nameType;
+                tmp.Diameter = d;
+                tmp.Thickness = h1;
+                tmp.Number = number;
+                tmp.Weight = weight;
+                CalculateList.Add(tmp);
+
+                BindToDgAndCalculateTotal();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void BindToDgAndCalculateTotal()
+        {
+            dgvCostCalculateList.DataSource = null;
+            dgvCostCalculateList.DataSource = CalculateList;
+            btnCalTotal();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            if (CalculateList.Count==0)
+            {
+                return;
+            }
+            int index = dgvCostCalculateList.CurrentRow.Index;
+            CalculateList.RemoveAt(index);
+            BindToDgAndCalculateTotal();
+        }
+        private void btnCalTotal()
+        {
+            double sum = 0;
+            foreach (var item in CalculateList)
+            {
+                sum += item.Weight;
+            }
+            if (chkLoss.Checked)
+            {
+                double loss;
+                CommonOperate.ConvertStringToDouble(txtLoss, out loss);
+                sum += loss;
+            }
+            txtTotal.Text = sum.ToString("N2");
+        }
 
+        private void txtLoss_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                double loss;
+                CommonOperate.ConvertStringToDouble(txtLoss, out loss);
+            }
+            catch (Exception ex)
+            {
+                txtLoss.Text = "100";
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void chkLoss_CheckedChanged(object sender, EventArgs e)
+        {
+            btnCalTotal();
         }
     }
 }

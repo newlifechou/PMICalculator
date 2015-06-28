@@ -36,6 +36,7 @@
             // 
             // btnOpen
             // 
+            this.btnOpen.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnOpen.Location = new System.Drawing.Point(448, 413);
             this.btnOpen.Name = "btnOpen";
             this.btnOpen.Size = new System.Drawing.Size(122, 38);
@@ -46,6 +47,7 @@
             // 
             // btnDelete
             // 
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDelete.Location = new System.Drawing.Point(303, 414);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(122, 38);
@@ -71,6 +73,7 @@
             // 
             // btnOpenWorkDirectory
             // 
+            this.btnOpenWorkDirectory.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnOpenWorkDirectory.Location = new System.Drawing.Point(13, 412);
             this.btnOpenWorkDirectory.Name = "btnOpenWorkDirectory";
             this.btnOpenWorkDirectory.Size = new System.Drawing.Size(159, 38);

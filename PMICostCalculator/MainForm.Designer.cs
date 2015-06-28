@@ -69,6 +69,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.helpToolStripMenuItem});
@@ -224,6 +225,7 @@
             // 
             // btnDelCost
             // 
+            this.btnDelCost.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDelCost.Location = new System.Drawing.Point(134, 84);
             this.btnDelCost.Name = "btnDelCost";
             this.btnDelCost.Size = new System.Drawing.Size(108, 35);
@@ -234,6 +236,7 @@
             // 
             // btnAddCost
             // 
+            this.btnAddCost.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAddCost.Location = new System.Drawing.Point(20, 84);
             this.btnAddCost.Name = "btnAddCost";
             this.btnAddCost.Size = new System.Drawing.Size(108, 35);
@@ -316,6 +319,7 @@
             // btnStatistic
             // 
             this.btnStatistic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnStatistic.Location = new System.Drawing.Point(393, 533);
             this.btnStatistic.Name = "btnStatistic";
             this.btnStatistic.Size = new System.Drawing.Size(108, 35);

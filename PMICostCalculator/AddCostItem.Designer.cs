@@ -45,6 +45,7 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAdd.Location = new System.Drawing.Point(283, 287);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(87, 47);
@@ -156,6 +157,7 @@
             // 
             // btnCalculator
             // 
+            this.btnCalculator.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCalculator.Location = new System.Drawing.Point(260, 99);
             this.btnCalculator.Name = "btnCalculator";
             this.btnCalculator.Size = new System.Drawing.Size(110, 28);

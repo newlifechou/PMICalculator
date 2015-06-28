@@ -54,6 +54,7 @@
             // 
             // btnNew
             // 
+            this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNew.Location = new System.Drawing.Point(12, 150);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(325, 43);

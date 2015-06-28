@@ -234,6 +234,9 @@
       <DependentUpon>StatisticSheetsSelect.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="PMICostCalculator20150628.pptx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

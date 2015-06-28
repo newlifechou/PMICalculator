@@ -298,6 +298,18 @@ namespace PMICostCalculator
             Settings f = new Settings();
             f.ShowDialog();
         }
+
+        private void documentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start("PMICostCalculator20150628.pptx");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);                
+            }
+        }
       
     }
 }

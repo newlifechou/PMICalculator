@@ -107,10 +107,12 @@
             // 
             // txtP1
             // 
+            this.txtP1.BackColor = System.Drawing.Color.Wheat;
+            this.txtP1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.txtP1.Location = new System.Drawing.Point(55, 72);
             this.txtP1.Name = "txtP1";
             this.txtP1.ReadOnly = true;
-            this.txtP1.Size = new System.Drawing.Size(80, 20);
+            this.txtP1.Size = new System.Drawing.Size(109, 31);
             this.txtP1.TabIndex = 27;
             this.txtP1.TabStop = false;
             this.txtP1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -118,7 +120,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(141, 75);
+            this.label6.Location = new System.Drawing.Point(162, 80);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(29, 13);
             this.label6.TabIndex = 23;
@@ -127,7 +129,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 75);
+            this.label5.Location = new System.Drawing.Point(20, 80);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(31, 13);
             this.label5.TabIndex = 24;

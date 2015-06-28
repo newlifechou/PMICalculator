@@ -59,8 +59,7 @@ namespace PMICalculatorDll
 
         private void chkIncludeCarbonPaper_CheckedChanged(object sender, EventArgs e)
         {
-            txtPapterWeight.Enabled = chkIncludeCarbonPaper.Checked;
-            txtPaperThickness.Enabled = chkIncludeCarbonPaper.Checked;
+            panelPaper.Enabled= chkIncludeCarbonPaper.Checked;
             panelMovePaper.Visible = chkIncludeCarbonPaper.Checked;
         }
 

@@ -69,7 +69,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btnInventoryGrahpitePaper = new System.Windows.Forms.Button();
             this.btnInventoryDensity = new System.Windows.Forms.Button();
+            this.panelPaper = new System.Windows.Forms.Panel();
             this.panelMovePaper.SuspendLayout();
+            this.panelPaper.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -127,7 +129,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(42, 40);
+            this.label9.Location = new System.Drawing.Point(9, 12);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(31, 13);
             this.label9.TabIndex = 3;
@@ -136,7 +138,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(132, 39);
+            this.label10.Location = new System.Drawing.Point(99, 11);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(13, 13);
             this.label10.TabIndex = 2;
@@ -144,7 +146,7 @@
             // 
             // txtPapterWeight
             // 
-            this.txtPapterWeight.Location = new System.Drawing.Point(77, 37);
+            this.txtPapterWeight.Location = new System.Drawing.Point(44, 9);
             this.txtPapterWeight.Name = "txtPapterWeight";
             this.txtPapterWeight.Size = new System.Drawing.Size(49, 20);
             this.txtPapterWeight.TabIndex = 44;
@@ -154,7 +156,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(148, 40);
+            this.label11.Location = new System.Drawing.Point(115, 12);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(31, 13);
             this.label11.TabIndex = 3;
@@ -163,7 +165,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(236, 39);
+            this.label12.Location = new System.Drawing.Point(203, 11);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(23, 13);
             this.label12.TabIndex = 2;
@@ -171,7 +173,7 @@
             // 
             // txtPaperThickness
             // 
-            this.txtPaperThickness.Location = new System.Drawing.Point(183, 36);
+            this.txtPaperThickness.Location = new System.Drawing.Point(150, 8);
             this.txtPaperThickness.Name = "txtPaperThickness";
             this.txtPaperThickness.Size = new System.Drawing.Size(51, 20);
             this.txtPaperThickness.TabIndex = 44;
@@ -427,7 +429,7 @@
             // 
             // btnInventoryGrahpitePaper
             // 
-            this.btnInventoryGrahpitePaper.Location = new System.Drawing.Point(260, 30);
+            this.btnInventoryGrahpitePaper.Location = new System.Drawing.Point(227, 2);
             this.btnInventoryGrahpitePaper.Name = "btnInventoryGrahpitePaper";
             this.btnInventoryGrahpitePaper.Size = new System.Drawing.Size(91, 29);
             this.btnInventoryGrahpitePaper.TabIndex = 56;
@@ -445,16 +447,28 @@
             this.btnInventoryDensity.UseVisualStyleBackColor = true;
             this.btnInventoryDensity.Click += new System.EventHandler(this.btnInventoryDensity_Click);
             // 
+            // panelPaper
+            // 
+            this.panelPaper.Controls.Add(this.btnInventoryGrahpitePaper);
+            this.panelPaper.Controls.Add(this.label9);
+            this.panelPaper.Controls.Add(this.label11);
+            this.panelPaper.Controls.Add(this.label10);
+            this.panelPaper.Controls.Add(this.txtPaperThickness);
+            this.panelPaper.Controls.Add(this.label12);
+            this.panelPaper.Controls.Add(this.txtPapterWeight);
+            this.panelPaper.Location = new System.Drawing.Point(21, 28);
+            this.panelPaper.Name = "panelPaper";
+            this.panelPaper.Size = new System.Drawing.Size(334, 36);
+            this.panelPaper.TabIndex = 58;
+            // 
             // CalculatorCircleTargetDensity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(367, 338);
             this.Controls.Add(this.btnInventoryDensity);
-            this.Controls.Add(this.btnInventoryGrahpitePaper);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.chkIncludeCarbonPaper);
-            this.Controls.Add(this.txtPaperThickness);
             this.Controls.Add(this.txtRelativeDensity);
             this.Controls.Add(this.txtRealDensity);
             this.Controls.Add(this.txtTheoreticalDensity);
@@ -464,31 +478,29 @@
             this.Controls.Add(this.txtThickness2);
             this.Controls.Add(this.txtThickness1);
             this.Controls.Add(this.label22);
-            this.Controls.Add(this.txtPapterWeight);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.txtDiameter);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtWeight);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelMovePaper);
+            this.Controls.Add(this.panelPaper);
             this.Name = "CalculatorCircleTargetDensity";
             this.Text = "圆形靶材密度估算工具";
             this.panelMovePaper.ResumeLayout(false);
             this.panelMovePaper.PerformLayout();
+            this.panelPaper.ResumeLayout(false);
+            this.panelPaper.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -537,6 +549,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnInventoryGrahpitePaper;
         private System.Windows.Forms.Button btnInventoryDensity;
+        private System.Windows.Forms.Panel panelPaper;
     }
 }
 

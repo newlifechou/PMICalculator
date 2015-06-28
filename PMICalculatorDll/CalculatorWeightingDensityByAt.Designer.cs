@@ -99,11 +99,12 @@
             // 
             // txtWeightingDensity
             // 
-            this.txtWeightingDensity.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWeightingDensity.BackColor = System.Drawing.Color.Wheat;
+            this.txtWeightingDensity.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.txtWeightingDensity.Location = new System.Drawing.Point(117, 426);
             this.txtWeightingDensity.Name = "txtWeightingDensity";
             this.txtWeightingDensity.ReadOnly = true;
-            this.txtWeightingDensity.Size = new System.Drawing.Size(327, 35);
+            this.txtWeightingDensity.Size = new System.Drawing.Size(327, 32);
             this.txtWeightingDensity.TabIndex = 19;
             this.txtWeightingDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 

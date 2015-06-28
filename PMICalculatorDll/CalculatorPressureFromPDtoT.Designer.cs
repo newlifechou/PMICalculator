@@ -61,10 +61,12 @@
             // 
             // txtT1
             // 
-            this.txtT1.Location = new System.Drawing.Point(56, 79);
+            this.txtT1.BackColor = System.Drawing.Color.Wheat;
+            this.txtT1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtT1.Location = new System.Drawing.Point(56, 73);
             this.txtT1.Name = "txtT1";
             this.txtT1.ReadOnly = true;
-            this.txtT1.Size = new System.Drawing.Size(80, 20);
+            this.txtT1.Size = new System.Drawing.Size(109, 31);
             this.txtT1.TabIndex = 15;
             this.txtT1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -80,7 +82,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(142, 82);
+            this.label4.Location = new System.Drawing.Point(171, 82);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(10, 13);
             this.label4.TabIndex = 10;

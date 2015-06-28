@@ -145,7 +145,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 203);
+            this.label5.Location = new System.Drawing.Point(27, 207);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(31, 13);
             this.label5.TabIndex = 0;
@@ -154,7 +154,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(148, 203);
+            this.label6.Location = new System.Drawing.Point(177, 207);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(29, 13);
             this.label6.TabIndex = 0;
@@ -162,10 +162,12 @@
             // 
             // txtP1
             // 
+            this.txtP1.BackColor = System.Drawing.Color.Wheat;
+            this.txtP1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.txtP1.Location = new System.Drawing.Point(62, 199);
             this.txtP1.Name = "txtP1";
             this.txtP1.ReadOnly = true;
-            this.txtP1.Size = new System.Drawing.Size(80, 20);
+            this.txtP1.Size = new System.Drawing.Size(109, 31);
             this.txtP1.TabIndex = 7;
             this.txtP1.TabStop = false;
             this.txtP1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -216,10 +218,12 @@
             // 
             // txtT2
             // 
-            this.txtT2.Location = new System.Drawing.Point(50, 51);
+            this.txtT2.BackColor = System.Drawing.Color.Wheat;
+            this.txtT2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.txtT2.Location = new System.Drawing.Point(50, 49);
             this.txtT2.Name = "txtT2";
             this.txtT2.ReadOnly = true;
-            this.txtT2.Size = new System.Drawing.Size(80, 20);
+            this.txtT2.Size = new System.Drawing.Size(109, 31);
             this.txtT2.TabIndex = 6;
             this.txtT2.TabStop = false;
             this.txtT2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -236,7 +240,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(136, 54);
+            this.label11.Location = new System.Drawing.Point(165, 58);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(10, 13);
             this.label11.TabIndex = 0;
@@ -245,7 +249,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(15, 54);
+            this.label12.Location = new System.Drawing.Point(15, 58);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(31, 13);
             this.label12.TabIndex = 0;

@@ -109,6 +109,7 @@
             // 
             // txtWeightingDensity
             // 
+            this.txtWeightingDensity.BackColor = System.Drawing.Color.Wheat;
             this.txtWeightingDensity.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtWeightingDensity.Location = new System.Drawing.Point(120, 455);
             this.txtWeightingDensity.Name = "txtWeightingDensity";

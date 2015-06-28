@@ -130,19 +130,23 @@
             // 
             // txtRelativeDensity
             // 
-            this.txtRelativeDensity.Location = new System.Drawing.Point(91, 159);
+            this.txtRelativeDensity.BackColor = System.Drawing.Color.Wheat;
+            this.txtRelativeDensity.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRelativeDensity.Location = new System.Drawing.Point(91, 162);
             this.txtRelativeDensity.Name = "txtRelativeDensity";
             this.txtRelativeDensity.ReadOnly = true;
-            this.txtRelativeDensity.Size = new System.Drawing.Size(72, 20);
+            this.txtRelativeDensity.Size = new System.Drawing.Size(114, 31);
             this.txtRelativeDensity.TabIndex = 49;
             this.txtRelativeDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtRealDensity
             // 
+            this.txtRealDensity.BackColor = System.Drawing.Color.Wheat;
+            this.txtRealDensity.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRealDensity.Location = new System.Drawing.Point(91, 130);
             this.txtRealDensity.Name = "txtRealDensity";
             this.txtRealDensity.ReadOnly = true;
-            this.txtRealDensity.Size = new System.Drawing.Size(72, 20);
+            this.txtRealDensity.Size = new System.Drawing.Size(114, 31);
             this.txtRealDensity.TabIndex = 48;
             this.txtRealDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -152,12 +156,13 @@
             this.txtTheoreticalDensity.Name = "txtTheoreticalDensity";
             this.txtTheoreticalDensity.Size = new System.Drawing.Size(72, 20);
             this.txtTheoreticalDensity.TabIndex = 4;
+            this.txtTheoreticalDensity.Text = "5.75";
             this.txtTheoreticalDensity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(170, 163);
+            this.label22.Location = new System.Drawing.Point(211, 169);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(15, 13);
             this.label22.TabIndex = 43;
@@ -166,7 +171,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(170, 133);
+            this.label20.Location = new System.Drawing.Point(211, 139);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(38, 13);
             this.label20.TabIndex = 42;
@@ -184,7 +189,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(32, 164);
+            this.label21.Location = new System.Drawing.Point(32, 171);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(55, 13);
             this.label21.TabIndex = 44;
@@ -193,7 +198,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(32, 134);
+            this.label19.Location = new System.Drawing.Point(32, 139);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(55, 13);
             this.label19.TabIndex = 45;

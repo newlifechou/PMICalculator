@@ -150,7 +150,7 @@
             this.txtPapterWeight.Name = "txtPapterWeight";
             this.txtPapterWeight.Size = new System.Drawing.Size(49, 20);
             this.txtPapterWeight.TabIndex = 44;
-            this.txtPapterWeight.Text = "5";
+            this.txtPapterWeight.Text = "4.4";
             this.txtPapterWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label11

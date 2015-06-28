@@ -20,7 +20,7 @@ namespace PMISpecificCalculator
         public MainForm()
         {
             InitializeComponent();
-            PMICalculatorDll.FormCommonOperate.SetFormToFixedSingleDialog(this);
+            PMICalculatorDll.CommonOperate.SetFormToFixedSingleDialog(this);
             //这里初始化所有的数据文件路径
             DataXMLFilePathMold = Path.Combine(Environment.CurrentDirectory, "XMLData", "MoldData.xml");
             DataXMLFilePathSimpleSubstance = Path.Combine(Environment.CurrentDirectory, "XMLData", "SubstanceData.xml");

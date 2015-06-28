@@ -34,7 +34,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnInventoryMold = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkThicknessMore = new System.Windows.Forms.CheckBox();
             this.txtThickness = new System.Windows.Forms.TextBox();
             this.txtThicnessMore = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,6 +48,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
+            this.btnCalculate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnInventoryDensity
@@ -106,18 +107,18 @@
             this.btnInventoryMold.UseVisualStyleBackColor = true;
             this.btnInventoryMold.Click += new System.EventHandler(this.btnInventoryMold_Click);
             // 
-            // checkBox1
+            // chkThicknessMore
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Checked = true;
-            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox1.Location = new System.Drawing.Point(12, 92);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(98, 17);
-            this.checkBox1.TabIndex = 74;
-            this.checkBox1.Text = "考虑加工余量";
-            this.checkBox1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkThicknessMore.AutoSize = true;
+            this.chkThicknessMore.Checked = true;
+            this.chkThicknessMore.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkThicknessMore.Location = new System.Drawing.Point(12, 92);
+            this.chkThicknessMore.Name = "chkThicknessMore";
+            this.chkThicknessMore.Size = new System.Drawing.Size(98, 17);
+            this.chkThicknessMore.TabIndex = 74;
+            this.chkThicknessMore.Text = "考虑加工余量";
+            this.chkThicknessMore.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.chkThicknessMore.UseVisualStyleBackColor = true;
             // 
             // txtThickness
             // 
@@ -212,12 +213,11 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(344, 204);
+            this.label13.Location = new System.Drawing.Point(344, 201);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(13, 13);
             this.label13.TabIndex = 78;
             this.label13.Text = "g";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label12
             // 
@@ -240,17 +240,28 @@
             this.txtTotal.TabIndex = 76;
             this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // btnCalculate
+            // 
+            this.btnCalculate.Location = new System.Drawing.Point(20, 147);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(337, 39);
+            this.btnCalculate.TabIndex = 79;
+            this.btnCalculate.Text = "开始计算";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
+            // 
             // CalculatorFillMaterials
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(373, 236);
+            this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnInventoryMold);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.chkThicknessMore);
             this.Controls.Add(this.txtThickness);
             this.Controls.Add(this.txtThicnessMore);
             this.Controls.Add(this.label6);
@@ -280,7 +291,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnInventoryMold;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkThicknessMore;
         private System.Windows.Forms.TextBox txtThickness;
         private System.Windows.Forms.TextBox txtThicnessMore;
         private System.Windows.Forms.Label label6;
@@ -294,5 +305,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.Button btnCalculate;
     }
 }

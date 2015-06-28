@@ -15,7 +15,7 @@ namespace PMICalculatorDll
         public CalculatorWeightingDensityByAt()
         {
             InitializeComponent();
-            FormCommonOperate.SetFormToFixedSingleDialog(this);
+            CommonOperate.SetFormToFixedSingleDialog(this);
             dgv.AutoGenerateColumns = false;
         }
         private List<WeightingDensityItem> list = new List<WeightingDensityItem>();
@@ -31,9 +31,9 @@ namespace PMICalculatorDll
                 {
                     throw new Exception("名称不能为空");
                 }
-                FormCommonOperate.ConvertStringToDouble(txtItemAt, out itemAt);
-                FormCommonOperate.ConvertStringToDouble(txtItemDensity, out itemDensity);
-                FormCommonOperate.ConvertStringToDouble(txtItemMolWeight, out itemMolWeight);
+                CommonOperate.ConvertStringToDouble(txtItemAt, out itemAt);
+                CommonOperate.ConvertStringToDouble(txtItemDensity, out itemDensity);
+                CommonOperate.ConvertStringToDouble(txtItemMolWeight, out itemMolWeight);
                 wdi.ItemAt = itemAt;
                 wdi.ItemMolWeight = itemMolWeight;
                 wdi.ItemDensity = itemDensity;

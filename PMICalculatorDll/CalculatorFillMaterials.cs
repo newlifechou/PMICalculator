@@ -16,7 +16,7 @@ namespace PMICalculatorDll
         public CalculatorFillMaterials()
         {
             InitializeComponent();
-            FormCommonOperate.SetFormToFixedSingleDialog(this);
+            CommonOperate.SetFormToFixedSingleDialog(this);
         }
 
         private void btnInventoryMold_Click(object sender, EventArgs e)
@@ -32,11 +32,6 @@ namespace PMICalculatorDll
             txtDiameter.Text = e.Para1;
         }
 
-        private void btnCalculate_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnInventoryDensity_Click(object sender, EventArgs e)
         {
             InventoryDensity id = new InventoryDensity();
@@ -50,9 +45,28 @@ namespace PMICalculatorDll
             txtTheoreticalDensity.Text = e.Para2;
         }
 
-        private void label13_Click(object sender, EventArgs e)
+        private void btnCalculate_Click(object sender, EventArgs e)
         {
+            double density, d, h1, h2, number,weight;
+            try
+            {
+                CommonOperate.ConvertStringToDouble(txtTheoreticalDensity, out density);
+                CommonOperate.ConvertStringToDouble(txtDiameter, out d);
+                CommonOperate.ConvertStringToDouble(txtThickness, out h1);
+                if (chkThicknessMore.Checked)
+                {
+                    CommonOperate.ConvertStringToDouble(txtThicnessMore, out h2);
+                    h1 += h2;
+                }
+                CommonOperate.ConvertStringToDouble(txtNumber, out number);
+                weight = Math.PI * d * d * h1 / 4000 * density * number;
+                txtTotal.Text = weight.ToString("N2");
 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

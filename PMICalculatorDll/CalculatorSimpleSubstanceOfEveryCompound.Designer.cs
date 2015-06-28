@@ -44,6 +44,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnCalculate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCalculateList)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -214,13 +215,23 @@
             this.btnDelete.Text = "删除";
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
+            // btnCalculate
+            // 
+            this.btnCalculate.Location = new System.Drawing.Point(12, 366);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(470, 53);
+            this.btnCalculate.TabIndex = 2;
+            this.btnCalculate.Text = "计算";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            // 
             // CalculatorSimpleSubstanceOfEveryCompound
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(494, 383);
+            this.ClientSize = new System.Drawing.Size(494, 431);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvCalculateList);
             this.Controls.Add(this.label2);
@@ -254,5 +265,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnCalculate;
     }
 }

@@ -15,7 +15,7 @@ namespace PMICalculatorDll
         public CalculatorSimpleSubstanceOfEveryCompound()
         {
             InitializeComponent();
-            FormCommonOperate.SetFormToFixedSingleDialog(this);
+            CommonOperate.SetFormToFixedSingleDialog(this);
         }
 
         private void btnInventorySimpleSubstance_Click(object sender, EventArgs e)

@@ -25,7 +25,7 @@ namespace PMICalculatorDll
         public InventoryMold()
         {
             InitializeComponent();
-            FormCommonOperate.SetFormToFixedSingleDialog(this);
+            CommonOperate.SetFormToFixedSingleDialog(this);
             lvData.FullRowSelect = true;
             lvData.MultiSelect = false;
             lvData.GridLines = true;

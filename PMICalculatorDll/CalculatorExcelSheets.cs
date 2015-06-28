@@ -15,7 +15,7 @@ namespace PMICalculatorDll
         public CalculatorExcelSheets()
         {
             InitializeComponent();
-            FormCommonOperate.SetFormToFixedSingleDialog(this);
+            CommonOperate.SetFormToFixedSingleDialog(this);
         }
         public List<FileInfo> ExcelSheets;
         private void btnCalculate_Click(object sender, EventArgs e)

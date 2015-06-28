@@ -16,7 +16,7 @@ namespace PMICalculatorDll
         public CalculatorMaterialRequirement()
         {
             InitializeComponent();
-            FormCommonOperate.SetFormToFixedSingleDialog(this);
+            CommonOperate.SetFormToFixedSingleDialog(this);
         }
 
         private void btnInventoryMold_Click(object sender, EventArgs e)

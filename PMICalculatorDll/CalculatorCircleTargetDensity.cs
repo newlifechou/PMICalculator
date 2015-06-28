@@ -16,7 +16,7 @@ namespace PMICalculatorDll
         public CalculatorCircleTargetDensity()
         {
             InitializeComponent();
-            FormCommonOperate.SetFormToFixedSingleDialog(this);
+            CommonOperate.SetFormToFixedSingleDialog(this);
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)
@@ -24,21 +24,21 @@ namespace PMICalculatorDll
             try
             {
                 double weight, diameter, h1, h2, h3, h4, h,paperWeight, paperThickness, theoreticalDensity;
-                FormCommonOperate.ConvertStringToDouble(txtWeight, out weight);
-                FormCommonOperate.ConvertStringToDouble(txtDiameter, out diameter);
-                FormCommonOperate.ConvertStringToDouble(txtThickness1, out h1);
-                FormCommonOperate.ConvertStringToDouble(txtThickness2, out h2);
-                FormCommonOperate.ConvertStringToDouble(txtThickness3, out h3);
-                FormCommonOperate.ConvertStringToDouble(txtThickness4, out h4);
-                FormCommonOperate.ConvertStringToDouble(txtTheoreticalDensity, out theoreticalDensity);
+                CommonOperate.ConvertStringToDouble(txtWeight, out weight);
+                CommonOperate.ConvertStringToDouble(txtDiameter, out diameter);
+                CommonOperate.ConvertStringToDouble(txtThickness1, out h1);
+                CommonOperate.ConvertStringToDouble(txtThickness2, out h2);
+                CommonOperate.ConvertStringToDouble(txtThickness3, out h3);
+                CommonOperate.ConvertStringToDouble(txtThickness4, out h4);
+                CommonOperate.ConvertStringToDouble(txtTheoreticalDensity, out theoreticalDensity);
                 h= (h1 + h2 + h3 + h4) / 4;
                 this.txtThickness.Text = h.ToString("N2");
 
                 //如果需要减去石墨纸的重量和厚度
                 if (chkIncludeCarbonPaper.Checked == true)
                 {
-                    FormCommonOperate.ConvertStringToDouble(txtPaperThickness, out paperThickness);
-                    FormCommonOperate.ConvertStringToDouble(txtPapterWeight, out paperWeight);
+                    CommonOperate.ConvertStringToDouble(txtPaperThickness, out paperThickness);
+                    CommonOperate.ConvertStringToDouble(txtPapterWeight, out paperWeight);
 
                     h = h - paperThickness;
                     this.txtMovePaperThickness.Text = h.ToString("N2");

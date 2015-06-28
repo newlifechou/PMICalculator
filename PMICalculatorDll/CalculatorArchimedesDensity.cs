@@ -15,7 +15,7 @@ namespace PMICalculatorDll
         public CalculatorArchimedesDensity()
         {
             InitializeComponent();
-            FormCommonOperate.SetFormToFixedSingleDialog(this);
+            CommonOperate.SetFormToFixedSingleDialog(this);
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)
@@ -24,10 +24,10 @@ namespace PMICalculatorDll
             {
                 double weight, w1, w2, thereticaldensity;
                 //当所有的textbox都转换成功的时候，才可以进行计算
-                FormCommonOperate.ConvertStringToDouble(txtWeight, out weight);
-                FormCommonOperate.ConvertStringToDouble(txtW1, out w1);
-                FormCommonOperate.ConvertStringToDouble(txtW2, out w2);
-                FormCommonOperate.ConvertStringToDouble(txtTheoreticalDensity, out thereticaldensity);
+                CommonOperate.ConvertStringToDouble(txtWeight, out weight);
+                CommonOperate.ConvertStringToDouble(txtW1, out w1);
+                CommonOperate.ConvertStringToDouble(txtW2, out w2);
+                CommonOperate.ConvertStringToDouble(txtTheoreticalDensity, out thereticaldensity);
 
                 CalculateTargetDensity tdc = new CalculateTargetDensity();
                 tdc.CalculateArchimedeTargetDensity(weight, w1, w2, thereticaldensity);

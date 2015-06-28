@@ -15,7 +15,7 @@ namespace PMICalculatorDll
         public CalculatorPressureFromT1D1D2ToT2()
         {
             InitializeComponent();
-            FormCommonOperate.SetFormToFixedSingleDialog(this);
+            CommonOperate.SetFormToFixedSingleDialog(this);
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)
@@ -23,9 +23,9 @@ namespace PMICalculatorDll
             try
             {
                 double t1, d1, d2;
-                FormCommonOperate.ConvertStringToDouble(txtT1, out t1);
-                FormCommonOperate.ConvertStringToDouble(txtD1, out d1);
-                FormCommonOperate.ConvertStringToDouble(txtD2, out d2);
+                CommonOperate.ConvertStringToDouble(txtT1, out t1);
+                CommonOperate.ConvertStringToDouble(txtD1, out d1);
+                CommonOperate.ConvertStringToDouble(txtD2, out d2);
 
                 CalculatePressure cp = new CalculatePressure();
                 cp.CalculateFromT1D1D2ToT2(d1, d2, t1);

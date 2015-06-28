@@ -53,6 +53,7 @@
     <Compile Include="CalculatorFillMaterials.Designer.cs">
       <DependentUpon>CalculatorFillMaterials.cs</DependentUpon>
     </Compile>
+    <Compile Include="Code\CalculateSpecific.cs" />
     <Compile Include="Code\CalculateWeightingDensity.cs" />
     <Compile Include="CalculatorMaterialRequirement.cs">
       <SubType>Form</SubType>
@@ -117,7 +118,7 @@
     <Compile Include="InventoryDensity.Designer.cs">
       <DependentUpon>InventoryDensity.cs</DependentUpon>
     </Compile>
-    <Compile Include="Code\FormCommonOperate.cs" />
+    <Compile Include="Code\CommonOperate.cs" />
     <Compile Include="InventoryGraphitePaper.cs">
       <SubType>Form</SubType>
     </Compile>

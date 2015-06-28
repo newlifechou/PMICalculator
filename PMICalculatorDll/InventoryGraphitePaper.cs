@@ -18,7 +18,7 @@ namespace PMICalculatorDll
         public InventoryGraphitePaper()
         {
             InitializeComponent();
-            FormCommonOperate.SetFormToFixedSingleDialog(this);
+            CommonOperate.SetFormToFixedSingleDialog(this);
             lvData.FullRowSelect = true;
             lvData.MultiSelect = false;
             lvData.GridLines = true;

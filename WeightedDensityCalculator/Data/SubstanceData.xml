@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SubstanceData>
+  <Substance ElementName="Ac" ANumber="89">
+    <MolWeight>227.03</MolWeight>
+    <Density>10.10</Density>
+    <MeltingPoint>1050</MeltingPoint>
+    <BoilingPoint>3200</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Ag" ANumber="47">
+    <MolWeight>107.868</MolWeight>
+    <Density>10.5</Density>
+    <MeltingPoint>961</MeltingPoint>
+    <BoilingPoint>2163</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Al" ANumber="13">
+    <MolWeight>26.982</MolWeight>
+    <Density>2.7</Density>
+    <MeltingPoint>660</MeltingPoint>
+    <BoilingPoint>2620</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Am" ANumber="95">
+    <MolWeight>243.06</MolWeight>
+    <Density>11.70</Density>
+    <MeltingPoint>863</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Ar" ANumber="18">
+    <MolWeight>39.948</MolWeight>
+    <Density>1.78</Density>
+    <MeltingPoint>-189</MeltingPoint>
+    <BoilingPoint>-186</BoilingPoint>
+  </Substance>
+  <Substance ElementName="As" ANumber="33">
+    <MolWeight>74.922</MolWeight>
+    <Density>5.73</Density>
+    <MeltingPoint>817h</MeltingPoint>
+    <BoilingPoint>-</BoilingPoint>
+  </Substance>
+  <Substance ElementName="At" ANumber="85">
+    <MolWeight>209.99</MolWeight>
+    <Density>0</Density>
+    <MeltingPoint>0</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Au" ANumber="79">
+    <MolWeight>196.967</MolWeight>
+    <Density>19.32</Density>
+    <MeltingPoint>1063</MeltingPoint>
+    <BoilingPoint>2857</BoilingPoint>
+  </Substance>
+  <Substance ElementName="B" ANumber="5">
+    <MolWeight>10.811</MolWeight>
+    <Density>2.34</Density>
+    <MeltingPoint>2300</MeltingPoint>
+    <BoilingPoint>4002</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Ba" ANumber="56">
+    <MolWeight>137.345</MolWeight>
+    <Density>3.5</Density>
+    <MeltingPoint>725</MeltingPoint>
+    <BoilingPoint>1805</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Be" ANumber="4">
+    <MolWeight>9.012</MolWeight>
+    <Density>1.65</Density>
+    <MeltingPoint>1278</MeltingPoint>
+    <BoilingPoint>2472</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Bh" ANumber="107">
+    <MolWeight>264.12</MolWeight>
+    <Density>0</Density>
+    <MeltingPoint>0</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Bi" ANumber="83">
+    <MolWeight>208.980</MolWeight>
+    <Density>9.75</Density>
+    <MeltingPoint>271</MeltingPoint>
+    <BoilingPoint>1560</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Bk" ANumber="97">
+    <MolWeight>247.07</MolWeight>
+    <Density>0</Density>
+    <MeltingPoint>0</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Br" ANumber="35">
+    <MolWeight>79.907</MolWeight>
+    <Density>3.12</Density>
+    <MeltingPoint>-7.2</MeltingPoint>
+    <BoilingPoint>59</BoilingPoint>
+  </Substance>
+  <Substance ElementName="C" ANumber="6">
+    <MolWeight>12.011</MolWeight>
+    <Density>2.25</Density>
+    <MeltingPoint>3652</MeltingPoint>
+    <BoilingPoint>3827</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Ca" ANumber="20">
+    <MolWeight>40.081</MolWeight>
+    <Density>1.54</Density>
+    <MeltingPoint>845</MeltingPoint>
+    <BoilingPoint>1494</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Cd" ANumber="48">
+    <MolWeight>112.405</MolWeight>
+    <Density>8.65</Density>
+    <MeltingPoint>321</MeltingPoint>
+    <BoilingPoint>765</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Ce" ANumber="58">
+    <MolWeight>140.124</MolWeight>
+    <Density>6.67</Density>
+    <MeltingPoint>795</MeltingPoint>
+    <BoilingPoint>3468</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Cf" ANumber="98">
+    <MolWeight>251.08</MolWeight>
+    <Density>0</Density>
+    <MeltingPoint>0</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Cl" ANumber="17">
+    <MolWeight>35.453</MolWeight>
+    <Density>3.21</Density>
+    <MeltingPoint>101</MeltingPoint>
+    <BoilingPoint>36</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Cm" ANumber="96">
+    <MolWeight>247.07</MolWeight>
+    <Density>6.98</Density>
+    <MeltingPoint>0</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Co" ANumber="27">
+    <MolWeight>58.933</MolWeight>
+    <Density>8.96</Density>
+    <MeltingPoint>1083</MeltingPoint>
+    <BoilingPoint>2563</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Cr" ANumber="24">
+    <MolWeight>51.986</MolWeight>
+    <Density>7.19</Density>
+    <MeltingPoint>1890</MeltingPoint>
+    <BoilingPoint>2672</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Cs" ANumber="55">
+    <MolWeight>132.905</MolWeight>
+    <Density>1.87</Density>
+    <MeltingPoint>29</MeltingPoint>
+    <BoilingPoint>671</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Cu" ANumber="29">
+    <MolWeight>63.546</MolWeight>
+    <Density>8.96</Density>
+    <MeltingPoint>1083</MeltingPoint>
+    <BoilingPoint>2563</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Db" ANumber="105">
+    <MolWeight>262.11</MolWeight>
+    <Density>0</Density>
+    <MeltingPoint>0</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Ds" ANumber="110">
+    <MolWeight>269</MolWeight>
+    <Density>0</Density>
+    <MeltingPoint>0</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Dy" ANumber="66">
+    <MolWeight>162.5</MolWeight>
+    <Density>8.54</Density>
+    <MeltingPoint>1407</MeltingPoint>
+    <BoilingPoint>2600</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Er" ANumber="68">
+    <MolWeight>167.265</MolWeight>
+    <Density>9.05</Density>
+    <MeltingPoint>1497</MeltingPoint>
+    <BoilingPoint>2900</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Es" ANumber="99">
+    <MolWeight>252.08</MolWeight>
+    <Density>0</Density>
+    <MeltingPoint>0</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Eu" ANumber="63">
+    <MolWeight>151.96</MolWeight>
+    <Density>5.26</Density>
+    <MeltingPoint>826</MeltingPoint>
+    <BoilingPoint>1439</BoilingPoint>
+  </Substance>
+  <Substance ElementName="F" ANumber="9">
+    <MolWeight>18.998</MolWeight>
+    <Density>1.69</Density>
+    <MeltingPoint>-220</MeltingPoint>
+    <BoilingPoint>-188</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Fe" ANumber="26">
+    <MolWeight>58.847</MolWeight>
+    <Density>7.87</Density>
+    <MeltingPoint>1535</MeltingPoint>
+    <BoilingPoint>2862</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Fm" ANumber="100">
+    <MolWeight>257.10</MolWeight>
+    <Density>0</Density>
+    <MeltingPoint>0</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Fr" ANumber="87">
+    <MolWeight>223.02</MolWeight>
+    <Density>0</Density>
+    <MeltingPoint>0</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Ga" ANumber="31">
+    <MolWeight>69.720</MolWeight>
+    <Density>5.91</Density>
+    <MeltingPoint>30</MeltingPoint>
+    <BoilingPoint>2205</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Gd" ANumber="64">
+    <MolWeight>157.255</MolWeight>
+    <Density>7.90</Density>
+    <MeltingPoint>1312</MeltingPoint>
+    <BoilingPoint>3010</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Ge" ANumber="32">
+    <MolWeight>72.595</MolWeight>
+    <Density>5.32</Density>
+    <MeltingPoint>937</MeltingPoint>
+    <BoilingPoint>2834</BoilingPoint>
+  </Substance>
+  <Substance ElementName="H" ANumber="1">
+    <MolWeight>1.008</MolWeight>
+    <Density>0.07</Density>
+    <MeltingPoint>-259</MeltingPoint>
+    <BoilingPoint>-253</BoilingPoint>
+  </Substance>
+  <Substance ElementName="He" ANumber="2">
+    <MolWeight>4.003</MolWeight>
+    <Density>0.18</Density>
+    <MeltingPoint>-272</MeltingPoint>
+    <BoilingPoint>-269</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Hf" ANumber="72">
+    <MolWeight>176.495</MolWeight>
+    <Density>13.29</Density>
+    <MeltingPoint>2150</MeltingPoint>
+    <BoilingPoint>4603</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Ho" ANumber="67">
+    <MolWeight>164.930</MolWeight>
+    <Density>8.80</Density>
+    <MeltingPoint>1461</MeltingPoint>
+    <BoilingPoint>2600</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Hs" ANumber="108">
+    <MolWeight>265.13</MolWeight>
+    <Density>0</Density>
+    <MeltingPoint>0</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="I" ANumber="53">
+    <MolWeight>126.904</MolWeight>
+    <Density>4.93</Density>
+    <MeltingPoint>114</MeltingPoint>
+    <BoilingPoint>184</BoilingPoint>
+  </Substance>
+  <Substance ElementName="In" ANumber="49">
+    <MolWeight>114.820</MolWeight>
+    <Density>7.31</Density>
+    <MeltingPoint>157</MeltingPoint>
+    <BoilingPoint>2075</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Ir" ANumber="77">
+    <MolWeight>192.2</MolWeight>
+    <Density>22.42</Density>
+    <MeltingPoint>2447</MeltingPoint>
+    <BoilingPoint>4428</BoilingPoint>
+  </Substance>
+  <Substance ElementName="K" ANumber="19">
+    <MolWeight>39.101</MolWeight>
+    <Density>0.83</Density>
+    <MeltingPoint>64</MeltingPoint>
+    <BoilingPoint>759</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Kr" ANumber="36">
+    <MolWeight>83.80</MolWeight>
+    <Density>3.73</Density>
+    <MeltingPoint>-157</MeltingPoint>
+    <BoilingPoint>-152</BoilingPoint>
+  </Substance>
+  <Substance ElementName="La" ANumber="57">
+    <MolWeight>138.915</MolWeight>
+    <Density>5.98</Density>
+    <MeltingPoint>920</MeltingPoint>
+    <BoilingPoint>3454</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Li" ANumber="3">
+    <MolWeight>6.939</MolWeight>
+    <Density>0.53</Density>
+    <MeltingPoint>180.6</MeltingPoint>
+    <BoilingPoint>1342</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Lr" ANumber="103">
+    <MolWeight>260.11</MolWeight>
+    <Density>0</Density>
+    <MeltingPoint>0</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Lu" ANumber="71">
+    <MolWeight>174.977</MolWeight>
+    <Density>9.87</Density>
+    <MeltingPoint>1652</MeltingPoint>
+    <BoilingPoint>3227</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Md" ANumber="101">
+    <MolWeight>258.10</MolWeight>
+    <Density>0</Density>
+    <MeltingPoint>0</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Mg" ANumber="12">
+    <MolWeight>24.312</MolWeight>
+    <Density>1.74</Density>
+    <MeltingPoint>651</MeltingPoint>
+    <BoilingPoint>1090</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Mn" ANumber="25">
+    <MolWeight>54.98</MolWeight>
+    <Density>7.21</Density>
+    <MeltingPoint>1245</MeltingPoint>
+    <BoilingPoint>2062</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Mo" ANumber="42">
+    <MolWeight>95.945</MolWeight>
+    <Density>10.22</Density>
+    <MeltingPoint>2610</MeltingPoint>
+    <BoilingPoint>4639</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Mt" ANumber="109">
+    <MolWeight>266.13</MolWeight>
+    <Density>0</Density>
+    <MeltingPoint>0</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="N" ANumber="7">
+    <MolWeight>14.008</MolWeight>
+    <Density>0.81</Density>
+    <MeltingPoint>-210</MeltingPoint>
+    <BoilingPoint>-196</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Na" ANumber="11">
+    <MolWeight>22.990</MolWeight>
+    <Density>0.97</Density>
+    <MeltingPoint>98</MeltingPoint>
+    <BoilingPoint>893</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Nb" ANumber="41">
+    <MolWeight>92.906</MolWeight>
+    <Density>8.57</Density>
+    <MeltingPoint>2470</MeltingPoint>
+    <BoilingPoint>4744</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Nd" ANumber="60">
+    <MolWeight>144.248</MolWeight>
+    <Density>6.8</Density>
+    <MeltingPoint>1024</MeltingPoint>
+    <BoilingPoint>3027</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Ne" ANumber="10">
+    <MolWeight>20.183</MolWeight>
+    <Density>0.90</Density>
+    <MeltingPoint>-249</MeltingPoint>
+    <BoilingPoint>-246</BoilingPoint>
+  </Substance>
+  <Substance ElementName="No" ANumber="102">
+    <MolWeight>259.10</MolWeight>
+    <Density>0</Density>
+    <MeltingPoint>0</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Np" ANumber="93">
+    <MolWeight>237.05</MolWeight>
+    <Density>18</Density>
+    <MeltingPoint>640</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="O" ANumber="8">
+    <MolWeight>15.999</MolWeight>
+    <Density>1.43</Density>
+    <MeltingPoint>-218</MeltingPoint>
+    <BoilingPoint>-183</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Os" ANumber="76">
+    <MolWeight>190.200</MolWeight>
+    <Density>22.57</Density>
+    <MeltingPoint>3000</MeltingPoint>
+    <BoilingPoint>5012</BoilingPoint>
+  </Substance>
+  <Substance ElementName="P" ANumber="15">
+    <MolWeight>30.974</MolWeight>
+    <Density>1.82</Density>
+    <MeltingPoint>44</MeltingPoint>
+    <BoilingPoint>280</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Pa" ANumber="91">
+    <MolWeight>231.036</MolWeight>
+    <Density>15.40</Density>
+    <MeltingPoint>1230</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Pb" ANumber="82">
+    <MolWeight>207.199</MolWeight>
+    <Density>11.35</Density>
+    <MeltingPoint>328</MeltingPoint>
+    <BoilingPoint>1750</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Pm" ANumber="61">
+    <MolWeight>144.91</MolWeight>
+    <Density>6.88</Density>
+    <MeltingPoint>1035</MeltingPoint>
+    <BoilingPoint>2730</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Po" ANumber="84">
+    <MolWeight>208.98</MolWeight>
+    <Density>9.32</Density>
+    <MeltingPoint>254</MeltingPoint>
+    <BoilingPoint>962</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Pr" ANumber="59">
+    <MolWeight>140.907</MolWeight>
+    <Density>6.78</Density>
+    <MeltingPoint>935</MeltingPoint>
+    <BoilingPoint>3127</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Pt" ANumber="78">
+    <MolWeight>195.090</MolWeight>
+    <Density>21.45</Density>
+    <MeltingPoint>1769</MeltingPoint>
+    <BoilingPoint>3827</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Pu" ANumber="94">
+    <MolWeight>244.06</MolWeight>
+    <Density>19.84</Density>
+    <MeltingPoint>640</MeltingPoint>
+    <BoilingPoint>3240</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Ra" ANumber="88">
+    <MolWeight>226.03</MolWeight>
+    <Density>5.0</Density>
+    <MeltingPoint>100</MeltingPoint>
+    <BoilingPoint>1730</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Rb" ANumber="37">
+    <MolWeight>85.487</MolWeight>
+    <Density>1.53</Density>
+    <MeltingPoint>39</MeltingPoint>
+    <BoilingPoint>688</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Rd" ANumber="46">
+    <MolWeight>106.40</MolWeight>
+    <Density>12.02</Density>
+    <MeltingPoint>1552</MeltingPoint>
+    <BoilingPoint>2964</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Re" ANumber="75">
+    <MolWeight>186.220</MolWeight>
+    <Density>21.02</Density>
+    <MeltingPoint>3280</MeltingPoint>
+    <BoilingPoint>5627</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Rf" ANumber="104">
+    <MolWeight>261.11</MolWeight>
+    <Density>0</Density>
+    <MeltingPoint>0</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Rh" ANumber="45">
+    <MolWeight>102.905</MolWeight>
+    <Density>12.42</Density>
+    <MeltingPoint>1967</MeltingPoint>
+    <BoilingPoint>3697</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Rn" ANumber="86">
+    <MolWeight>222.02</MolWeight>
+    <Density>9.73</Density>
+    <MeltingPoint>-71</MeltingPoint>
+    <BoilingPoint>-62</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Ru" ANumber="44">
+    <MolWeight>101.070</MolWeight>
+    <Density>12.41</Density>
+    <MeltingPoint>2250</MeltingPoint>
+    <BoilingPoint>4150</BoilingPoint>
+  </Substance>
+  <Substance ElementName="S" ANumber="16">
+    <MolWeight>32.065</MolWeight>
+    <Density>2.07</Density>
+    <MeltingPoint>113</MeltingPoint>
+    <BoilingPoint>445</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Sb" ANumber="51">
+    <MolWeight>121.755</MolWeight>
+    <Density>6.69</Density>
+    <MeltingPoint>631</MeltingPoint>
+    <BoilingPoint>1587</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Sc" ANumber="21">
+    <MolWeight>44.956</MolWeight>
+    <Density>2.99</Density>
+    <MeltingPoint>1539</MeltingPoint>
+    <BoilingPoint>2832</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Se" ANumber="34">
+    <MolWeight>78.961</MolWeight>
+    <Density>4.79</Density>
+    <MeltingPoint>217</MeltingPoint>
+    <BoilingPoint>685</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Sg" ANumber="106">
+    <MolWeight>263.12</MolWeight>
+    <Density>0</Density>
+    <MeltingPoint>0</MeltingPoint>
+    <BoilingPoint>0</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Si" ANumber="14">
+    <MolWeight>28.086</MolWeight>
+    <Density>2.33</Density>
+    <MeltingPoint>1410</MeltingPoint>
+    <BoilingPoint>3267</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Sm" ANumber="62">
+    <MolWeight>150.350</MolWeight>
+    <Density>7.54</Density>
+    <MeltingPoint>1072</MeltingPoint>
+    <BoilingPoint>1900</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Sn" ANumber="50">
+    <MolWeight>118.695</MolWeight>
+    <Density>5.75</Density>
+    <MeltingPoint>232</MeltingPoint>
+    <BoilingPoint>2603</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Sr" ANumber="38">
+    <MolWeight>87.625</MolWeight>
+    <Density>2.54</Density>
+    <MeltingPoint>769</MeltingPoint>
+    <BoilingPoint>1384</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Ta" ANumber="73">
+    <MolWeight>180.848</MolWeight>
+    <Density>16.6</Density>
+    <MeltingPoint>2996</MeltingPoint>
+    <BoilingPoint>5425</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Tb" ANumber="65">
+    <MolWeight>158.924</MolWeight>
+    <Density>8.27</Density>
+    <MeltingPoint>1336</MeltingPoint>
+    <BoilingPoint>2800</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Tc" ANumber="43">
+    <MolWeight>97.907</MolWeight>
+    <Density>11.50</Density>
+    <MeltingPoint>2240</MeltingPoint>
+    <BoilingPoint>4877</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Te" ANumber="52">
+    <MolWeight>127.605</MolWeight>
+    <Density>6.24</Density>
+    <MeltingPoint>450</MeltingPoint>
+    <BoilingPoint>990</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Th" ANumber="90">
+    <MolWeight>232.038</MolWeight>
+    <Density>11.66</Density>
+    <MeltingPoint>1700</MeltingPoint>
+    <BoilingPoint>4788</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Ti" ANumber="22">
+    <MolWeight>47.900</MolWeight>
+    <Density>4.5</Density>
+    <MeltingPoint>1660</MeltingPoint>
+    <BoilingPoint>3289</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Tl" ANumber="81">
+    <MolWeight>204.377</MolWeight>
+    <Density>11.85</Density>
+    <MeltingPoint>304</MeltingPoint>
+    <BoilingPoint>1473</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Tm" ANumber="69">
+    <MolWeight>168.934</MolWeight>
+    <Density>9.33</Density>
+    <MeltingPoint>1545</MeltingPoint>
+    <BoilingPoint>1729</BoilingPoint>
+  </Substance>
+  <Substance ElementName="U" ANumber="92">
+    <MolWeight>238.035</MolWeight>
+    <Density>18.95</Density>
+    <MeltingPoint>1133</MeltingPoint>
+    <BoilingPoint>4134</BoilingPoint>
+  </Substance>
+  <Substance ElementName="V" ANumber="23">
+    <MolWeight>50.942</MolWeight>
+    <Density>5.96</Density>
+    <MeltingPoint>1890</MeltingPoint>
+    <BoilingPoint>3409</BoilingPoint>
+  </Substance>
+  <Substance ElementName="W" ANumber="74">
+    <MolWeight>183.855</MolWeight>
+    <Density>19.30</Density>
+    <MeltingPoint>3415</MeltingPoint>
+    <BoilingPoint>5660</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Xe" ANumber="54">
+    <MolWeight>131.30</MolWeight>
+    <Density>5.89</Density>
+    <MeltingPoint>-112</MeltingPoint>
+    <BoilingPoint>-107</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Y" ANumber="39">
+    <MolWeight>98.905</MolWeight>
+    <Density>4.45</Density>
+    <MeltingPoint>1497</MeltingPoint>
+    <BoilingPoint>3338</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Yb" ANumber="70">
+    <MolWeight>173.040</MolWeight>
+    <Density>6.98</Density>
+    <MeltingPoint>826</MeltingPoint>
+    <BoilingPoint>1427</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Zn" ANumber="30">
+    <MolWeight>65.371</MolWeight>
+    <Density>7.13</Density>
+    <MeltingPoint>419</MeltingPoint>
+    <BoilingPoint>907</BoilingPoint>
+  </Substance>
+  <Substance ElementName="Zr" ANumber="40">
+    <MolWeight>91.220</MolWeight>
+    <Density>6.5</Density>
+    <MeltingPoint>1852</MeltingPoint>
+    <BoilingPoint>4409</BoilingPoint>
+  </Substance>
+</SubstanceData>

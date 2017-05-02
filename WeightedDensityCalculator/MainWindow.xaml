@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WeightedDensityCalculator"
         Icon="calculator.png"
         mc:Ignorable="d"
-        Title="加权密度计算器-designed by xs.zhou" Height="600" Width="800">
+        Title="加权密度计算器-designed by xs.zhou" Height="500" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>

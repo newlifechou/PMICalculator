@@ -4,11 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeightedDensityCalculator"
+        Icon="calculator.png"
         mc:Ignorable="d"
-        Title="加权密度计算器-新版测试程序" Height="500" Width="800">
+        Title="加权密度计算器-designed by xs.zhou" Height="500" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="150"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
@@ -17,7 +18,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBox Text=""  Grid.Row="0" TextChanged="FilterSubstance_TextChanged"/>
+            <TextBox Text=""  Grid.Row="0" TextChanged="FilterSubstance_TextChanged" Style="{StaticResource StyleTextBoxCommon}"/>
             <ListBox x:Name="LstSubstances"  Grid.Row="1" ItemsSource="{Binding Path=Substances}"
                       HorizontalContentAlignment="Stretch">
                 <ListBox.ItemTemplate>
@@ -25,76 +26,87 @@
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition/>
-                                <ColumnDefinition Width="auto"/>
-                            </Grid.ColumnDefinitions>
-                            <TextBlock Text="{Binding Path=ElementName}" Grid.Column="0"/>
-                            <Button Content="选择" Grid.Column="1" Command="{Binding Path=DataContext.SelectCommand,RelativeSource={
-                                RelativeSource Mode=FindAncestor,AncestorType=Window}}" CommandParameter="{Binding}"/>
-                        </Grid>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
-        </Grid>
-        <Grid Grid.Column="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="待选元素"/>
-            <TextBlock Grid.Row="1" Grid.Column="0" Text="成分"/>
-            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=SelectedCalculationSubstance.ElementName}" IsReadOnly="True"/>
-            <TextBlock Grid.Row="2" Grid.Column="0" Text="摩尔质量"/>
-            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=SelectedCalculationSubstance.MolWeight}" IsReadOnly="True"/>
-            <TextBlock Grid.Row="3" Grid.Column="0" Text="密度"/>
-            <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Path=SelectedCalculationSubstance.Density}" IsReadOnly="True"/>
-            <TextBlock Grid.Row="4" Grid.Column="0" Text="At"/>
-            <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=SelectedCalculationSubstance.At}" Background="Orange" Foreground="White"/>
-            <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Content="添加" Command="{Binding Path=DataContext.AddCommand,
-                RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Window}}"/>
-            <ListBox Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" ItemsSource="{Binding Path=CalculatedList}" HorizontalContentAlignment="Stretch">
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="50"/>
-                                <ColumnDefinition />
                             </Grid.ColumnDefinitions>
-                            <TextBlock Text="{Binding Path=ElementName}" Grid.Column="0"/>
-                            <Button Content="删除" Grid.Column="1" Command="{Binding Path=DataContext.DeleteCommand,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Window}}" CommandParameter="{Binding}" />
+                            <TextBlock Text="{Binding Path=ElementName}" Grid.Column="0" Style="{StaticResource StyleTextBlockCommon}"/>
+                            <Button Content="选择" Grid.Column="1"  Style="{StaticResource StyleButtonCommon}"
+                                    Command="{Binding Path=DataContext.SelectCommand,RelativeSource={
+                                RelativeSource Mode=FindAncestor,AncestorType=Window}}" CommandParameter="{Binding}"/> 
                         </Grid>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
         </Grid>
-        <Grid Grid.Column="2">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-            <TextBlock Text="计算结果"/>
-            <DataGrid Grid.Row="1" ItemsSource="{Binding Path=CalculatedList}" IsReadOnly="True" AutoGenerateColumns="False"
+        <Border Grid.Column="1" BorderBrush="LightBlue" BorderThickness="1" Margin="2">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="待选元素" Style="{StaticResource StyleTextBlockCommon}"/>
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="成分" Style="{StaticResource StyleTextBlockCommon}"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=SelectedCalculationSubstance.ElementName}"
+                         IsReadOnly="True" Background="LightBlue"  Style="{StaticResource StyleTextBoxCommon}"/>
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="摩尔质量" Style="{StaticResource StyleTextBlockCommon}"/>
+                <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=SelectedCalculationSubstance.MolWeight}"
+                         IsReadOnly="True" Background="LightBlue"   Style="{StaticResource StyleTextBoxCommon}"/>
+                <TextBlock Grid.Row="3" Grid.Column="0" Text="密度" Style="{StaticResource StyleTextBlockCommon}"/>
+                <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Path=SelectedCalculationSubstance.Density}"
+                         IsReadOnly="True"  Background="LightBlue"   Style="{StaticResource StyleTextBoxCommon}"/>
+                <TextBlock Grid.Row="4" Grid.Column="0" Text="At" Style="{StaticResource StyleTextBlockCommon}"/>
+                <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Path=SelectedCalculationSubstance.At}"
+                         Background="Orange" Foreground="White"   Style="{StaticResource StyleTextBoxCommon}"/>
+                <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Content="添加" Command="{Binding Path=DataContext.AddCommand,
+                RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Window}}"   Style="{StaticResource StyleButtonCommon}"/>
+                <ListBox Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" ItemsSource="{Binding Path=CalculatedList}" HorizontalContentAlignment="Stretch">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition Width="50"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Text="{Binding Path=ElementName}" Grid.Column="0" Style="{StaticResource StyleTextBlockCommon}"/>
+                                <Button Content="删除" Grid.Column="1" Style="{StaticResource StyleButtonCommon}"
+                                        Command="{Binding Path=DataContext.DeleteCommand,
+                                    RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Window}}" CommandParameter="{Binding}" />
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+        </Border>
+        <Border Grid.Column="2" BorderBrush="LightBlue" BorderThickness="1" Margin="2">
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="计算结果" Style="{StaticResource StyleTextBlockCommon}"/>
+                <DataGrid Grid.Row="1" ItemsSource="{Binding Path=CalculatedList}" IsReadOnly="True" AutoGenerateColumns="False"
                       GridLinesVisibility="Horizontal" SelectionMode="Single" HorizontalGridLinesBrush="LightGray"  SnapsToDevicePixels="True" AlternatingRowBackground="Wheat"  CanUserResizeRows="False" CanUserReorderColumns="False"
                       CanUserSortColumns="False">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="元素" Binding="{Binding ElementName}" />
-                    <DataGridTextColumn Header="摩尔质量" Binding="{Binding MolWeight}" />
-                    <DataGridTextColumn Header="密度" Binding="{Binding Density,StringFormat={}{0:F2}}" />
-                    <DataGridTextColumn Header="At比" Binding="{Binding At}"/>
-                    <DataGridTextColumn Header="Wt%" Binding="{Binding Wt,StringFormat={}{0:P}}"  />
-                </DataGrid.Columns>
-            </DataGrid>
-            <TextBlock Text="{Binding Path=WeightedDensity,StringFormat=加权密度:{0:F3}g/cm3}" Grid.Row="2" FontWeight="Bold" FontSize="20"/>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="元素" Binding="{Binding ElementName}"  ElementStyle="{StaticResource StyleDGTextBlockCommon}" />
+                        <DataGridTextColumn Header="摩尔质量" Binding="{Binding MolWeight}" ElementStyle="{StaticResource StyleDGTextBlockRight}" />
+                        <DataGridTextColumn Header="密度" Binding="{Binding Density,StringFormat={}{0:F2}}"  ElementStyle="{StaticResource StyleDGTextBlockRight}" />
+                        <DataGridTextColumn Header="At比" Binding="{Binding At}"  ElementStyle="{StaticResource StyleDGTextBlockRight}" />
+                        <DataGridTextColumn Header="Wt%" Binding="{Binding Wt,StringFormat={}{0:P}}"   ElementStyle="{StaticResource StyleDGTextBlockRight}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <TextBlock Text="{Binding Path=WeightedDensity,StringFormat=加权密度:{0:F3}g/cm3}" Grid.Row="2" FontWeight="Bold" FontSize="20"/>
 
-        </Grid>
+            </Grid>
+        </Border>
     </Grid>
 </Window>

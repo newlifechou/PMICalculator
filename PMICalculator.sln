@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadDensityDataFromDB", "Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeightedDensityCalculator", "WeightedDensityCalculator\WeightedDensityCalculator.csproj", "{6C4E9BB0-EEE5-48D9-91AF-AAF960427545}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMSCompositionSimulator", "PMSCompositionSimulator\PMSCompositionSimulator.csproj", "{A9F0928E-53D4-4B9A-BA99-CB6A07685ED7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6C4E9BB0-EEE5-48D9-91AF-AAF960427545}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C4E9BB0-EEE5-48D9-91AF-AAF960427545}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C4E9BB0-EEE5-48D9-91AF-AAF960427545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9F0928E-53D4-4B9A-BA99-CB6A07685ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9F0928E-53D4-4B9A-BA99-CB6A07685ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9F0928E-53D4-4B9A-BA99-CB6A07685ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9F0928E-53D4-4B9A-BA99-CB6A07685ED7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

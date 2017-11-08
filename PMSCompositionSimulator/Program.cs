@@ -53,16 +53,19 @@ namespace PMSCompositionSimulator
                         //Process Data
                         double AllAt = elements.Sum(s => s.Ratio);
                         Random r = new Random();
+
                         elements.ForEach(s =>
                         {
                             s.Ratio = s.Ratio / AllAt;
-                            for (int i = 0; i < recordCount; i++)
+                            for (int j = 0; j < recordCount; j++)
                             {
-                                double temp = s.Ratio*100 + r.NextDouble() - s.Offset;
+                                double temp = 0;
+                                temp = s.Ratio * 100 + r.NextDouble() - s.Offset;
                                 s.RealValues.Add(temp);
                             }
                             s.Average = s.RealValues.Average();
                         });
+
 
                         string outputFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Data.csv");
                         StreamWriter sw = new StreamWriter(outputFile);
@@ -92,7 +95,7 @@ namespace PMSCompositionSimulator
                         elements.ForEach(s =>
                         {
                             sw.Write(",");
-                            sw.Write((s.Average ).ToString("F2"));
+                            sw.Write((s.Average).ToString("F2"));
                         });
                         sw.WriteLine();
 

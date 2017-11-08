@@ -13,7 +13,7 @@ namespace PMSCompositionSimulator
             Element = "";
             Ratio = 0;
             Offset = 0.5;
-            RealValues=new List<double>():
+            RealValues = new List<double>();
             Average = 0;
         }
         public string Element { get; set; }

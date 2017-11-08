@@ -20,17 +20,27 @@ namespace PMSCompositionSimulator
             {
                 while (!isQuit)
                 {
-                    string templateFile = Path.Combine(Environment.CurrentDirectory, "Template.txt");
-                    Console.WriteLine("需要改写模板吗(y/n)？");
-                    input = Console.ReadLine();
-                    if (input=="y")
+                    try
                     {
-                        Console.WriteLine("请按照特定模式改写模板，保存后关闭回车继续");
-                        Process.Start(templateFile);
-                    }
-                    Console.WriteLine("模版改写完毕,回车继续");
-                    input=Console.ReadLine();
+                        string templateFile = Path.Combine(Environment.CurrentDirectory, "Template.txt");
+                        Console.WriteLine("需要改写模板吗(y/n)？");
+                        input = Console.ReadLine();
+                        if (input == "y")
+                        {
+                            Console.WriteLine("请按照特定模式改写模板，保存后关闭回车继续");
+                            Process.Start(templateFile);
+                        }
+                        Console.WriteLine("模版改写后请保存,回车继续");
+                        input = Console.ReadLine();
 
+                        StreamReader sr = new StreamReader(templateFile);
+
+
+                    }
+                    catch (Exception)
+                    {
+                        throw;
+                    }
                     Console.WriteLine("(退出请输入exit)");
                     input = Console.ReadLine();
                     isQuit = (input == "exit");

@@ -23,19 +23,19 @@ namespace PMSCompositionSimulator
                     try
                     {
                         Console.WriteLine("********当前模板如下*******");
-                        Console.WriteLine("========当前模板如下=======");
+                        Console.WriteLine("========模板(成分+比例+偏差)=======");
                         string templateFile = Path.Combine(Environment.CurrentDirectory, "Template.txt");
                         string templateContent = File.ReadAllText(templateFile);
                         Console.WriteLine(templateContent);
 
-                        Console.WriteLine("========当前模板如下=======");
-                        Console.WriteLine("改写模板请按y，再回车，不需要改写直接回车？");
+                        Console.WriteLine("========模板=======");
+                        Console.WriteLine("=======>改写模板请按y，再回车，不需要改写直接回车？");
                         input = Console.ReadLine();
                         if (input == "y")
                         {
-                            Console.WriteLine("请按照特定模式改写模板，保存后关闭回车继续");
+                            Console.WriteLine("=======>请按照特定模式改写模板，保存后关闭回车继续");
                             Process.Start(templateFile);
-                            Console.WriteLine("模版改写后请保存,回车继续");
+                            Console.WriteLine("=======>模版改写后请保存,回车继续");
                             input = Console.ReadLine();
                         }
 
@@ -92,7 +92,7 @@ namespace PMSCompositionSimulator
                         });
 
                         //显示结果
-                        Console.WriteLine("==========数据结果==========");
+                        Console.WriteLine("=======>数据结果");
                         elements.ForEach(s =>
                         {
                             Console.Write(s.Element);
@@ -146,7 +146,7 @@ namespace PMSCompositionSimulator
                     }
                     catch (Exception)
                     {
-                        Console.WriteLine("文件内容格式错误");
+                        Console.WriteLine("=======>文件内容格式错误");
                     }
                 }
 

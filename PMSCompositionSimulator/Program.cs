@@ -54,17 +54,24 @@ namespace PMSCompositionSimulator
                         double AllAt = elements.Sum(s => s.Ratio);
                         Random r = new Random();
 
+                        for (int i = 0; i < recordCount; i++)
+                        {
+                            
+                            for (int j = 0; j < elements.Count; j++)
+                            {
+                                var s = elements[i];
+                            }
+                        }
+
+
+
                         elements.ForEach(s =>
                         {
-                            s.Ratio = s.Ratio / AllAt;
-                            for (int j = 0; j < recordCount; j++)
-                            {
-                                double temp = 0;
-                                temp = s.Ratio * 100 + r.NextDouble() - s.Offset;
-                                s.RealValues.Add(temp);
-                            }
                             s.Average = s.RealValues.Average();
                         });
+
+
+
 
 
                         string outputFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Data.csv");

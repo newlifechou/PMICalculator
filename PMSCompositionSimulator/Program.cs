@@ -22,8 +22,14 @@ namespace PMSCompositionSimulator
                 {
                     try
                     {
+                        Console.WriteLine("********当前模板如下*******");
+                        Console.WriteLine("========当前模板如下=======");
                         string templateFile = Path.Combine(Environment.CurrentDirectory, "Template.txt");
-                        Console.WriteLine("改写模板请按y再回车？");
+                        string templateContent = File.ReadAllText(templateFile);
+                        Console.WriteLine(templateContent);
+
+                        Console.WriteLine("========当前模板如下=======");
+                        Console.WriteLine("改写模板请按y，再回车，不需要改写直接回车？");
                         input = Console.ReadLine();
                         if (input == "y")
                         {
@@ -54,34 +60,61 @@ namespace PMSCompositionSimulator
                         double AllAt = elements.Sum(s => s.Ratio);
                         Random r = new Random();
 
+                        elements.ForEach(s =>
+                        {
+                            s.Ratio = s.Ratio / AllAt;
+                        });
+
                         for (int i = 0; i < recordCount; i++)
                         {
-                            
+                            double sum = 0;
                             for (int j = 0; j < elements.Count; j++)
                             {
-                                var s = elements[i];
+                                var s = elements[j];
+                                double temp = 0;
+                                //last element   for special way
+                                if (j < elements.Count - 1)
+                                {
+                                    temp = s.Ratio*100 + s.Offset - r.NextDouble();
+                                    sum += temp;
+                                }
+                                else
+                                {
+                                    temp = 100 - sum;
+                                }
+                                s.RealValues.Add(temp);
                             }
                         }
-
-
 
                         elements.ForEach(s =>
                         {
                             s.Average = s.RealValues.Average();
                         });
 
+                        //显示结果
+                        Console.WriteLine("==========数据结果==========");
+                        elements.ForEach(s =>
+                        {
+                            Console.Write(s.Element);
+                            Console.Write("=");
+                            s.RealValues.ForEach(rr =>
+                            {
+                                Console.Write(rr.ToString("F2"));
+                                Console.Write("  ");
+                            });
+                            Console.Write("  Average=");
+                            Console.Write(s.Average.ToString("F2"));
+                            Console.WriteLine();
+                        });
 
-
-
-
-                        string outputFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "Data.csv");
+                        string outputFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), DateTime.Now.ToString("yyyyMMddhhmmss") + ".csv");
                         StreamWriter sw = new StreamWriter(outputFile);
                         //write the title
                         sw.Write("No.");
                         elements.ForEach(s =>
                         {
                             sw.Write(",");
-                            sw.Write(s.Element);
+                            sw.Write(s.Element + " atm%");
                         });
                         sw.WriteLine();
 
@@ -109,7 +142,7 @@ namespace PMSCompositionSimulator
                         sw.Flush();
                         sw.Close();
 
-                        Console.WriteLine("数据输出完毕");
+                        Console.WriteLine("=======>数据文件输出在桌面上了，请查阅\r\n");
                     }
                     catch (Exception)
                     {

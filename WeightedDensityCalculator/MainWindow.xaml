@@ -52,7 +52,7 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="待选元素" Style="{StaticResource StyleTextBlockCommon}"/>
+                <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="&lt;-待选元素" Style="{StaticResource StyleTextBlockCommon}"/>
                 <TextBlock Grid.Row="1" Grid.Column="0" Text="成分" Style="{StaticResource StyleTextBlockCommon}"/>
                 <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=SelectedCalculationSubstance.ElementName}"
                          IsReadOnly="True" Background="LightBlue"  Style="{StaticResource StyleTextBoxCommon}"/>

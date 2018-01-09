@@ -51,7 +51,11 @@ namespace PMSCompositionSimulator
                             SingleElement s = new SingleElement();
                             s.Element = arrays[0];
                             s.Ratio = double.Parse(arrays[1]);
-                            s.Offset = double.Parse(arrays[2]);
+                            //判断文件默认有没有设定Offset
+                            if (arrays.Length == 3)
+                            {
+                                s.Offset = double.Parse(arrays[2]);
+                            }
                             elements.Add(s);
                         }
                         sr.Close();
@@ -75,7 +79,7 @@ namespace PMSCompositionSimulator
                                 //last element   for special way
                                 if (j < elements.Count - 1)
                                 {
-                                    temp = s.Ratio*100 + s.Offset - r.NextDouble();
+                                    temp = s.Ratio * 100 + s.Offset - r.NextDouble();
                                     sum += temp;
                                 }
                                 else
@@ -107,7 +111,8 @@ namespace PMSCompositionSimulator
                             Console.WriteLine();
                         });
 
-                        string outputFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), DateTime.Now.ToString("yyyyMMddhhmmss") + ".csv");
+                        string outputFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), 
+                            DateTime.Now.ToString("yyyyMMddHHmmssffff") + ".csv");
                         StreamWriter sw = new StreamWriter(outputFile);
                         //write the title
                         sw.Write("No.");
